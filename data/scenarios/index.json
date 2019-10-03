@@ -1,14 +1,23 @@
 {
 	"Community renewables": {
-		"ev": "EV-CommunityRenewables.csv"
+		"ev": {
+			"file": "EV-CommunityRenewables.csv",
+			"key": "Primary"
+		}
 	},
 	"Consumer evolution": {
-		"ev": "EV-ConsumerEvolution.csv"
+		"ev": {
+			"file": "EV-ConsumerEvolution.csv"
+		}
 	},
 	"Steady progression": {
-		"ev": "EV-SteadyProgression.csv"
+		"ev": {
+			"file": "EV-SteadyProgression.csv"
+		}
 	},
 	"Two degrees": {
-		"ev": "EV-TwoDegrees.csv"
+		"ev": {
+			"file": "EV-TwoDegrees.csv"
+		}
 	}
 }

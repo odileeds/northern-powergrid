@@ -20,19 +20,29 @@ S(document).ready(function(){
 			'primaries':{'title':'Primary Supply','file':'data/maps/primaries-unique.geojson'}
 		};
 		
-		S().ajax("data/scenarios/index.json",{
+		S().ajax("data/primaries2lad.json",{
 			'this':this,
 			'cache':false,
 			'dataType':'json',
-			'complete': function(d){
-				this.scenarios = d;
-				this.init();
+			'success': function(d){
+				this.primary2lad = d;
+				S().ajax("data/scenarios/index.json",{
+					'this':this,
+					'cache':false,
+					'dataType':'json',
+					'success': function(d){
+						this.scenarios = d;
+						this.init();
+					},
+					'error': function(e,attr){
+						console.error('Unable to load '+attr.file);
+					}
+				});
 			},
 			'error': function(e,attr){
 				console.error('Unable to load '+attr.file);
 			}
 		});
-		
 
 		return this;
 	}
@@ -65,22 +75,6 @@ S(document).ready(function(){
 		return this;
 	}
 
-	// Parse the CSV file
-	FES.prototype.parseCSV = function(data,attr){
-
-		this.csv = data;
-
-		// Convert the CSV to a JSON structure
-		this.data = CSV2JSON(data,1);
-		this.records = this.data.rows.length; 
-
-		// Construct the map
-		this.buildMap();
-
-
-		return;
-	}
-	
 
 	FES.prototype.buildMap = function(){
 
@@ -112,6 +106,105 @@ S(document).ready(function(){
 			}).addTo(this.map);
 		}
 
+		var geoattr = {
+			"style": {
+				"color": "#D73058",
+				"weight": 0.5,
+				"opacity": 0.65
+			}
+		};
+		
+		if(!this.scenarios[this.scenario][this.parameter].raw){
+			// Load the file
+			S().ajax("data/scenarios/"+this.scenarios[this.scenario][this.parameter].file,{
+				'this':this,
+				'cache':false,
+				'dataType':'text',
+				'scenario': this.scenario,
+				'parameter': this.parameter,
+				'complete': function(d,attr){
+					this.scenarios[attr.scenario][attr.parameter].raw = CSV2JSON(d,1);
+					this.scenarios[attr.scenario][attr.parameter].primaries = {};
+					this.scenarios[attr.scenario][attr.parameter].LAD = {};
+					var r,c,v,p,lad;
+					var key = (this.scenarios[attr.scenario][attr.parameter].key||"");
+					console.log(key)
+					var col = -1;
+					for(i = 0; i < this.scenarios[attr.scenario][attr.parameter].raw.fields.name.length; i++){
+						if(this.scenarios[attr.scenario][attr.parameter].raw.fields.name[i] == key) col = i;
+					}
+					if(col >= 0){
+						for(r = 0; r < this.scenarios[attr.scenario][attr.parameter].raw.rows.length; r++){
+							pkey = this.scenarios[attr.scenario][attr.parameter].raw.rows[r][col];
+							this.scenarios[attr.scenario][attr.parameter].primaries[pkey] = {};
+							for(c = 0; c < this.scenarios[attr.scenario][attr.parameter].raw.fields.name.length; c++){
+								if(c != col){
+									v = parseFloat(this.scenarios[attr.scenario][attr.parameter].raw.rows[r][c]);
+									this.scenarios[attr.scenario][attr.parameter].primaries[pkey][this.scenarios[attr.scenario][attr.parameter].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[attr.scenario][attr.parameter].raw.rows[r][c];
+								}
+							}
+						}
+						// Convert to LADs
+						// For each primary
+						for(p in this.scenarios[attr.scenario][attr.parameter].primaries){
+							if(this.primary2lad[p]){
+								// Loop over the LADs for this primary
+								for(lad in this.primary2lad[p]){
+									// Loop over each key
+									for(key in this.scenarios[attr.scenario][attr.parameter].primaries[p]){
+										// Zero the variable if necessary
+										if(!this.scenarios[attr.scenario][attr.parameter].LAD[lad]) this.scenarios[attr.scenario][attr.parameter].LAD[lad] = {};
+										if(!this.scenarios[attr.scenario][attr.parameter].LAD[lad][key]) this.scenarios[attr.scenario][attr.parameter].LAD[lad][key] = 0;
+										// Sum the fractional amount for this LAD/Primary
+										this.scenarios[attr.scenario][attr.parameter].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[attr.scenario][attr.parameter].primaries[p][key];
+									}
+								}
+							}
+						}
+						
+					}
+					this.buildMap();
+				},
+				'error': function(e,attr){
+					console.error('Unable to load '+attr.file);
+				}
+			});
+		}else{
+			var min = 0;
+			var max = 1;
+			var key =  '2019';
+			var _obj = this;
+			var _scenario = this.scenarios[this.scenario][this.parameter];
+
+			if(_scenario[this.view]){
+				var min = 1e100;
+				var max = -1e100;
+				for(i in _scenario[this.view]){
+					v = _scenario[this.view][i][key];
+					if(typeof v==="number"){
+						min = Math.min(v,min);
+						max = Math.max(v,max);
+					}
+				}
+			}
+
+			geoattr.style = function(feature){
+				if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
+					var v = 0;
+					var data = _scenario[_obj.view];
+					if(_obj.view == "LAD"){
+						// Need to convert primaries to LAD
+						lad19cd = feature.properties.lad19cd;
+						if(data[lad19cd]) v = (data[lad19cd][key]-min)/(max-min);
+					}else if(_obj.view == "primaries"){
+						f = (data[feature.properties.Primary][key]-min)/(max-min);
+						v = f;//v = (f*0.6 + 0.2);
+					}
+					return { "color": "#D73058", "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
+				}else return { "color": "#D73058" };
+			};		
+		}
+
 		if(this.map){
 
 			if(!this.views[this.view].data){
@@ -131,13 +224,7 @@ S(document).ready(function(){
 				});
 			}else{
 				if(!this.views[this.view].layer){
-					this.views[this.view].layer = L.geoJSON(this.views[this.view].data, {
-						style: {
-							"color": "#D73058",
-							"weight": 0.5,
-							"opacity": 0.65
-						}
-					});
+					this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
 				}
 			}
 
@@ -156,24 +243,6 @@ S(document).ready(function(){
 			}
 		}
 		
-		if(typeof this.scenarios[this.scenario][this.parameter]=="string"){
-			this.scenarios[this.scenario][this.parameter] = {'file':this.scenarios[this.scenario][this.parameter]};
-			// Load the file
-			S().ajax("data/scenarios/"+this.scenarios[this.scenario][this.parameter].file,{
-				'this':this,
-				'cache':false,
-				'dataType':'text',
-				'scenario': this.scenario,
-				'parameter': this.parameter,
-				'complete': function(d,attr){
-					this.scenarios[attr.scenario][attr.parameter].data = CSV2JSON(d);
-					this.buildMap();
-				},
-				'error': function(e,attr){
-					console.error('Unable to load '+attr.file);
-				}
-			});
-		}
 
 		/*
 		function popuptext(feature){
