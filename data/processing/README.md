@@ -1,10 +1,12 @@
-# NorthernPowerGrid work
+# NorthernPowerGrid Data Processing
 
 ## 1. Create geography of distribution sub-stations 
 
 We start with three big (>100MB) files containing sub-stations and the postcodes of customers. The header lines were cleaned up to remove new line characters. The first task is to group the postcodes by sub-station.
 
-`perl step1-a.pl`
+```
+perl step1-a.pl
+```
 
 This takes the three files `LV DSS fed postcodes Northeast_MB.csv`, `LV DSS fed postcodes Yorkshire_MB_A_to_M.csv`, and `LV DSS fed postcodes Yorkshire_MB_N_toZ.csv` and outputs to `substation-postcodes.csv`. Error messages are saved in `substation-postcodes.log` and will include the number of lines with missing postcodes (5426), the invalid postcodes (5718), the number of distribution sub-stations names that are in more than one area (114 are in Yorkshire and the North East), and the number of distribution sub-stations with multiple IDs within a region. This results in unique postcodes for 58439 distribution sub-stations (this is ~4000 fewer than the number listed in DistributionSubstation_BaseData.csv).
 
@@ -13,7 +15,9 @@ Next we need to find the Output Areas for each Distribution Station. Drop `getDS
 
 Next we need to convert all postcodes to Output Areas:
 
-`perl step1-b.pl`
+```
+perl step1-b.pl
+```
 
 This converts postcodes to OAs. It processes two files:
 
