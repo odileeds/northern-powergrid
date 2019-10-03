@@ -131,7 +131,7 @@ S(document).ready(function(){
 				if(!this.views.LAD.layer){
 					this.views.LAD.layer = L.geoJSON(this.views.LAD.data, {
 						style: {
-							"color": "#2254F4",
+							"color": "#D73058",
 							"weight": 0.5,
 							"opacity": 0.65
 						}
@@ -158,7 +158,7 @@ S(document).ready(function(){
 				console.log('construct')
 					this.views.primaries.layer = L.geoJSON(this.views.primaries.data, {
 						style: {
-							"color": "#2254F4",
+							"color": "#D73058",
 							"weight": 0.5,
 							"opacity": 0.65
 						}
