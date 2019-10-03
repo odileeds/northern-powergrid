@@ -84,10 +84,9 @@ S(document).ready(function(){
 
 	FES.prototype.buildMap = function(){
 
-		var lat = 53.79659;
-		var lon = -1.53385;
-		var d = 3;
-
+		
+		var bounds = L.latLngBounds(L.latLng(56.01680,2.43896),L.latLng(52.82268,-5.603027));
+		
 		function makeMarker(colour){
 			return L.divIcon({
 				'className': '',
@@ -103,10 +102,8 @@ S(document).ready(function(){
 		if(!this.map){
 			var mapel = S('#map');
 			var mapid = mapel.attr('id');
-			this.map = L.map(mapid,{'scrollWheelZoom':true}).fitBounds([
-				[lat-d, lon-d],
-				[lat+d, lon+d]
-			]);
+			this.map = L.map(mapid,{'scrollWheelZoom':true}).fitBounds(bounds);
+
 			// CartoDB map
 			L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
 				attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
