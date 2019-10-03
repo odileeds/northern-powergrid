@@ -1,0 +1,14 @@
+{
+	"Community renewables": {
+		"ev": "EV-CommunityRenewables.csv"
+	},
+	"Consumer evolution": {
+		"ev": "EV-ConsumerEvolution.csv"
+	},
+	"Steady progression": {
+		"ev": "EV-SteadyProgression.csv"
+	},
+	"Two degrees": {
+		"ev": "EV-TwoDegrees.csv"
+	}
+}
