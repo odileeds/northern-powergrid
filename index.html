@@ -22,7 +22,10 @@
 	input, select { font-size: 1em; line-height: 2em; width: 100%; }
 	h2 { font-size: 1em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.25em; }
 	p { margin-bottom: 1em; }
+	.spinner { position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); z-index: 1000; }
+	.spinner img { width: 5em; margin: auto; }
 	footer a:visited { color: #D73058; }
+	footer ul { list-style: disc; margin-left: 2em; }
 	</style>
 </head>
 <body>
@@ -55,7 +58,11 @@
 				<div id="view-holder"></div>
 			</div>
 			<div class="right">
-				<div id="map"></div>
+				<div id="map">
+					<div class="spinner">
+						<img src="https://odileeds.org/resources/images/odi.svg" alt="Loading..." />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

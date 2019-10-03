@@ -16,8 +16,8 @@ S(document).ready(function(){
 		};
 		this.scenarios = null;
 		this.views = {
-			'LAD':{'title':'Local Authorities'},
-			'primaries':{'title':'Primary Supply'}
+			'LAD':{'title':'Local Authorities','file':'data/maps/LAD-npg.geojson'},
+			'primaries':{'title':'Primary Supply','file':'data/maps/primaries-unique.geojson'}
 		};
 		
 		S().ajax("data/scenarios/index.json",{
@@ -113,14 +113,16 @@ S(document).ready(function(){
 		}
 
 		if(this.map){
-		
-			if(!this.views.LAD.data){			
-				S().ajax("data/maps/primaries-unique.geojson",{
+
+			if(!this.views[this.view].data){
+				S('#map .spinner').css({'display':''});		
+				S().ajax(this.views[this.view].file,{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
-					'complete': function(d){
-						this.views.primaries.data = d;
+					'view': this.view,
+					'complete': function(d,attr){
+						this.views[attr.view].data = d;
 						this.init();
 					},
 					'error': function(e,attr){
@@ -128,8 +130,8 @@ S(document).ready(function(){
 					}
 				});
 			}else{
-				if(!this.views.LAD.layer){
-					this.views.LAD.layer = L.geoJSON(this.views.LAD.data, {
+				if(!this.views[this.view].layer){
+					this.views[this.view].layer = L.geoJSON(this.views[this.view].data, {
 						style: {
 							"color": "#D73058",
 							"weight": 0.5,
@@ -139,42 +141,18 @@ S(document).ready(function(){
 				}
 			}
 
-			if(!this.views.primaries.data){
-				S().ajax("data/maps/LAD-npg.geojson",{
-					'this':this,
-					'cache':false,
-					'dataType':'json',
-					'complete': function(d){
-						this.views.LAD.data = d;
-						this.init();
-					},
-					'error': function(e,attr){
-						console.error('Unable to load '+attr.file);
-					}
-				});
-			}else{
-
-				if(!this.views.primaries.layer){
-				console.log('construct')
-					this.views.primaries.layer = L.geoJSON(this.views.primaries.data, {
-						style: {
-							"color": "#D73058",
-							"weight": 0.5,
-							"opacity": 0.65
-						}
-					});
-				}
-			}
-		}
-		
-			
-		if(this.map){
 			if(this.view=="LAD"){
 				if(this.views.primaries.layer && this.views.primaries.layer._map) this.views.primaries.layer.remove();
-				if(this.views.LAD.layer) this.views.LAD.layer.addTo(this.map);
+				if(this.views.LAD.layer){
+					this.views.LAD.layer.addTo(this.map);
+					S('#map .spinner').css({'display':'none'});
+				}
 			}else if(this.view=="primaries"){
 				if(this.views.LAD.layer && this.views.LAD.layer._map) this.views.LAD.layer.remove();
-				if(this.views.primaries.layer) this.views.primaries.layer.addTo(this.map);
+				if(this.views.primaries.layer){
+					this.views.primaries.layer.addTo(this.map);
+					S('#map .spinner').css({'display':'none'});
+				}
 			}
 		}
 		
