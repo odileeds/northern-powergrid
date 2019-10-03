@@ -180,6 +180,25 @@ S(document).ready(function(){
 				if(this.views.primaries.layer) this.views.primaries.layer.addTo(this.map);
 			}
 		}
+		
+		if(typeof this.scenarios[this.scenario][this.parameter]=="string"){
+			this.scenarios[this.scenario][this.parameter] = {'file':this.scenarios[this.scenario][this.parameter]};
+			// Load the file
+			S().ajax("data/scenarios/"+this.scenarios[this.scenario][this.parameter].file,{
+				'this':this,
+				'cache':false,
+				'dataType':'text',
+				'scenario': this.scenario,
+				'parameter': this.parameter,
+				'complete': function(d,attr){
+					this.scenarios[attr.scenario][attr.parameter].data = CSV2JSON(d);
+					this.buildMap();
+				},
+				'error': function(e,attr){
+					console.error('Unable to load '+attr.file);
+				}
+			});
+		}
 
 		/*
 		function popuptext(feature){
