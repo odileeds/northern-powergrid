@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>NorthernPowerGrid Future Energy Scenarios</title>
+	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
+	<link rel="StyleSheet" href="resources/leaflet.css" type="text/css" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" src="resources/stuquery.js"></script>
+	<script type="text/javascript" src="resources/npg.js"></script>
+	<script type="text/javascript" src="resources/leaflet.js"></script>
+	<style>
+	#map { 
+		height: 500px;
+		display: block;
+		width: 100%;
+	}
+	.columns { display: flex; padding: 1em; }
+	.left { width: 30%; max-width: 300px; margin-right: 1em; }
+	.right { width: 70%; }
+	input, select { font-size: 1em; line-height: 2em; width: 100%; }
+	h2 { font-size: 1em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.25em; }
+	p { margin-bottom: 1em; }
+	</style>
+</head>
+<body>
+	<header class="b1-bg">
+		<div class="b1-bg glory">
+			<div class="glory-opacity">
+				<div class="holder">
+					<a href="https://odileeds.org/"><img alt="ODI Leeds" src="https://odileeds.org/resources/images/odileeds-1.svg" title="ODI Leeds"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="main">
+		<div class="c1-bg">
+			<div class="holder">
+				<h1>NorthernPowerGrid Future Energy Scenarios</h1>
+			</div>
+		</div>
+	</div>
+	<div class="b6-bg">
+		<div class="holder columns">
+			<div class="left">
+				<p>An explanation of DFES goes here to set the scene.</p>
+				<h2><label for="scenarios">Choose a scenario</label>:</h2>
+				<div id="scenario-holder"></div>
+				<h2><label for="parameters">Choose a parameter</label>:</h2>
+				<div id="parameter-holder"></div>
+				<h2><label for="views">View by</label>:</h2>
+				<div id="view-holder"></div>
+			</div>
+			<div class="right">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="b1-bg">
+		<div class="holder">
+				<p>Created by Stuart Lowe &amp; Patrick Lake, <a href="http://odileeds.org/projects/">ODI Leeds</a> 2019.</p>
+				<p>Energy scenario data &copy; NorthernPowerGrid.</p>
+				<p><a href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2019-boundaries-uk-buc">Local Authority Districts boundaries</a> are taken from <a href="https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BUC/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=&having=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&historicMoment=&returnDistinctValues=false&resultOffset=&resultRecordCount=&queryByDistance=&returnExtentOnly=false&datumTransformation=&parameterValues=&rangeValues=&quantizationParameters=&featureEncoding=esriDefault&f=geojson">the ONS geo service</a>. They are <a href="https://www.ons.gov.uk/methodology/geography/licences">released under OGL</a>:</p>
+				<ul>
+					<li>Contains National Statistics data © Crown copyright and database right 2019</li>
+					<li>Contains OS data © Crown copyright and database right 2019</li>
+				</ul>
+		</div>
+	</footer>
+</body>
+</html>
