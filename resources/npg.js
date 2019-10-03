@@ -17,7 +17,7 @@ S(document).ready(function(){
 		this.scenarios = null;
 		this.views = {
 			'LAD':{'title':'Local Authorities'},
-			'primaries':{'title':'Primary distribution'}
+			'primaries':{'title':'Primary Supply'}
 		};
 		
 		S().ajax("data/scenarios/index.json",{
