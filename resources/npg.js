@@ -10,6 +10,7 @@ S(document).ready(function(){
 
 		this.scenario = "Community renewables";
 		this.view = "LAD";
+		this.key = "2019";
 		this.parameter = "ev";
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles' }
@@ -106,11 +107,16 @@ S(document).ready(function(){
 			}).addTo(this.map);
 		}
 
+		var _obj = this;
 		var geoattr = {
 			"style": {
 				"color": "#D73058",
 				"weight": 0.5,
 				"opacity": 0.65
+			},
+			'onEachFeature': function(feature, layer){
+				var popup = popuptext(feature,{'this':_obj});
+				if(popup) layer.bindPopup(popup);
 			}
 		};
 		
@@ -128,7 +134,7 @@ S(document).ready(function(){
 					this.scenarios[attr.scenario][attr.parameter].LAD = {};
 					var r,c,v,p,lad;
 					var key = (this.scenarios[attr.scenario][attr.parameter].key||"");
-					console.log(key)
+					
 					var col = -1;
 					for(i = 0; i < this.scenarios[attr.scenario][attr.parameter].raw.fields.name.length; i++){
 						if(this.scenarios[attr.scenario][attr.parameter].raw.fields.name[i] == key) col = i;
@@ -172,7 +178,6 @@ S(document).ready(function(){
 		}else{
 			var min = 0;
 			var max = 1;
-			var key =  '2019';
 			var _obj = this;
 			var _scenario = this.scenarios[this.scenario][this.parameter];
 
@@ -180,7 +185,7 @@ S(document).ready(function(){
 				var min = 1e100;
 				var max = -1e100;
 				for(i in _scenario[this.view]){
-					v = _scenario[this.view][i][key];
+					v = _scenario[this.view][i][this.key];
 					if(typeof v==="number"){
 						min = Math.min(v,min);
 						max = Math.max(v,max);
@@ -195,9 +200,9 @@ S(document).ready(function(){
 					if(_obj.view == "LAD"){
 						// Need to convert primaries to LAD
 						lad19cd = feature.properties.lad19cd;
-						if(data[lad19cd]) v = (data[lad19cd][key]-min)/(max-min);
+						if(data[lad19cd]) v = (data[lad19cd][_obj.key]-min)/(max-min);
 					}else if(_obj.view == "primaries"){
-						f = (data[feature.properties.Primary][key]-min)/(max-min);
+						f = (data[feature.properties.Primary][_obj.key]-min)/(max-min);
 						v = f;//v = (f*0.6 + 0.2);
 					}
 					return { "color": "#D73058", "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
@@ -244,50 +249,30 @@ S(document).ready(function(){
 		}
 		
 
-		/*
-		function popuptext(feature){
+		function popuptext(feature,attr){
 			// does this feature have a property named popupContent?
 			popup = '';
-			if(feature.properties){
-				// If this feature has a default popup
-				// Convert "other_tags" e.g "\"ele:msl\"=>\"105.8\",\"ele:source\"=>\"GPS\",\"material\"=>\"stone\""
-				if(feature.properties.other_tags){
-					tags = feature.properties.other_tags.split(/,/);
-					for(var t = 0; t < tags.length; t++){
-						tags[t] = tags[t].replace(/\"/g,"");
-						bits = tags[t].split(/\=\>/);
-						if(bits.length == 2){
-							if(!feature.properties[bits[0]]) feature.properties[bits[0]] = bits[1];
-						}
-					}
-				}
-				if(feature.properties.popup){
-					popup = feature.properties.popup.replace(/\n/g,"<br />");
-				}else{
-					title = '';
-					if(feature.properties.title || feature.properties.name || feature.properties.Name) title = (feature.properties.title || feature.properties.name || feature.properties.Name);
-					//if(!title) title = "Unknown name";
-					if(title) popup += '<h3>'+(title)+'</h3>';
-					var added = 0;
-					for(var f in feature.properties){
-						if(f != "Name" && f!="name" && f!="title" && f!="other_tags" && (typeof feature.properties[f]==="number" || (typeof feature.properties[f]==="string" && feature.properties[f].length > 0))){
-							popup += (added > 0 ? '<br />':'')+'<strong>'+f+':</strong> '+(typeof feature.properties[f]==="string" && feature.properties[f].indexOf("http")==0 ? '<a href="'+feature.properties[f]+'" target="_blank">'+feature.properties[f]+'</a>' : feature.properties[f])+'';
-							added++;
-						}
-					}
-				}
-				// Loop over properties and replace anything
-				for(p in feature.properties){
-					while(popup.indexOf("%"+p+"%") >= 0){
-						popup = popup.replace("%"+p+"%",feature.properties[p] || "?");
-					}
-				}
-				popup = popup.replace(/%type%/g,feature.geometry.type.toLowerCase());
-				// Replace any remaining unescaped parts
-				popup = popup.replace(/%[^\%]+%/g,"?");
+			me = attr['this'];
+			key = feature.properties[(me.view=="LAD" ? "lad19cd" : "Primary")];
+			v = 0;
+			if(me.scenarios[me.scenario][me.parameter][me.view] && me.scenarios[me.scenario][me.parameter][me.view][key]){
+				v = me.scenarios[me.scenario][me.parameter][me.view][key][me.key];
 			}
+			title = '?';
+			added = 0;
+			if(feature.properties){
+				if(feature.properties.Primary || feature.properties.lad19nm) title = (feature.properties.Primary || feature.properties.lad19nm);
+				if(feature.properties.lad19cd){
+					popup += (added > 0 ? '<br />':'')+'<strong>Code:</strong> '+feature.properties.lad19cd;
+					added++;
+				}
+			}
+			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+v.toFixed(2);
+			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
 			return popup;
 		}
+		
+		/*
 		var customicon = makeMarker('#FF6700');
 
 		this.geojson = {
@@ -541,8 +526,6 @@ S(document).ready(function(){
 		}
 		return lastIndexOf;
 	}
-
-
 
 	// Define a new instance of the FES
 	future = new FES();
