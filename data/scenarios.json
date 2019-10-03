@@ -1,0 +1,14 @@
+{
+	"Community renewables": {
+		"ev": "scenarios/ev-community-renewables.csv"
+	},
+	"Consumer evolution": {
+		"ev": "scenarios/ev-consumer-evolution.csv"
+	},
+	"Steady progression": {
+		"ev": "scenarios/ev-steady-progression.csv"
+	},
+	"Two degrees": {
+		"ev": "scenarios/ev-two-degrees.csv"
+	}
+}
