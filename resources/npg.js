@@ -101,6 +101,7 @@ S(document).ready(function(){
 				'parameter': this.parameter,
 				'success': function(d,attr){
 					this.loadedData(d,attr.scenario,attr.parameter);
+					this.buildMap();
 				},
 				'error': function(e,attr){
 					this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
@@ -158,13 +159,12 @@ S(document).ready(function(){
 			}
 			
 		}
-		this.buildMap();
+		
 		return this;
 	}
 
 	FES.prototype.buildMap = function(){
 
-		
 		var bounds = L.latLngBounds(L.latLng(56.01680,2.43896),L.latLng(52.82268,-5.603027));
 		
 		function makeMarker(colour){
@@ -261,23 +261,21 @@ S(document).ready(function(){
 						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 					}
 				});
-			}else{
-				if(this.views[this.view].layer) this.views[this.view].layer.remove();
-				this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
+				return this;
 			}
 
-			if(this.view=="LAD"){
-				if(this.views.primaries.layer && this.views.primaries.layer._map) this.views.primaries.layer.remove();
-				if(this.views.LAD.layer){
-					this.views.LAD.layer.addTo(this.map);
-					S('#map .spinner').css({'display':'none'});
+			for(v in this.views){
+				if(this.views[v].layer){
+					this.views[v].layer.remove();
+					delete this.views[v].layer;
 				}
-			}else if(this.view=="primaries"){
-				if(this.views.LAD.layer && this.views.LAD.layer._map) this.views.LAD.layer.remove();
-				if(this.views.primaries.layer){
-					this.views.primaries.layer.addTo(this.map);
-					S('#map .spinner').css({'display':'none'});
-				}
+			}
+
+			this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
+
+			if(this.views[this.view].layer){
+				this.views[this.view].layer.addTo(this.map);
+				S('#map .spinner').css({'display':'none'});
 			}
 		}
 		
@@ -385,7 +383,7 @@ S(document).ready(function(){
 
 		var msgel = S('.message');
 		if(msgel.length == 0){
-			S('#scenario').prepend('<div class="message"></div>');
+			S('#scenario').before('<div class="message"></div>');
 			msgel = S('.message');
 		}
 	
