@@ -92,6 +92,7 @@ S(document).ready(function(){
 		S('#scenario .about').html(this.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
 		S('#scenarios').attr('class',css)
 		S('.scenario').attr('class','scenario '+css);
+		S('header img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg')
 
 		if(!this.scenarios[this.scenario].data[this.parameter].raw){
 			// Load the file

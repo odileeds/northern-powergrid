@@ -13,7 +13,7 @@
 	"Consumer evolution": {
 		"description": "<ul><li>2050 decarbonisation target not met.</li><li>Decentralised landscape.</li></ul>",
 		"color": "#2f529f",
-		"css": "s1-bg",
+		"css": "c1-bg",
 		"data": {
 			"ev": {
 				"file": "EV-ConsumerEvolution.csv",
