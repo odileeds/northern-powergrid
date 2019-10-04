@@ -184,7 +184,9 @@ S(document).ready(function(){
 			var mapel = S('#map');
 			var mapid = mapel.attr('id');
 			this.map = L.map(mapid,{'scrollWheelZoom':true}).fitBounds(bounds);
-
+			this.map.attributionControl._attributions = {};
+			this.map.attributionControl.addAttribution('Vis: <a href="https://odileeds.org/projects/">ODI Leeds</a>, Data: <a href="https://cms.npproductionadmin.net/generation-availability-map">Northern Powergrid</a>');
+			
 			// CartoDB map
 			L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
 				attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
