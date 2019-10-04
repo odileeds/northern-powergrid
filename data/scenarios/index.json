@@ -1,23 +1,39 @@
 {
 	"Community renewables": {
-		"ev": {
-			"file": "EV-CommunityRenewables.csv",
-			"key": "Primary"
+		"color": "#E6007C",
+		"css": "c9-bg",
+		"data": {
+			"ev": {
+				"file": "EV-CommunityRenewables.csv",
+				"key": "Primary"
+			}
 		}
 	},
 	"Consumer evolution": {
-		"ev": {
-			"file": "EV-ConsumerEvolution.csv"
+		"color": "#2f529f",
+		"css": "s1-bg",
+		"data": {
+			"ev": {
+				"file": "EV-ConsumerEvolution.csv"
+			}
 		}
 	},
 	"Steady progression": {
-		"ev": {
-			"file": "EV-SteadyProgression.csv"
+		"color": "#F9BC26",
+		"css": "c14-bg",
+		"data": {
+			"ev": {
+				"file": "EV-SteadyProgression.csv"
+			}
 		}
 	},
 	"Two degrees": {
-		"ev": {
-			"file": "EV-TwoDegrees.csv"
+		"color": "#0DBC37",
+		"css": "c6-bg",
+		"data": {
+			"ev": {
+				"file": "EV-TwoDegrees.csv"
+			}
 		}
 	}
 }

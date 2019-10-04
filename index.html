@@ -11,12 +11,13 @@
 	<script type="text/javascript" src="resources/npg.js"></script>
 	<script type="text/javascript" src="resources/leaflet.js"></script>
 	<style>
+	h1 { line-height: 1.5em; font-size: 1.5em; }
 	#map { 
 		height: 500px;
 		display: block;
 		width: 100%;
 	}
-	.columns { display: flex; padding: 1em; }
+	.columns { display: flex; padding: 1em 0; }
 	.left { width: 30%; max-width: 300px; margin-right: 1em; }
 	.right { width: 70%; }
 	input, select { font-size: 1em; line-height: 2em; width: 100%; }
@@ -24,7 +25,7 @@
 	p { margin-bottom: 1em; }
 	.spinner { position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); z-index: 1000; }
 	.spinner img { width: 5em; margin: auto; }
-	footer a:visited { color: #D73058; }
+	footer a:visited { color: inherit; }
 	footer ul { list-style: disc; margin-left: 2em; }
 	</style>
 </head>
@@ -33,20 +34,18 @@
 		<div class="b1-bg glory">
 			<div class="glory-opacity">
 				<div class="holder">
-					<a href="https://odileeds.org/"><img alt="ODI Leeds" src="https://odileeds.org/resources/images/odileeds-11.svg" title="ODI Leeds"></a>
+					<a href="https://odileeds.org/"><img alt="ODI Leeds" src="https://odileeds.org/resources/images/odileeds-9.svg" title="ODI Leeds"></a>
 				</div>
 			</div>
 		</div>
-	</header>
-
-	<div id="main">
-		<div class="c11-bg">
+		<div class="c9-bg title">
 			<div class="holder">
 				<h1>NorthernPowerGrid Future Energy Scenarios</h1>
 			</div>
 		</div>
-	</div>
-	<div class="b6-bg">
+	</header>
+
+	<div class="b6-bg" id="scenario">
 		<div class="holder columns">
 			<div class="left">
 				<p>An explanation of DFES goes here to set the scene.</p>

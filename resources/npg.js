@@ -15,6 +15,7 @@ S(document).ready(function(){
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles' }
 		};
+		this.logging = true;
 		this.scenarios = null;
 		this.views = {
 			'LAD':{'title':'Local Authorities','file':'data/maps/LAD-npg.geojson'},
@@ -36,12 +37,12 @@ S(document).ready(function(){
 						this.init();
 					},
 					'error': function(e,attr){
-						console.error('Unable to load '+attr.file);
+						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 					}
 				});
 			},
 			'error': function(e,attr){
-				console.error('Unable to load '+attr.file);
+				this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 			}
 		});
 
@@ -52,8 +53,12 @@ S(document).ready(function(){
 
 		if(this.scenarios && S('#scenarios').length==0){
 			var html = "";
-			for(var s in this.scenarios) html += "<option"+(this.scenario == s ? " selected=\"selected\"":"")+" value=\""+s+"\">"+s+"</option>";
+			for(var s in this.scenarios) html += "<option"+(this.scenario == s ? " selected=\"selected\"":"")+" class=\""+this.scenarios[s].css+"\" value=\""+s+"\">"+s+"</option>";
 			S('#scenario-holder').html('<select id="scenarios">'+html+'</select>');
+			S('#scenarios').on('change',{'me':this},function(e){
+				e.preventDefault();
+				e.data.me.setScenario(e.currentTarget.value);
+			})
 		}
 		if(this.views && S('#view').length==0){
 			var html = "";
@@ -71,11 +76,90 @@ S(document).ready(function(){
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 		}
 		
-		this.buildMap();
+		this.setScenario(this.scenario);
 		
 		return this;
 	}
+	
+	FES.prototype.setScenario = function(scenario){
+		console.log('setScenario')
+		// Set the scenario
+		this.scenario = scenario;
 
+		// Update the CSS class
+		css = this.scenarios[scenario].css;
+		S('header .title').attr('class','title '+css);
+
+		if(!this.scenarios[this.scenario].data[this.parameter].raw){
+			// Load the file
+			S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter].file,{
+				'this':this,
+				'cache':false,
+				'dataType':'text',
+				'scenario': this.scenario,
+				'parameter': this.parameter,
+				'success': function(d,attr){
+					this.loadedData(d,attr.scenario,attr.parameter);
+				},
+				'error': function(e,attr){
+					this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+				}
+			});
+		}else{
+			this.message('',{'id':'error'});
+			// Re-draw the map
+			this.buildMap();
+		}
+
+		return this;
+	}
+
+
+	FES.prototype.loadedData = function(d,scenario,parameter){
+	
+		this.scenarios[scenario].data[parameter].raw = CSV2JSON(d,1);
+		this.scenarios[scenario].data[parameter].primaries = {};
+		this.scenarios[scenario].data[parameter].LAD = {};
+		var r,c,v,p,lad;
+		var key = (this.scenarios[scenario].data[parameter].key||"");
+		
+		var col = -1;
+		for(i = 0; i < this.scenarios[scenario].data[parameter].raw.fields.name.length; i++){
+			if(this.scenarios[scenario].data[parameter].raw.fields.name[i] == key) col = i;
+		}
+		if(col >= 0){
+			for(r = 0; r < this.scenarios[scenario].data[parameter].raw.rows.length; r++){
+				pkey = this.scenarios[scenario].data[parameter].raw.rows[r][col];
+				this.scenarios[scenario].data[parameter].primaries[pkey] = {};
+				for(c = 0; c < this.scenarios[scenario].data[parameter].raw.fields.name.length; c++){
+					if(c != col){
+						v = parseFloat(this.scenarios[scenario].data[parameter].raw.rows[r][c]);
+						this.scenarios[scenario].data[parameter].primaries[pkey][this.scenarios[scenario].data[parameter].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter].raw.rows[r][c];
+					}
+				}
+			}
+			// Convert to LADs
+			// For each primary
+			for(p in this.scenarios[scenario].data[parameter].primaries){
+				if(this.primary2lad[p]){
+					// Loop over the LADs for this primary
+					for(lad in this.primary2lad[p]){
+						// Loop over each key
+						for(key in this.scenarios[scenario].data[parameter].primaries[p]){
+							// Zero the variable if necessary
+							if(!this.scenarios[scenario].data[parameter].LAD[lad]) this.scenarios[scenario].data[parameter].LAD[lad] = {};
+							if(!this.scenarios[scenario].data[parameter].LAD[lad][key]) this.scenarios[scenario].data[parameter].LAD[lad][key] = 0;
+							// Sum the fractional amount for this LAD/Primary
+							this.scenarios[scenario].data[parameter].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter].primaries[p][key];
+						}
+					}
+				}
+			}
+			
+		}
+		this.buildMap();
+		return this;
+	}
 
 	FES.prototype.buildMap = function(){
 
@@ -120,95 +204,43 @@ S(document).ready(function(){
 			}
 		};
 		
-		if(!this.scenarios[this.scenario][this.parameter].raw){
-			// Load the file
-			S().ajax("data/scenarios/"+this.scenarios[this.scenario][this.parameter].file,{
-				'this':this,
-				'cache':false,
-				'dataType':'text',
-				'scenario': this.scenario,
-				'parameter': this.parameter,
-				'complete': function(d,attr){
-					this.scenarios[attr.scenario][attr.parameter].raw = CSV2JSON(d,1);
-					this.scenarios[attr.scenario][attr.parameter].primaries = {};
-					this.scenarios[attr.scenario][attr.parameter].LAD = {};
-					var r,c,v,p,lad;
-					var key = (this.scenarios[attr.scenario][attr.parameter].key||"");
-					
-					var col = -1;
-					for(i = 0; i < this.scenarios[attr.scenario][attr.parameter].raw.fields.name.length; i++){
-						if(this.scenarios[attr.scenario][attr.parameter].raw.fields.name[i] == key) col = i;
-					}
-					if(col >= 0){
-						for(r = 0; r < this.scenarios[attr.scenario][attr.parameter].raw.rows.length; r++){
-							pkey = this.scenarios[attr.scenario][attr.parameter].raw.rows[r][col];
-							this.scenarios[attr.scenario][attr.parameter].primaries[pkey] = {};
-							for(c = 0; c < this.scenarios[attr.scenario][attr.parameter].raw.fields.name.length; c++){
-								if(c != col){
-									v = parseFloat(this.scenarios[attr.scenario][attr.parameter].raw.rows[r][c]);
-									this.scenarios[attr.scenario][attr.parameter].primaries[pkey][this.scenarios[attr.scenario][attr.parameter].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[attr.scenario][attr.parameter].raw.rows[r][c];
-								}
-							}
-						}
-						// Convert to LADs
-						// For each primary
-						for(p in this.scenarios[attr.scenario][attr.parameter].primaries){
-							if(this.primary2lad[p]){
-								// Loop over the LADs for this primary
-								for(lad in this.primary2lad[p]){
-									// Loop over each key
-									for(key in this.scenarios[attr.scenario][attr.parameter].primaries[p]){
-										// Zero the variable if necessary
-										if(!this.scenarios[attr.scenario][attr.parameter].LAD[lad]) this.scenarios[attr.scenario][attr.parameter].LAD[lad] = {};
-										if(!this.scenarios[attr.scenario][attr.parameter].LAD[lad][key]) this.scenarios[attr.scenario][attr.parameter].LAD[lad][key] = 0;
-										// Sum the fractional amount for this LAD/Primary
-										this.scenarios[attr.scenario][attr.parameter].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[attr.scenario][attr.parameter].primaries[p][key];
-									}
-								}
-							}
-						}
-						
-					}
-					this.buildMap();
-				},
-				'error': function(e,attr){
-					console.error('Unable to load '+attr.file);
-				}
-			});
-		}else{
-			var min = 0;
-			var max = 1;
-			var _obj = this;
-			var _scenario = this.scenarios[this.scenario][this.parameter];
+		if(!this.scenarios[this.scenario].data[this.parameter].raw){
+			console.error('Scenario '+this.scenario+' not loaded');
+			return this;
+		}
+		
+		var min = 0;
+		var max = 1;
+		var _obj = this;
+		var _scenario = this.scenarios[this.scenario].data[this.parameter];
 
-			if(_scenario[this.view]){
-				var min = 1e100;
-				var max = -1e100;
-				for(i in _scenario[this.view]){
-					v = _scenario[this.view][i][this.key];
-					if(typeof v==="number"){
-						min = Math.min(v,min);
-						max = Math.max(v,max);
-					}
+		if(_scenario[this.view]){
+			var min = 1e100;
+			var max = -1e100;
+			for(i in _scenario[this.view]){
+				v = _scenario[this.view][i][this.key];
+				if(typeof v==="number"){
+					min = Math.min(v,min);
+					max = Math.max(v,max);
 				}
 			}
-
-			geoattr.style = function(feature){
-				if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
-					var v = 0;
-					var data = _scenario[_obj.view];
-					if(_obj.view == "LAD"){
-						// Need to convert primaries to LAD
-						lad19cd = feature.properties.lad19cd;
-						if(data[lad19cd]) v = (data[lad19cd][_obj.key]-min)/(max-min);
-					}else if(_obj.view == "primaries"){
-						f = (data[feature.properties.Primary][_obj.key]-min)/(max-min);
-						v = f;//v = (f*0.6 + 0.2);
-					}
-					return { "color": "#D73058", "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
-				}else return { "color": "#D73058" };
-			};		
 		}
+
+		geoattr.style = function(feature){
+			if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
+				var v = 0;
+				var data = _scenario[_obj.view];
+				if(_obj.view == "LAD"){
+					// Need to convert primaries to LAD
+					lad19cd = feature.properties.lad19cd;
+					if(data[lad19cd]) v = (data[lad19cd][_obj.key]-min)/(max-min);
+				}else if(_obj.view == "primaries"){
+					f = (data[feature.properties.Primary][_obj.key]-min)/(max-min);
+					v = f;//v = (f*0.6 + 0.2);
+				}
+				return { "color": "#D73058", "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
+			}else return { "color": "#D73058" };
+		};
 
 		if(this.map){
 
@@ -221,10 +253,10 @@ S(document).ready(function(){
 					'view': this.view,
 					'complete': function(d,attr){
 						this.views[attr.view].data = d;
-						this.init();
+						this.buildMap();
 					},
 					'error': function(e,attr){
-						console.error('Unable to load '+attr.file);
+						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 					}
 				});
 			}else{
@@ -255,8 +287,8 @@ S(document).ready(function(){
 			me = attr['this'];
 			key = feature.properties[(me.view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.scenario][me.parameter][me.view] && me.scenarios[me.scenario][me.parameter][me.view][key]){
-				v = me.scenarios[me.scenario][me.parameter][me.view][key][me.key];
+			if(me.scenarios[me.scenario].data[me.parameter][me.view] && me.scenarios[me.scenario].data[me.parameter][me.view][key]){
+				v = me.scenarios[me.scenario].data[me.parameter][me.view][key][me.key];
 			}
 			title = '?';
 			added = 0;
@@ -329,7 +361,50 @@ S(document).ready(function(){
 		return this;
 	}
 	
+	FES.prototype.log = function(){
+		if(this.logging || arguments[0]=="ERROR"){
+			var args = Array.prototype.slice.call(arguments, 0);
+			if(console && typeof console.log==="function"){
+				if(arguments[0] == "ERROR") console.error('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
+				else if(arguments[0] == "WARNING") console.warning('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
+				else console.log('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
+			}
+		}
+		return this;
+	};
+
+	FES.prototype.message = function(msg,attr){
+		if(!attr) attr = {};
+		if(!attr.id) attr.id = 'default';
+		if(!attr['type']) attr['type'] = 'message';
+		if(msg) this.log(attr['type'],msg);
+		var css = "b5-bg";
+		if(attr['type']=="ERROR") css = "c12-bg";
+		if(attr['type']=="WARNING") css = "c14-bg";
+
+		var msgel = S('.message');
+		if(msgel.length == 0){
+			S('#scenario').append('<div class="message"></div>');
+			msgel = S('.message');
+		}
 	
+		if(!msg){
+			if(msgel.length > 0){
+				// Remove the specific message container
+				if(msgel.find('#'+attr.id).length > 0) msgel.find('#'+attr.id).remove();
+				//msgel.find('#'+attr.id).parent().removeClass('padded');
+			}
+		}else if(msg){
+			// Pad the container
+			//msgel.parent().addClass('padded');
+			// We make a specific message container
+			if(msgel.find('#'+attr.id).length==0) msgel.append('<div id="'+attr.id+'"><div class="holder padded"></div></div>');
+			msgel = msgel.find('#'+attr.id);
+			msgel.attr('class',css).find('.holder').html(msg);
+		}
+
+		return this;
+	};
 
 
 	// Useful functions
