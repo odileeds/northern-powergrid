@@ -89,6 +89,7 @@ S(document).ready(function(){
 		// Update the CSS class
 		css = this.scenarios[scenario].css;
 		S('header .title').attr('class','title '+css);
+		S('#scenarios').attr('class',css)
 
 		if(!this.scenarios[this.scenario].data[this.parameter].raw){
 			// Load the file
