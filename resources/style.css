@@ -350,6 +350,9 @@ table td.n { text-align: center; }
 .c12-text { color: #D60303; }
 .c13-text { color: #FF6700; }
 .c14-text { color: #F9BC26; }
+.s1-text { color: #2f529f; }
+.s2-text { color: #00ace8; }
+.s3-text { color: #7dc5ea; }
 .c1-bg, .elsewhere .facebook:hover, .c1-bg-hover:hover { background-color: #2254F4; color: white; }
 .c2-bg, .c2-bg-hover:hover { background-color: #178CFF; color: black; }
 .c3-bg, .elsewhere .twitter:hover, .c3-bg-hover:hover { background-color: #00B6FF; color: black; }

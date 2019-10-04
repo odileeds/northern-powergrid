@@ -1,5 +1,6 @@
 {
 	"Community renewables": {
+		"description": "<ul><li>Achieves the 2050 decarbonisation target.</li><li>Decentralised pathway.</li></ul>",
 		"color": "#E6007C",
 		"css": "c9-bg",
 		"data": {
@@ -10,6 +11,7 @@
 		}
 	},
 	"Consumer evolution": {
+		"description": "<ul><li>2050 decarbonisation target not met.</li><li>Decentralised landscape.</li></ul>",
 		"color": "#2f529f",
 		"css": "s1-bg",
 		"data": {
@@ -20,6 +22,7 @@
 		}
 	},
 	"Steady progression": {
+		"description": "<ul><li>2050 decarbonisation target not met.</li><li>Large-scale centralised solutions.</li></ul>",
 		"color": "#F9BC26",
 		"css": "c14-bg",
 		"data": {
@@ -30,6 +33,7 @@
 		}
 	},
 	"Two degrees": {
+		"description": "<ul><li>Achieves the 2050 decarbonisation target.</li><li>Large-scale centralised solutions.</li></ul>",
 		"color": "#0DBC37",
 		"css": "c6-bg",
 		"data": {

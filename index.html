@@ -26,7 +26,9 @@
 	.spinner { position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); z-index: 1000; }
 	.spinner img { width: 5em; margin: auto; }
 	footer a:visited { color: inherit; }
-	footer ul { list-style: disc; margin-left: 2em; }
+	#scenario .about { font-weight: bold; }
+	#scenario ul, footer ul { list-style: disc; margin-left: 1em; }
+	footer ul { margin-left: 2em; }
 	.message .padded { padding: 0.5em 0; }
 	</style>
 </head>
@@ -50,9 +52,9 @@
 		<div class="holder columns">
 			<div class="left">
 				<p>An explanation of DFES goes here to set the scene.</p>
-				<p>Bug: The GeoJSON uses lad19cd but the data uses lad11cd and there are differences. Need </p>
 				<h2><label for="scenarios">Choose a scenario</label>:</h2>
 				<div id="scenario-holder"></div>
+				<div class="about"></div>
 				<h2><label for="parameters">Choose a parameter</label>:</h2>
 				<div id="parameter-holder"></div>
 				<h2><label for="views">View by</label>:</h2>
