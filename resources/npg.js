@@ -386,7 +386,7 @@ S(document).ready(function(){
 
 		var msgel = S('.message');
 		if(msgel.length == 0){
-			S('#scenario').append('<div class="message"></div>');
+			S('#scenario').prepend('<div class="message"></div>');
 			msgel = S('.message');
 		}
 	
