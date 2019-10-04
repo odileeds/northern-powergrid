@@ -91,6 +91,7 @@ S(document).ready(function(){
 		S('header .title').attr('class','title '+css);
 		S('#scenario .about').html(this.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
 		S('#scenarios').attr('class',css)
+		S('.scenario').attr('class','scenario '+css);
 
 		if(!this.scenarios[this.scenario].data[this.parameter].raw){
 			// Load the file
