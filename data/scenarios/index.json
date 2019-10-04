@@ -14,7 +14,8 @@
 		"css": "s1-bg",
 		"data": {
 			"ev": {
-				"file": "EV-ConsumerEvolution.csv"
+				"file": "EV-ConsumerEvolution.csv",
+				"key": "Primary"
 			}
 		}
 	},
@@ -23,7 +24,8 @@
 		"css": "c14-bg",
 		"data": {
 			"ev": {
-				"file": "EV-SteadyProgression.csv"
+				"file": "EV-SteadyProgression.csv",
+				"key": "Primary"
 			}
 		}
 	},
@@ -32,7 +34,8 @@
 		"css": "c6-bg",
 		"data": {
 			"ev": {
-				"file": "EV-TwoDegrees.csv"
+				"file": "EV-TwoDegrees.csv",
+				"key": "Primary"
 			}
 		}
 	}

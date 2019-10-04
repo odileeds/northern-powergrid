@@ -82,7 +82,7 @@ S(document).ready(function(){
 	}
 	
 	FES.prototype.setScenario = function(scenario){
-		console.log('setScenario')
+		console.log('setScenario',scenario,this.parameter)
 		// Set the scenario
 		this.scenario = scenario;
 
@@ -262,9 +262,8 @@ S(document).ready(function(){
 					}
 				});
 			}else{
-				if(!this.views[this.view].layer){
-					this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
-				}
+				if(this.views[this.view].layer) this.views[this.view].layer.remove();
+				this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
 			}
 
 			if(this.view=="LAD"){
