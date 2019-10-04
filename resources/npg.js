@@ -192,9 +192,10 @@ S(document).ready(function(){
 		}
 
 		var _obj = this;
+		var color = (this.scenarios[this.scenario].color||"#000000");
 		var geoattr = {
 			"style": {
-				"color": "#D73058",
+				"color": color,
 				"weight": 0.5,
 				"opacity": 0.65
 			},
@@ -238,8 +239,8 @@ S(document).ready(function(){
 					f = (data[feature.properties.Primary][_obj.key]-min)/(max-min);
 					v = f;//v = (f*0.6 + 0.2);
 				}
-				return { "color": "#D73058", "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
-			}else return { "color": "#D73058" };
+				return { "color": color, "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
+			}else return { "color": color };
 		};
 
 		if(this.map){
