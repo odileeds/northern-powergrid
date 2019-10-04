@@ -5,8 +5,7 @@
 		"css": "c9-bg",
 		"data": {
 			"ev": {
-				"file": "EV-CommunityRenewables.csv",
-				"key": "Primary"
+				"file": "EV-CommunityRenewables.csv"
 			}
 		}
 	},
@@ -16,8 +15,7 @@
 		"css": "c1-bg",
 		"data": {
 			"ev": {
-				"file": "EV-ConsumerEvolution.csv",
-				"key": "Primary"
+				"file": "EV-ConsumerEvolution.csv"
 			}
 		}
 	},
@@ -27,8 +25,7 @@
 		"css": "c14-bg",
 		"data": {
 			"ev": {
-				"file": "EV-SteadyProgression.csv",
-				"key": "Primary"
+				"file": "EV-SteadyProgression.csv"
 			}
 		}
 	},
@@ -38,8 +35,7 @@
 		"css": "c6-bg",
 		"data": {
 			"ev": {
-				"file": "EV-TwoDegrees.csv",
-				"key": "Primary"
+				"file": "EV-TwoDegrees.csv"
 			}
 		}
 	}

@@ -76,6 +76,31 @@ S(document).ready(function(){
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 		}
 		
+
+		// Create the slider
+		this.slider = document.getElementById('slider');
+		noUiSlider.create(this.slider, {
+			start: [parseInt(this.key)],
+			step: 1,
+			connect: true,
+			range: {
+				'min': 2017,
+				'max': 2050
+			},
+			pips: {
+				mode: 'values',
+				stepped: true,
+				values: [2020,2030,2040,2050],
+				density: 3
+			}
+		});
+		var _obj = this;
+		// Bind the changing function to the update event.
+		this.slider.noUiSlider.on('update', function () {
+			_obj.setYear(''+parseInt(slider.noUiSlider.get()));
+		});
+
+		
 		this.setScenario(this.scenario);
 		
 		return this;
@@ -93,6 +118,8 @@ S(document).ready(function(){
 		S('#scenarios').attr('class',css)
 		S('.scenario').attr('class','scenario '+css);
 		S('header img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg')
+		S('.noUi-connect').attr('class','noUi-connect '+css);
+
 
 		if(!this.scenarios[this.scenario].data[this.parameter].raw){
 			// Load the file
@@ -119,6 +146,13 @@ S(document).ready(function(){
 		return this;
 	}
 
+	FES.prototype.setYear = function(y){
+		if(this.map){
+			this.key = y;
+			this.buildMap();
+		}
+		return this;
+	}
 
 	FES.prototype.loadedData = function(d,scenario,parameter){
 	
@@ -126,14 +160,16 @@ S(document).ready(function(){
 		this.scenarios[scenario].data[parameter].primaries = {};
 		this.scenarios[scenario].data[parameter].LAD = {};
 		var r,c,v,p,lad;
-		var key = (this.scenarios[scenario].data[parameter].key||"");
+		var key = "Primary";
 		
+		// Find the column number for the column containing the Primary name
 		var col = -1;
 		for(i = 0; i < this.scenarios[scenario].data[parameter].raw.fields.name.length; i++){
 			if(this.scenarios[scenario].data[parameter].raw.fields.name[i] == key) col = i;
 		}
 		if(col >= 0){
 			for(r = 0; r < this.scenarios[scenario].data[parameter].raw.rows.length; r++){
+				// The primary key
 				pkey = this.scenarios[scenario].data[parameter].raw.rows[r][col];
 				this.scenarios[scenario].data[parameter].primaries[pkey] = {};
 				for(c = 0; c < this.scenarios[scenario].data[parameter].raw.fields.name.length; c++){
