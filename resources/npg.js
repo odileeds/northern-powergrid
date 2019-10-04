@@ -10,7 +10,7 @@ S(document).ready(function(){
 
 		this.scenario = "Community renewables";
 		this.view = "LAD";
-		this.key = "2019";
+		this.key = (new Date()).getFullYear()+'';
 		this.parameter = "ev";
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles' }
