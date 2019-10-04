@@ -6,4 +6,4 @@ The [Local Authority Districts](https://geoportal.statistics.gov.uk/datasets/loc
 * Contains OS data © Crown copyright and database right 2019
 
 
-
+We have to convert from Output Area (2011) to Local Authority District (2019) using [data from the ONS](https://geoportal.statistics.gov.uk/datasets/postcode-to-output-area-to-lower-layer-super-output-area-to-middle-layer-super-output-area-to-local-authority-district-august-2019-lookup-in-the-uk).
