@@ -17,9 +17,43 @@ S(document).ready(function(){
 		};
 		this.logging = true;
 		this.scenarios = null;
+		this.layers = {
+			'LAD':{
+				'file': 'data/maps/LAD-npg.geojson'
+			},
+			'primaries':{
+				'file':'data/maps/primaries-unique.geojson'
+			}
+		}
 		this.views = {
-			'LAD':{'title':'Local Authorities','file':'data/maps/LAD-npg.geojson'},
-			'primaries':{'title':'Primary Supply','file':'data/maps/primaries-unique.geojson'}
+			'LAD':{
+				'title':'Local Authorities',
+				'file':'data/maps/LAD-npg.geojson',
+				'layers':[{
+					'id': 'LAD',
+					'heatmap': true,
+					'boundary':{'strokeWidth':2}
+				}]
+			},
+			'primaries':{
+				'title':'Primary Supply',
+				'file':'data/maps/primaries-unique.geojson',
+				'layers':[{
+					'id': 'primaries',
+					'heatmap': true,
+				}]
+			},
+			'primariesLAD':{
+				'title':'Primary Supply (with Local Authorities)',
+				'layers':[{
+					'id':'LAD',
+					'heatmap': false,
+					'boundary':{'strokeWidth':1,"fillColor":"white"}
+				},{
+					'id':'primaries',
+					'heatmap': true,
+				}]
+			}
 		};
 		
 		S().ajax("data/primaries2lad.json",{
@@ -53,7 +87,7 @@ S(document).ready(function(){
 
 		if(this.scenarios && S('#scenarios').length==0){
 			var html = "";
-			for(var s in this.scenarios) html += "<option"+(this.scenario == s ? " selected=\"selected\"":"")+" class=\""+this.scenarios[s].css+"\" value=\""+s+"\">"+s+"</option>";
+			for(var s in this.scenarios) html += "<option"+(this.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.scenarios[s].css+"\"
 			S('#scenario-holder').html('<select id="scenarios">'+html+'</select>');
 			S('#scenarios').on('change',{'me':this},function(e){
 				e.preventDefault();
@@ -115,9 +149,9 @@ S(document).ready(function(){
 		css = this.scenarios[scenario].css;
 		S('header .title').attr('class','title '+css);
 		S('#scenario .about').html(this.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
-		S('#scenarios').attr('class',css)
+		S('#scenarios').attr('class',css);
 		S('.scenario').attr('class','scenario '+css);
-		S('header img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg')
+		S('header img').attr('src','../../www/odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
 		S('.noUi-connect').attr('class','noUi-connect '+css);
 
 
@@ -151,6 +185,7 @@ S(document).ready(function(){
 			this.key = y;
 			this.buildMap();
 		}
+		S('.year').html(" ("+y+")");
 		return this;
 	}
 
@@ -235,17 +270,8 @@ S(document).ready(function(){
 
 		var _obj = this;
 		var color = (this.scenarios[this.scenario].color||"#000000");
-		var geoattr = {
-			"style": {
-				"color": color,
-				"weight": 0.5,
-				"opacity": 0.65
-			},
-			'onEachFeature': function(feature, layer){
-				var popup = popuptext(feature,{'this':_obj});
-				if(popup) layer.bindPopup(popup);
-			}
-		};
+		
+		
 		
 		if(!this.scenarios[this.scenario].data[this.parameter].raw){
 			console.error('Scenario '+this.scenario+' not loaded');
@@ -269,54 +295,152 @@ S(document).ready(function(){
 			}
 		}
 
-		geoattr.style = function(feature){
-			if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
-				var v = 0;
-				var data = _scenario[_obj.view];
-				if(_obj.view == "LAD"){
-					// Need to convert primaries to LAD
-					lad19cd = feature.properties.lad19cd;
-					if(data[lad19cd]) v = (data[lad19cd][_obj.key]-min)/(max-min);
-				}else if(_obj.view == "primaries"){
-					f = (data[feature.properties.Primary][_obj.key]-min)/(max-min);
-					v = f;//v = (f*0.6 + 0.2);
-				}
-				return { "color": color, "weight": 0.5, "opacity": 0.65,"fillOpacity": v };
-			}else return { "color": color };
-		};
-
 		if(this.map){
 
-			if(!this.views[this.view].data){
-				S('#map .spinner').css({'display':''});		
-				S().ajax(this.views[this.view].file,{
-					'this':this,
-					'cache':false,
-					'dataType':'json',
-					'view': this.view,
-					'complete': function(d,attr){
-						this.views[attr.view].data = d;
-						this.buildMap();
-					},
-					'error': function(e,attr){
-						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
-					}
-				});
-				return this;
-			}
+			var gotlayers = true;
 
-			for(v in this.views){
-				if(this.views[v].layer){
-					this.views[v].layer.remove();
-					delete this.views[v].layer;
+			for(var l = 0 ; l < this.views[this.view].layers.length; l++){
+
+				layer = this.views[this.view].layers[l];
+
+				if(!this.layers[layer.id].data){
+
+					// Show the spinner
+					S('#map .spinner').css({'display':''});
+
+					S().ajax(this.layers[layer.id].file,{
+						'this':this,
+						'cache':false,
+						'dataType':'json',
+						'view': this.view,
+						'id': layer.id,
+						'complete': function(d,attr){
+							this.layers[attr.id].data = d;
+							this.buildMap();
+						},
+						'error': function(e,attr){
+							this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+						}
+					});
 				}
+				if(!this.layers[layer.id].data) gotlayers = false;
+
 			}
 
-			this.views[this.view].layer = L.geoJSON(this.views[this.view].data, geoattr);
+			if(!gotlayers){
+				return this;
+			}else{
+			
+				_geojson = [];
+				
+				// Remove existing layers
+				for(var l in this.layers){
+					if(this.layers[l].layer){
+						this.layers[l].layer.remove();
+						delete this.layers[l].layer;
+					}
+				}
 
-			if(this.views[this.view].layer){
-				this.views[this.view].layer.addTo(this.map);
-				S('#map .spinner').css({'display':'none'});
+				// Make copies of variables we'll use inside functions
+				var _scenario = this.scenarios[this.scenario].data[this.parameter];
+				var _obj = this;
+
+				// Re-build the layers for this view
+				for(var l = 0; l < this.views[this.view].layers.length; l++){
+					
+					var highlightFeature = function(e){
+						var layer = e.target;
+						layer.setStyle({
+							weight: 2,
+							color: '#444',
+							fillColor: color,
+							opacity: 1
+						});
+						if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) layer.bringToFront();
+					}
+
+					var resetHighlight = function(e){
+						for(var l = 0; l < _geojson.length; l++) _geojson[l].resetStyle(e.target);
+					}
+					
+					this.views[this.view].layers[l].geoattr = {
+						"style": {
+							"color": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.color||color : color),
+							"weight": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.strokeWidth||0.5 : 0.5),
+							"fillOpacity": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillOpacity||0 : 0),
+							"fillColor": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillColor||color : color)
+						}
+					};
+
+					var _id = this.views[this.view].layers[l].id;
+
+					if(this.views[this.view].layers[l].heatmap){
+
+						var _l = l;
+						this.views[this.view].layers[l].range = {'min':0,'max':1};
+						view = this.views[this.view].layers[l].id;
+
+						if(_scenario[view]){
+							this.views[this.view].layers[l].range = {'min':1e100,'max':-1e100};
+							for(i in _scenario[view]){
+								v = _scenario[view][i][this.key];
+								if(typeof v==="number"){
+									this.views[this.view].layers[l].range.min = Math.min(v,this.views[this.view].layers[l].range.min);
+									this.views[this.view].layers[l].range.max = Math.max(v,this.views[this.view].layers[l].range.max);
+								}
+							}
+						}
+						
+						// Define the GeoJSON attributes for this layer
+						this.views[this.view].layers[l].geoattr.style = function(feature){
+							var layer = _obj.views[_obj.view].layers[_l];
+							var props = {
+								"color": (layer.boundary ? layer.boundary.color||color : color),
+								"fillColor": (layer.boundary ? layer.boundary.fillColor||color : color)
+							};
+							if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
+								var v = 0;
+								var data = _scenario[layer.id];
+								if(layer.id=="LAD"){
+									// Need to convert primaries to LAD
+									if(data[feature.properties.lad19cd]) v = (data[feature.properties.lad19cd][_obj.key]-layer.range.min)/(layer.range.max-layer.range.min);
+								}else if(layer.id=="primaries"){
+									v = (data[feature.properties.Primary][_obj.key] - layer.range.min)/(layer.range.max - layer.range.min);
+								}
+								v *= 0.8; // Maximum opacity
+								props.weight = 1;
+								props.opacity = 0.1;
+								props.fillOpacity = v;
+							}
+							return props;
+						};
+
+						this.views[this.view].layers[l].geoattr.onEachFeature = function(feature, layer){
+							var popup = popuptext(feature,{'this':_obj,'layer':_l});
+							attr = {
+								'mouseover':highlightFeature,
+								'mouseout': resetHighlight,
+							}
+							if(popup) layer.bindPopup(popup);
+							layer.on(attr);
+						}
+					}
+
+				}
+
+				//this.map.on('popupclose', resetHighlight);
+				for(var l = 0; l < this.views[this.view].layers.length; l++){
+
+					id = this.views[this.view].layers[l].id
+					this.layers[id].layer = L.geoJSON(this.layers[id].data,this.views[this.view].layers[l].geoattr);
+					_geojson.push(this.layers[id].layer);
+
+					if(this.layers[id].layer){
+						this.layers[id].layer.addTo(this.map);
+						S('#map .spinner').css({'display':'none'});
+					}
+					this.layers[id].layer.setStyle(this.views[this.view].layers[l].geoattr.style);
+				}
 			}
 		}
 		
@@ -325,80 +449,28 @@ S(document).ready(function(){
 			// does this feature have a property named popupContent?
 			popup = '';
 			me = attr['this'];
-			key = feature.properties[(me.view=="LAD" ? "lad19cd" : "Primary")];
+			var view = me.views[me.view].layers[attr.layer].id;
+			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.scenario].data[me.parameter][me.view] && me.scenarios[me.scenario].data[me.parameter][me.view][key]){
-				v = me.scenarios[me.scenario].data[me.parameter][me.view][key][me.key];
+			if(me.scenarios[me.scenario].data[me.parameter][view] && me.scenarios[me.scenario].data[me.parameter][view][key]){
+				v = me.scenarios[me.scenario].data[me.parameter][view][key][me.key];
 			}
 			title = '?';
 			added = 0;
 			if(feature.properties){
 				if(feature.properties.Primary || feature.properties.lad19nm) title = (feature.properties.Primary || feature.properties.lad19nm);
-				if(feature.properties.lad19cd){
+				/*if(feature.properties.lad19cd){
 					popup += (added > 0 ? '<br />':'')+'<strong>Code:</strong> '+feature.properties.lad19cd;
 					added++;
-				}
+				}*/
 			}
 			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+v.toFixed(2);
 			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
 			return popup;
 		}
-		
-		/*
-		var customicon = makeMarker('#FF6700');
-
-		this.geojson = {
-			"type": "FeatureCollection",
-			"features": []
-		}
-
-		// Build marker list
-		var markerList = [];
-
-		for(var i = 0; i < this.data.rows.length; i++){
-			if(this.data.geo[i] && this.data.geo[i].length == 2){
-
-				feature = {"type":"Feature","properties":{},"geometry": { "type": "Point", "coordinates": this.data.geo[i] }};
-				for(var c = 0; c < this.data.rows[i].length; c++){
-					var n = this.data.fields.title[c];
-					if(this.data.fields.required[c]==true && this.data.rows[i][c]!=""){
-						feature.properties[n] = this.data.rows[i][c];
-					}
-				}
-				this.geojson.features.push(feature);
-
-				// Add marker
-				marker = L.marker([this.data.geo[i][1],this.data.geo[i][0]],{icon: customicon});
-				marker.bindPopup(popuptext(feature));
-				markerList.push(marker);
-			}
-		}
-
-		if(this.map && this.geojson.features.length > 0){
-			if(this.layer) this.map.removeLayer(this.layer);
-
-			// Define a cluster layer
-			this.layer = L.markerClusterGroup({
-				chunkedLoading: true,
-				maxClusterRadius: 70,
-				iconCreateFunction: function (cluster) {
-					var markers = cluster.getAllChildMarkers();
-					return L.divIcon({ html: '<div class="marker-group" style="background-color:#FF6700;color:black">'+markers.length+'</div>', className: '',iconSize: L.point(40, 40) });
-				},
-				// Disable all of the defaults:
-				spiderfyOnMaxZoom: true, showCoverageOnHover: false, zoomToBoundsOnClick: true
-			});
-			// Add marker list to layer
-			this.layer.addLayers(markerList);
-			this.map.fitBounds(this.layer.getBounds(),{'padding':[8,8]});
-			this.layer.addTo(this.map);
-		}
-		
-		txt = JSON.stringify(this.geojson);
-		this.geojsonnewline = txt.replace(/\{"type":"Feature"/g,"\n{\"type\":\"Feature\"");
-		*/
 
 		return this;
+
 	}
 	
 	FES.prototype.log = function(){
