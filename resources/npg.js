@@ -352,7 +352,7 @@ S(document).ready(function(){
 						var layer = e.target;
 						layer.setStyle({
 							weight: 2,
-							color: '#444',
+							color: color,
 							fillColor: color,
 							opacity: 1
 						});
@@ -409,7 +409,7 @@ S(document).ready(function(){
 									v = (data[feature.properties.Primary][_obj.key] - layer.range.min)/(layer.range.max - layer.range.min);
 								}
 								v *= 0.8; // Maximum opacity
-								props.weight = 1;
+								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);
 								props.opacity = 0.1;
 								props.fillOpacity = v;
 							}
@@ -429,7 +429,6 @@ S(document).ready(function(){
 
 				}
 
-				//this.map.on('popupclose', resetHighlight);
 				for(var l = 0; l < this.views[this.view].layers.length; l++){
 
 					id = this.views[this.view].layers[l].id
