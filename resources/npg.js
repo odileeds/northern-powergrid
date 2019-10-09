@@ -48,7 +48,7 @@ S(document).ready(function(){
 				'layers':[{
 					'id':'LAD',
 					'heatmap': false,
-					'boundary':{'strokeWidth':1,"fillColor":"white"}
+					'boundary':{'color':'#444444','strokeWidth':1,"opacity":0.5,"fillOpacity":0}
 				},{
 					'id':'primaries',
 					'heatmap': true,
@@ -366,6 +366,7 @@ S(document).ready(function(){
 					this.views[this.view].layers[l].geoattr = {
 						"style": {
 							"color": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.color||color : color),
+							"opacity": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.opacity||1 : 1),
 							"weight": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.strokeWidth||0.5 : 0.5),
 							"fillOpacity": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillOpacity||0 : 0),
 							"fillColor": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillColor||color : color)
