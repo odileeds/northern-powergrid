@@ -17,6 +17,7 @@ S(document).ready(function(){
 		};
 		this.logging = true;
 		this.scenarios = null;
+		this.scale = "relative";
 		this.layers = {
 			'LAD':{
 				'file': 'data/maps/LAD-npg.geojson'
@@ -123,6 +124,13 @@ S(document).ready(function(){
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 		}
 		
+		S('#scale-holder input').on('change',{me:this},function(e){
+			e.preventDefault();
+			e.data.me.scale = e.currentTarget.value;
+			if(e.currentTarget.value=="relative") S('#scale-holder').removeClass('checked');
+			else S('#scale-holder').addClass('checked');
+			e.data.me.buildMap();
+		})
 
 		// Create the slider
 		this.slider = document.getElementById('slider');
@@ -396,14 +404,25 @@ S(document).ready(function(){
 						if(_scenario[view]){
 							this.views[this.view].layers[l].range = {'min':1e100,'max':-1e100};
 							for(i in _scenario[view]){
-								v = _scenario[view][i][this.key];
-								if(typeof v==="number"){
-									this.views[this.view].layers[l].range.min = Math.min(v,this.views[this.view].layers[l].range.min);
-									this.views[this.view].layers[l].range.max = Math.max(v,this.views[this.view].layers[l].range.max);
+
+								keys = [];
+								if(this.scale == "absolute"){
+									for(k in _scenario[view][i]){
+										if(parseInt(k)==k) keys.push(k);
+									}
+								}else{
+									keys.push(this.key);
+								}
+
+								for(k = 0; k < keys.length; k++){
+									v = _scenario[view][i][keys[k]];
+									if(typeof v==="number"){
+										this.views[this.view].layers[l].range.min = Math.min(v,this.views[this.view].layers[l].range.min);
+										this.views[this.view].layers[l].range.max = Math.max(v,this.views[this.view].layers[l].range.max);
+									}
 								}
 							}
 						}
-						
 						
 						// Get a nicer range
 						this.views[this.view].layers[l].range = niceRange(this.views[this.view].layers[l].range.min,this.views[this.view].layers[l].range.max);
