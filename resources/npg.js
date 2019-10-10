@@ -224,8 +224,8 @@ S(document).ready(function(){
 	FES.prototype.loadedData = function(d,scenario,parameter){
 	
 		this.scenarios[scenario].data[parameter][this.source].raw = CSV2JSON(d,1);
-		this.scenarios[scenario].data[parameter][this.source].primaries = {};
-		this.scenarios[scenario].data[parameter][this.source].LAD = {};
+		this.scenarios[scenario].data[parameter][this.source].primaries = {'values':{},'range':{}};
+		this.scenarios[scenario].data[parameter][this.source].LAD = {'values':{},'range':{}};
 		var r,c,v,p,lad;
 		var key = "Primary";
 		
@@ -235,35 +235,49 @@ S(document).ready(function(){
 			if(this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] == key) col = i;
 		}
 		if(col >= 0){
+			var min = 1e100;
+			var max = -1e100;
 			for(r = 0; r < this.scenarios[scenario].data[parameter][this.source].raw.rows.length; r++){
 				// The primary key
 				pkey = this.scenarios[scenario].data[parameter][this.source].raw.rows[r][col];
-				this.scenarios[scenario].data[parameter][this.source].primaries[pkey] = {};
+				this.scenarios[scenario].data[parameter][this.source].primaries.values[pkey] = {};
 				for(c = 0; c < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; c++){
 					if(c != col){
 						v = parseFloat(this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c]);
-						this.scenarios[scenario].data[parameter][this.source].primaries[pkey][this.scenarios[scenario].data[parameter][this.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c];
-					}
-				}
-			}
-			// Convert to LADs
-			// For each primary
-			for(p in this.scenarios[scenario].data[parameter][this.source].primaries){
-				if(this.primary2lad[p]){
-					// Loop over the LADs for this primary
-					for(lad in this.primary2lad[p]){
-						// Loop over each key
-						for(key in this.scenarios[scenario].data[parameter][this.source].primaries[p]){
-							// Zero the variable if necessary
-							if(!this.scenarios[scenario].data[parameter][this.source].LAD[lad]) this.scenarios[scenario].data[parameter][this.source].LAD[lad] = {};
-							if(!this.scenarios[scenario].data[parameter][this.source].LAD[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD[lad][key] = 0;
-							// Sum the fractional amount for this LAD/Primary
-							this.scenarios[scenario].data[parameter][this.source].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries[p][key];
+						this.scenarios[scenario].data[parameter][this.source].primaries.values[pkey][this.scenarios[scenario].data[parameter][this.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c];
+						if(!isNaN(v)){
+							min = Math.min(min,v);
+							max = Math.max(max,v);
 						}
 					}
 				}
 			}
-			
+			this.layers.primaries.range = {'min':min,'max':max};
+			// Convert to LADs
+			var min = 1e100;
+			var max = -1e100;
+			// For each primary
+			for(p in this.scenarios[scenario].data[parameter][this.source].primaries.values){
+				if(this.primary2lad[p]){
+					// Loop over the LADs for this primary
+					for(lad in this.primary2lad[p]){
+						// Loop over each key
+						for(key in this.scenarios[scenario].data[parameter][this.source].primaries.values[p]){
+							// Zero the variable if necessary
+							if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad] = {};
+							if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = 0;
+							// Sum the fractional amount for this LAD/Primary
+							this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key];
+							
+							if(!isNaN(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key])){
+								min = Math.min(min,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+								max = Math.max(max,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+							}
+						}
+					}
+				}
+			}
+			this.layers.LAD.range = {'min':min,'max':max};
 		}
 		
 		return this;
@@ -410,22 +424,14 @@ S(document).ready(function(){
 						var _l = l;
 						this.views[this.view].layers[l].range = {'min':0,'max':1};
 						view = this.views[this.view].layers[l].id;
-
 						if(_scenario[view]){
 							this.views[this.view].layers[l].range = {'min':1e100,'max':-1e100};
-							for(i in _scenario[view]){
-
-								keys = [];
+							for(i in _scenario[view].values){
 								if(this.scale == "absolute"){
-									for(k in _scenario[view][i]){
-										if(parseInt(k)==k) keys.push(k);
-									}
+									// We have pre-calculated the range
+									this.views[this.view].layers[l].range = this.layers[view].range;
 								}else{
-									keys.push(this.key);
-								}
-
-								for(k = 0; k < keys.length; k++){
-									v = _scenario[view][i][keys[k]];
+									v = _scenario[view].values[i][this.key];
 									if(typeof v==="number"){
 										this.views[this.view].layers[l].range.min = Math.min(v,this.views[this.view].layers[l].range.min);
 										this.views[this.view].layers[l].range.max = Math.max(v,this.views[this.view].layers[l].range.max);
@@ -456,9 +462,9 @@ S(document).ready(function(){
 								var data = _scenario[layer.id];
 								if(layer.id=="LAD"){
 									// Need to convert primaries to LAD
-									if(data[feature.properties.lad19cd]) v = (data[feature.properties.lad19cd][_obj.key]-layer.range.min)/(layer.range.max-layer.range.min);
+									if(data.values[feature.properties.lad19cd]) v = (data.values[feature.properties.lad19cd][_obj.key]-layer.range.min)/(layer.range.max-layer.range.min);
 								}else if(layer.id=="primaries"){
-									v = (data[feature.properties.Primary][_obj.key] - layer.range.min)/(layer.range.max - layer.range.min);
+									v = (data.values[feature.properties.Primary][_obj.key] - layer.range.min)/(layer.range.max - layer.range.min);
 								}
 								v *= 0.8; // Maximum opacity
 								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);
@@ -504,8 +510,8 @@ S(document).ready(function(){
 			var view = me.views[me.view].layers[attr.layer].id;
 			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.scenario].data[me.parameter][me.source][view] && me.scenarios[me.scenario].data[me.parameter][me.source][view][key]){
-				v = me.scenarios[me.scenario].data[me.parameter][me.source][view][key][me.key];
+			if(me.scenarios[me.scenario].data[me.parameter][me.source][view].values && me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key]){
+				v = me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key][me.key];
 			}
 			title = '?';
 			added = 0;
