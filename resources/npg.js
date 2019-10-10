@@ -13,9 +13,9 @@ S(document).ready(function(){
 		this.key = (new Date()).getFullYear()+'';
 		this.parameter = "ev";
 		this.parameters = {
-			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'' },
-			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW' },
-			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%' }
+			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
+			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
+			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 }
 		};
 		this.logging = true;
 		this.scenarios = null;
@@ -559,7 +559,8 @@ S(document).ready(function(){
 					added++;
 				}*/
 			}
-			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+v.toFixed(2)+''+(me.parameters[me.parameter].units ? ' '+me.parameters[me.parameter].units : '');
+			var dp = (typeof me.parameters[me.parameter].dp==="number" ? me.parameters[me.parameter].dp : 2);
+			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp))+''+(me.parameters[me.parameter].units ? '&thinsp;'+me.parameters[me.parameter].units : '');
 			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
 			return popup;
 		}
