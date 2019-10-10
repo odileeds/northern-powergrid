@@ -29,6 +29,7 @@ S(document).ready(function(){
 			'LAD':{
 				'title':'Local Authorities',
 				'file':'data/maps/LAD-npg.geojson',
+				'source': 'primary',
 				'layers':[{
 					'id': 'LAD',
 					'heatmap': true,
@@ -38,6 +39,7 @@ S(document).ready(function(){
 			'primaries':{
 				'title':'Primary Supply',
 				'file':'data/maps/primaries-unique.geojson',
+				'source': 'primary',
 				'layers':[{
 					'id': 'primaries',
 					'heatmap': true,
@@ -45,6 +47,7 @@ S(document).ready(function(){
 			},
 			'primariesLAD':{
 				'title':'Primary Supply (with Local Authorities)',
+				'source': 'primary',
 				'layers':[{
 					'id':'LAD',
 					'heatmap': false,
@@ -83,6 +86,17 @@ S(document).ready(function(){
 		return this;
 	}
 
+	FES.prototype.setView = function(v){
+		if(this.views[v]){
+			this.view = v;
+			this.source = this.views[this.view].source;
+			this.buildMap();
+		}else{
+			this.log.error('The view '+v+' does not exist!');
+		}
+		return this;
+	}
+	
 	FES.prototype.init = function(){
 
 		if(this.scenarios && S('#scenarios').length==0){
@@ -100,8 +114,7 @@ S(document).ready(function(){
 			S('#view-holder').html('<select id="views">'+html+'</select>');
 			S('#views').on('change',{'me':this},function(e){
 				e.preventDefault();
-				e.data.me.view = e.currentTarget.value;
-				e.data.me.buildMap();
+				e.data.me.setView(e.currentTarget.value);
 			})
 		}
 		if(this.parameters && S('#parameters').length==0){
@@ -154,10 +167,11 @@ S(document).ready(function(){
 		S('header img').attr('src','../../www/odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
 		S('.noUi-connect').attr('class','noUi-connect '+css);
 
+		this.source = this.views[this.view].source;
 
-		if(!this.scenarios[this.scenario].data[this.parameter].raw){
+		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
 			// Load the file
-			S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter].file,{
+			S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter][this.source].file,{
 				'this':this,
 				'cache':false,
 				'dataType':'text',
@@ -191,42 +205,42 @@ S(document).ready(function(){
 
 	FES.prototype.loadedData = function(d,scenario,parameter){
 	
-		this.scenarios[scenario].data[parameter].raw = CSV2JSON(d,1);
-		this.scenarios[scenario].data[parameter].primaries = {};
-		this.scenarios[scenario].data[parameter].LAD = {};
+		this.scenarios[scenario].data[parameter][this.source].raw = CSV2JSON(d,1);
+		this.scenarios[scenario].data[parameter][this.source].primaries = {};
+		this.scenarios[scenario].data[parameter][this.source].LAD = {};
 		var r,c,v,p,lad;
 		var key = "Primary";
 		
 		// Find the column number for the column containing the Primary name
 		var col = -1;
-		for(i = 0; i < this.scenarios[scenario].data[parameter].raw.fields.name.length; i++){
-			if(this.scenarios[scenario].data[parameter].raw.fields.name[i] == key) col = i;
+		for(i = 0; i < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; i++){
+			if(this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] == key) col = i;
 		}
 		if(col >= 0){
-			for(r = 0; r < this.scenarios[scenario].data[parameter].raw.rows.length; r++){
+			for(r = 0; r < this.scenarios[scenario].data[parameter][this.source].raw.rows.length; r++){
 				// The primary key
-				pkey = this.scenarios[scenario].data[parameter].raw.rows[r][col];
-				this.scenarios[scenario].data[parameter].primaries[pkey] = {};
-				for(c = 0; c < this.scenarios[scenario].data[parameter].raw.fields.name.length; c++){
+				pkey = this.scenarios[scenario].data[parameter][this.source].raw.rows[r][col];
+				this.scenarios[scenario].data[parameter][this.source].primaries[pkey] = {};
+				for(c = 0; c < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; c++){
 					if(c != col){
-						v = parseFloat(this.scenarios[scenario].data[parameter].raw.rows[r][c]);
-						this.scenarios[scenario].data[parameter].primaries[pkey][this.scenarios[scenario].data[parameter].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter].raw.rows[r][c];
+						v = parseFloat(this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c]);
+						this.scenarios[scenario].data[parameter][this.source].primaries[pkey][this.scenarios[scenario].data[parameter][this.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c];
 					}
 				}
 			}
 			// Convert to LADs
 			// For each primary
-			for(p in this.scenarios[scenario].data[parameter].primaries){
+			for(p in this.scenarios[scenario].data[parameter][this.source].primaries){
 				if(this.primary2lad[p]){
 					// Loop over the LADs for this primary
 					for(lad in this.primary2lad[p]){
 						// Loop over each key
-						for(key in this.scenarios[scenario].data[parameter].primaries[p]){
+						for(key in this.scenarios[scenario].data[parameter][this.source].primaries[p]){
 							// Zero the variable if necessary
-							if(!this.scenarios[scenario].data[parameter].LAD[lad]) this.scenarios[scenario].data[parameter].LAD[lad] = {};
-							if(!this.scenarios[scenario].data[parameter].LAD[lad][key]) this.scenarios[scenario].data[parameter].LAD[lad][key] = 0;
+							if(!this.scenarios[scenario].data[parameter][this.source].LAD[lad]) this.scenarios[scenario].data[parameter][this.source].LAD[lad] = {};
+							if(!this.scenarios[scenario].data[parameter][this.source].LAD[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD[lad][key] = 0;
 							// Sum the fractional amount for this LAD/Primary
-							this.scenarios[scenario].data[parameter].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter].primaries[p][key];
+							this.scenarios[scenario].data[parameter][this.source].LAD[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries[p][key];
 						}
 					}
 				}
@@ -270,10 +284,8 @@ S(document).ready(function(){
 
 		var _obj = this;
 		var color = (this.scenarios[this.scenario].color||"#000000");
-		
-		
-		
-		if(!this.scenarios[this.scenario].data[this.parameter].raw){
+
+		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
 			console.error('Scenario '+this.scenario+' not loaded');
 			return this;
 		}
@@ -281,7 +293,7 @@ S(document).ready(function(){
 		var min = 0;
 		var max = 1;
 		var _obj = this;
-		var _scenario = this.scenarios[this.scenario].data[this.parameter];
+		var _scenario = this.scenarios[this.scenario].data[this.parameter][this.source];
 
 		if(_scenario[this.view]){
 			var min = 1e100;
@@ -342,7 +354,7 @@ S(document).ready(function(){
 				}
 
 				// Make copies of variables we'll use inside functions
-				var _scenario = this.scenarios[this.scenario].data[this.parameter];
+				var _scenario = this.scenarios[this.scenario].data[this.parameter][this.source];
 				var _obj = this;
 
 				// Re-build the layers for this view
@@ -391,6 +403,17 @@ S(document).ready(function(){
 								}
 							}
 						}
+						
+						
+						// Get a nicer range
+						this.views[this.view].layers[l].range = niceRange(this.views[this.view].layers[l].range.min,this.views[this.view].layers[l].range.max);
+						// Update the scale bar
+						S('#scale').html(makeScaleBar(getRGBAstr(color,0.0),getRGBAstr(color,0.8),{
+							'min': this.views[this.view].layers[l].range.min,
+							'max': this.views[this.view].layers[l].range.max,
+							'weight': this.views[this.view].layers[l].geoattr.style.weight,
+							'color': this.views[this.view].layers[l].geoattr.style.color
+						}));
 						
 						// Define the GeoJSON attributes for this layer
 						this.views[this.view].layers[l].geoattr.style = function(feature){
@@ -452,8 +475,8 @@ S(document).ready(function(){
 			var view = me.views[me.view].layers[attr.layer].id;
 			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.scenario].data[me.parameter][view] && me.scenarios[me.scenario].data[me.parameter][view][key]){
-				v = me.scenarios[me.scenario].data[me.parameter][view][key][me.key];
+			if(me.scenarios[me.scenario].data[me.parameter][me.source][view] && me.scenarios[me.scenario].data[me.parameter][me.source][view][key]){
+				v = me.scenarios[me.scenario].data[me.parameter][me.source][view][key][me.key];
 			}
 			title = '?';
 			added = 0;
@@ -714,6 +737,60 @@ S(document).ready(function(){
 		return lastIndexOf;
 	}
 
+	function makeScaleBar(a,b,attr){
+		if(!attr) attr = {};
+		if(!attr.min) attr.min = 0;
+		if(!attr.max) attr.max = 0;
+		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+'</span>';
+	}
+	function makeGradient(a,b){
+		if(!b) b = a;
+		return 'background: '+a+'; background: -moz-linear-gradient(left, '+a+' 0%, '+b+' 100%);background: -webkit-linear-gradient(left, '+a+' 0%,'+b+' 100%);background: linear-gradient(to right, '+a+' 0%,'+b+' 100%);';
+	}
+	function getRGBAstr(c,a){
+        a = (typeof a==="number" ? a : 1.0);
+        var rgb = "rgba(0,0,0,1)";
+        if(c.indexOf("rgb")==0) rgb = c.replace(/^rgba?\(([0-9]+),([0-9]+),([0-9]+),?([0-9\.]+)?\)$/,function(m,p1,p2,p3,p4){ return "rgba("+p1+","+p2+","+p3+","+p4+")"; });
+        else if(c.indexOf('#')==0) rgb = "rgba("+parseInt(c.substr(1,2),16)+","+parseInt(c.substr(3,2),16)+","+parseInt(c.substr(5,2),16)+","+a+")";
+        return rgb;
+    }
+	function niceRange(mn,mx){
+
+		var dv,log10_dv,base,frac,options,distance,imin,tmin,i;
+		n = 20;
+
+		// Start off by finding the exact spacing
+		dv = (mx - mn)/n;
+
+		// In any given order of magnitude interval, we allow the spacing to be
+		// 1, 2, 5, or 10 (since all divide 10 evenly). We start off by finding the
+		// log of the spacing value, then splitting this into the integer and
+		// fractional part (note that for negative values, we consider the base to
+		// be the next value 'down' where down is more negative, so -3.6 would be
+		// split into -4 and 0.4).
+		log10_dv = Math.log10(dv);
+		base = Math.floor(log10_dv);
+		frac = log10_dv - base;
+
+		// We now want to check whether frac falls closest to 1, 2, 5, or 10 (in log
+		// space). There are more efficient ways of doing this but this is just for clarity.
+		options = [1,2,5,10];
+		distance = new Array(options.length);
+		imin = -1;
+		tmin = 1e100;
+		for(i = 0; i < options.length; i++){
+			distance[i] = Math.abs(frac - Math.log10(options[i]));
+			if(distance[i] < tmin){
+				tmin = distance[i];
+				imin = i;
+			}
+		}
+
+		// Now determine the actual spacing
+		var inc = Math.pow(10,base) * options[imin];
+
+		return {'min': Math.floor(mn/inc) * inc, 'max': Math.ceil(mx/inc) * inc};
+	}
 	// Define a new instance of the FES
 	future = new FES();
 	
