@@ -252,8 +252,8 @@ S(document).ready(function(){
 	FES.prototype.loadedData = function(d,scenario,parameter){
 	
 		this.scenarios[scenario].data[parameter][this.source].raw = CSV2JSON(d,1);
-		this.scenarios[scenario].data[parameter][this.source].primaries = {'values':{},'range':{}};
-		this.scenarios[scenario].data[parameter][this.source].LAD = {'values':{},'range':{}};
+		this.scenarios[scenario].data[parameter][this.source].primaries = {'values':{},'fullrange':{}};
+		this.scenarios[scenario].data[parameter][this.source].LAD = {'values':{},'fullrange':{}};
 		var r,c,v,p,lad;
 		var key = "Primary";
 		
@@ -280,7 +280,7 @@ S(document).ready(function(){
 					}
 				}
 			}
-			this.layers.primaries.range = {'min':min,'max':max};
+			this.scenarios[scenario].data[parameter][this.source].primaries.fullrange = {'min':min,'max':max};
 			// Combine the data into Local Authority Districts
 			var min = 1e100;
 			var max = -1e100;
@@ -311,7 +311,7 @@ S(document).ready(function(){
 					}
 				}
 			}
-			this.layers.LAD.range = {'min':min,'max':max};
+			this.scenarios[scenario].data[parameter][this.source].LAD.fullrange = {'min':min,'max':max};
 		}
 		
 		return this;
@@ -463,7 +463,7 @@ S(document).ready(function(){
 							for(i in _scenario[view].values){
 								if(this.scale == "absolute"){
 									// We have pre-calculated the range
-									this.views[this.view].layers[l].range = this.layers[view].range;
+									this.views[this.view].layers[l].range = this.scenarios[this.scenario].data[this.parameter][this.source][view].fullrange;
 								}else{
 									v = _scenario[view].values[i][this.key];
 									if(typeof v==="number"){
