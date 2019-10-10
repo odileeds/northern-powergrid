@@ -122,12 +122,12 @@ S(document).ready(function(){
 		// Add events to toggle switch		
 		S('#scale-holder input').on('change',{me:this},function(e){
 			e.preventDefault();
-			e.data.me.setScale(e.currentTarget.checked ? "relative":"absolute");
+			e.data.me.setScale(e.currentTarget.checked);
 		})
 		S('#scale-holder .switch').on('click',{me:this},function(e){
 			var el = S('#scale-holder input');
 			el[0].checked = !el[0].checked;
-			e.data.me.setScale(el[0].checked ? "relative":"absolute");
+			e.data.me.setScale(el[0].checked);
 		})
 
 		// Create the slider
@@ -232,10 +232,10 @@ S(document).ready(function(){
 		return this;
 	}
 	
-	FES.prototype.setScale = function(v){
-		this.scale = v;
-		if(v=="relative") S('#scale-holder').removeClass('checked');
-		else S('#scale-holder').addClass('checked');
+	FES.prototype.setScale = function(checked){
+		this.scale = (checked ? "absolute":"relative");
+		if(checked) S('#scale-holder').addClass('checked');
+		else S('#scale-holder').removeClass('checked');
 		this.buildMap();
 	}
 
