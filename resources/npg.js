@@ -14,7 +14,8 @@ S(document).ready(function(){
 		this.parameter = "ev";
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'' },
-			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW' }
+			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW' },
+			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%' }
 		};
 		this.logging = true;
 		this.scenarios = null;
@@ -480,7 +481,8 @@ S(document).ready(function(){
 							'min': this.views[this.view].layers[l].range.min,
 							'max': this.views[this.view].layers[l].range.max,
 							'weight': this.views[this.view].layers[l].geoattr.style.weight,
-							'color': this.views[this.view].layers[l].geoattr.style.color
+							'color': this.views[this.view].layers[l].geoattr.style.color,
+							'units': this.parameters[this.parameter].units
 						}));
 						
 						// Define the GeoJSON attributes for this layer
@@ -546,6 +548,7 @@ S(document).ready(function(){
 			if(me.scenarios[me.scenario].data[me.parameter][me.source][view].values && me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key]){
 				v = me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key][me.key];
 			}
+			if(!v) console.log(v,me.scenarios[me.scenario].data[me.parameter][me.source][view].values,key,me.key,me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key])
 			title = '?';
 			added = 0;
 			if(feature.properties){
@@ -809,7 +812,9 @@ S(document).ready(function(){
 		if(!attr) attr = {};
 		if(!attr.min) attr.min = 0;
 		if(!attr.max) attr.max = 0;
-		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+'</span>';
+		if(!attr.units) attr.units = "";
+		if(attr.units) attr.units = "&thinsp;"+attr.units;
+		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+attr.units+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+attr.units+'</span>';
 	}
 	function makeGradient(a,b){
 		if(!b) b = a;
