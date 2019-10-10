@@ -169,7 +169,6 @@ S(document).ready(function(){
 			'callback': callback,
 			'success': function(d,attr){
 				this.loadedData(d,attr.scenario,attr.parameter);
-//				this.buildMap();
 				if(typeof attr.callback==="function") attr.callback.call(this);
 			},
 			'error': function(e,attr){
@@ -260,6 +259,8 @@ S(document).ready(function(){
 		// Find the column number for the column containing the Primary name
 		var col = -1;
 		for(i = 0; i < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; i++){
+			n = this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i];
+			if(parseFloat(n) == n) this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] = parseInt(n);
 			if(this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] == key) col = i;
 		}
 		if(col >= 0){
