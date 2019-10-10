@@ -20,7 +20,7 @@ S(document).ready(function(){
 		this.scale = "relative";
 		this.layers = {
 			'LAD':{
-				'file': 'data/maps/LAD-npg.geojson'
+				'file': 'data/maps/LAD2019-npg.geojson'
 			},
 			'primaries':{
 				'file':'data/maps/primaries-unique.geojson'
