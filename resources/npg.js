@@ -13,7 +13,8 @@ S(document).ready(function(){
 		this.key = (new Date()).getFullYear()+'';
 		this.parameter = "ev";
 		this.parameters = {
-			'ev':{ 'title': 'Electric vehicles' }
+			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'' },
+			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW' }
 		};
 		this.logging = true;
 		this.scenarios = null;
@@ -96,7 +97,7 @@ S(document).ready(function(){
 			S('#scenarios').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setScenario(e.currentTarget.value);
-			})
+			});
 		}
 		if(this.views && S('#view').length==0){
 			var html = "";
@@ -105,12 +106,16 @@ S(document).ready(function(){
 			S('#views').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setView(e.currentTarget.value);
-			})
+			});
 		}
 		if(this.parameters && S('#parameters').length==0){
 			var html = "";
 			for(var p in this.parameters) html += "<option"+(this.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
+			S('#parameters').on('change',{'me':this},function(e){
+				e.preventDefault();
+				e.data.me.setParameter(e.currentTarget.value);
+			});
 		}
 
 		// Add events to toggle switch		
@@ -153,6 +158,26 @@ S(document).ready(function(){
 		return this;
 	}
 	
+	FES.prototype.loadScenarioData = function(callback){
+		S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter][this.source].file,{
+			'this':this,
+			'cache':false,
+			'dataType':'text',
+			'scenario': this.scenario,
+			'parameter': this.parameter,
+			'callback': callback,
+			'success': function(d,attr){
+				this.loadedData(d,attr.scenario,attr.parameter);
+//				this.buildMap();
+				if(typeof attr.callback==="function") attr.callback.call(this);
+			},
+			'error': function(e,attr){
+				this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+			}
+		});
+	
+	}
+	
 	FES.prototype.setScenario = function(scenario){
 
 		// Set the scenario
@@ -170,20 +195,8 @@ S(document).ready(function(){
 		this.source = this.views[this.view].source;
 
 		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
-			// Load the file
-			S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter][this.source].file,{
-				'this':this,
-				'cache':false,
-				'dataType':'text',
-				'scenario': this.scenario,
-				'parameter': this.parameter,
-				'success': function(d,attr){
-					this.loadedData(d,attr.scenario,attr.parameter);
-					this.buildMap();
-				},
-				'error': function(e,attr){
-					this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
-				}
+			this.loadScenarioData(function(){
+				this.buildMap();
 			});
 		}else{
 			this.message('',{'id':'error'});
@@ -201,6 +214,20 @@ S(document).ready(function(){
 			this.buildMap();
 		}else{
 			this.log.error('The view '+v+' does not exist!');
+		}
+		return this;
+	}
+
+	FES.prototype.setParameter = function(v){
+		if(this.parameters[v]){
+			this.parameter = v;
+			// Have we loaded the parameter/scenario?
+			if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
+				// Load the scenario data
+				this.loadScenarioData(function(){ this.buildMap(); });
+			}else{
+				this.buildMap();
+			}
 		}
 		return this;
 	}
@@ -253,7 +280,7 @@ S(document).ready(function(){
 				}
 			}
 			this.layers.primaries.range = {'min':min,'max':max};
-			// Convert to LADs
+			// Combine the data into Local Authority Districts
 			var min = 1e100;
 			var max = -1e100;
 			// For each primary
@@ -263,15 +290,21 @@ S(document).ready(function(){
 					for(lad in this.primary2lad[p]){
 						// Loop over each key
 						for(key in this.scenarios[scenario].data[parameter][this.source].primaries.values[p]){
-							// Zero the variable if necessary
-							if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad] = {};
-							if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = 0;
-							// Sum the fractional amount for this LAD/Primary
-							this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key];
+							if(parseInt(key)==key){
+								// Zero the variable if necessary
+								if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad] = {};
+								if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = 0;
+								// Sum the fractional amount for this LAD/Primary
+								if(this.parameters[parameter].combine=="sum"){
+									this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key];
+								}else if(this.parameters[parameter].combine=="max"){
+									this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = Math.max(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key],this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key]);
+								}
 							
-							if(!isNaN(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key])){
-								min = Math.min(min,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
-								max = Math.max(max,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+								if(!isNaN(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key])){
+									min = Math.min(min,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+									max = Math.max(max,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+								}
 							}
 						}
 					}
@@ -318,7 +351,7 @@ S(document).ready(function(){
 		var color = (this.scenarios[this.scenario].color||"#000000");
 
 		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
-			console.error('Scenario '+this.scenario+' not loaded');
+			console.error('Scenario '+this.scenario+' not loaded',this.scenarios[this.scenario].data[this.parameter]);
 			return this;
 		}
 		
@@ -522,7 +555,7 @@ S(document).ready(function(){
 					added++;
 				}*/
 			}
-			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+v.toFixed(2);
+			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+v.toFixed(2)+''+(me.parameters[me.parameter].units ? ' '+me.parameters[me.parameter].units : '');
 			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
 			return popup;
 		}

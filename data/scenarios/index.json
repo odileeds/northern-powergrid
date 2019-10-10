@@ -6,6 +6,9 @@
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-CommunityRenewables.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-CommunityRenewables.csv" }
 			}
 		}
 	},
@@ -16,6 +19,9 @@
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-ConsumerEvolution.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-ConsumerEvolution.csv" }
 			}
 		}
 	},
@@ -26,6 +32,9 @@
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-SteadyProgression.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SteadyProgression.csv" }
 			}
 		}
 	},
@@ -36,6 +45,9 @@
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-TwoDegrees.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-TwoDegrees.csv" }
 			}
 		}
 	}

@@ -19,10 +19,12 @@
 		display: block;
 		width: 100%;
 	}
-	.columns { display: flex; padding: 1em 0; }
+	.columns { display: flex; padding: 2em 0; }
 	.left { width: 30%; max-width: 300px; margin-right: 2em; }
 	.right { width: 70%; }
-	h2 { font-size: 1em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.25em; }
+	h2 { font-size: 1.4em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.25em; }
+	.left h2 { font-size: 1em; }
+	h3 { font-size: 1.2em; margin-top: 1em; margin-bottom: 0.5em; }
 	p { margin-bottom: 1em; }
 	.spinner { position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); z-index: 1000; }
 	.spinner img { width: 5em; margin: auto; }
@@ -143,11 +145,25 @@
 		</div>
 	</div>
 	<div class="scenario padded">&nbsp;</div>
+	<div class="b5-bg">
+		<div class="holder padded">
+			<h2>About this visualisation</h2>
+			<h3>Predictions</h3>
+			<p>Each modelled parameter is calculated by Element Energy for each of Northern Powergrid's Primary Supply points.</p>
+			<h3>Geographies</h3>
+			<p>We have used the Northern Powergrid customer postcodes to identify each Output Area supplied by each Primary Supply point. 
+			The proportion of a Primary Supply point's customers in each Local Authority District is calculated by adding up the customers in each Output Area belonging to a specific Local Authority District. 
+			We construct representative geographies for each Primary Supply point using the Output Areas. In cases where multiple Primary Supply points serve the same Output Area, that Output Area is assigned to the Primary Supply point that serves the most customers there.</p>
+			
+			<h3>Views</h3>
+			<p>The model predictions have been created by Primary Supply point and that is the definitive view. The Local Authority view is constructed from the Primary Supply point values. For some parameters (e.g. electric vehicles) the values from the Primary Supply points are apportioned to each Local Authority District and then summed into totals. For values which can't be summed (e.g. Peak demand) we have shown the maximum value for any Primary Supply point that serves a Local Authority.</p>
+		</div>
+	</div>
 	<footer class="b1-bg">
 		<div class="holder">
 				<p>Created by Stuart Lowe &amp; Patrick Lake, <a href="http://odileeds.org/projects/">ODI Leeds</a> 2019.</p>
 				<p>Energy scenario data &copy; NorthernPowerGrid.</p>
-				<p><a href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2019-boundaries-uk-buc">Local Authority District boundaries</a> and the <a href="https://geoportal.statistics.gov.uk/datasets/postcode-to-output-area-to-lower-layer-super-output-area-to-middle-layer-super-output-area-to-local-authority-district-august-2019-lookup-in-the-uk">conversion from Postcodes to Output Areas (2011) and Local Authority Districts (2019)</a> uses data from the ONS geo service. They are <a href="https://www.ons.gov.uk/methodology/geography/licences">released under OGL</a>.</p>
+				<p><a href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2019-boundaries-uk-bgc">Local Authority District boundaries</a>, <a href="https://geoportal.statistics.gov.uk/datasets/output-area-december-2011-generalised-clipped-boundaries-in-england-and-wales">Output Area boundaries</a>, and the <a href="https://geoportal.statistics.gov.uk/datasets/postcode-to-output-area-to-lower-layer-super-output-area-to-middle-layer-super-output-area-to-local-authority-district-august-2019-lookup-in-the-uk">conversion from Postcodes to Output Areas (2011) and Local Authority Districts (2019)</a> uses data from the ONS geo service. They are <a href="https://www.ons.gov.uk/methodology/geography/licences">released under the OGL</a>:</p>
 				<ul>
 					<li>Contains National Statistics data © Crown copyright and database right 2019</li>
 					<li>Contains OS data © Crown copyright and database right 2019</li>
