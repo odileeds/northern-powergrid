@@ -87,17 +87,6 @@ S(document).ready(function(){
 		return this;
 	}
 
-	FES.prototype.setView = function(v){
-		if(this.views[v]){
-			this.view = v;
-			this.source = this.views[this.view].source;
-			this.buildMap();
-		}else{
-			this.log.error('The view '+v+' does not exist!');
-		}
-		return this;
-	}
-	
 	FES.prototype.init = function(){
 
 		if(this.scenarios && S('#scenarios').length==0){
@@ -123,13 +112,16 @@ S(document).ready(function(){
 			for(var p in this.parameters) html += "<option"+(this.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 		}
-		
+
+		// Add events to toggle switch		
 		S('#scale-holder input').on('change',{me:this},function(e){
 			e.preventDefault();
-			e.data.me.scale = e.currentTarget.value;
-			if(e.currentTarget.value=="relative") S('#scale-holder').removeClass('checked');
-			else S('#scale-holder').addClass('checked');
-			e.data.me.buildMap();
+			e.data.me.setScale(e.currentTarget.checked ? "relative":"absolute");
+		})
+		S('#scale-holder .switch').on('click',{me:this},function(e){
+			var el = S('#scale-holder input');
+			el[0].checked = !el[0].checked;
+			e.data.me.setScale(el[0].checked ? "relative":"absolute");
 		})
 
 		// Create the slider
@@ -162,7 +154,7 @@ S(document).ready(function(){
 	}
 	
 	FES.prototype.setScenario = function(scenario){
-		console.log('setScenario',scenario,this.parameter)
+
 		// Set the scenario
 		this.scenario = scenario;
 
@@ -200,6 +192,24 @@ S(document).ready(function(){
 		}
 
 		return this;
+	}
+
+	FES.prototype.setView = function(v){
+		if(this.views[v]){
+			this.view = v;
+			this.source = this.views[this.view].source;
+			this.buildMap();
+		}else{
+			this.log.error('The view '+v+' does not exist!');
+		}
+		return this;
+	}
+	
+	FES.prototype.setScale = function(v){
+		this.scale = v;
+		if(v=="relative") S('#scale-holder').removeClass('checked');
+		else S('#scale-holder').addClass('checked');
+		this.buildMap();
 	}
 
 	FES.prototype.setYear = function(y){

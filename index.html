@@ -64,10 +64,7 @@
 		padding: 0;
 		position: absolute;
 		top: 0;
-		z-index: 2;
-			/*IE*/
-			zoom: 1;
-			filter: alpha(opacity=0);
+		z-index: 0;
 		cursor: pointer;
 	}
 	/* As we are hiding the radio buttons we will make the switch glow when the radio button receives focus. We need to use some sibling selectors. */
@@ -127,13 +124,12 @@
 				<div id="slider"></div>
 				<h2><label for="scale-mode">Scale</label>:</h2>
 				<div id="scale-holder" class="toggleinput toggler">
-					<label class="toggle-label1" for="mode-relative">Relative</label>
+					<span class="toggle-label1">Relative</span>
 					<div class="toggle-bg">
-						<input type="radio" id="mode-relative" checked="checked" name="scale-mode" value="relative" title="Choose mode:">
-						<input type="radio" id="mode-absolute" name="scale-mode" value="absolute" title="Choose mode:">
+						<input type="checkbox" id="scale-mode" name="scale-mode" title="Select for an absolute scale" />
 						<span class="switch"></span>
 					</div>
-					<label class="toggle-label2" for="mode-absolute">Absolute</label>
+					<label class="toggle-label2" for="scale-mode">Absolute</label>
 				</div>
 			</div>
 			<div class="right">
