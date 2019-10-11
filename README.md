@@ -1,6 +1,6 @@
 # Northern Powergrid Future Energy Scenarios
 
-Northern Powergrid's potential future scenarios as defined in the National Grid Future Energy Scenarios.
+A collaboration between Northern Powergrid and ODI Leeds to visualise Northern Powergrid's potential future scenarios as defined in the National Grid Future Energy Scenarios.
 
 
 ## About the visualisation
