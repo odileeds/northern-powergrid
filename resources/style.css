@@ -53,6 +53,8 @@ body {
 	padding: 0px;
 	line-height: 1.44em;
 }
+p, time, li, td, th, footer, div { font-weight: 300; }
+
 header {
 	width: 100%;
 	padding: 0px;
@@ -110,6 +112,7 @@ header .holder nav { line-height: 1em; }
 .padded {
 	padding: 1em;
 }
+h1, h2, h3 { font-weight: 500; }
 h1 { font-size: 2em; }
 h2 { font-size: 1.7em; }
 h3 { font-size: 1.4em; }
