@@ -33,7 +33,7 @@
 	},
 	"Steady progression": {
 		"description": "<ul><li>2050 decarbonisation target not met.</li><li>Large-scale centralised solutions.</li></ul>",
-		"color": "#F9BC26",
+		"color": "#FF6700",
 		"css": "c14-bg",
 		"data": {
 			"ev": {
