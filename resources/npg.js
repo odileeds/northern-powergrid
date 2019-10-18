@@ -413,6 +413,21 @@ S(document).ready(function(){
 				return this;
 			}else{
 			
+				this.message('',{'id':'warn','type':'WARNING'});
+				if(layer.id=="primaries"){
+					var missing = '';
+					for(var p in this.data.scenarios[this.options.scenario].data.ev.primary.primaries.values){
+						match = false;
+						for(var f = 0; f < this.layers[layer.id].data.features.length; f++){
+							if(this.layers[layer.id].data.features[f].properties.Primary==p) match = true;
+						}
+						if(!match) missing += (missing ? ', ':'')+p;
+					}
+					if(missing){
+						this.message('The following Primaries are not yet included on the map (to be done): '+missing,{'id':'warn','type':'WARNING'});
+					}
+				}
+
 				_geojson = [];
 				
 				// Remove existing layers
@@ -577,7 +592,7 @@ S(document).ready(function(){
 			var args = Array.prototype.slice.call(arguments, 0);
 			if(console && typeof console.log==="function"){
 				if(arguments[0] == "ERROR") console.error('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
-				else if(arguments[0] == "WARNING") console.warning('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
+				else if(arguments[0] == "WARNING") console.warn('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
 				else console.log('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
 			}
 		}
