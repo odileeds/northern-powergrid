@@ -832,7 +832,7 @@ S(document).ready(function(){
 		if(!attr.max) attr.max = 0;
 		if(!attr.units) attr.units = "";
 		if(attr.units) attr.units = "&thinsp;"+attr.units;
-		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+attr.units+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+attr.units+'</span>';
+		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><div class="range"><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+attr.units+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+attr.units+'</span></div>';
 	}
 
 	function makeGradient(a,b){
