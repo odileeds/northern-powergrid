@@ -1,5 +1,5 @@
 /*!
- * ODI Leeds FES viewer
+ * ODI Leeds Future Energy Scenario viewer
  */
 var future;
 
@@ -13,15 +13,16 @@ S(document).ready(function(){
 			"view": "LAD",
 			"key": (new Date()).getFullYear()+'',
 			"parameter": "ev",
-			"scale": "relative"
+			"scale": "relative",
+			"source": null
 		}
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
 			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
 			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 }
 		};
+		this.data = { 'scenarios': null, 'primary2lad': null };
 		this.logging = true;
-		this.scenarios = null;
 		this.layers = {
 			'LAD':{
 				'file': 'data/maps/LAD2019-npg.geojson'
@@ -69,13 +70,13 @@ S(document).ready(function(){
 			'cache':false,
 			'dataType':'json',
 			'success': function(d){
-				this.primary2lad = d;
+				this.data.primary2lad = d;
 				S().ajax("data/scenarios/index.json",{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
 					'success': function(d){
-						this.scenarios = d;
+						this.data.scenarios = d;
 						this.init();
 					},
 					'error': function(e,attr){
@@ -93,9 +94,9 @@ S(document).ready(function(){
 
 	FES.prototype.init = function(){
 
-		if(this.scenarios && S('#scenarios').length==0){
+		if(this.data.scenarios && S('#scenarios').length==0){
 			var html = "";
-			for(var s in this.scenarios) html += "<option"+(this.options.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.options.scenarios[s].css+"\"
+			for(var s in this.data.scenarios) html += "<option"+(this.options.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.options.scenarios[s].css+"\"
 			S('#scenario-holder').html('<select id="scenarios">'+html+'</select>');
 			S('#scenarios').on('change',{'me':this},function(e){
 				e.preventDefault();
@@ -162,7 +163,7 @@ S(document).ready(function(){
 	}
 	
 	FES.prototype.loadScenarioData = function(callback){
-		S().ajax("data/scenarios/"+this.scenarios[this.options.scenario].data[this.options.parameter][this.source].file,{
+		S().ajax("data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].file,{
 			'this':this,
 			'cache':false,
 			'dataType':'text',
@@ -186,17 +187,17 @@ S(document).ready(function(){
 		this.options.scenario = scenario;
 
 		// Update the CSS class
-		css = this.scenarios[scenario].css;
+		css = this.data.scenarios[scenario].css;
 		S('header .title').attr('class','title '+css);
-		S('#scenario .about').html(this.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
+		S('#scenario .about').html(this.data.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
 		S('#scenarios').attr('class',css);
 		S('.scenario').attr('class','scenario '+css);
 		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
 		S('.noUi-connect').attr('class','noUi-connect '+css);
 
-		this.source = this.views[this.options.view].source;
+		this.options.source = this.views[this.options.view].source;
 
-		if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
+		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
 			this.loadScenarioData(function(){
 				this.buildMap();
 			});
@@ -212,7 +213,7 @@ S(document).ready(function(){
 	FES.prototype.setView = function(v){
 		if(this.views[v]){
 			this.options.view = v;
-			this.source = this.views[this.options.view].source;
+			this.options.source = this.views[this.options.view].source;
 			this.buildMap();
 		}else{
 			this.log.error('The view '+v+' does not exist!');
@@ -224,7 +225,7 @@ S(document).ready(function(){
 		if(this.parameters[v]){
 			this.options.parameter = v;
 			// Have we loaded the parameter/scenario?
-			if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
+			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
 				// Load the scenario data
 				this.loadScenarioData(function(){ this.buildMap(); });
 			}else{
@@ -252,30 +253,30 @@ S(document).ready(function(){
 
 	FES.prototype.loadedData = function(d,scenario,parameter){
 	
-		this.scenarios[scenario].data[parameter][this.source].raw = CSV2JSON(d,1);
-		this.scenarios[scenario].data[parameter][this.source].primaries = {'values':{},'fullrange':{}};
-		this.scenarios[scenario].data[parameter][this.source].LAD = {'values':{},'fullrange':{}};
+		this.data.scenarios[scenario].data[parameter][this.options.source].raw = CSV2JSON(d,1);
+		this.data.scenarios[scenario].data[parameter][this.options.source].primaries = {'values':{},'fullrange':{}};
+		this.data.scenarios[scenario].data[parameter][this.options.source].LAD = {'values':{},'fullrange':{}};
 		var r,c,v,p,lad;
 		var key = "Primary";
 		
 		// Find the column number for the column containing the Primary name
 		var col = -1;
-		for(i = 0; i < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; i++){
-			n = this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i];
-			if(parseFloat(n) == n) this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] = parseInt(n);
-			if(this.scenarios[scenario].data[parameter][this.source].raw.fields.name[i] == key) col = i;
+		for(i = 0; i < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; i++){
+			n = this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i];
+			if(parseFloat(n) == n) this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i] = parseInt(n);
+			if(this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i] == key) col = i;
 		}
 		if(col >= 0){
 			var min = 1e100;
 			var max = -1e100;
-			for(r = 0; r < this.scenarios[scenario].data[parameter][this.source].raw.rows.length; r++){
+			for(r = 0; r < this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows.length; r++){
 				// The primary key
-				pkey = this.scenarios[scenario].data[parameter][this.source].raw.rows[r][col];
-				this.scenarios[scenario].data[parameter][this.source].primaries.values[pkey] = {};
-				for(c = 0; c < this.scenarios[scenario].data[parameter][this.source].raw.fields.name.length; c++){
+				pkey = this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][col];
+				this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey] = {};
+				for(c = 0; c < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; c++){
 					if(c != col){
-						v = parseFloat(this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c]);
-						this.scenarios[scenario].data[parameter][this.source].primaries.values[pkey][this.scenarios[scenario].data[parameter][this.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.scenarios[scenario].data[parameter][this.source].raw.rows[r][c];
+						v = parseFloat(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]);
+						this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey][this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c];
 						if(!isNaN(v)){
 							min = Math.min(min,v);
 							max = Math.max(max,v);
@@ -283,38 +284,38 @@ S(document).ready(function(){
 					}
 				}
 			}
-			this.scenarios[scenario].data[parameter][this.source].primaries.fullrange = {'min':min,'max':max};
+			this.data.scenarios[scenario].data[parameter][this.options.source].primaries.fullrange = {'min':min,'max':max};
 			// Combine the data into Local Authority Districts
 			var min = 1e100;
 			var max = -1e100;
 			// For each primary
-			for(p in this.scenarios[scenario].data[parameter][this.source].primaries.values){
-				if(this.primary2lad[p]){
+			for(p in this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values){
+				if(this.data.primary2lad[p]){
 					// Loop over the LADs for this primary
-					for(lad in this.primary2lad[p]){
+					for(lad in this.data.primary2lad[p]){
 						// Loop over each key
-						for(key in this.scenarios[scenario].data[parameter][this.source].primaries.values[p]){
+						for(key in this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p]){
 							if(parseInt(key)==key){
 								// Zero the variable if necessary
-								if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad] = {};
-								if(!this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]) this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = 0;
+								if(!this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad]) this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad] = {};
+								if(!this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]) this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] = 0;
 								// Sum the fractional amount for this LAD/Primary
 								if(this.parameters[parameter].combine=="sum"){
-									this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] += this.primary2lad[p][lad]*this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key];
+									this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] += this.data.primary2lad[p][lad]*this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p][key];
 								}else if(this.parameters[parameter].combine=="max"){
-									this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key] = Math.max(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key],this.scenarios[scenario].data[parameter][this.source].primaries.values[p][key]);
+									this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] = Math.max(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key],this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p][key]);
 								}
 							
-								if(!isNaN(this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key])){
-									min = Math.min(min,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
-									max = Math.max(max,this.scenarios[scenario].data[parameter][this.source].LAD.values[lad][key]);
+								if(!isNaN(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key])){
+									min = Math.min(min,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
+									max = Math.max(max,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
 								}
 							}
 						}
 					}
 				}
 			}
-			this.scenarios[scenario].data[parameter][this.source].LAD.fullrange = {'min':min,'max':max};
+			this.data.scenarios[scenario].data[parameter][this.options.source].LAD.fullrange = {'min':min,'max':max};
 		}
 		
 		return this;
@@ -352,17 +353,17 @@ S(document).ready(function(){
 		}
 
 		var _obj = this;
-		var color = (this.scenarios[this.options.scenario].color||"#000000");
+		var color = (this.data.scenarios[this.options.scenario].color||"#000000");
 
-		if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
-			console.error('Scenario '+this.options.scenario+' not loaded',this.scenarios[this.options.scenario].data[this.options.parameter]);
+		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
+			console.error('Scenario '+this.options.scenario+' not loaded',this.data.scenarios[this.options.scenario].data[this.options.parameter]);
 			return this;
 		}
 		
 		var min = 0;
 		var max = 1;
 		var _obj = this;
-		var _scenario = this.scenarios[this.options.scenario].data[this.options.parameter][this.source];
+		var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source];
 
 		if(_scenario[this.options.view]){
 			var min = 1e100;
@@ -423,7 +424,7 @@ S(document).ready(function(){
 				}
 
 				// Make copies of variables we'll use inside functions
-				var _scenario = this.scenarios[this.options.scenario].data[this.options.parameter][this.source];
+				var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source];
 				var _obj = this;
 
 				// Re-build the layers for this view
@@ -466,7 +467,7 @@ S(document).ready(function(){
 							for(i in _scenario[view].values){
 								if(this.options.scale == "absolute"){
 									// We have pre-calculated the range
-									this.views[this.options.view].layers[l].range = this.scenarios[this.options.scenario].data[this.options.parameter][this.source][view].fullrange;
+									this.views[this.options.view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source][view].fullrange;
 								}else{
 									v = _scenario[view].values[i][this.options.key];
 									if(typeof v==="number"){
@@ -548,10 +549,10 @@ S(document).ready(function(){
 			var view = me.views[me.options.view].layers[attr.layer].id;
 			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values && me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key]){
-				v = me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key][me.options.key];
+			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
+				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key][me.options.key];
 			}
-			if(!v) console.log(v,me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values,key,me.options.key,me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key])
+			if(!v) console.log(v,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values,key,me.options.key,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key])
 			title = '?';
 			added = 0;
 			if(feature.properties){
@@ -618,8 +619,6 @@ S(document).ready(function(){
 
 
 	// Useful functions
-
-
 	function niceSize(b){
 		if(b > 1e12) return (b/1e12).toFixed(2)+" TB";
 		if(b > 1e9) return (b/1e9).toFixed(2)+" GB";
@@ -794,7 +793,6 @@ S(document).ready(function(){
 		return object;
 	}
 
-
 	String.prototype.regexLastIndexOf = function(regex, startpos) {
 		regex = (regex.global) ? regex : new RegExp(regex.source, "g" + (regex.ignoreCase ? "i" : "") + (regex.multiLine ? "m" : ""));
 		if(typeof (startpos) == "undefined") {
@@ -820,10 +818,12 @@ S(document).ready(function(){
 		if(attr.units) attr.units = "&thinsp;"+attr.units;
 		return '<div class="bar" style="'+makeGradient(a,b)+';border:'+attr.weight+'px solid '+attr.color+'"></div><span class="min" style="border-left:'+attr.weight+'px solid '+attr.color+'">'+attr.min.toLocaleString()+attr.units+'</span><span class="max" style="border-right:'+attr.weight+'px solid '+attr.color+'">'+attr.max.toLocaleString()+attr.units+'</span>';
 	}
+
 	function makeGradient(a,b){
 		if(!b) b = a;
 		return 'background: '+a+'; background: -moz-linear-gradient(left, '+a+' 0%, '+b+' 100%);background: -webkit-linear-gradient(left, '+a+' 0%,'+b+' 100%);background: linear-gradient(to right, '+a+' 0%,'+b+' 100%);';
 	}
+
 	function getRGBAstr(c,a){
         a = (typeof a==="number" ? a : 1.0);
         var rgb = "rgba(0,0,0,1)";
@@ -831,6 +831,7 @@ S(document).ready(function(){
         else if(c.indexOf('#')==0) rgb = "rgba("+parseInt(c.substr(1,2),16)+","+parseInt(c.substr(3,2),16)+","+parseInt(c.substr(5,2),16)+","+a+")";
         return rgb;
     }
+
 	function niceRange(mn,mx){
 
 		var dv,log10_dv,base,frac,options,distance,imin,tmin,i;
@@ -868,6 +869,7 @@ S(document).ready(function(){
 
 		return {'min': Math.floor(mn/inc) * inc, 'max': Math.ceil(mx/inc) * inc};
 	}
+
 	// Define a new instance of the FES
 	future = new FES();
 	
