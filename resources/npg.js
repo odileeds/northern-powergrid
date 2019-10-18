@@ -8,10 +8,13 @@ S(document).ready(function(){
 	// Main function
 	function FES(file){
 
-		this.scenario = "Community renewables";
-		this.view = "LAD";
-		this.key = (new Date()).getFullYear()+'';
-		this.parameter = "ev";
+		this.options = {
+			"scenario": "Community renewables",
+			"view": "LAD",
+			"key": (new Date()).getFullYear()+'',
+			"parameter": "ev",
+			"scale": "relative"
+		}
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
 			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
@@ -19,7 +22,6 @@ S(document).ready(function(){
 		};
 		this.logging = true;
 		this.scenarios = null;
-		this.scale = "relative";
 		this.layers = {
 			'LAD':{
 				'file': 'data/maps/LAD2019-npg.geojson'
@@ -93,7 +95,7 @@ S(document).ready(function(){
 
 		if(this.scenarios && S('#scenarios').length==0){
 			var html = "";
-			for(var s in this.scenarios) html += "<option"+(this.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.scenarios[s].css+"\"
+			for(var s in this.scenarios) html += "<option"+(this.options.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.options.scenarios[s].css+"\"
 			S('#scenario-holder').html('<select id="scenarios">'+html+'</select>');
 			S('#scenarios').on('change',{'me':this},function(e){
 				e.preventDefault();
@@ -102,7 +104,7 @@ S(document).ready(function(){
 		}
 		if(this.views && S('#view').length==0){
 			var html = "";
-			for(var l in this.views) html += "<option"+(this.view == l ? " selected=\"selected\"":"")+" value=\""+l+"\">"+this.views[l].title+"</option>";
+			for(var l in this.views) html += "<option"+(this.options.view == l ? " selected=\"selected\"":"")+" value=\""+l+"\">"+this.views[l].title+"</option>";
 			S('#view-holder').html('<select id="views">'+html+'</select>');
 			S('#views').on('change',{'me':this},function(e){
 				e.preventDefault();
@@ -111,7 +113,7 @@ S(document).ready(function(){
 		}
 		if(this.parameters && S('#parameters').length==0){
 			var html = "";
-			for(var p in this.parameters) html += "<option"+(this.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
+			for(var p in this.parameters) html += "<option"+(this.options.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 			S('#parameters').on('change',{'me':this},function(e){
 				e.preventDefault();
@@ -133,7 +135,7 @@ S(document).ready(function(){
 		// Create the slider
 		this.slider = document.getElementById('slider');
 		noUiSlider.create(this.slider, {
-			start: [parseInt(this.key)],
+			start: [parseInt(this.options.key)],
 			step: 1,
 			connect: true,
 			range: {
@@ -154,18 +156,18 @@ S(document).ready(function(){
 		});
 
 		
-		this.setScenario(this.scenario);
+		this.setScenario(this.options.scenario);
 		
 		return this;
 	}
 	
 	FES.prototype.loadScenarioData = function(callback){
-		S().ajax("data/scenarios/"+this.scenarios[this.scenario].data[this.parameter][this.source].file,{
+		S().ajax("data/scenarios/"+this.scenarios[this.options.scenario].data[this.options.parameter][this.source].file,{
 			'this':this,
 			'cache':false,
 			'dataType':'text',
-			'scenario': this.scenario,
-			'parameter': this.parameter,
+			'scenario': this.options.scenario,
+			'parameter': this.options.parameter,
 			'callback': callback,
 			'success': function(d,attr){
 				this.loadedData(d,attr.scenario,attr.parameter);
@@ -181,7 +183,7 @@ S(document).ready(function(){
 	FES.prototype.setScenario = function(scenario){
 
 		// Set the scenario
-		this.scenario = scenario;
+		this.options.scenario = scenario;
 
 		// Update the CSS class
 		css = this.scenarios[scenario].css;
@@ -192,9 +194,9 @@ S(document).ready(function(){
 		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
 		S('.noUi-connect').attr('class','noUi-connect '+css);
 
-		this.source = this.views[this.view].source;
+		this.source = this.views[this.options.view].source;
 
-		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
+		if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
 			this.loadScenarioData(function(){
 				this.buildMap();
 			});
@@ -209,8 +211,8 @@ S(document).ready(function(){
 
 	FES.prototype.setView = function(v){
 		if(this.views[v]){
-			this.view = v;
-			this.source = this.views[this.view].source;
+			this.options.view = v;
+			this.source = this.views[this.options.view].source;
 			this.buildMap();
 		}else{
 			this.log.error('The view '+v+' does not exist!');
@@ -220,9 +222,9 @@ S(document).ready(function(){
 
 	FES.prototype.setParameter = function(v){
 		if(this.parameters[v]){
-			this.parameter = v;
+			this.options.parameter = v;
 			// Have we loaded the parameter/scenario?
-			if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
+			if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
 				// Load the scenario data
 				this.loadScenarioData(function(){ this.buildMap(); });
 			}else{
@@ -233,7 +235,7 @@ S(document).ready(function(){
 	}
 	
 	FES.prototype.setScale = function(checked){
-		this.scale = (checked ? "absolute":"relative");
+		this.options.scale = (checked ? "absolute":"relative");
 		if(checked) S('#scale-holder').addClass('checked');
 		else S('#scale-holder').removeClass('checked');
 		this.buildMap();
@@ -241,7 +243,7 @@ S(document).ready(function(){
 
 	FES.prototype.setYear = function(y){
 		if(this.map){
-			this.key = y;
+			this.options.key = y;
 			this.buildMap();
 		}
 		S('.year').html(" ("+y+")");
@@ -350,23 +352,23 @@ S(document).ready(function(){
 		}
 
 		var _obj = this;
-		var color = (this.scenarios[this.scenario].color||"#000000");
+		var color = (this.scenarios[this.options.scenario].color||"#000000");
 
-		if(!this.scenarios[this.scenario].data[this.parameter][this.source].raw){
-			console.error('Scenario '+this.scenario+' not loaded',this.scenarios[this.scenario].data[this.parameter]);
+		if(!this.scenarios[this.options.scenario].data[this.options.parameter][this.source].raw){
+			console.error('Scenario '+this.options.scenario+' not loaded',this.scenarios[this.options.scenario].data[this.options.parameter]);
 			return this;
 		}
 		
 		var min = 0;
 		var max = 1;
 		var _obj = this;
-		var _scenario = this.scenarios[this.scenario].data[this.parameter][this.source];
+		var _scenario = this.scenarios[this.options.scenario].data[this.options.parameter][this.source];
 
-		if(_scenario[this.view]){
+		if(_scenario[this.options.view]){
 			var min = 1e100;
 			var max = -1e100;
-			for(i in _scenario[this.view]){
-				v = _scenario[this.view][i][this.key];
+			for(i in _scenario[this.options.view]){
+				v = _scenario[this.options.view][i][this.options.key];
 				if(typeof v==="number"){
 					min = Math.min(v,min);
 					max = Math.max(v,max);
@@ -378,9 +380,9 @@ S(document).ready(function(){
 
 			var gotlayers = true;
 
-			for(var l = 0 ; l < this.views[this.view].layers.length; l++){
+			for(var l = 0 ; l < this.views[this.options.view].layers.length; l++){
 
-				layer = this.views[this.view].layers[l];
+				layer = this.views[this.options.view].layers[l];
 
 				if(!this.layers[layer.id].data){
 
@@ -391,7 +393,7 @@ S(document).ready(function(){
 						'this':this,
 						'cache':false,
 						'dataType':'json',
-						'view': this.view,
+						'view': this.options.view,
 						'id': layer.id,
 						'complete': function(d,attr){
 							this.layers[attr.id].data = d;
@@ -421,11 +423,11 @@ S(document).ready(function(){
 				}
 
 				// Make copies of variables we'll use inside functions
-				var _scenario = this.scenarios[this.scenario].data[this.parameter][this.source];
+				var _scenario = this.scenarios[this.options.scenario].data[this.options.parameter][this.source];
 				var _obj = this;
 
 				// Re-build the layers for this view
-				for(var l = 0; l < this.views[this.view].layers.length; l++){
+				for(var l = 0; l < this.views[this.options.view].layers.length; l++){
 					
 					var highlightFeature = function(e){
 						var layer = e.target;
@@ -442,53 +444,53 @@ S(document).ready(function(){
 						for(var l = 0; l < _geojson.length; l++) _geojson[l].resetStyle(e.target);
 					}
 					
-					this.views[this.view].layers[l].geoattr = {
+					this.views[this.options.view].layers[l].geoattr = {
 						"style": {
-							"color": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.color||color : color),
-							"opacity": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.opacity||1 : 1),
-							"weight": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.strokeWidth||0.5 : 0.5),
-							"fillOpacity": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillOpacity||0 : 0),
-							"fillColor": (this.views[this.view].layers[l].boundary ? this.views[this.view].layers[l].boundary.fillColor||color : color)
+							"color": (this.views[this.options.view].layers[l].boundary ? this.views[this.options.view].layers[l].boundary.color||color : color),
+							"opacity": (this.views[this.options.view].layers[l].boundary ? this.views[this.options.view].layers[l].boundary.opacity||1 : 1),
+							"weight": (this.views[this.options.view].layers[l].boundary ? this.views[this.options.view].layers[l].boundary.strokeWidth||0.5 : 0.5),
+							"fillOpacity": (this.views[this.options.view].layers[l].boundary ? this.views[this.options.view].layers[l].boundary.fillOpacity||0 : 0),
+							"fillColor": (this.views[this.options.view].layers[l].boundary ? this.views[this.options.view].layers[l].boundary.fillColor||color : color)
 						}
 					};
 
-					var _id = this.views[this.view].layers[l].id;
+					var _id = this.views[this.options.view].layers[l].id;
 
-					if(this.views[this.view].layers[l].heatmap){
+					if(this.views[this.options.view].layers[l].heatmap){
 
 						var _l = l;
-						this.views[this.view].layers[l].range = {'min':0,'max':1};
-						view = this.views[this.view].layers[l].id;
+						this.views[this.options.view].layers[l].range = {'min':0,'max':1};
+						view = this.views[this.options.view].layers[l].id;
 						if(_scenario[view]){
-							this.views[this.view].layers[l].range = {'min':1e100,'max':-1e100};
+							this.views[this.options.view].layers[l].range = {'min':1e100,'max':-1e100};
 							for(i in _scenario[view].values){
-								if(this.scale == "absolute"){
+								if(this.options.scale == "absolute"){
 									// We have pre-calculated the range
-									this.views[this.view].layers[l].range = this.scenarios[this.scenario].data[this.parameter][this.source][view].fullrange;
+									this.views[this.options.view].layers[l].range = this.scenarios[this.options.scenario].data[this.options.parameter][this.source][view].fullrange;
 								}else{
-									v = _scenario[view].values[i][this.key];
+									v = _scenario[view].values[i][this.options.key];
 									if(typeof v==="number"){
-										this.views[this.view].layers[l].range.min = Math.min(v,this.views[this.view].layers[l].range.min);
-										this.views[this.view].layers[l].range.max = Math.max(v,this.views[this.view].layers[l].range.max);
+										this.views[this.options.view].layers[l].range.min = Math.min(v,this.views[this.options.view].layers[l].range.min);
+										this.views[this.options.view].layers[l].range.max = Math.max(v,this.views[this.options.view].layers[l].range.max);
 									}
 								}
 							}
 						}
 						
 						// Get a nicer range
-						this.views[this.view].layers[l].range = niceRange(this.views[this.view].layers[l].range.min,this.views[this.view].layers[l].range.max);
+						this.views[this.options.view].layers[l].range = niceRange(this.views[this.options.view].layers[l].range.min,this.views[this.options.view].layers[l].range.max);
 						// Update the scale bar
 						S('#scale').html(makeScaleBar(getRGBAstr(color,0.0),getRGBAstr(color,0.8),{
-							'min': this.views[this.view].layers[l].range.min,
-							'max': this.views[this.view].layers[l].range.max,
-							'weight': this.views[this.view].layers[l].geoattr.style.weight,
-							'color': this.views[this.view].layers[l].geoattr.style.color,
-							'units': this.parameters[this.parameter].units
+							'min': this.views[this.options.view].layers[l].range.min,
+							'max': this.views[this.options.view].layers[l].range.max,
+							'weight': this.views[this.options.view].layers[l].geoattr.style.weight,
+							'color': this.views[this.options.view].layers[l].geoattr.style.color,
+							'units': this.parameters[this.options.parameter].units
 						}));
 						
 						// Define the GeoJSON attributes for this layer
-						this.views[this.view].layers[l].geoattr.style = function(feature){
-							var layer = _obj.views[_obj.view].layers[_l];
+						this.views[this.options.view].layers[l].geoattr.style = function(feature){
+							var layer = _obj.views[_obj.options.view].layers[_l];
 							var props = {
 								"color": (layer.boundary ? layer.boundary.color||color : color),
 								"fillColor": (layer.boundary ? layer.boundary.fillColor||color : color)
@@ -498,9 +500,9 @@ S(document).ready(function(){
 								var data = _scenario[layer.id];
 								if(layer.id=="LAD"){
 									// Need to convert primaries to LAD
-									if(data.values[feature.properties.lad19cd]) v = (data.values[feature.properties.lad19cd][_obj.key]-layer.range.min)/(layer.range.max-layer.range.min);
+									if(data.values[feature.properties.lad19cd]) v = (data.values[feature.properties.lad19cd][_obj.options.key]-layer.range.min)/(layer.range.max-layer.range.min);
 								}else if(layer.id=="primaries"){
-									v = (data.values[feature.properties.Primary][_obj.key] - layer.range.min)/(layer.range.max - layer.range.min);
+									v = (data.values[feature.properties.Primary][_obj.options.key] - layer.range.min)/(layer.range.max - layer.range.min);
 								}
 								v *= 0.8; // Maximum opacity
 								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);
@@ -510,7 +512,7 @@ S(document).ready(function(){
 							return props;
 						};
 
-						this.views[this.view].layers[l].geoattr.onEachFeature = function(feature, layer){
+						this.views[this.options.view].layers[l].geoattr.onEachFeature = function(feature, layer){
 							var popup = popuptext(feature,{'this':_obj,'layer':_l});
 							attr = {
 								'mouseover':highlightFeature,
@@ -523,17 +525,17 @@ S(document).ready(function(){
 
 				}
 
-				for(var l = 0; l < this.views[this.view].layers.length; l++){
+				for(var l = 0; l < this.views[this.options.view].layers.length; l++){
 
-					id = this.views[this.view].layers[l].id
-					this.layers[id].layer = L.geoJSON(this.layers[id].data,this.views[this.view].layers[l].geoattr);
+					id = this.views[this.options.view].layers[l].id
+					this.layers[id].layer = L.geoJSON(this.layers[id].data,this.views[this.options.view].layers[l].geoattr);
 					_geojson.push(this.layers[id].layer);
 
 					if(this.layers[id].layer){
 						this.layers[id].layer.addTo(this.map);
 						S('#map .spinner').css({'display':'none'});
 					}
-					this.layers[id].layer.setStyle(this.views[this.view].layers[l].geoattr.style);
+					this.layers[id].layer.setStyle(this.views[this.options.view].layers[l].geoattr.style);
 				}
 			}
 		}
@@ -543,13 +545,13 @@ S(document).ready(function(){
 			// does this feature have a property named popupContent?
 			popup = '';
 			me = attr['this'];
-			var view = me.views[me.view].layers[attr.layer].id;
+			var view = me.views[me.options.view].layers[attr.layer].id;
 			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			v = 0;
-			if(me.scenarios[me.scenario].data[me.parameter][me.source][view].values && me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key]){
-				v = me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key][me.key];
+			if(me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values && me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key]){
+				v = me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key][me.options.key];
 			}
-			if(!v) console.log(v,me.scenarios[me.scenario].data[me.parameter][me.source][view].values,key,me.key,me.scenarios[me.scenario].data[me.parameter][me.source][view].values[key])
+			if(!v) console.log(v,me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values,key,me.options.key,me.scenarios[me.options.scenario].data[me.options.parameter][me.source][view].values[key])
 			title = '?';
 			added = 0;
 			if(feature.properties){
@@ -559,8 +561,8 @@ S(document).ready(function(){
 					added++;
 				}*/
 			}
-			var dp = (typeof me.parameters[me.parameter].dp==="number" ? me.parameters[me.parameter].dp : 2);
-			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.parameter].title+' '+me.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp))+''+(me.parameters[me.parameter].units ? '&thinsp;'+me.parameters[me.parameter].units : '');
+			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
+			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp))+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
 			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
 			return popup;
 		}
