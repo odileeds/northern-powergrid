@@ -12,6 +12,9 @@
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-CommunityRenewables.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-CommunityRenewables.csv" }
 			}
 		}
 	},
@@ -28,6 +31,9 @@
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-ConsumerEvolution.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-ConsumerEvolution.csv" }
 			}
 		}
 	},
@@ -44,6 +50,9 @@
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SteadyProgression.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SteadyProgression.csv" }
 			}
 		}
 	},
@@ -60,6 +69,9 @@
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-TwoDegrees.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-TwoDegrees.csv" }
 			}
 		}
 	}

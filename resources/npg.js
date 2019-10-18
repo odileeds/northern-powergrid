@@ -19,7 +19,8 @@ S(document).ready(function(){
 		this.parameters = {
 			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
 			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
-			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 }
+			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 },
+			'windcapacity':{ 'title': 'Installed wind capacity', 'combine': 'sum', 'units':'MW', 'dp': 3 }
 		};
 		this.data = { 'scenarios': null, 'primary2lad': null };
 		this.logging = true;
