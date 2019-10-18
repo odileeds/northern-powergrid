@@ -276,6 +276,7 @@ S(document).ready(function(){
 				this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey] = {};
 				for(c = 0; c < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; c++){
 					if(c != col){
+						if(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]=="") this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c] = 0;
 						v = parseFloat(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]);
 						this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey][this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c];
 						if(!isNaN(v)){
@@ -306,10 +307,11 @@ S(document).ready(function(){
 								}else if(this.parameters[parameter].combine=="max"){
 									this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] = Math.max(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key],this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p][key]);
 								}
-							
 								if(!isNaN(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key])){
 									min = Math.min(min,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
 									max = Math.max(max,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
+								}else{
+									console.warn('Problem with value',scenario,parameter,lad,key);
 								}
 							}
 						}
@@ -483,6 +485,7 @@ S(document).ready(function(){
 							for(i in _scenario[view].values){
 								if(this.options.scale == "absolute"){
 									// We have pre-calculated the range
+
 									this.views[this.options.view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source][view].fullrange;
 								}else{
 									v = _scenario[view].values[i][this.options.key];
@@ -564,11 +567,11 @@ S(document).ready(function(){
 			me = attr['this'];
 			var view = me.views[me.options.view].layers[attr.layer].id;
 			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
-			v = 0;
+			v = null;
 			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
 				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key][me.options.key];
 			}
-			if(!v) console.log(v,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values,key,me.options.key,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key])
+			if(typeof v!=="number") console.log('popuptext',v,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values,key,me.options.key,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key])
 			title = '?';
 			added = 0;
 			if(feature.properties){
