@@ -20,7 +20,8 @@ S(document).ready(function(){
 			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
 			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
 			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 },
-			'windcapacity':{ 'title': 'Installed wind capacity', 'combine': 'sum', 'units':'MW', 'dp': 3 }
+			'windcapacity':{ 'title': 'Installed wind capacity', 'combine': 'sum', 'units':'MW', 'dp': 3 },
+			'heatpumps':{ 'title': 'Heat pumps', 'combine': 'sum', 'units':'', 'dp': 0 }
 		};
 		this.data = { 'scenarios': null, 'primary2lad': null };
 		this.logging = true;
@@ -197,15 +198,20 @@ S(document).ready(function(){
 		S('.noUi-connect').attr('class','noUi-connect '+css);
 
 		this.options.source = this.views[this.options.view].source;
-
-		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
-			this.loadScenarioData(function(){
-				this.buildMap();
-			});
+		if(!this.data.scenarios[scenario].data[this.options.parameter]){
+			this.message('We have no data for '+this.parameters[this.options.parameter].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
 		}else{
-			this.message('',{'id':'error'});
-			// Re-draw the map
-			this.buildMap();
+			this.message('',{'id':'error','type':'ERROR'});
+
+			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
+				this.loadScenarioData(function(){
+					this.buildMap();
+				});
+			}else{
+				this.message('',{'id':'error'});
+				// Re-draw the map
+				this.buildMap();
+			}
 		}
 
 		return this;
@@ -217,7 +223,7 @@ S(document).ready(function(){
 			this.options.source = this.views[this.options.view].source;
 			this.buildMap();
 		}else{
-			this.log.error('The view '+v+' does not exist!');
+			this.message('The view '+v+' does not exist!',{'id':'error','type':'ERROR'});
 		}
 		return this;
 	}
@@ -225,12 +231,20 @@ S(document).ready(function(){
 	FES.prototype.setParameter = function(v){
 		if(this.parameters[v]){
 			this.options.parameter = v;
+			this.message('',{'id':'error','type':'ERROR'})
 			// Have we loaded the parameter/scenario?
-			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
-				// Load the scenario data
-				this.loadScenarioData(function(){ this.buildMap(); });
-			}else{
-				this.buildMap();
+			if(!this.data.scenarios[this.options.scenario]) this.message('We have no data for '+this.parameters[v].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
+			else{
+				if(!this.data.scenarios[this.options.scenario].data[this.options.parameter]){
+					this.message('We have no data for '+this.parameters[v].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
+				}else{
+					if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
+						// Load the scenario data
+						this.loadScenarioData(function(){ this.buildMap(); });
+					}else{
+						this.buildMap();
+					}
+				}
 			}
 		}
 		return this;
@@ -419,7 +433,7 @@ S(document).ready(function(){
 				this.message('',{'id':'warn','type':'WARNING'});
 				if(layer.id=="primaries"){
 					var missing = '';
-					for(var p in this.data.scenarios[this.options.scenario].data.ev.primary.primaries.values){
+					for(var p in this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values){
 						match = false;
 						for(var f = 0; f < this.layers[layer.id].data.features.length; f++){
 							if(this.layers[layer.id].data.features[f].properties.Primary==p) match = true;

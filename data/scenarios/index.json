@@ -72,6 +72,9 @@
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-TwoDegrees.csv" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-TwoDegrees.csv" }
 			}
 		}
 	}
