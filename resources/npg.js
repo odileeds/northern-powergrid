@@ -188,6 +188,11 @@ S(document).ready(function(){
 		// Set the scenario
 		this.options.scenario = scenario;
 
+		// Clear messages
+		this.message('',{'id':'warn','type':'WARNING'});
+		this.message('',{'id':'error','type':'ERROR'});
+				
+				
 		// Update the CSS class
 		css = this.data.scenarios[scenario].css;
 		S('header .title').attr('class','title '+css);
@@ -218,6 +223,11 @@ S(document).ready(function(){
 	}
 
 	FES.prototype.setView = function(v){
+
+		// Clear messages
+		this.message('',{'id':'warn','type':'WARNING'});
+		this.message('',{'id':'error','type':'ERROR'});
+
 		if(this.views[v]){
 			this.options.view = v;
 			this.options.source = this.views[this.options.view].source;
@@ -229,6 +239,11 @@ S(document).ready(function(){
 	}
 
 	FES.prototype.setParameter = function(v){
+
+		// Clear messages
+		this.message('',{'id':'warn','type':'WARNING'});
+		this.message('',{'id':'error','type':'ERROR'});
+
 		if(this.parameters[v]){
 			this.options.parameter = v;
 			this.message('',{'id':'error','type':'ERROR'})
@@ -270,7 +285,7 @@ S(document).ready(function(){
 	
 		this.data.scenarios[scenario].data[parameter][this.options.source].raw = CSV2JSON(d,1);
 		this.data.scenarios[scenario].data[parameter][this.options.source].primaries = {'values':{},'fullrange':{}};
-		this.data.scenarios[scenario].data[parameter][this.options.source].LAD = {'values':{},'fullrange':{}};
+		this.data.scenarios[scenario].data[parameter][this.options.source].LAD = {'values':{},'fullrange':{},'primarylist':{}};
 		var r,c,v,p,lad;
 		var key = "Primary";
 		
@@ -288,6 +303,7 @@ S(document).ready(function(){
 				// The primary key
 				pkey = this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][col];
 				this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey] = {};
+
 				for(c = 0; c < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; c++){
 					if(c != col){
 						if(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]=="") this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c] = 0;
@@ -338,6 +354,53 @@ S(document).ready(function(){
 		return this;
 	}
 
+	FES.prototype.buildBarChart = function(attr){
+
+		if(!attr) attr = {};
+
+		if(attr.id){
+
+			var data = [];
+			
+			for(var p in this.data.primary2lad){
+				if(this.data.primary2lad[p][attr.id]){
+					data.push([p+' ('+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'%)',this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
+				}
+			}
+
+			data.sort(function(a, b) {
+				if(a[1]===b[1]) return 0;
+				else return (a[1] < b[1]) ? -1 : 1;
+			}).reverse();
+			
+			// Create the barchart object. We'll add a function to
+			// customise the class of the bar depending on the key.
+			var chart = new S.barchart('#barchart',{
+				'formatKey': function(key){
+					return '';
+				}
+			});
+
+			// Send the data array and bin size then draw the chart
+			chart.setData(data).setBins({ 'mintick': 5 }).draw();
+			parameter = this.parameters[this.options.parameter].title+' '+this.options.key;
+			units = this.parameters[this.options.parameter].units;
+			dp = this.parameters[this.options.parameter].dp;
+			
+
+			// Add an event
+			chart.on('barover',function(e){
+				S('.balloon').remove();
+				S(e.event.currentTarget).find('.bar').append(
+					"<div class=\"balloon\">"+this.bins[e.bin].key+"<br />"+parameter+": "+(this.bins[e.bin].value).toFixed(dp).replace(/\.?0+$/,"")+(units ? '&thinsp;'+units:'')+"</div>"
+				);
+			});
+			S('.barchart table .bar').css({'background-color':this.data.scenarios[this.options.scenario].color});
+		}else{
+			S(attr.el).find('#barchart').remove();
+		}
+	}
+
 	FES.prototype.buildMap = function(){
 
 		var bounds = L.latLngBounds(L.latLng(56.01680,2.43896),L.latLng(52.82268,-5.603027));
@@ -354,10 +417,16 @@ S(document).ready(function(){
 			});
 		}
 
+		var _obj = this;
 		if(!this.map){
 			var mapel = S('#map');
 			var mapid = mapel.attr('id');
 			this.map = L.map(mapid,{'scrollWheelZoom':true}).fitBounds(bounds);
+			
+			this.map.on('popupopen',function(e){
+				// Update the bar chart in the popup
+				_obj.buildBarChart({'el':e.popup._contentNode,'id':e.popup._source.feature.properties.lad19cd});
+			});
 			this.map.attributionControl._attributions = {};
 			this.map.attributionControl.addAttribution('Vis: <a href="https://odileeds.org/projects/">ODI Leeds</a>, Data: <a href="https://cms.npproductionadmin.net/generation-availability-map">Northern Powergrid</a>');
 			
@@ -369,14 +438,13 @@ S(document).ready(function(){
 			}).addTo(this.map);
 		}
 
-		var _obj = this;
 		var color = (this.data.scenarios[this.options.scenario].color||"#000000");
 
 		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
 			console.error('Scenario '+this.options.scenario+' not loaded',this.data.scenarios[this.options.scenario].data[this.options.parameter]);
 			return this;
 		}
-		
+
 		var min = 0;
 		var max = 1;
 		var _obj = this;
@@ -547,10 +615,10 @@ S(document).ready(function(){
 						};
 
 						this.views[this.options.view].layers[l].geoattr.onEachFeature = function(feature, layer){
-							var popup = popuptext(feature,{'this':_obj,'layer':_l});
+							var popup = popuptext(feature,{'this':_obj,'layer':_l,'maxWidth': 'auto'});
 							attr = {
 								'mouseover':highlightFeature,
-								'mouseout': resetHighlight,
+								'mouseout': resetHighlight
 							}
 							if(popup) layer.bindPopup(popup);
 							layer.on(attr);
@@ -597,7 +665,7 @@ S(document).ready(function(){
 			}
 			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
 			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp))+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
-			if(title) popup = '<h3>'+(title)+'</h3>'+popup;
+			if(title) popup = '<h3>'+(title)+'</h3><div id="barchart"></div>'+popup;
 			return popup;
 		}
 

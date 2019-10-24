@@ -7,8 +7,10 @@
 	<link rel="StyleSheet" href="resources/nouislider.min.css" type="text/css" />
 	<link rel="StyleSheet" href="resources/leaflet.css" type="text/css" />
 	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
+	<link rel="stylesheet" href="resources/stuquery.barchart.css" type="text/css" />
 	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 	<script type="text/javascript" src="resources/stuquery.js"></script>
+	<script type="text/javascript" src="resources/stuquery.barchart.min.js"></script>
 	<script type="text/javascript" src="resources/nouislider.min.js"></script>
 	<script type="text/javascript" src="resources/npg.js"></script>
 	<script type="text/javascript" src="resources/leaflet.js"></script>
@@ -45,6 +47,15 @@
 	#scale .min { float: left; padding-left: 0.25em; }
 	#scale .max { float: right; padding-right: 0.25em; }
 	#scale .range { display: block; height: 1.5em; }
+
+	/* Bar chart */
+	#barchart { height: 100px; width: 300px; margin-bottom: 0.5em; }
+	#barchart .antibar{ display: none; }
+	#barchart .label { display: none; }
+	.leaflet-popup-content table td:first-child { padding-right: 0; }
+	.leaflet-container a { color: inherit; }
+	.barchart .balloon { background-color: black; color: white; text-align: left; }
+	.barchart .balloon::after { border-left-color: black; }
 
 
 	/* form toggle */
