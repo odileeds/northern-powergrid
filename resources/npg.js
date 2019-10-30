@@ -16,13 +16,7 @@ S(document).ready(function(){
 			"scale": "relative",
 			"source": null
 		}
-		this.parameters = {
-			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
-			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
-			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 },
-			'windcapacity':{ 'title': 'Installed wind capacity', 'combine': 'sum', 'units':'MW', 'dp': 3 },
-			'heatpumps':{ 'title': 'Heat pumps', 'combine': 'sum', 'units':'', 'dp': 0 }
-		};
+		this.parameters = {};
 		this.data = { 'scenarios': null, 'primary2lad': null };
 		this.logging = true;
 		this.layers = {
@@ -67,19 +61,31 @@ S(document).ready(function(){
 			}
 		};
 		
-		S().ajax("data/primaries2lad.json",{
+		
+		S().ajax("data/scenarios/config.json",{
 			'this':this,
 			'cache':false,
 			'dataType':'json',
 			'success': function(d){
-				this.data.primary2lad = d;
-				S().ajax("data/scenarios/index.json",{
+				this.parameters = d;
+				S().ajax("data/primaries2lad.json",{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
 					'success': function(d){
-						this.data.scenarios = d;
-						this.init();
+						this.data.primary2lad = d;
+						S().ajax("data/scenarios/index.json",{
+							'this':this,
+							'cache':false,
+							'dataType':'json',
+							'success': function(d){
+								this.data.scenarios = d;
+								this.init();
+							},
+							'error': function(e,attr){
+								this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+							}
+						});
 					},
 					'error': function(e,attr){
 						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
@@ -664,7 +670,7 @@ S(document).ready(function(){
 				}*/
 			}
 			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
-			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp))+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
+			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp)).toLocaleString()+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
 			if(title) popup = '<h3>'+(title)+'</h3><div id="barchart"></div>'+popup;
 			return popup;
 		}
