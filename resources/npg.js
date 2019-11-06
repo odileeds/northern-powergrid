@@ -398,7 +398,7 @@ S(document).ready(function(){
 			chart.on('barover',function(e){
 				S('.balloon').remove();
 				S(e.event.currentTarget).find('.bar').append(
-					"<div class=\"balloon\">"+this.bins[e.bin].key+"<br />"+parameter+": "+(this.bins[e.bin].value).toFixed(dp)+(units ? '&thinsp;'+units:'')+"</div>"
+					"<div class=\"balloon\">"+this.bins[e.bin].key+"<br />"+parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:'')+"</div>"
 				);
 			});
 			S('.barchart table .bar').css({'background-color':this.data.scenarios[this.options.scenario].color});
