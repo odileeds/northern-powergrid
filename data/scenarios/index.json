@@ -10,8 +10,14 @@
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-CommunityRenewables.csv" }
 			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-CommunityRenewables.csv" }
+			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-CommunityRenewables.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-CommunityRenewables.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-CommunityRenewables.csv" }
@@ -53,8 +59,14 @@
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-ConsumerEvolution.csv" }
 			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-ConsumerEvolution.csv" }
+			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-ConsumerEvolution.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-ConsumerEvolution.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-ConsumerEvolution.csv" }
@@ -96,8 +108,14 @@
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-SteadyProgression.csv" }
 			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SteadyProgression.csv" }
+			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SteadyProgression.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SteadyProgression.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SteadyProgression.csv" }
@@ -139,8 +157,14 @@
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-TwoDegrees.csv" }
 			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-TwoDegrees.csv" }
+			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-TwoDegrees.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-TwoDegrees.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-TwoDegrees.csv" }
