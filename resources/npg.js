@@ -370,7 +370,7 @@ S(document).ready(function(){
 			
 			for(var p in this.data.primary2lad){
 				if(this.data.primary2lad[p][attr.id]){
-					data.push([p+' ('+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'%)',this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
+					data.push([(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% of '+p,this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
 				}
 			}
 
