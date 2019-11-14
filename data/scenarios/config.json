@@ -4,7 +4,6 @@
 	"peakdemandcf": { "title": "Peak demand with customer flexibility", "combine": "max", "units":"MW", "dp": 3 },
 	"peakutilisation": { "title": "Peak utilisation", "combine": "max", "units":"%", "dp": 1 },
 	"peakutilisationcf": { "title": "Peak utilisation with customer flexibility", "combine": "max", "units":"%", "dp": 1 },
-	"wind": { "title": "Wind generation", "combine": "max", "units":"MW", "dp": 3 },
 	"windcapacity": { "title": "Installed wind capacity", "combine": "sum", "units":"MW", "dp": 3 },
 	"heatpumps": { "title": "Heat pumps", "combine": "sum", "units":"", "dp": 0 },
 	"domestic-consumption": { "title": "Domestic consumption", "combine": "sum", "units":"MWh", "dp": 0 },
