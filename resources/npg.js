@@ -226,6 +226,17 @@ S(document).ready(function(){
 	
 	}
 	
+	FES.prototype.setScenarioColours = function(scenario){
+		var css = this.data.scenarios[scenario].css;
+		S('header .title').attr('class','title '+css);
+		S('#scenario .about').html(this.data.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
+		S('#scenarios').attr('class',css);
+		S('.scenario').attr('class','scenario '+css);
+		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
+		S('.noUi-connect').attr('class','noUi-connect '+css);
+		return this;
+	}
+
 	FES.prototype.setScenario = function(scenario){
 
 		// Set the scenario
@@ -237,13 +248,7 @@ S(document).ready(function(){
 				
 				
 		// Update the CSS class
-		css = this.data.scenarios[scenario].css;
-		S('header .title').attr('class','title '+css);
-		S('#scenario .about').html(this.data.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
-		S('#scenarios').attr('class',css);
-		S('.scenario').attr('class','scenario '+css);
-		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
-		S('.noUi-connect').attr('class','noUi-connect '+css);
+		this.setScenarioColours(scenario);
 
 		this.options.source = this.views[this.options.view].source;
 		if(!this.data.scenarios[scenario].data[this.options.parameter]){
@@ -320,7 +325,7 @@ S(document).ready(function(){
 			this.options.key = y;
 			this.buildMap();
 		}
-		S('.year').html(" ("+y+")");
+		S('.year').html(y);
 		return this;
 	}
 
@@ -487,6 +492,16 @@ S(document).ready(function(){
 				subdomains: 'abcd',
 				maxZoom: 19
 			}).addTo(this.map);
+			
+			var info = L.control({'position':'topright'});
+			info.onAdd = function(map){
+				this._div = L.DomUtil.create('div','scenario');
+				this._div.innerHTML = '<div class="year padded">'+_obj.options.key+'</div>';
+				return this._div;
+			}
+			info.addTo(this.map);
+			this.setScenarioColours(this.options.scenario);
+			
 		}
 
 		var color = (this.data.scenarios[this.options.scenario].color||"#000000");

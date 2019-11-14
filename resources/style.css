@@ -583,6 +583,7 @@ footer ul { margin-left: 2em; }
 .noUi-pips-horizontal { height: auto; }
 button:disabled { opacity: 0.8; filter: grayscale(100%); cursor: not-allowed; }
 #play, #pause { line-height: 1.2em; }
+.leaflet-control-container .year { font-size: 1em; font-weight: bold; padding: 0.5em; }
 
 @media only screen and (max-width: 1000px) {
 	body{ overflow-x: hidden; }
