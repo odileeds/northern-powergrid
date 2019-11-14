@@ -1,7 +1,7 @@
 /*!
  * ODI Leeds Future Energy Scenario viewer
  */
-var future;
+var dfes;
 
 S(document).ready(function(){
 
@@ -368,9 +368,17 @@ S(document).ready(function(){
 
 			var data = [];
 			
+			// Work out the Local Authority name
+			var lad19nm = attr.id;
+			if(this.layers.LAD){
+				for(var c = 0; c < this.layers.LAD.data.features.length; c++){
+					if(this.layers.LAD.data.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LAD.data.features[c].properties.lad19nm;
+				}
+			}
+			
 			for(var p in this.data.primary2lad){
 				if(this.data.primary2lad[p][attr.id]){
-					data.push([(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% of '+p,this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
+					data.push([p+'<br />Total: %VALUE%<br />'+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
 				}
 			}
 
@@ -398,7 +406,7 @@ S(document).ready(function(){
 			chart.on('barover',function(e){
 				S('.balloon').remove();
 				S(e.event.currentTarget).find('.bar').append(
-					"<div class=\"balloon\">"+this.bins[e.bin].key+"<br />"+parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:'')+"</div>"
+					"<div class=\"balloon\">"+this.bins[e.bin].key.replace(/%VALUE%/,parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
 				);
 			});
 			S('.barchart table .bar').css({'background-color':this.data.scenarios[this.options.scenario].color});
@@ -409,7 +417,7 @@ S(document).ready(function(){
 
 	FES.prototype.buildMap = function(){
 
-		var bounds = L.latLngBounds(L.latLng(56.01680,2.43896),L.latLng(52.82268,-5.603027));
+		var bounds = L.latLngBounds(L.latLng(56.01680,2.35107),L.latLng(52.6497,-5.5151));
 		
 		function makeMarker(colour){
 			return L.divIcon({
@@ -664,13 +672,10 @@ S(document).ready(function(){
 			added = 0;
 			if(feature.properties){
 				if(feature.properties.Primary || feature.properties.lad19nm) title = (feature.properties.Primary || feature.properties.lad19nm);
-				/*if(feature.properties.lad19cd){
-					popup += (added > 0 ? '<br />':'')+'<strong>Code:</strong> '+feature.properties.lad19cd;
-					added++;
-				}*/
 			}
 			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
-			popup += (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp)).toLocaleString()+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
+			var value = (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp)).toLocaleString()+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
+			popup = popup.replace(/\%VALUE\%/g,value);
 			if(title) popup = '<h3>'+(title)+'</h3><div id="barchart"></div>'+popup;
 			return popup;
 		}
@@ -978,6 +983,6 @@ S(document).ready(function(){
 	}
 
 	// Define a new instance of the FES
-	future = new FES();
+	dfes = new FES();
 	
 });
