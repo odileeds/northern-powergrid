@@ -118,8 +118,8 @@ h2 { font-size: 1.7em; }
 h3 { font-size: 1.4em; }
 strong { font-weight: 700; }
 em { font-style: italic; }
-button, a.button { border: 0px; font-size: 1em; background-color: #efefef; color: black!important; text-decoration: none!important; display: inline-block; padding: 0.5em 1em; cursor: pointer; }
-button:hover, a.button:hover { background-color: #333333!important; color: #efefef!important; }
+button, a.button { border: 0px; font-size: 1em; background-color: #efefef; color: black; text-decoration: none!important; display: inline-block; padding: 0.5em 1em; cursor: pointer; }
+button:hover, a.button:hover { background-color: #333333!important; color: #efefef; }
 a:hover { text-decoration: underline; }
 h2 a, h3 a,p a, #left a { text-decoration: underline; color: #178cff; }
 h2 a:visited, h3 a:visited, p a:visited, #left a:visited { color: #722ea5; }
@@ -580,6 +580,9 @@ footer ul { margin-left: 2em; }
 .toggle-bg, .toggle-bg input { width: 2.5em; }
 .toggle-label1, .toggle-label2 { top: -0.25em; }
 .switch { width: 1.25em; }
+.noUi-pips-horizontal { height: auto; }
+button:disabled { opacity: 0.8; filter: grayscale(100%); cursor: not-allowed; }
+#play, #pause { line-height: 1.2em; }
 
 @media only screen and (max-width: 1000px) {
 	body{ overflow-x: hidden; }

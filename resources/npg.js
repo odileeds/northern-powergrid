@@ -141,6 +141,8 @@ S(document).ready(function(){
 			e.data.me.setScale(el[0].checked);
 		})
 
+		this.options.years = {'min':2017,'max':2050};
+
 		// Create the slider
 		this.slider = document.getElementById('slider');
 		noUiSlider.create(this.slider, {
@@ -148,8 +150,8 @@ S(document).ready(function(){
 			step: 1,
 			connect: true,
 			range: {
-				'min': 2017,
-				'max': 2050
+				'min': this.options.years.min,
+				'max': this.options.years.max
 			},
 			pips: {
 				mode: 'values',
@@ -163,10 +165,45 @@ S(document).ready(function(){
 		this.slider.noUiSlider.on('update', function () {
 			_obj.setYear(''+parseInt(slider.noUiSlider.get()));
 		});
-
 		
 		this.setScenario(this.options.scenario);
 		
+
+		S('#play').on('click',{me:this},function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			e.data.me.startAnimate();
+		})
+
+		S('#pause').on('click',{me:this},function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			e.data.me.stopAnimate();
+		})
+		
+		return this;
+	}
+	
+	FES.prototype.startAnimate = function(){
+		//this.slider.noUiSlider.set(this.options.years.min);
+		S('#play')[0].disabled = true;
+		S('#pause')[0].disabled = false;
+		var _obj = this;
+		// If we are starting at the end, reset first
+		if(parseInt(this.slider.noUiSlider.get())==this.options.years.max) this.slider.noUiSlider.set(this.options.years.min);
+		this.options.years.interval = setInterval(function(){
+			var yy = parseInt(_obj.slider.noUiSlider.get()) + 1;
+			if(yy <= _obj.options.years.max) _obj.slider.noUiSlider.set(yy);
+			else _obj.stopAnimate();
+		},500);
+		return this;
+	}
+	
+	FES.prototype.stopAnimate = function(){
+		clearInterval(this.options.years.interval);
+		S('#play')[0].disabled = false;
+		S('#pause')[0].disabled = true;
+
 		return this;
 	}
 	
