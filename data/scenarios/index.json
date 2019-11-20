@@ -19,6 +19,9 @@
 			"peakutilisationcf":{
 				"primary": { "file": "primaries/PeakUtilisationWithCF-CommunityRenewables.csv" }
 			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-CommunityRenewables.csv" }
+			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-CommunityRenewables.csv" }
 			},
@@ -67,6 +70,9 @@
 			},
 			"peakutilisationcf":{
 				"primary": { "file": "primaries/PeakUtilisationWithCF-ConsumerEvolution.csv" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-ConsumerEvolution.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-ConsumerEvolution.csv" }
@@ -117,6 +123,9 @@
 			"peakutilisationcf":{
 				"primary": { "file": "primaries/PeakUtilisationWithCF-SteadyProgression.csv" }
 			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SteadyProgression.csv" }
+			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SteadyProgression.csv" }
 			},
@@ -165,6 +174,9 @@
 			},
 			"peakutilisationcf":{
 				"primary": { "file": "primaries/PeakUtilisationWithCF-TwoDegrees.csv" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-TwoDegrees.csv" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-TwoDegrees.csv" }

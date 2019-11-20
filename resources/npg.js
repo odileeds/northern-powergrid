@@ -731,7 +731,7 @@ S(document).ready(function(){
 			var v = null;
 
 			// Define popups
-			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart">BARCHART</div>';
+			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div>';
 			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
 
 			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
