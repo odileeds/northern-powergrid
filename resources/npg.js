@@ -420,20 +420,31 @@ S(document).ready(function(){
 			
 			for(var p in this.data.primary2lad){
 				if(this.data.primary2lad[p][attr.id]){
-					data.push([p+'<br />Total: %VALUE%<br />'+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key]]);
+					v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key];
+					fracLA = this.data.primary2lad[p][attr.id]*v;
+					fracOther = v - fracLA;
+					data.push([p+'<br />Total: %VALUE%<br />'+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
 				}
 			}
 
 			data.sort(function(a, b) {
-				if(a[1]===b[1]) return 0;
-				else return (a[1] < b[1]) ? -1 : 1;
+				if(a[1][0]===b[1][0]) return 0;
+				else return (a[1][0] < b[1][0]) ? -1 : 1;
 			}).reverse();
+
+			// Remove totals from bars now that we've sorted by total
+			for(var i = 0; i < data.length; i++){
+				data[i][1].splice(0,1);
+			}
 			
 			// Create the barchart object. We'll add a function to
 			// customise the class of the bar depending on the key.
 			var chart = new S.barchart('#barchart',{
 				'formatKey': function(key){
 					return '';
+				},
+				'formatBar': function(key,val,series){
+					return (typeof series==="number" ? "series-"+series : "");
 				}
 			});
 
@@ -447,11 +458,12 @@ S(document).ready(function(){
 			// Add an event
 			chart.on('barover',function(e){
 				S('.balloon').remove();
-				S(e.event.currentTarget).find('.bar').append(
+				S(e.event.currentTarget).find('.bar.series-1').append(
 					"<div class=\"balloon\">"+this.bins[e.bin].key.replace(/%VALUE%/,parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
 				);
 			});
-			S('.barchart table .bar').css({'background-color':this.data.scenarios[this.options.scenario].color});
+			S('.barchart table .bar').css({'background-color':'#dddddd'});
+			S('.barchart table .bar.series-0').css({'background-color':this.data.scenarios[this.options.scenario].color});
 		}else{
 			S(attr.el).find('#barchart').remove();
 		}
@@ -713,13 +725,14 @@ S(document).ready(function(){
 			// does this feature have a property named popupContent?
 			var popup = '';
 			var me = attr['this'];
-			// Define popups
-			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div>';
-			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
 			
 			var view = me.views[me.options.view].layers[attr.layer].id;
 			var key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
 			var v = null;
+
+			// Define popups
+			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart">BARCHART</div>';
+			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
 
 			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
 				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key][me.options.key];
