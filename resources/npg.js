@@ -711,24 +711,31 @@ S(document).ready(function(){
 
 		function popuptext(feature,attr){
 			// does this feature have a property named popupContent?
-			popup = '';
-			me = attr['this'];
+			var popup = '';
+			var me = attr['this'];
+			// Define popups
+			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div>';
+			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
+			
 			var view = me.views[me.options.view].layers[attr.layer].id;
-			key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
-			v = null;
+			var key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
+			var v = null;
+
 			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
 				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key][me.options.key];
 			}
 			if(typeof v!=="number") console.log('popuptext',v,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values,key,me.options.key,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key])
-			title = '?';
-			added = 0;
+
+			var title = '?';
+			var added = 0;
 			if(feature.properties){
 				if(feature.properties.Primary || feature.properties.lad19nm) title = (feature.properties.Primary || feature.properties.lad19nm);
 			}
 			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
 			var value = (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp)).toLocaleString()+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
-			popup = popup.replace(/\%VALUE\%/g,value);
-			if(title) popup = '<h3>'+(title)+'</h3><div id="barchart"></div>'+popup;
+
+			// Replace values
+			popup = popup.replace(/\%VALUE\%/g,value).replace(/\%TITLE\%/g,title);
 			return popup;
 		}
 
