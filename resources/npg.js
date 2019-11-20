@@ -462,7 +462,7 @@ S(document).ready(function(){
 					"<div class=\"balloon\">"+this.bins[e.bin].key.replace(/%VALUE%/,parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
 				);
 			});
-			S('.barchart table .bar').css({'background-color':'#dddddd'});
+			S('.barchart table .bar').css({'background-color':'#cccccc'});
 			S('.barchart table .bar.series-0').css({'background-color':this.data.scenarios[this.options.scenario].color});
 		}else{
 			S(attr.el).find('#barchart').remove();
