@@ -1,6 +1,6 @@
 {
 	"Community renewables": {
-		"description": "<ul><li>Achieves 80% decarbonisation by 2050.</li><li>Decentralised pathway.</li></ul>",
+		"description": "<ul><li>Achieves 80% decarbonisation by 2050.</li><li>Local energy schemes flourish.</li></ul>",
 		"color": "#E6007C",
 		"css": "c9-bg",
 		"data": {
@@ -52,7 +52,7 @@
 		}
 	},
 	"Consumer evolution": {
-		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Decentralised landscape.</li></ul>",
+		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Shift towards local generation.</li></ul>",
 		"color": "#2f529f",
 		"css": "c1-bg",
 		"data": {
@@ -104,7 +104,7 @@
 		}
 	},
 	"Steady progression": {
-		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Large-scale centralised solutions.</li></ul>",
+		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Pace of transition stays at similar rate to today.</li></ul>",
 		"color": "#FF6700",
 		"css": "c14-bg",
 		"data": {
