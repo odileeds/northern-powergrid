@@ -1,16 +1,16 @@
 {
 	"ev": { "title": "Electric Vehicles (number)", "combine": "sum", "units":"", "dp": 0 },
+	"heatpumps": { "title": "Heat Pumps (number)", "combine": "sum", "units":"", "dp": 0 },
+	"domestic-pv": { "title": "Domestic photovoltaic installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
+	"industrial-pv": { "title": "Large solar generation installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
+	"windcapacity": { "title": "Wind generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3 },
+	"othergen": { "title": "Other generation installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
+	"storage": { "title": "Energy storage installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
+	"domestic-consumption": { "title": "Domestic underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
+	"industrial-consumption": { "title": "Industrial and commercial underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
+	"totalconsumptioncf": { "title": "Total energy consumption including electric vehicles and heat pumps (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
 	"peakdemand": { "title": "Peak demand (MW) at Primary Substations", "combine": "max", "units":"MW", "dp": 3 },
 	"peakdemandcf": { "title": "Peak demand with customer flexibility (MW) at Primary Substations", "combine": "max", "units":"MW", "dp": 3 },
 	"peakutilisation": { "title": "Peak utilisation (%) at Primary Substations", "combine": "max", "units":"%", "dp": 1 },
-	"peakutilisationcf": { "title": "Peak utilisation with customer flexibility (%) at Primary Substations", "combine": "max", "units":"%", "dp": 1 },
-	"totalconsumptioncf": { "title": "Total energy consumption including electric vehicles and heat pumps (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
-	"windcapacity": { "title": "Wind generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3 },
-	"heatpumps": { "title": "Heat Pumps (number)", "combine": "sum", "units":"", "dp": 0 },
-	"domestic-consumption": { "title": "Domestic underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
-	"domestic-pv": { "title": "Domestic photovoltaic installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
-	"industrial-consumption": { "title": "Industrial and commercial underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0 },
-	"industrial-pv": { "title": "Large solar generation installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
-	"othergen": { "title": "Other generation installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 },
-	"storage": { "title": "Energy storage installed capacity (MW)", "combine": "max", "units":"MW", "dp": 3 }
+	"peakutilisationcf": { "title": "Peak utilisation with customer flexibility (%) at Primary Substations", "combine": "max", "units":"%", "dp": 1 }
 }
