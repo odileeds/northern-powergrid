@@ -39,7 +39,7 @@ S(document).ready(function(){
 				}]
 			},
 			'primaries':{
-				'title':'Primary Supply',
+				'title':'Primary Substations',
 				'file':'data/maps/primaries-unique.geojson',
 				'source': 'primary',
 				'layers':[{
@@ -48,7 +48,7 @@ S(document).ready(function(){
 				}]
 			},
 			'primariesLAD':{
-				'title':'Primary Supply (with Local Authorities)',
+				'title':'Primary Substations (with Local Authorities)',
 				'source': 'primary',
 				'layers':[{
 					'id':'LAD',
