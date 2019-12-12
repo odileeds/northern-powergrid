@@ -238,6 +238,7 @@ S(document).ready(function(){
 		S('header .title').attr('class','title '+css);
 		if(S('#scenario-holder .about').length==0) S('#scenario-holder').append('<div class="about"></div>');
 		S('#scenario-holder .about').html(this.data.scenarios[scenario].description||'').attr('class','about '+css.replace(/-bg/,"-text"));
+		S('#parameter-holder .about').html(this.parameters[this.options.parameter].description||'').attr('class','about '+css.replace(/-bg/,"-text"));
 		S('#scenarios').attr('class',css);
 		S('.scenario').attr('class','scenario '+css);
 		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
