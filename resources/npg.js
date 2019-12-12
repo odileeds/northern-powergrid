@@ -13,7 +13,7 @@ S(document).ready(function(){
 			"view": "LAD",
 			"key": (new Date()).getFullYear()+'',
 			"parameter": "ev",
-			"scale": "relative",
+			"scale": "absolute",
 			"source": null
 		}
 		this.parameters = {};
@@ -101,6 +101,11 @@ S(document).ready(function(){
 	}
 
 	FES.prototype.init = function(){
+
+		if(this.options.scale=="absolute"){
+			S('#scale-holder input').attr('checked','checked');
+			S('#scale-holder').addClass('checked');
+		}
 
 		if(this.data.scenarios && S('#scenarios').length==0){
 			var html = "";
