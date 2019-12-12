@@ -127,8 +127,10 @@ S(document).ready(function(){
 		}
 		if(this.parameters && S('#parameters').length==0){
 			var html = "";
+			var css = this.data.scenarios[this.options.scenario].css;
 			for(var p in this.parameters) html += "<option"+(this.options.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
-			S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
+			S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
+			S('#parameter-holder .about').html(this.parameters[this.options.parameter].description||'').attr('class','about '+css.replace(/-bg/,"-text"))
 			S('#parameters').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setParameter(e.currentTarget.value);
@@ -234,7 +236,8 @@ S(document).ready(function(){
 	FES.prototype.setScenarioColours = function(scenario){
 		var css = this.data.scenarios[scenario].css;
 		S('header .title').attr('class','title '+css);
-		S('#scenario .about').html(this.data.scenarios[scenario].description||'').attr('class','about padded '+css.replace(/-bg/,"-text"));
+		if(S('#scenario-holder .about').length==0) S('#scenario-holder').append('<div class="about"></div>');
+		S('#scenario-holder .about').html(this.data.scenarios[scenario].description||'').attr('class','about '+css.replace(/-bg/,"-text"));
 		S('#scenarios').attr('class',css);
 		S('.scenario').attr('class','scenario '+css);
 		S('header .ODIlogo img').attr('src','https://odileeds.org/resources/images/odileeds-'+(css.replace(/[cs]([0-9]+)-bg/,function(m,p1){ return p1; }))+'.svg');
@@ -299,7 +302,10 @@ S(document).ready(function(){
 
 		if(this.parameters[v]){
 			this.options.parameter = v;
-			this.message('',{'id':'error','type':'ERROR'})
+			this.message('',{'id':'error','type':'ERROR'});
+			
+			S('#parameter-holder .about').html(this.parameters[this.options.parameter].description||'');
+
 			// Have we loaded the parameter/scenario?
 			if(!this.data.scenarios[this.options.scenario]) this.message('We have no data for '+this.parameters[v].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
 			else{
