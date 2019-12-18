@@ -24,7 +24,7 @@ S(document).ready(function(){
 				'file': 'data/maps/LAD2019-npg.geojson'
 			},
 			'primaries':{
-				'file':'data/maps/primaries-unique.geojson'
+				'file':'data/maps/primaries-unique-all.geojson'
 			}
 		}
 		this.views = {
@@ -694,7 +694,12 @@ S(document).ready(function(){
 									// Need to convert primaries to LAD
 									if(data.values[feature.properties.lad19cd]) v = (data.values[feature.properties.lad19cd][_obj.options.key]-layer.range.min)/(layer.range.max-layer.range.min);
 								}else if(layer.id=="primaries"){
-									v = (data.values[feature.properties.Primary][_obj.options.key] - layer.range.min)/(layer.range.max - layer.range.min);
+									if(data.values[feature.properties.Primary]){
+										v = (data.values[feature.properties.Primary][_obj.options.key] - layer.range.min)/(layer.range.max - layer.range.min);
+									}else{
+										console.warn('Unable to find Primary '+feature.properties.Primary)
+										v = 0;
+									}
 								}
 								v *= 0.8; // Maximum opacity
 								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);

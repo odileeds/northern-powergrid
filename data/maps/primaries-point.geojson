@@ -1,0 +1,20 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{ "type": "Feature", "properties": { "Primary": "BILLET LANE" }, "geometry": { "type": "Point","coordinates": [ -0.663373,53.609148] } },
+		{ "type": "Feature", "properties": { "Primary": "BTP" }, "geometry": { "type": "Point","coordinates": [ -0.109002,53.579635] } },
+		{ "type": "Feature", "properties": { "Primary": "ELLIFOOT LANE" }, "geometry": { "type": "Point","coordinates": [ -0.139065,53.734844 ] } },
+		{ "type": "Feature", "properties": { "Primary": "HEIGHINGTON" }, "geometry": { "type": "Point","coordinates": [ -1.576405,54.592421 ] } },
+		{ "type": "Feature", "properties": { "Primary": "HUMBER ROAD" }, "geometry": { "type": "Point","coordinates": [ -0.212029,53.634581 ] } },
+		{ "type": "Feature", "properties": { "Primary": "PETERLEE INDUSTRIAL" }, "geometry": { "type": "Point","coordinates": [ -1.360263,54.768647 ] } },
+		{ "type": "Feature", "properties": { "Primary": "SHEPCOTE TINSLEY" }, "geometry": { "type": "Point","coordinates": [ -1.401893,53.403891 ] } },
+		{ "type": "Feature", "properties": { "Primary": "STEVENSON ROAD" }, "geometry": { "type": "Point","coordinates": [ -1.438297,53.393273 ] } },
+		{ "type": "Feature", "properties": { "Primary": "TEES INDUSTRIAL T1 T2" }, "geometry": { "type": "Point","coordinates": [ -1.168111,54.609626 ] } },
+		{ "type": "Feature", "properties": { "Primary": "WAVERLEY BUSINESS PARK" }, "geometry": { "type": "Point","coordinates": [ -1.378782,53.384735 ] } },
+		{ "type": "Feature", "properties": { "Primary": "GUARDIAN GLASS" }, "geometry": { "type": "Point","coordinates": [ -0.910559,53.697934 ] } },
+		{ "type": "Feature", "properties": { "Primary": "KNOSTROP" }, "geometry": { "type": "Point","coordinates": [ -1.508761,53.779542 ] } },
+		{ "type": "Feature", "properties": { "Primary": "NEWPORT 2" }, "geometry": { "type": "Point","coordinates": [ -0.698868,53.765537 ] } },
+		{ "type": "Feature", "properties": { "Primary": "NORTH TEES T3 T4" }, "geometry": { "type": "Point","coordinates": [ -1.261896,54.58528 ] } },
+		{ "type": "Feature", "properties": { "Primary": "AYCLIFFE FORREST" }, "geometry": { "type": "Point","coordinates": [ -1.563776,54.58577 ] } }
+	]
+}
