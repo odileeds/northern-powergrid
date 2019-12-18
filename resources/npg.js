@@ -13,7 +13,7 @@ S(document).ready(function(){
 			"view": "LAD",
 			"key": (new Date()).getFullYear()+'',
 			"parameter": "ev",
-			"scale": "absolute",
+			"scale": "relative",
 			"source": null
 		}
 		this.parameters = {};
