@@ -516,7 +516,7 @@ S(document).ready(function(){
 			this.map.getPane('labels').style.pointerEvents = 'none';
 
 			var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
-				attribution: '©OpenStreetMap, ©CartoDB',
+				attribution: '',
 				pane: 'labels'
 			}).addTo(this.map);
 			
