@@ -40,7 +40,7 @@ S(document).ready(function(){
 			},
 			'primaries':{
 				'title':'Primary Substations',
-				'file':'data/maps/primaries-unique.geojson',
+				'file':'data/maps/primaries-unique-all.geojson',
 				'source': 'primary',
 				'layers':[{
 					'id': 'primaries',
@@ -515,7 +515,7 @@ S(document).ready(function(){
 			this.map.getPane('labels').style.zIndex = 650;
 			this.map.getPane('labels').style.pointerEvents = 'none';
 
-			var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+			L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
 				attribution: '',
 				pane: 'labels'
 			}).addTo(this.map);
