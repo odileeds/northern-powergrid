@@ -33,7 +33,7 @@ We need to let the visualisation know that the CSV files exist and where they ar
   ...
 }
 ```
-Once you've finished adding this parameter to `index.json`, check it is valid JSON using [JSON Lint](https://jsonlint.com/) otherwise you will break the visualisation.
+Once you've finished adding this parameter to `index.json`, check it is valid JSON using [JSON Lint](https://jsonlint.com/) otherwise you could break the visualisation if you have an invalid file.
 
 ### Update configuration
 
@@ -49,3 +49,5 @@ Where:
 * `combine` determines how Primary Sub-station values are combined into Local Authorities (`sum` to add each Primary contribution up or `max` to find the maximum value of a Primary in the Local Authority);
 * `units` is the label to put after a number on the scale and popups (e.g. `MWh`);
 * `description` is the help text that appears below the drop down.
+
+Check that your changes are still valid JSON using [JSON Lint](https://jsonlint.com/).
