@@ -12,7 +12,7 @@ Add the CSV files for this parameter to the [Primaries data directory](https://g
 
 ### Update the index
 
-We need to let the visualisation know that the CSV file exist and where they are. Edit the [index.json](https://github.com/odileeds/northern-powergrid/blob/master/data/scenarios/index.json) file. We need a _unique_ key for the new parameter. Existing keys are e.g. `ev`, `peakdemand`, `peakutilisation` etc. Keys should be simple - they won't be displayed in the visualisation - and any special characters (e.g. `‘`, `”`, `\`) will need to be escaped with a `\`. For this example we will use `newparameter`. Add the new parameter to each of the scenarios e.g.
+We need to let the visualisation know that the CSV files exist and where they are. Edit the [index.json](https://github.com/odileeds/northern-powergrid/blob/master/data/scenarios/index.json) file. We need a _unique_ key for the new parameter. Existing keys are e.g. `ev`, `peakdemand`, `peakutilisation` etc. Keys should be simple - they won't be displayed in the visualisation - and any special characters (e.g. `‘`, `”`, `\`) will need to be escaped with a `\`. For this example we will use `newparameter`. Add the new parameter to each of the scenarios e.g.
 
 ```javascript
 {
@@ -40,7 +40,7 @@ Once you've finished adding this parameter to `index.json`, check it is valid JS
 Next we need to update the [config.json](config.json) file. This file contains the configuration for each of the parameters that appear in the drop-down box in the visualisation. It uses the same keys as in the `index.json` file (e.g. `ev` and `heatpumps`) to list the configuration of each parameter. The order of the keys in this file determines the order of the options in the drop-down. The format of each parameter is a JSON object (key-value pairs) along the lines of:
 
 ```javascript
-"key": { "title": "Electric Vehicles (number)", "combine": "sum", "units":"", "dp": 0, "description": "Number of registered plug in electric vehicles (pure and hybrid)" }
+"newparameter": { "title": "Our brand new parameter", "combine": "sum", "units":"", "dp": 0, "description": "The short description that appears below the drop down" }
 ```
 
 Where:
