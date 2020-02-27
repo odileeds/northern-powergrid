@@ -523,8 +523,7 @@ footer ul { margin-left: 2em; }
 #scale .range { display: block; height: 1.5em; }
 
 /* Bar chart */
-#barchart { height: 100px; width: 300px; margin-bottom: 0.5em; }
-#barchart .antibar{ display: none; }
+#barchart { height: 100px; width: 300px; margin-bottom: 0.5em!important; }
 #barchart .label { display: none; }
 .leaflet-popup-content table td:first-child { padding-right: 0; }
 .leaflet-container a { color: inherit; }
