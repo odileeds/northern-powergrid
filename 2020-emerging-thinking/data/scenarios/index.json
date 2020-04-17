@@ -1,0 +1,158 @@
+{
+	"Deep electrification": {
+		"description": "<ul><li>Does something</li></ul>",
+		"color": "#AB1236",
+		"css": "deep-electrification",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-DeepElectrification.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-DeepElectrification.csv" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-DeepElectrification.csv" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-DeepElectrification.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-DeepElectrification.csv" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-DeepElectrification.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-DeepElectrification.csv" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-DeepElectrification.csv" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-DeepElectrification.csv" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-DeepElectrification.csv" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-DeepElectrification.csv" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-DeepElectrification.csv" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-DeepElectrification.csv" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-DeepElectrification.csv" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-DeepElectrification.csv" }
+			}
+		}
+	},
+	"High hydrogen": {
+		"description": "<ul><li>Does something else.</li></ul>",
+		"color": "#888B8D",
+		"css": "high-hydrogen",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-HighHydrogen.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-HighHydrogen.csv" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-HighHydrogen.csv" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-HighHydrogen.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-HighHydrogen.csv" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-HighHydrogen.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-HighHydrogen.csv" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-HighHydrogen.csv" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-HighHydrogen.csv" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-HighHydrogen.csv" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-HighHydrogen.csv" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-HighHydrogen.csv" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-HighHydrogen.csv" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-HighHydrogen.csv" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-HighHydrogen.csv" }
+			}
+		}
+	},
+	"Early net zero": {
+		"description": "<ul><li>Does an early thing.</li></ul>",
+		"color": "#00AB84",
+		"css": "net-zero",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-EarlyNetZero.csv" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-EarlyNetZero.csv" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-EarlyNetZero.csv" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-EarlyNetZero.csv" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-EarlyNetZero.csv" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-EarlyNetZero.csv" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-EarlyNetZero.csv" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-EarlyNetZero.csv" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-EarlyNetZero.csv" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-EarlyNetZero.csv" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-EarlyNetZero.csv" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-EarlyNetZero.csv" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-EarlyNetZero.csv" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-EarlyNetZero.csv" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-EarlyNetZero.csv" }
+			}
+		}
+	}
+}
