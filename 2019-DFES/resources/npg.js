@@ -5,6 +5,13 @@ var dfes;
 
 S(document).ready(function(){
 
+	var scripts = document.getElementsByTagName('script');
+	var path = "";
+	for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].src.indexOf('npg.js')>=0) path = scripts[i].src.split('?')[0];	// remove any ?query
+	}
+	path = path.split('/').slice(0, -2).join('/')+'/';  // remove last filename part of path
+
 	// Main function
 	function FES(file){
 
@@ -62,19 +69,19 @@ S(document).ready(function(){
 		};
 		
 		
-		S().ajax("data/scenarios/config.json",{
+		S().ajax(path+"data/scenarios/config.json",{
 			'this':this,
 			'cache':false,
 			'dataType':'json',
 			'success': function(d){
 				this.parameters = d;
-				S().ajax("data/primaries2lad.json",{
+				S().ajax(path+"data/primaries2lad.json",{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
 					'success': function(d){
 						this.data.primary2lad = d;
-						S().ajax("data/scenarios/index.json",{
+						S().ajax(path+"data/scenarios/index.json",{
 							'this':this,
 							'cache':false,
 							'dataType':'json',
@@ -215,7 +222,7 @@ S(document).ready(function(){
 	}
 	
 	FES.prototype.loadScenarioData = function(callback){
-		S().ajax("data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].file,{
+		S().ajax(path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].file,{
 			'this':this,
 			'cache':false,
 			'dataType':'text',
@@ -575,7 +582,7 @@ S(document).ready(function(){
 					// Show the spinner
 					S('#map .spinner').css({'display':''});
 
-					S().ajax(this.layers[layer.id].file,{
+					S().ajax(path+this.layers[layer.id].file,{
 						'this':this,
 						'cache':false,
 						'dataType':'json',
