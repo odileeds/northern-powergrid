@@ -53,7 +53,7 @@
 	},
 	"High hydrogen": {
 		"description": "<ul><li>Does something else.</li></ul>",
-		"color": "#888B8D",
+		"color": "#0085CA",
 		"css": "high-hydrogen",
 		"data": {
 			"ev": {
