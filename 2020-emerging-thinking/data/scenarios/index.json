@@ -1,6 +1,6 @@
 {
 	"Deep electrification": {
-		"description": "<ul><li>Does something</li></ul>",
+		"description": "<ul><li>Does something</li><li>And another thing</li></ul>",
 		"color": "#AB1236",
 		"css": "deep-electrification",
 		"data": {
