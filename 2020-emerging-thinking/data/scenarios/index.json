@@ -1,6 +1,6 @@
 {
 	"Deep electrification": {
-		"description": "<ul><li>Reaches net zero by 2050</li><li>High level of decentralisation (Heat pumps, distributed generation etc...)</li></ul>",
+		"description": "<ul><li>Reaches net zero by 2050</li><li>Electric heat and transport. Decentralised local energy plans, distributed generation etc.</li></ul>",
 		"color": "#AB1236",
 		"css": "deep-electrification",
 		"data": {
@@ -52,7 +52,7 @@
 		}
 	},
 	"High hydrogen": {
-		"description": "<ul><li>Reaches net zero by 2050</li><li>Low level of decentralisation (.......)</li></ul>",
+		"description": "<ul><li>Reaches net zero by 2050</li><li>Hydrogen for heat and large transport (HGVs, freight etc.) Electric local transport. Centralised hydrogen hubs, Carbon capture and storage, large offshore wind etc.</li></ul>",
 		"color": "#0085CA",
 		"css": "high-hydrogen",
 		"data": {
@@ -104,7 +104,7 @@
 		}
 	},
 	"Early net zero": {
-		"description": "<ul><li>Reaches net zero approximately 2040-45 (confirm</li><li>Medium level of decentralisation (Hybrid explain)</li></ul>",
+		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)</li><li>Highly accelerated electric heat & transport. Highly decentralised distributed wind, solar & other renewable generation.</li></ul>",
 		"color": "#00AB84",
 		"css": "net-zero",
 		"data": {
