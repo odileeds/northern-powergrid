@@ -769,7 +769,7 @@ S(document).ready(function(){
 			var v = null;
 
 			// Define popups
-			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div>';
+			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div><p style="font-size:0.8em;margin-top: 0.25em;text-align:center;">Primary substations (ordered)</p><p style="font-size:0.8em;">The bar heights show the total for a Primary substation. The coloured portion of the bar shows the fraction considered to be <em>in</em> %TITLE%</p>';
 			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
 
 			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
