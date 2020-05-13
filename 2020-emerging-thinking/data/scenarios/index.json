@@ -52,7 +52,7 @@
 		}
 	},
 	"High hydrogen": {
-		"description": "<ul><li>Reaches net zero by 2050</li><li>Hydrogen for heat and large transport (HGVs, freight etc.) Electric local transport. Centralised hydrogen hubs, Carbon capture and storage, large offshore wind etc.</li></ul>",
+		"description": "<ul><li>Reaches net zero by 2050</li><li>Hydrogen for heat and large transport (HGVs, freight etc). Electric local transport. Centralised hydrogen hubs, Carbon capture and storage, large offshore wind etc.</li></ul>",
 		"color": "#0085CA",
 		"css": "high-hydrogen",
 		"data": {
