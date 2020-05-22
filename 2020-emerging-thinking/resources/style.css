@@ -56,6 +56,9 @@ table {
 .net-zero { background-color: #00AB84!important; color: white!important; }
 .net-zero-text { color: #00AB84!important; }
 
+ol { list-style: decimal; margin-left: 1em; }
+ol li { margin-bottom: 1em; }
+ol li:last-child { margin-bottom: 0px; }
 body {
 	background-color: #000000;
 	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
