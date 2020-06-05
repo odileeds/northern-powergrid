@@ -5,7 +5,7 @@ function getSVG(im){
 	fetch(src).then(response => response.text()).then((data) => {
 
 		// Remove the stuff at the front
-		data = data.replace(/<\?[^>]*\?>/g,"");
+		data = data.replace(/<\!--\?[^>]*\?-->/g,"");
 
 		// Parse the document
 		let parser = new DOMParser();
@@ -15,8 +15,8 @@ function getSVG(im){
 		var svg = doc.activeElement;
 
 		// Set the ID to that of the original <img>
-		svg.setAttribute('id',id);
-		svg.setAttribute('style',css);
+		if(id) svg.setAttribute('id',id);
+		if(css) svg.setAttribute('style',css);
 
 		// Add the SVG
 		im.insertAdjacentElement('beforebegin', svg);

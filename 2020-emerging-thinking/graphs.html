@@ -14,6 +14,7 @@
 	.glory { height: unset; }
 	.glory .holder { height: unset; }
 	.glory-opacity { height: unset; }
+	#graphs svg { width: 100%; height: auto;}
 	</style>
 </head>
 <body>
@@ -40,11 +41,12 @@
 
 	<div class="b6-bg padded" id="graphs">
 		<div class="holder jekyll-parse">
-			Some content here<br/>
+			<p>Some content here</p>
+			<br />
 {% if true %}
-	Included {% include_relative resources/odileeds-black.svg %}	
+	{% include_relative data/graphs/graph-test.svg %}	
 {% else %}
-	Inline <img src="resources/odileeds-black.svg" style="width:8em;height:4em;" class="to-svg" id="one" />
+	<img src="data/graphs/graph-test.svg" class="to-svg" />
 {% endif %}
 		</div>
 	</div>
