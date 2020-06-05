@@ -1,0 +1,77 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Northern Powergrid Future Energy Scenarios - 2020 Emerging Thinking</title>
+	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" src="resources/stuquery.js"></script>
+	<style>
+	.glory { height: unset; }
+	.glory .holder { height: unset; }
+	.glory-opacity { height: unset; }
+	</style>
+</head>
+<body>
+	<div class="c12-bg padded message">
+		<div class="holder" style="text-align:center;padding:0.25em 0;">THIS IS A PROTOTYPE WITH TEST DATA. Please refer to the <a href="../2019-DFES/">DFES 2019 visualisation</a> for real data.</div>
+	</div>
+
+	<header class="b1-bg">
+		<div class="b1-bg glory">
+			<div class="glory-opacity">
+				<div class="holder">
+					<a href="https://odileeds.org/" class="ODIlogo"><img alt="ODI Leeds" src="https://odileeds.org/resources/images/odileeds.svg" title="ODI Leeds"></a>
+					<a href="https://www.northernpowergrid.com/"><img alt="Northern Powergrid" src="https://odileeds.org/dashboard/data/img/northernpowergrid.svg" title="Northern Powergrid"></a>
+					<a href="http://www.element-energy.co.uk/"><img alt="Element Energy" src="https://odileeds.org/dashboard/data/img/elementenergy.svg" title="Element Energy"></a>
+				</div>
+			</div>
+		</div>
+		<div class="deep-electrification title">
+			<div class="holder">
+				<h1>Northern Powergrid Emerging Thinking 2020 graphs</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="b6-bg padded" id="graphs">
+		<div class="holder jekyll-parse">
+			Some content here<br/>
+{% if true %}
+	Included {% include_relative resources/odileeds-black.svg %}	
+{% else %}
+	Inline <img src="resources/odileeds-black.svg" style="width:8em;height:4em;" class="to-svg" id="one" />
+{% endif %}
+		</div>
+	</div>
+	<div class="scenario padded">&nbsp;</div>
+
+
+	<section class="b5-bg">
+		<div class="holder padded">
+			<h2>About this visualisation</h2>
+			<p>Here is a description</p>
+		</div>
+	</section>
+	<footer class="b1-bg">
+		<div class="holder">
+				<h3><a href="https://odileeds.org/blog/2019-12-09-visualising-future-energy-scenarios">Interactive visualisation</a></h3>
+				<p>&copy; ODI Leeds (Stuart Lowe) 2020. Released under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> licence. <a href="https://odileeds.org/projects/northernpowergrid/dfes/">Read about the project</a> or view the <a href="https://github.com/odileeds/northern-powergrid">repository on Github</a>.</p>
+				<h3><a href="https://datamillnorth.org/">Energy scenario data</a></h3>
+				<p>&copy; NorthernPowerGrid &amp; ElementEnergy 2020. Released under a Creative Commons Attribution Licence.</p>
+		</div>
+	</footer>
+
+	<div class="jekyll-remove">
+{% if false	%}
+		<script type="text/javascript" src="resources/local.js"></script>
+{% endif %}
+	</div>
+
+
+</body>
+</html>
