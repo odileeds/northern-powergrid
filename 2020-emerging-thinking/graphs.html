@@ -14,6 +14,8 @@
 	.glory { height: unset; }
 	.glory .holder { height: unset; }
 	.glory-opacity { height: unset; }
+	figure { border-top: 2px solid #AB1236; padding: 0.5em 0; width: 640px; margin-bottom: 3em; }
+	figure h3 { font-size: 1em; margin-top: 0; }
 	#graphs svg { width: 100%; height: auto;}
 	</style>
 </head>
@@ -40,18 +42,39 @@
 	</header>
 
 	<div class="b6-bg padded" id="graphs">
-		<div class="holder jekyll-parse">
-			<p>Some content here</p>
-			<br />
+		<div class="holder">
+			<p>The following charts and tables show the Northern Powergrid totals for the potential uptake of electric vehicles and heat pumps. We have provided the underlying data on the ODI website with disaggregation down to local authority level and also primary substation level.</p>
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 1:</strong> Electric vehicle uptake forecast</h3>
 {% if true %}
-	{% include_relative data/graphs/graph-test.svg %}	
+	{% include_relative data/graphs/graph-evs-test.svg %}	
 {% else %}
-	<img src="data/graphs/graph-test.svg" class="to-svg" />
+				<img src="data/graphs/graph-evs-test.svg" class="to-svg" />
 {% endif %}
+				<figcaption></figcaption>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 2:</strong> Annual carbon emissions test (MTco2e)</h3>
+{% if true %}
+	{% include_relative data/graphs/graph-annual-co2-emissions-test.svg %}	
+{% else %}
+				<img src="data/graphs/graph-annual-co2-emissions-test.svg" class="to-svg" />
+{% endif %}
+				<figcaption></figcaption>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 3:</strong> Heatpumps test</h3>
+{% if true %}
+	{% include_relative data/graphs/graph-heatpumps-test.svg %}	
+{% else %}
+				<img src="data/graphs/graph-heatpumps-test.svg" class="to-svg" />
+{% endif %}
+				<figcaption></figcaption>
+			</figure>
 		</div>
 	</div>
-	<div class="scenario padded">&nbsp;</div>
-
 
 	<section class="b5-bg">
 		<div class="holder padded">
