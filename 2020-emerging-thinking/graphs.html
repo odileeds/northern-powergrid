@@ -14,8 +14,13 @@
 	.glory { height: unset; }
 	.glory .holder { height: unset; }
 	.glory-opacity { height: unset; }
-	figure { border-top: 2px solid #AB1236; padding: 0.5em 0; width: 640px; margin-bottom: 3em; }
+	figure { border-top: 2px solid #cc0935; padding: 0.5em 0; width: 640px; margin-bottom: 3em; }
 	figure h3 { font-size: 1em; margin-top: 0; }
+	figure table { border-spacing: 0.4em; border-collapse: separate; width: 100%; margin-left: -0.4em; margin-bottom: 0.5em; }
+	figure table th, figure table td { padding: 0.25em 0.5em; text-align: right; }
+	figure table th:first-child, figure table td:first-child { text-align: left; font-weight: bold; border-left: 0; }
+	figure table th { background-color: #cc0935; color: white; font-weight: bold; }
+	figure table td {background-color: rgba(204, 9, 53,0.3); color: black; }
 	#graphs svg { width: 100%; height: auto;}
 	</style>
 </head>
@@ -46,6 +51,7 @@
 			<p>The following charts and tables show the Northern Powergrid totals for the potential uptake of electric vehicles and heat pumps. We have provided the underlying data on the ODI website with disaggregation down to local authority level and also primary substation level.</p>
 			<figure class="jekyll-parse">
 				<h3><strong>Figure 1:</strong> Electric vehicle uptake forecast</h3>
+				{% include_relative data/graphs/graph-evs-test.html %}
 {% if true %}
 	{% include_relative data/graphs/graph-evs-test.svg %}	
 {% else %}
@@ -56,6 +62,7 @@
 
 			<figure class="jekyll-parse">
 				<h3><strong>Figure 2:</strong> Annual carbon emissions test (MTco2e)</h3>
+				{% include_relative data/graphs/graph-annual-co2-emissions-test.html %}
 {% if true %}
 	{% include_relative data/graphs/graph-annual-co2-emissions-test.svg %}	
 {% else %}
@@ -66,6 +73,7 @@
 
 			<figure class="jekyll-parse">
 				<h3><strong>Figure 3:</strong> Heatpumps test</h3>
+				{% include_relative data/graphs/graph-heatpumps-test.html %}
 {% if true %}
 	{% include_relative data/graphs/graph-heatpumps-test.svg %}	
 {% else %}

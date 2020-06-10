@@ -1,4 +1,4 @@
-package ODILeeds::LineGraph;
+package ODILeeds::NPG;
 
 use strict;
 use warnings;
@@ -42,26 +42,22 @@ print "$file ".(-e $file)."\n";
 # Set the properties of the scenarios
 sub setScenarios {
 	my ($self, %scenarios) = @_;
-	$self->{'scenarios'} = \%scenarios;	
+	$self->{'scenario-props'} = \%scenarios;	
 	return $self;
 }
 
+sub process {
+	my ($self) = @_;
+	my(@lines,@header,$c,%headers,$i,@cols,$maxy,$miny,$maxyr,$minyr);
 
-# Draw the graph
-sub draw {
-	my ($self, %props) = @_;
-	my ($r,$w,$h,@lines,$svg,@header,%headers,$c,@cols,@rows,$i,@scenariolookup,$s,%scenarios,$scenario,$minyr,$maxyr,$miny,$maxy,$path,$y,$yrs,$yrange,$xpos,$ypos,$t,@pos,$circles,%ticks,@a,@b,$left,$right,$top,$bottom);
-
-	$w = $props{'width'};
-	$h = $props{'height'};
 	$minyr = 3000;
 	$maxyr = 2000;
 	$miny = 1e100;
 	$maxy = -1e100;
-	
-	if(!$h){ $h = $w*0.4; }
 
 	@lines = @{$self->{'data'}};
+	$self->{'scenarios'} = ();
+	$self->{'scenariolookup'} = ();
 
 	# Split the headers and tidy
 	$lines[0] =~ s/[\n\r]//g;
@@ -76,16 +72,40 @@ sub draw {
 	# Process the rest of the lines
 	for($i = 1 ; $i < @lines; $i++){
 		chomp($lines[$i]);
+		$lines[$i] =~ s/[\n\r]//g;
 		(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$lines[$i]);
 		for($c = 0; $c < @header; $c++){ $cols[$c] =~ s/(^\"|\"$)//g; }
-		$scenarios{$cols[$headers{'Scenario'}]} = {};
-		push(@scenariolookup,$cols[$headers{'Scenario'}]);
+		$self->{'scenarios'}{$cols[$headers{'Scenario'}]} = {};
+		push(@{$self->{'scenariolookup'}},$cols[$headers{'Scenario'}]);
 		for($c = 1; $c < @header; $c++){
-			$scenarios{$cols[$headers{'Scenario'}]}{$header[$c]} = $cols[$c];
+			$self->{'scenarios'}{$cols[$headers{'Scenario'}]}{$header[$c]} = $cols[$c];
 			if($cols[$c] > $maxy){ $maxy = $cols[$c]; }
 			if($cols[$c] < $miny){ $miny = $cols[$c]; }
 		}
 	}
+	
+	$self->{'xmax'} = $maxyr;
+	$self->{'xmin'} = $minyr;
+	$self->{'ymax'} = $maxy;
+	$self->{'ymin'} = $miny;
+	
+	return $self;
+}
+
+# Draw the graph
+sub draw {
+	my ($self, %props) = @_;
+	my ($r,$w,$h,@lines,$svg,@header,%headers,$c,@cols,@rows,$i,@scenariolookup,$s,%scenarios,$scenario,$minyr,$maxyr,$miny,$maxy,$path,$y,$yrs,$yrange,$xpos,$ypos,$t,@pos,$circles,%ticks,@a,@b,$left,$right,$top,$bottom);
+
+	$w = $props{'width'};
+	$h = $props{'height'};
+	
+	$minyr = $self->{'xmin'};
+	$maxyr = $self->{'xmax'};
+	$miny = $self->{'ymin'};
+	$maxy = $self->{'ymax'};
+
+	if(!$h){ $h = $w*0.4; }
 
 	$miny = 0;
 
@@ -123,26 +143,26 @@ sub draw {
 	$svg .= buildAxis(('axis'=>'y','label'=>$props{'yaxis-label'},'tick'=>5,'ticks'=>$props{'yaxis-ticks'},'line'=>$props{'xaxis-line'},'format'=>$props{'yaxis-format'},'n'=>4,'left'=>$left,'right'=>$right,'bottom'=>$bottom,'top'=>$top,'axis-lines'=>$props{'yaxis-lines'},'width'=>$w,'height'=>$h,'xmin'=>$minyr,'xmax'=>$maxyr,'ymin'=>$miny,'ymax'=>$maxy));
 	$svg .= buildAxis(('axis'=>'x','label'=>$props{'xaxis-label'},'tick'=>5,'ticks'=>$props{'xaxis-ticks'},'line'=>$props{'yaxis-line'},'format'=>$props{'xaxis-format'},'left'=>$left,'right'=>$right,'bottom'=>$bottom,'top'=>$top,'spacing'=>10,'axis-lines'=>$props{'xaxis-lines'},'width'=>$w,'height'=>$h,'xmin'=>$minyr,'xmax'=>$maxyr,'ymin'=>$miny,'ymax'=>$maxy));
 
-	for($s = 0; $s < @scenariolookup; $s++){
-		$scenario = $scenariolookup[$s];
+	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
+		$scenario = $self->{'scenariolookup'}[$s];
 		$t = $scenario;
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 		$path = "";
-		$svg .= "<g data-scenario=\"".$self->{'scenarios'}{$t}{'css'}."\" class=\"data-series\">";
+		$svg .= "<g data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\" class=\"data-series\">";
 		$circles = "";
 		for($y = $minyr; $y <= $maxyr; $y++){
-			if($scenarios{$scenario}{$y}){
-				@pos = getXY(('x'=>$y,'y'=>$scenarios{$scenario}{$y},'width'=>$w,'height'=>$h,'left'=>$left,'right'=>$right,'bottom'=>$bottom,'top'=>$top,'xmin'=>$minyr,'xmax'=>$maxyr,'ymin'=>$miny,'ymax'=>$maxy));
+			if($self->{'scenarios'}{$scenario}{$y}){
+				@pos = getXY(('x'=>$y,'y'=>$self->{'scenarios'}{$scenario}{$y},'width'=>$w,'height'=>$h,'left'=>$left,'right'=>$right,'bottom'=>$bottom,'top'=>$top,'xmin'=>$minyr,'xmax'=>$maxyr,'ymin'=>$miny,'ymax'=>$maxy));
 				$xpos = $pos[0];
 				$ypos = $pos[1];
 				$path .= ($y == $minyr ? "M":"L")." ".$xpos.",".$ypos;
 				if($props{'point'} > 0){
-					$circles .= "<circle cx=\"$xpos\" cy=\"$ypos\" data-y=\"$scenarios{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenarios'}{$t}{'color'}||"")."\"><title>$y: $scenarios{$scenario}{$y}</title></circle>";
+					$circles .= "<circle cx=\"$xpos\" cy=\"$ypos\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>";
 				}
 			}
 		}
-		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".$self->{'scenarios'}{$t}{'color'}."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
+		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".$self->{'scenario-props'}{$t}{'color'}."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
 		$svg .= $circles;
 		$svg .= "</g>\n";
 	}
@@ -150,6 +170,46 @@ sub draw {
 	$svg .= "</svg>\n";
 	
 	return $svg;
+}
+
+# Draw the graph
+sub table {
+	my ($self, %props) = @_;
+	my ($html,$minyr,$maxyr,$miny,%ticks,$s,$t,$y,$scenario);
+
+	
+	$minyr = $self->{'xmin'};
+	$maxyr = $self->{'xmax'};
+
+	%ticks = makeTicks($minyr,$maxyr,('spacing'=>10));
+
+	# Build HTML
+	$html = "<table>\n";
+
+	$html .= "<tr><th></th>";
+	for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
+		$html .= "<th>$y</th>";
+	}
+	$html .= "</tr>\n";
+	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
+		$scenario = $self->{'scenariolookup'}[$s];
+		$t = $scenario;
+		$t =~ s/ \(.*\)//g;
+		$t =~ s/ with customer flexibility//g;
+
+		$html .= "<tr><td class=\"".$self->{'scenario-props'}{$t}{'css'}."\">".$scenario."</td>";
+		
+#		$svg .= "<g data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\" class=\"data-series\">";
+
+		for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
+			$html .= "<td>$self->{'scenarios'}{$scenario}{$y}</td>";
+		}
+#		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".$self->{'scenario-props'}{$t}{'color'}."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
+		$html .= "</tr>\n";
+	}
+	$html .= "</table>";
+	
+	return $html;
 }
 
 sub buildAxis {

@@ -1,16 +1,19 @@
 [{
-	"svg":"graph-evs-test.svg",
 	"csv":"EVs test (#).csv",
+	"svg":"graph-evs-test.svg",
+	"table":"graph-evs-test.html",
 	"yaxis-label": "Number",
 	"left": 120
 },{
-	"svg":"graph-annual-co2-emissions-test.svg",
 	"csv":"Annual carbon emissions test (MTco2e).csv",
+	"svg":"graph-annual-co2-emissions-test.svg",
+	"table":"graph-annual-co2-emissions-test.html",
 	"yaxis-label": "Mt CO2(e)",
 	"left": 65
 },{
-	"svg":"graph-heatpumps-test.svg",
 	"csv":"heatpumps test (number).csv",
+	"svg":"graph-heatpumps-test.svg",
+	"table":"graph-heatpumps-test.html",
 	"yaxis-label": "Number",
 	"left": 120
 }]
