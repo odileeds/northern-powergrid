@@ -121,13 +121,13 @@ sub draw {
 	$svg = "<svg width=\"".sprintf("%d",$w)."\" height=\"".sprintf("%d",$h)."\" viewBox=\"0 0 $w $h\" xmlns=\"http://www.w3.org/2000/svg\" style=\"overflow:display\" preserveAspectRatio=\"xMinYMin meet\" overflow=\"visible\">\n";
 	$svg .= "<defs>";
 	$svg .= "<style>";
-	$svg .= ".data-series { }";
 	$svg .= ".data-series path.line { fill-opacity: 0; }";
 	$svg .= ".data-series path.line.dotted { stroke-dasharray: 12 20 }";
 	$svg .= ".data-series circle { display: none; }";
 	$svg .= ".data-series:hover path.line, .data-series.on path.line { stroke-width: $props{'strokehover'}; }";
 	$svg .= ".data-series:hover circle, .data-series.on circle { display: inline; }";
 	$svg .= ".data-series circle:hover, .data-series circle.on { r: $props{'pointhover'}px!important; fill: black; }";
+	$svg .= ".grid { font-family: \"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif; }";
 	$svg .= ".grid line { stroke: rgb(0,0,0); stroke-width: $props{'line'}; stroke-linecap: round; }";
 	$svg .= ".grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(".($props{'tick'}*2)."px); }";
 	$svg .= ".grid.grid-y text { text-anchor: end; dominant-baseline: ".($props{'yaxis-labels-baseline'}||"middle")."; transform: translateX(-".($props{'tick'}*2)."px); }";
