@@ -16,4 +16,10 @@
 	"table":"graph-heatpumps-test.html",
 	"yaxis-label": "Number",
 	"left": 120
+},{
+	"csv":"Battery storage capacity installed (GW).csv",
+	"svg":"graph-battery-storage.svg",
+	"table":"graph-battery-storage.html",
+	"yaxis-label": "Installed capacity (GW)",
+	"left": 80
 }]
