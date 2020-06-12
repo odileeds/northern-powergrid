@@ -87,6 +87,17 @@
 {% endif %}
 				<div class="download"><a href="data/graphs/graph-heatpumps-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a></div>
 			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 42:</strong> Battery storage</h3>
+				{% include_relative data/graphs/graph-battery-storage.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-battery-storage.svg %}	
+{% else %}
+				<img src="data/graphs/graph-battery-storage.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-battery-storage.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a></div>
+			</figure>
 		</div>
 	</div>
 
