@@ -56,17 +56,6 @@
 		<div class="holder">
 			<p>The following charts and tables show the Northern Powergrid totals for the potential uptake of electric vehicles and heat pumps. We have provided the underlying data on the ODI website with disaggregation down to local authority level and also primary substation level.</p>
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 1:</strong> Electric vehicle uptake forecast.</figcaption>
-				{% include_relative data/graphs/graph-evs-test.html %}
-{% if true %}
-	{% include_relative data/graphs/graph-evs-test.svg %}	
-{% else %}
-				<img src="data/graphs/graph-evs-test.svg" class="to-svg" />
-{% endif %}
-				<div class="download"><a href="data/graphs/graph-evs-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a></div>
-			</figure>
-
-			<figure class="jekyll-parse">
 				<figcaption><strong>Figure 2:</strong> Annual carbon emissions test (MTco2e)</figcaption>
 				{% include_relative data/graphs/graph-annual-co2-emissions-test.html %}
 {% if true %}
@@ -75,6 +64,17 @@
 				<img src="data/graphs/graph-annual-co2-emissions-test.svg" class="to-svg" />
 {% endif %}
 				<div class="download"><a href="data/graphs/graph-annual-co2-emissions-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 2" /> SVG</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<figcaption><strong>Figure 1:</strong> Electric vehicle uptake forecast.</figcaption>
+				{% include_relative data/graphs/graph-evs-test.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-evs-test.svg %}	
+{% else %}
+				<img src="data/graphs/graph-evs-test.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-evs-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a></div>
 			</figure>
 
 			<figure class="jekyll-parse">
