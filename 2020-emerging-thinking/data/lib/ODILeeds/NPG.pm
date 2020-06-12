@@ -139,20 +139,20 @@ sub draw {
 
 	# Build SVG
 	$svg = "<svg width=\"".sprintf("%d",$w)."\" height=\"".sprintf("%d",$h)."\" viewBox=\"0 0 $w $h\" xmlns=\"http://www.w3.org/2000/svg\" style=\"overflow:display\" preserveAspectRatio=\"xMinYMin meet\" overflow=\"visible\">\n";
-	$svg .= "<defs>";
-	$svg .= "<style>";
-	$svg .= ".data-series path.line { fill-opacity: 0; }";
-	$svg .= ".data-series path.line.dotted { stroke-dasharray: 12 20 }";
-	$svg .= ".data-series circle { display: none; }";
-	$svg .= ".data-series:hover path.line, .data-series.on path.line { stroke-width: $props{'strokehover'}; }";
-	$svg .= ".data-series:hover circle, .data-series.on circle { display: inline; }";
-	$svg .= ".data-series circle:hover, .data-series circle.on { r: $props{'pointhover'}px!important; fill: black; }";
-	$svg .= ".grid { font-family: \"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif; }";
-	$svg .= ".grid line { stroke: rgb(0,0,0); stroke-width: $props{'line'}; stroke-linecap: round; }";
-	$svg .= ".grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(".($props{'tick'}*2)."px); }";
-	$svg .= ".grid.grid-y text { text-anchor: end; dominant-baseline: ".($props{'yaxis-labels-baseline'}||"middle")."; transform: translateX(-".($props{'tick'}*2)."px); }";
-	$svg .= "</style>\n";
-	$svg .= "</defs>";
+	$svg .= "<defs>\n";
+	$svg .= "\t<style>\n";
+	$svg .= "\t.data-series path.line { fill-opacity: 0; }\n";
+	$svg .= "\t.data-series path.line.dotted { stroke-dasharray: 12 20 }\n";
+	$svg .= "\t.data-series circle { display: none; }\n";
+	$svg .= "\t.data-series:hover path.line, .data-series.on path.line { stroke-width: $props{'strokehover'}; }\n";
+	$svg .= "\t.data-series:hover circle, .data-series.on circle { display: inline; }\n";
+	$svg .= "\t.data-series circle:hover, .data-series circle.on { r: $props{'pointhover'}px!important; fill: black; }\n";
+	$svg .= "\t.grid { font-family: \"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif; }\n";
+	$svg .= "\t.grid line { stroke: rgb(0,0,0); stroke-width: $props{'line'}; stroke-linecap: round; }\n";
+	$svg .= "\t.grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(".($props{'tick'}*2)."px); }\n";
+	$svg .= "\t.grid.grid-y text { text-anchor: end; dominant-baseline: ".($props{'yaxis-labels-baseline'}||"middle")."; transform: translateX(-".($props{'tick'}*2)."px); }\n";
+	$svg .= "\t</style>\n";
+	$svg .= "</defs>\n";
 
 	$left = $props{'left'}||100;
 	$right = $props{'right'}||10;
@@ -178,11 +178,11 @@ sub draw {
 				$ypos = $pos[1];
 				$path .= ($y == $minyr ? "M":"L")." ".sprintf("%0.2f",$xpos).",".sprintf("%0.2f",$ypos);
 				if($props{'point'} > 0){
-					$circles .= "<circle cx=\"".sprintf("%0.2f",$xpos)."\" cy=\"".sprintf("%0.2f",$ypos)."\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>\n";
+					$circles .= "\t<circle cx=\"".sprintf("%0.2f",$xpos)."\" cy=\"".sprintf("%0.2f",$ypos)."\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>\n";
 				}
 			}
 		}
-		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>\n";
+		$svg .= "\t<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>\n";
 		$svg .= $circles;
 		$svg .= "</g>\n";
 	}
@@ -237,7 +237,7 @@ sub buildAxis {
 	
 	%ticks = makeTicks($props{($axis eq "yaxis" ? "ymin":"xmin")},$props{($axis eq "yaxis" ? "ymax":"xmax")},%props);
 
-	$svg = "<g class=\"grid grid-$props{'axis'}\">";
+	$svg = "<g class=\"grid grid-$props{'axis'}\">\n";
 	for($t = 0; $t < $ticks{'length'}; $t++){
 
 		if($props{'axis'} eq "x"){
@@ -259,22 +259,22 @@ sub buildAxis {
 		@b = getXY(%props);
 		if($a[1] >= 0 && $a[0] >= $props{'left'}){
 			if(($t == 0 && $props{'line'}) || $props{'axis-lines'}){
-				$svg .= "<line x1=\"$a[0]\" y1=\"$a[1]\" x2=\"$b[0]\" y2=\"$b[1]\" data-left=\"$props{'left'}\"></line>";
+				$svg .= "\t<line x1=\"$a[0]\" y1=\"$a[1]\" x2=\"$b[0]\" y2=\"$b[1]\" data-left=\"$props{'left'}\"></line>\n";
 			}
 			if($a[0] < $props{'width'}){
 
 				if($props{'ticks'}){
-					$svg .= "<line class=\"tick\" x1=\"$a[0]\" y1=\"$a[1]\" x2=\"".($a[0]-($axis eq "yaxis" ? $tick : 0))."\" y2=\"".($a[1]+($axis eq "yaxis" ? 0 : $tick))."\"></line>";
+					$svg .= "\t<line class=\"tick\" x1=\"$a[0]\" y1=\"$a[1]\" x2=\"".($a[0]-($axis eq "yaxis" ? $tick : 0))."\" y2=\"".($a[1]+($axis eq "yaxis" ? 0 : $tick))."\"></line>\n";
 				}
 				$label = $ticks{'data-'.$t};
 				if($props{'format'} && $props{'format'} eq "commify"){ $label = commify($label); }
-				$svg .= "<text x=\"$a[0]\" y=\"$a[1]\" text-anchor=\"".($axis eq "yaxis" ? "end":"middle")."\">".$label."</text>";
+				$svg .= "\t<text x=\"$a[0]\" y=\"$a[1]\" text-anchor=\"".($axis eq "yaxis" ? "end":"middle")."\">".$label."</text>\n";
 			}
 		}
 	}
-	$svg .= "<text style=\"text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(".($props{'top'} + ($props{'height'}-$props{'top'}-$props{'bottom'})/2)."px) rotate(-90deg);\">".($props{'label'}||"")."</text>";
+	$svg .= "\t<text style=\"text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(".($props{'top'} + ($props{'height'}-$props{'top'}-$props{'bottom'})/2)."px) rotate(-90deg);\">".($props{'label'}||"")."</text>\n";
 
-	$svg .= "</g>";
+	$svg .= "</g>\n";
 	return $svg;
 }
 
