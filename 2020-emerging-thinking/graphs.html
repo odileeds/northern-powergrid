@@ -9,7 +9,6 @@
 	<title>Northern Powergrid Future Energy Scenarios - 2020 Emerging Thinking</title>
 	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
 	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-	<script type="text/javascript" src="resources/stuquery.js"></script>
 	<style>
 	.glory { height: unset; }
 	.glory .holder { height: unset; }
@@ -55,49 +54,133 @@
 	<div class="b6-bg padded" id="graphs">
 		<div class="holder">
 			<p>The following charts and tables show the Northern Powergrid totals for the potential uptake of electric vehicles and heat pumps. We have provided the underlying data on the ODI website with disaggregation down to local authority level and also primary substation level.</p>
-			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 2:</strong> Annual carbon emissions test (MTco2e)</figcaption>
-				{% include_relative data/graphs/graph-annual-co2-emissions-test.html %}
-{% if true %}
-	{% include_relative data/graphs/graph-annual-co2-emissions-test.svg %}	
-{% else %}
-				<img src="data/graphs/graph-annual-co2-emissions-test.svg" class="to-svg" />
-{% endif %}
-				<div class="download"><a href="data/graphs/graph-annual-co2-emissions-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 2" /> SVG</a></div>
-			</figure>
+	
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 1:</strong> Electric vehicle uptake forecast.</figcaption>
-				{% include_relative data/graphs/graph-evs-test.html %}
+				<h3><strong>Figure 1:</strong> Annual carbon emissions (MtCO2)</h3>
+				{% include_relative data/graphs/graph-annual-co2-emissions.html %}
 {% if true %}
-	{% include_relative data/graphs/graph-evs-test.svg %}	
+	{% include_relative data/graphs/graph-annual-co2-emissions.svg %}	
 {% else %}
-				<img src="data/graphs/graph-evs-test.svg" class="to-svg" />
+				<img src="data/graphs/graph-annual-co2-emissions.svg" class="to-svg" />
 {% endif %}
-				<div class="download"><a href="data/graphs/graph-evs-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a></div>
+				<div class="download"><a href="data/graphs/graph-annual-co2-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Annual carbon emissions (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
 			</figure>
 
-			<figure class="jekyll-parse">
-				<h3><strong>Figure 3:</strong> Heatpumps test</h3>
-				{% include_relative data/graphs/graph-heatpumps-test.html %}
-{% if true %}
-	{% include_relative data/graphs/graph-heatpumps-test.svg %}	
-{% else %}
-				<img src="data/graphs/graph-heatpumps-test.svg" class="to-svg" />
-{% endif %}
-				<div class="download"><a href="data/graphs/graph-heatpumps-test.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a></div>
-			</figure>
 
 			<figure class="jekyll-parse">
-				<h3><strong>Figure 42:</strong> Battery storage</h3>
+				<figcaption><strong>Figure 2:</strong> Battery storage capacity installed (GW)</figcaption>
 				{% include_relative data/graphs/graph-battery-storage.html %}
 {% if true %}
 	{% include_relative data/graphs/graph-battery-storage.svg %}	
 {% else %}
 				<img src="data/graphs/graph-battery-storage.svg" class="to-svg" />
 {% endif %}
-				<div class="download"><a href="data/graphs/graph-battery-storage.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a></div>
+				<div class="download"><a href="data/graphs/graph-battery-storage.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 2" /> SVG</a><a href="data/graphs/graph-battery-storage.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 2" /> CSV</a></div>
 			</figure>
+
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 3:</strong> Cumulative carbon emissions (MtCO2)</h3>
+				{% include_relative data/graphs/graph-cumulative-carbon-emissions.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-cumulative-carbon-emissions.svg %}	
+{% else %}
+				<img src="data/graphs/graph-cumulative-carbon-emissions.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-cumulative-carbon-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Cumulative carbon emissions (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+
+			<figure class="jekyll-parse">
+				<figcaption><strong>Figure 4:</strong> Electric vehicle penetration of total car stock (%)</figcaption>
+				{% include_relative data/graphs/graph-ev-percent.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-ev-percent.svg %}	
+{% else %}
+				<img src="data/graphs/graph-ev-percent.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-ev-percent.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a><a href="data/graphs/Electric vehicle penetration of total car stock (%).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 1" /> CSV</a></div>
+			</figure>
+
+
+			<figure class="jekyll-parse">
+				<figcaption><strong>Figure 5:</strong> Electric vehicle uptake forecast.</figcaption>
+				{% include_relative data/graphs/graph-ev.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-ev.svg %}	
+{% else %}
+				<img src="data/graphs/graph-ev.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-ev.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a><a href="data/graphs/Total number of EVs (#).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 1" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 6:</strong> Total number of heat pumps</h3>
+				{% include_relative data/graphs/graph-heatpumps.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-heatpumps.svg %}	
+{% else %}
+				<img src="data/graphs/graph-heatpumps.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-heatpumps.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Total number of heat pumps (#).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 7:</strong> Renewable generation installed (GW)</h3>
+				{% include_relative data/graphs/graph-renewable-generation-installed.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-renewable-generation-installed.svg %}	
+{% else %}
+				<img src="data/graphs/graph-renewable-generation-installed.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-renewable-generation-installed.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Renewable generation installed (GW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 8:</strong> Network annual carbon emission breakdown - Deep electrification (MtCO2)</h3>
+				{% include_relative data/graphs/graph-annual-carbon-emissions-deep-electrification.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-annual-carbon-emissions-deep-electrification.svg %}	
+{% else %}
+				<img src="data/graphs/graph-annual-carbon-emissions-deep-electrification.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-annual-carbon-emissions-deep-electrification.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual carbon emission breakdown - Deep electrification (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 9:</strong> Network annual carbon emission breakdown - Early net zero (MtCO2)</h3>
+				{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.svg %}	
+{% else %}
+				<img src="data/graphs/graph-annual-carbon-emissions-early-net-zero.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-annual-carbon-emissions-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual carbon emission breakdown - Early net zero (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 10:</strong> Network annual carbon emission breakdown - High hydrogen (MtCO2)</h3>
+				{% include_relative data/graphs/graph-annual-carbon-emissions-high-hydrogen.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-annual-carbon-emissions-high-hydrogen.svg %}	
+{% else %}
+				<img src="data/graphs/graph-annual-carbon-emissions-high-hydrogen.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-annual-carbon-emissions-high-hydrogen.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual carbon emission breakdown - High hydrogen (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 11:</strong> Annual peak demand (GW)</h3>
+				{% include_relative data/graphs/graph-annual-peak-demand.html %}
+{% if true %}
+	{% include_relative data/graphs/graph-annual-peak-demand.svg %}	
+{% else %}
+				<img src="data/graphs/graph-annual-peak-demand.svg" class="to-svg" />
+{% endif %}
+				<div class="download"><a href="data/graphs/graph-annual-peak-demand.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Annual peak demand (GW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
 		</div>
 	</div>
 

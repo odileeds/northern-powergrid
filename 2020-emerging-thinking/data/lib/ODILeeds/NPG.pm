@@ -20,7 +20,6 @@ sub load {
 	my ($self, $file) = @_;
 	my ($str,@lines,$i,$c,@header,%headers,%cols,@rows);
 
-print "$file ".(-e $file)."\n";
 	if(-e $file){
 		# Get a local file
 		open(FILE,$file);
@@ -30,10 +29,10 @@ print "$file ".(-e $file)."\n";
 		# Get a remote file
 		@lines = `wget -q --no-check-certificate -O- "$file"`;
 	}else{
-		print "ERROR: No file provided.\n";
+		print "ERROR: No file provided ($file).\n";
 		return $self;
 	}
-	
+	$self->{'file'} = $file;
 	$self->{'data'} = \@lines;
 
 	return $self;
@@ -48,8 +47,9 @@ sub setScenarios {
 
 sub process {
 	my ($self) = @_;
-	my(@lines,@header,$c,%headers,$i,@cols,$maxy,$miny,$maxyr,$minyr);
+	my(@lines,@header,$c,%headers,$i,@cols,$maxy,$miny,$maxyr,$minyr,$scale);
 
+	# Set some dummy min/max values
 	$minyr = 3000;
 	$maxyr = 2000;
 	$miny = 1e100;
@@ -75,10 +75,12 @@ sub process {
 		$lines[$i] =~ s/[\n\r]//g;
 		(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$lines[$i]);
 		for($c = 0; $c < @header; $c++){ $cols[$c] =~ s/(^\"|\"$)//g; }
-		$self->{'scenarios'}{$cols[$headers{'Scenario'}]} = {};
-		push(@{$self->{'scenariolookup'}},$cols[$headers{'Scenario'}]);
+		$self->{'scenarios'}{$cols[0]} = {};
+		push(@{$self->{'scenariolookup'}},$cols[0]);
 		for($c = 1; $c < @header; $c++){
-			$self->{'scenarios'}{$cols[$headers{'Scenario'}]}{$header[$c]} = $cols[$c];
+			if($cols[0]){
+				$self->{'scenarios'}{$cols[0]}{$header[$c]} = $cols[$c];
+			}
 			if($cols[$c] > $maxy){ $maxy = $cols[$c]; }
 			if($cols[$c] < $miny){ $miny = $cols[$c]; }
 		}
@@ -88,6 +90,24 @@ sub process {
 	$self->{'xmin'} = $minyr;
 	$self->{'ymax'} = $maxy;
 	$self->{'ymin'} = $miny;
+	
+	return $self;
+}
+
+sub scaleY {
+	my ($self,$scale) = @_;
+	my ($scenario,$y,$s);
+	
+	# Scale the max/min values
+	$self->{'ymax'} *= $scale;
+	$self->{'ymin'} *= $scale;
+
+	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
+		$scenario = $self->{'scenariolookup'}[$s];
+		for($y = $self->{'xmin'}; $y <= $self->{'xmax'}; $y++){
+			$self->{'scenarios'}{$scenario}{$y} *= $scale;
+		}
+	}
 	
 	return $self;
 }
@@ -105,7 +125,7 @@ sub draw {
 	$miny = $self->{'ymin'};
 	$maxy = $self->{'ymax'};
 
-	if(!$h){ $h = $w*0.4; }
+	if(!$h){ $h = $w*0.5; }
 
 	$miny = 0;
 
@@ -149,20 +169,20 @@ sub draw {
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 		$path = "";
-		$svg .= "<g data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\" class=\"data-series\">";
+		$svg .= "<g data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\" class=\"data-series\">";
 		$circles = "";
 		for($y = $minyr; $y <= $maxyr; $y++){
 			if($self->{'scenarios'}{$scenario}{$y}){
 				@pos = getXY(('x'=>$y,'y'=>$self->{'scenarios'}{$scenario}{$y},'width'=>$w,'height'=>$h,'left'=>$left,'right'=>$right,'bottom'=>$bottom,'top'=>$top,'xmin'=>$minyr,'xmax'=>$maxyr,'ymin'=>$miny,'ymax'=>$maxy));
 				$xpos = $pos[0];
 				$ypos = $pos[1];
-				$path .= ($y == $minyr ? "M":"L")." ".$xpos.",".$ypos;
+				$path .= ($y == $minyr ? "M":"L")." ".sprintf("%0.2f",$xpos).",".sprintf("%0.2f",$ypos);
 				if($props{'point'} > 0){
-					$circles .= "<circle cx=\"$xpos\" cy=\"$ypos\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>";
+					$circles .= "<circle cx=\"".sprintf("%0.2f",$xpos)."\" cy=\"".sprintf("%0.2f",$ypos)."\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>";
 				}
 			}
 		}
-		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".$self->{'scenario-props'}{$t}{'color'}."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
+		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
 		$svg .= $circles;
 		$svg .= "</g>\n";
 	}
@@ -197,12 +217,11 @@ sub table {
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 
-		$html .= "<tr data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\"><td class=\"".$self->{'scenario-props'}{$t}{'css'}."\">".$scenario."</td>";
+		$html .= "<tr data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\"><td class=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\">".$scenario."</td>";
 		
 		for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
-			$html .= "<td>$self->{'scenarios'}{$scenario}{$y}</td>";
+			$html .= "<td>".($self->{'scenarios'}{$scenario}{$y}||"")."</td>";
 		}
-#		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".$self->{'scenario-props'}{$t}{'color'}."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
 		$html .= "</tr>\n";
 	}
 	$html .= "</table>";
