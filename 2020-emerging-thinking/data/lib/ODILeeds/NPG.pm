@@ -186,7 +186,7 @@ sub table {
 	# Build HTML
 	$html = "<table>\n";
 
-	$html .= "<tr><th></th>";
+	$html .= "<tr><th>Scenario</th>";
 	for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
 		$html .= "<th>$y</th>";
 	}
@@ -197,10 +197,8 @@ sub table {
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 
-		$html .= "<tr><td class=\"".$self->{'scenario-props'}{$t}{'css'}."\">".$scenario."</td>";
+		$html .= "<tr data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\"><td class=\"".$self->{'scenario-props'}{$t}{'css'}."\">".$scenario."</td>";
 		
-#		$svg .= "<g data-scenario=\"".$self->{'scenario-props'}{$t}{'css'}."\" class=\"data-series\">";
-
 		for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
 			$html .= "<td>$self->{'scenarios'}{$scenario}{$y}</td>";
 		}

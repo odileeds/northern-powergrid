@@ -29,12 +29,16 @@ function getSVG(im){
 	return;
 }
 
+
 var blocks = document.getElementsByClassName('jekyll-parse');
+var regexp = /(\{\% include_relative .*.html \%\})/g;
+var match,matches;
 for(var i = 0; i < blocks.length; i++){
 	html = blocks[i].innerHTML.replace(/\n/g,"=====");
 	html = html.replace(/\{\% if true \%\}.*\{\% else \%\}/g,"");
 	html = html.replace(/\{\%[^\}]*\%\}/g,"");
-	html = html.replace(/=====/g,"\n")
+	html = html.replace(/=====/g,"\n");
+	
 	blocks[i].innerHTML = html;
 }
 var rs = document.getElementsByClassName('jekyll-remove');
