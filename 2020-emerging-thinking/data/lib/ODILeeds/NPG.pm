@@ -178,11 +178,11 @@ sub draw {
 				$ypos = $pos[1];
 				$path .= ($y == $minyr ? "M":"L")." ".sprintf("%0.2f",$xpos).",".sprintf("%0.2f",$ypos);
 				if($props{'point'} > 0){
-					$circles .= "<circle cx=\"".sprintf("%0.2f",$xpos)."\" cy=\"".sprintf("%0.2f",$ypos)."\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>";
+					$circles .= "<circle cx=\"".sprintf("%0.2f",$xpos)."\" cy=\"".sprintf("%0.2f",$ypos)."\" data-y=\"$self->{'scenarios'}{$scenario}{$y}\" data-x=\"$y\" r=\"$props{'point'}\" fill=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\"><title>$y: $self->{'scenarios'}{$scenario}{$y}</title></circle>\n";
 				}
 			}
 		}
-		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>";
+		$svg .= "<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>\n";
 		$svg .= $circles;
 		$svg .= "</g>\n";
 	}
