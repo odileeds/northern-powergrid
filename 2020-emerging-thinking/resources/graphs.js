@@ -2,6 +2,7 @@ function highlightScenario(scenario){
 	svgs = document.querySelectorAll('svg');
 	trs = document.getElementsByTagName('tr');
 
+	console.log(highlightScenario,scenario,svgs,trs)
 	if(scenario){
 		for(s = 0; s < svgs.length; s++){
 			lines = svgs[s].querySelectorAll('.data-series');
