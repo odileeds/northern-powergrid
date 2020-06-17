@@ -10,6 +10,7 @@ function highlightScenario(scenario){
 				if(lines[i].getAttribute('data-scenario')==scenario){ lines[i].classList.add('on'); match = i; }
 				else lines[i].classList.remove('on');
 			}
+			console.log(scenario,match);
 			// Move series to top
 			if(match >= 0){
 				lines[match].closest('svg').appendChild(lines[match])
