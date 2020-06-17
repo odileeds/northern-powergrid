@@ -3,6 +3,7 @@ package ODILeeds::NPG;
 use strict;
 use warnings;
 use Data::Dumper;
+use ODILeeds::Colour;
 
 
 sub new {
@@ -115,7 +116,7 @@ sub scaleY {
 # Draw the graph
 sub draw {
 	my ($self, %props) = @_;
-	my ($r,$w,$h,@lines,$svg,@header,%headers,$c,@cols,@rows,$i,@scenariolookup,$s,%scenarios,$scenario,$minyr,$maxyr,$miny,$maxy,$path,$y,$yrs,$yrange,$xpos,$ypos,$t,@pos,$circles,%ticks,@a,@b,$left,$right,$top,$bottom);
+	my ($r,$w,$h,@lines,$svg,@header,%headers,$c,@cols,@rows,$i,@scenariolookup,$s,%scenarios,$scenario,$safescenario,$minyr,$maxyr,$miny,$maxy,$path,$y,$yrs,$yrange,$xpos,$ypos,$t,@pos,$circles,%ticks,@a,@b,$left,$right,$top,$bottom);
 
 	$w = $props{'width'};
 	$h = $props{'height'};
@@ -165,11 +166,12 @@ sub draw {
 
 	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
 		$scenario = $self->{'scenariolookup'}[$s];
+		$safescenario = safeXML($scenario);
 		$t = $scenario;
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 		$path = "";
-		$svg .= "<g data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\" class=\"data-series\">";
+		$svg .= "<g data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||safeID($scenario)).($scenario =~ "customer flexibility" ? "-customer-flexibility":"")."\" class=\"data-series\">";
 		$circles = "";
 		for($y = $minyr; $y <= $maxyr; $y++){
 			if($self->{'scenarios'}{$scenario}{$y}){
@@ -182,7 +184,7 @@ sub draw {
 				}
 			}
 		}
-		$svg .= "\t<path d=\"$path\" id=\"$scenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$scenario</title></path>\n";
+		$svg .= "\t<path d=\"$path\" id=\"$safescenario\" class=\"line".($scenario =~ "customer flexibility" ? " dotted":"")."\" stroke=\"".($self->{'scenario-props'}{$t}{'color'}||"#cc0935")."\" stroke-width=\"$props{'stroke'}\" stroke-linecap=\"round\"><title>$safescenario</title></path>\n";
 		$svg .= $circles;
 		$svg .= "</g>\n";
 	}
@@ -195,7 +197,7 @@ sub draw {
 # Draw the graph
 sub table {
 	my ($self, %props) = @_;
-	my ($html,$minyr,$maxyr,$miny,%ticks,$s,$t,$y,$scenario);
+	my ($html,$minyr,$maxyr,$miny,%ticks,$s,$t,$y,$scenario,$safescenario,$c);
 
 	
 	$minyr = $self->{'xmin'};
@@ -213,11 +215,14 @@ sub table {
 	$html .= "</tr>\n";
 	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
 		$scenario = $self->{'scenariolookup'}[$s];
+		$safescenario = safeXML($scenario).($scenario =~ "customer flexibility" ? "&nbsp;-&nbsp;-&nbsp;-":"");
 		$t = $scenario;
 		$t =~ s/ \(.*\)//g;
 		$t =~ s/ with customer flexibility//g;
 
-		$html .= "<tr data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\"><td class=\"".($self->{'scenario-props'}{$t}{'css'}||"")."\">".$scenario."</td>";
+		$c = ODILeeds::Colour->new('colour'=>($self->{'scenario-props'}{$t}{'color'}||"#cc0935"));
+
+		$html .= "<tr data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||safeID($scenario))."".($scenario =~ "customer flexibility" ? "-customer-flexibility":"")."\"><td ".($self->{'scenario-props'}{$t}{'css'} ? "class=\"".$self->{'scenario-props'}{$t}{'css'}."\"" : "style=\"background-color:".($c->{'hex'}).";color:".($c->{'text'})."\"")."><span>".$safescenario."</span></td>";
 		
 		for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
 			$html .= "<td>".($self->{'scenarios'}{$scenario}{$y}||"")."</td>";
@@ -280,6 +285,20 @@ sub buildAxis {
 
 
 # "Private" functions (they aren't technically private)
+
+sub safeID {
+	my ($str) = $_[0];
+	$str =~ s/ \& / and /g;
+	$str =~ s/\s/-/g;
+	$str =~ tr/[A-Z]/[a-z]/;
+	return $str;
+}
+
+sub safeXML {
+	my ($str) = $_[0];
+	$str =~ s/ \& / \&amp; /g;
+	return $str;
+}
 
 sub getXY {
 	my (%props) = @_;

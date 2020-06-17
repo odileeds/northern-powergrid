@@ -1,20 +1,40 @@
-function ready(){
-	var trs,r,i,lines,scenario;
+function highlightScenario(scenario){
+	svgs = document.querySelectorAll('svg');
 	trs = document.getElementsByTagName('tr');
-	for(r = 0; r < trs.length; r++){
-		
-		trs[r].addEventListener('mouseover', function(e){
-			scenario = e.target.closest('tr').getAttribute('data-scenario');
-			if(scenario){
-				lines = e.target.closest('figure').querySelectorAll('svg .data-series');
-				for(i = 0; i < lines.length; i++){
-					if(lines[i].getAttribute('data-scenario')==scenario) lines[i].classList.add('on');
-					else lines[i].classList.remove('on');
-				}
+
+	if(scenario){
+		for(s = 0; s < svgs.length; s++){
+			lines = svgs[s].querySelectorAll('.data-series');
+			var match = -1;
+			for(i = 0; i < lines.length; i++){
+				if(lines[i].getAttribute('data-scenario')==scenario){ lines[i].classList.add('on'); match = i; }
+				else lines[i].classList.remove('on');
 			}
-		}, false);
+			// Move series to top
+			if(match >= 0){
+				lines[match].closest('svg').appendChild(lines[match])
+			}
+		}
+		for(i = 0; i < trs.length; i++){
+			if(trs[i].getAttribute('data-scenario')==scenario) trs[i].classList.add('on');
+			else trs[i].classList.remove('on');
+		}
 	}
 	
+}
+
+function ready(){
+	var trs,r,i,lines,scenario;
+	// Add hover events to table rows
+	trs = document.getElementsByTagName('tr');
+	for(r = 0; r < trs.length; r++){
+		trs[r].addEventListener('mouseover', function(e){
+			var tr = e.target.closest('tr');
+			var scenario = tr.getAttribute('data-scenario');
+			highlightScenario(scenario);
+		}, false);
+	}
+	// Add hover events to lines
 }
 
 function getResource(res){

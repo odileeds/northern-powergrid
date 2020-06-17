@@ -83,4 +83,40 @@
 	"table":"graph-annual-peak-demand-high-hydrogen.html",
 	"yaxis-label": "Annual gross peak demand (GW)",
 	"left": 80
+},{
+	"csv":"Network energy consumption breakdown - Deep electrification (TWh).csv",
+	"svg":"graph-energy-consumption-deep-electrification.svg",
+	"table":"graph-energy-consumption-deep-electrification.html",
+	"yaxis-label": "Network energy consumption (TWh)",
+	"left": 80
+},{
+	"csv":"Network energy consumption breakdown - Early net zero (TWh).csv",
+	"svg":"graph-energy-consumption-early-net-zero.svg",
+	"table":"graph-energy-consumption-early-net-zero.html",
+	"yaxis-label": "Network energy consumption (TWh)",
+	"left": 80
+},{
+	"csv":"Network energy consumption breakdown - High Hydrogen (TWh).csv",
+	"svg":"graph-energy-consumption-high-hydrogen.svg",
+	"table":"graph-energy-consumption-high-hydrogen.html",
+	"yaxis-label": "Network energy consumption (TWh)",
+	"left": 80
+},{
+	"csv":"Network peak demand breakdown - Deep electrification (GW).csv",
+	"svg":"graph-peak-demand-breakdown-deep-electrification.svg",
+	"table":"graph-peak-demand-breakdown-deep-electrification.html",
+	"yaxis-label": "Network peak demand (GW)",
+	"left": 80
+},{
+	"csv":"Network peak demand breakdown - Early net zero (GW).csv",
+	"svg":"graph-peak-demand-breakdown-early-net-zero.svg",
+	"table":"graph-peak-demand-breakdown-early-net-zero.html",
+	"yaxis-label": "Network peak demand (GW)",
+	"left": 80
+},{
+	"csv":"Network peak demand breakdown - High hydrogen (GW).csv",
+	"svg":"graph-peak-demand-breakdown-high-hydrogen.svg",
+	"table":"graph-peak-demand-breakdown-high-hydrogen.html",
+	"yaxis-label": "Network peak demand (GW)",
+	"left": 80
 }]

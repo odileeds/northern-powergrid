@@ -21,6 +21,18 @@ foreach $scenario (keys(%scenarios)){
 	print "$scenario - $scenarios{$scenario}{'color'} - $scenarios{$scenario}{'css'}\n";
 }
 
+# Load in the extra colour definitions
+open(FILE,$dir."colours.csv");
+@lines = <FILE>;
+close(FILE);
+foreach $line  (@lines){
+	$line =~ s/[\n\r]//g;
+	(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$line);
+	$scenarios{$cols[0]} = ();
+	$scenarios{$cols[0]}{'color'} = $cols[1];
+}
+
+
 
 # Get the graph config
 open(FILE,$dir."graphs/index.json");
