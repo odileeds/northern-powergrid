@@ -83,9 +83,8 @@ for(var i = 0; i < rs.length; i++) rs[i].parentNode.removeChild(rs[i]);
 
 var res = document.getElementsByClassName('jekyll-resource');
 var toload = res.length;
+var loaded = 0;
 if(toload > 0){
-	_ready = false;
-	var loaded = 0;
 	for(var i = 0; i < toload; i++) getResource(res[i]);
 }
 
