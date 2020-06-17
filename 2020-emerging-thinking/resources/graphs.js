@@ -26,9 +26,11 @@ function highlightScenario(scenario){
 }
 
 function ready(){
+	console.log('ready');
 	var trs,r,i,lines,scenario;
 	// Add hover events to table rows
 	trs = document.getElementsByTagName('tr');
+	console.log(trs);
 	for(r = 0; r < trs.length; r++){
 		trs[r].addEventListener('mouseover', function(e){
 			var tr = e.target.closest('tr');
