@@ -39,6 +39,7 @@
 	"svg":"graph-ev-percent.svg",
 	"table":"graph-ev-percent.html",
 	"yaxis-label": "EVs (%)",
+	"yaxis-max": 100,
 	"yscale": 100,
 	"left": 80
 },{

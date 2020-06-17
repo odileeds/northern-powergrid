@@ -132,6 +132,8 @@ sub draw {
 
 	if($props{'xaxis-max'}){ $maxyr = $props{'xaxis-max'}; }
 	if($props{'xaxis-min'}){ $minyr = $props{'xaxis-min'}; }
+	if($props{'yaxis-max'}){ $maxy = $props{'yaxis-max'}; }
+	if($props{'yaxis-min'}){ $miny = $props{'yaxis-min'}; }
 
 	$yrs = $maxyr-$minyr;
 	$yrange = $maxy-$miny;
@@ -243,6 +245,7 @@ sub buildAxis {
 	%ticks = makeTicks($props{($axis eq "yaxis" ? "ymin":"xmin")},$props{($axis eq "yaxis" ? "ymax":"xmax")},%props);
 
 	$svg = "<g class=\"grid grid-$props{'axis'}\">\n";
+	
 	for($t = 0; $t < $ticks{'length'}; $t++){
 
 		if($props{'axis'} eq "x"){
