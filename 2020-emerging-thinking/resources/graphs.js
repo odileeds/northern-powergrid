@@ -2,7 +2,6 @@ function highlightScenario(scenario){
 	svgs = document.querySelectorAll('svg');
 	trs = document.getElementsByTagName('tr');
 
-	console.log(highlightScenario,scenario,svgs,trs)
 	if(scenario){
 		for(s = 0; s < svgs.length; s++){
 			lines = svgs[s].querySelectorAll('.data-series');
@@ -11,7 +10,6 @@ function highlightScenario(scenario){
 				if(lines[i].getAttribute('data-scenario')==scenario){ lines[i].classList.add('on'); match = i; }
 				else lines[i].classList.remove('on');
 			}
-			console.log(scenario,match);
 			// Move series to top
 			if(match >= 0){
 				lines[match].closest('svg').appendChild(lines[match])
@@ -26,11 +24,9 @@ function highlightScenario(scenario){
 }
 
 function ready(){
-	console.log('ready');
 	var trs,r,i,lines,scenario;
 	// Add hover events to table rows
 	trs = document.getElementsByTagName('tr');
-	console.log(trs);
 	for(r = 0; r < trs.length; r++){
 		trs[r].addEventListener('mouseover', function(e){
 			var tr = e.target.closest('tr');
@@ -84,9 +80,9 @@ for(var i = 0; i < rs.length; i++) rs[i].parentNode.removeChild(rs[i]);
 var res = document.getElementsByClassName('jekyll-resource');
 var toload = res.length;
 var loaded = 0;
-if(toload > 0){
+if(toload == 0) ready();
+else{
 	for(var i = 0; i < toload; i++) getResource(res[i]);
 }
 
-if(toload == loaded) ready();
 
