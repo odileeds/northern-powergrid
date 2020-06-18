@@ -13,6 +13,7 @@
 	.glory { height: unset; }
 	.glory .holder { height: unset; }
 	.glory-opacity { height: unset; }
+	h2 { font-weight: bold; font-size: 1.4em; margin-top: 2em; }
 	figure { border-top: 2px solid #cc0935; padding: 0.5em 0; width: 640px; max-width:100%; margin-bottom: 3em; }
 	figure h3 { font-size: 1em; margin-top: 0; }
 	figure table { border-spacing: 0.4em; border-collapse: separate; width: 100%; margin-left: -0.4em; }
@@ -63,7 +64,7 @@
 		<div class="holder padded">
 			<p>The following graphs are supplemental to <a href="index.html">Northern Powergrid's potential net zero scenarios interactive map</a>. Each graph can be downloaded as a scalable-vector-graphic (SVG). The underlying data for each graph is also available as a CSV file.</p>
 	
-			<h1 style="text-align:left"><b>Emissions<b></h1>
+			<h2>Emissions</h2>
 			
 			<figure class="jekyll-parse">
 				<h3><strong>Figure 1:</strong> Annual carbon emissions (MtCO2)</h3>
@@ -100,7 +101,7 @@
 				<div class="download"><a href="data/graphs/graph-annual-carbon-emissions-high-hydrogen.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual carbon emission breakdown - High hydrogen (MtCO2).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
 			</figure>
 
-			<h1 style="text-align:left"><b>Low carbon technologies<b></h1>
+			<h2>Low carbon technologies</h2>
 			
 			<figure class="jekyll-parse">
 				<figcaption><strong>Figure 6:</strong> Electric vehicle uptake forecast.</figcaption>
@@ -137,7 +138,7 @@
 				<div class="download"><a href="data/graphs/graph-renewable-generation-installed.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Renewable generation installed (GW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
 			</figure>
 
-			<h1 style="text-align:left"><b>Network data<b></h1>
+			<h2>Network data</h2>
 
 			<figure class="jekyll-parse">
 				<h3><strong>Figure 11:</strong> Annual peak demand (GW)</h3>
@@ -188,8 +189,36 @@
 				<div class="download"><a href="data/graphs/graph-energy-consumption-high-hydrogen.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network energy consumption breakdown - High Hydrogen (TWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
 			</figure>
 
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 18:</strong> Annual network energy consumption (TWh)</h3>
+				<div class="table-holder">{% include_relative data/graphs/graph-annual-energy-consumption.html %}</div>
+				{% include_relative data/graphs/graph-annual-energy-consumption.svg %}	
+				<div class="download"><a href="data/graphs/graph-energy-consumption-high-hydrogen.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Annual network energy consumption (TWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
 
-			
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 19:</strong> Network annual fuel consumption breakdown - Deep electrification (GWh-yr)</h3>
+				<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-deep-electrification.html %}</div>
+				{% include_relative data/graphs/graph-fuel-consumption-deep-electrification.svg %}	
+				<div class="download"><a href="data/graphs/graph-fuel-consumption-deep-electrification.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual fuel consumption breakdown - Deep electrification (GWh-yr).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 20:</strong> Network annual fuel consumption breakdown - Early net zero (GWh-yr)</h3>
+				<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-early-net-zero.html %}</div>
+				{% include_relative data/graphs/graph-fuel-consumption-early-net-zero.svg %}	
+				<div class="download"><a href="data/graphs/graph-fuel-consumption-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual fuel consumption breakdown - Deep electrification (GWh-yr).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
+
+			<figure class="jekyll-parse">
+				<h3><strong>Figure 21:</strong> Network annual fuel consumption breakdown - High hydrogen (GWh-yr)</h3>
+				<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-high-hydrogen.html %}</div>
+				{% include_relative data/graphs/graph-fuel-consumption-high-hydrogen.svg %}	
+				<div class="download"><a href="data/graphs/graph-fuel-consumption-high-hydrogen.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a><a href="data/graphs/Network annual fuel consumption breakdown - High hydrogen (GWh-yr).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a></div>
+			</figure>
+
 
 
 		</div>
