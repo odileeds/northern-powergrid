@@ -206,6 +206,9 @@ ul.grid > li > a {
 	text-decoration: none;
 	transition: background-color 0.3s ease-in, color 0.3s ease-in, background 0.3s ease-in;
 }
+ul.grid > li > a time {
+	font-weight: 400;
+}
 /* End of CSS Grid */
 
 
@@ -231,54 +234,6 @@ blockquote {
 	width: 250px;
 	height: auto;
 }
-body.front .glory img {
-	width: 500px;
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translate3d(-50%, -50%, 0px);
-}
-body.front .glory .holder {
-	padding-top: 59px;
-}
-body.front .glory {
-	height: 300px;
-	position: relative;
-}
-body.front .glory-image {
-	background-image:url('/resources/images/front-header.jpg');
-	/*filter: blur(0.5px) !important;*/
-	background-position:center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 300px;
-	position: absolute;
-	left: 0px;
-	height: 100%;
-	right: 0px;
-}
-.elsewhere { float: right; }
-.elsewhere li { display: inline-block; margin-left: 0.5em; }
-.elsewhere li a { line-height: 0; display: block;}
-.type:after { content: ":"; }
-
-.note { width: 12.75em; height: 12.75em; float: left; position: relative; margin-right: 1.5em; padding: 1em; background-color: #f9bc26; margin-bottom: 1em; margin-left: -3em; }
-.note:before {
-	background: #ff6700 none repeat scroll 0 0;
-	border-color: #efefef #f9bc26 #efefef #f9bc26;
-	border-style: solid;
-	border-width: 0 0 16px 16px;
-	box-shadow: -2px -4px 1px rgba(0, 0, 0, 0.2), -4px -2px 1px rgba(0, 0, 0, 0.05);
-	content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-}
-.hamburger { display: none; }
-p.source { font-weight: 700; }
-.narrow-only { display: none; }
 
 table td.n { text-align: center; }
 
