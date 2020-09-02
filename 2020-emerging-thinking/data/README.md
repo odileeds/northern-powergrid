@@ -3,15 +3,22 @@
 ## Adding parameters
 
 1. Save the parameter files for each of the four scenarios into [scenarios/primaries](scenarios/primaries/).
-2. Edit [npg.js](../resources/npg.js) to include the new parameter in the dropdown:
+2. Edit [config.json](scenarios/config.json) to include the new parameter in the dropdown:
 ```
-this.parameters = {
-			'ev':{ 'title': 'Electric vehicles', 'combine': 'sum', 'units':'', 'dp': 0 },
-			'peakdemand':{ 'title': 'Peak demand', 'combine': 'max', 'units':'MW', 'dp': 3 },
-			'peakutilisation':{ 'title': 'Peak utilisation', 'combine': 'max', 'units':'%', 'dp': 1 },
-			'windcapacity':{ 'title': 'Installed wind capacity', 'combine': 'sum', 'units':'MW', 'dp': 3 }
-		};
+{
+	"ev": { "title": "Electric Vehicles (number)", "combine": "sum", "units":"", "dp": 0, "description": "Number of registered plug in electric vehicles (pure and hybrid)" },
+	"heatpumps": { "title": "Heat Pumps (number)", "combine": "sum", "units":"", "dp": 0, "description": "Number of heat pumps per residential household and commercial properties including from district heating schemes" },
+.
+.
+.
+};
 ```
+Each parameter can have the following properties:
+  * `title` - the label used for this parameter
+  * `description` - the description that appears below the drop down
+  * `combine` - how the data from the smaller regions are combined into larger regions (`sum` or `max` are the options)
+  * `units` - the units to use e.g. `MWh`
+  * `dp` - the number of decimal places to use for this value
 3. Edit [index.json](index.json) and add the file references for each scenario:
 ```
 	"Community renewables": {

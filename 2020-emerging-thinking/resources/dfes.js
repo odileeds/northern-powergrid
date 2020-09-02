@@ -1,72 +1,25 @@
 /*!
  * ODI Leeds Future Energy Scenario viewer
  */
-var dfes;
-
-S(document).ready(function(){
-
+(function(root){
+	
 	var scripts = document.getElementsByTagName('script');
 	var path = "";
 	for(var i = 0; i < scripts.length; i++){
-		if(scripts[i].src.indexOf('npg.js')>=0) path = scripts[i].src.split('?')[0];	// remove any ?query
+		if(scripts[i].src.indexOf('dfes.js')>=0) path = scripts[i].src.split('?')[0];	// remove any ?query
 	}
 	path = path.split('/').slice(0, -2).join('/')+'/';  // remove last filename part of path
 
 	// Main function
-	function FES(file){
+	function FES(config){
 
-		this.options = {
-			"scenario": "Deep electrification",
-			"view": "LAD",
-			"key": (new Date()).getFullYear()+'',
-			"parameter": "ev",
-			"scale": "relative",
-			"source": null
-		}
+		if(!config) config = {};
+		this.options = (config.options||{});
 		this.parameters = {};
-		this.data = { 'scenarios': null, 'primary2lad': null };
-		this.logging = true;
-		this.layers = {
-			'LAD':{
-				'file': 'data/maps/LAD2019-npg.geojson'
-			},
-			'primaries':{
-				'file':'data/maps/primaries-unique-all.geojson'
-			}
-		}
-		this.views = {
-			'LAD':{
-				'title':'Local Authorities',
-				'file':'data/maps/LAD-npg.geojson',
-				'source': 'primary',
-				'layers':[{
-					'id': 'LAD',
-					'heatmap': true,
-					'boundary':{'strokeWidth':2}
-				}]
-			},
-			'primaries':{
-				'title':'Primary Substations',
-				'file':'data/maps/primaries-unique-all.geojson',
-				'source': 'primary',
-				'layers':[{
-					'id': 'primaries',
-					'heatmap': true,
-				}]
-			},
-			'primariesLAD':{
-				'title':'Primary Substations (with Local Authorities)',
-				'source': 'primary',
-				'layers':[{
-					'id':'LAD',
-					'heatmap': false,
-					'boundary':{'color':'#444444','strokeWidth':1,"opacity":0.5,"fillOpacity":0}
-				},{
-					'id':'primaries',
-					'heatmap': true,
-				}]
-			}
-		};
+		this.data = { };//'scenarios': null, 'primary2lad': null };
+		this.logging = true;		
+		this.layers = (config.layers||{});
+		this.views = (config.views||{});
 		
 		
 		S().ajax(path+"data/scenarios/config.json",{
@@ -156,8 +109,6 @@ S(document).ready(function(){
 			el[0].checked = !el[0].checked;
 			e.data.me.setScale(el[0].checked);
 		})
-
-		this.options.years = {'min':2017,'max':2050};
 
 		// Create the slider
 		this.slider = document.getElementById('slider');
@@ -1092,7 +1043,6 @@ S(document).ready(function(){
 		return {'min': Math.floor(mn/inc) * inc, 'max': Math.ceil(mx/inc) * inc};
 	}
 
-	// Define a new instance of the FES
-	dfes = new FES();
-	
-});
+	root.FES = function(config){ return new FES(config); };
+
+})(window || this);
