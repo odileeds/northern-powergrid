@@ -13,10 +13,11 @@
 	// Main function
 	function FES(config){
 
+		this.version = "1.2";
 		if(!config) config = {};
 		this.options = (config.options||{});
 		this.parameters = {};
-		this.data = { };//'scenarios': null, 'primary2lad': null };
+		this.data = { };
 		this.logging = true;		
 		this.layers = (config.layers||{});
 		this.views = (config.views||{});
@@ -28,26 +29,14 @@
 			'dataType':'json',
 			'success': function(d){
 				this.parameters = d;
-				S().ajax(path+"data/primaries2lad.json",{
+				S().ajax(path+"data/scenarios/index.json",{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
 					'success': function(d,attr){
-						console.info('Got '+attr.url);	
-						this.data.primary2lad = d;
-						S().ajax(path+"data/scenarios/index.json",{
-							'this':this,
-							'cache':false,
-							'dataType':'json',
-							'success': function(d,attr){
-								console.info('Got '+attr.url);
-								this.data.scenarios = d;
-								this.init();
-							},
-							'error': function(e,attr){
-								this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
-							}
-						});
+						console.info('Got '+attr.url);
+						this.data.scenarios = d;
+						this.init();
 					},
 					'error': function(e,attr){
 						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
@@ -175,6 +164,7 @@
 	}
 	
 	FES.prototype.loadScenarioData = function(callback){
+
 		S().ajax(path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].file,{
 			'this':this,
 			'cache':false,
@@ -184,8 +174,7 @@
 			'callback': callback,
 			'success': function(d,attr){
 				console.info('Got '+attr.url);
-				this.loadedData(d,attr.scenario,attr.parameter);
-				if(typeof attr.callback==="function") attr.callback.call(this);
+				this.loadedData(d,attr.scenario,attr.parameter,attr.callback);
 			},
 			'error': function(e,attr){
 				this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
@@ -225,7 +214,6 @@
 			this.message('We have no data for '+this.parameters[this.options.parameter].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
 		}else{
 			this.message('',{'id':'error','type':'ERROR'});
-
 			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
 				this.loadScenarioData(function(){
 					this.buildMap();
@@ -302,149 +290,187 @@
 		return this;
 	}
 
-	FES.prototype.loadedData = function(d,scenario,parameter){
+	FES.prototype.loadedData = function(d,scenario,parameter,callback){
 	
-		this.data.scenarios[scenario].data[parameter][this.options.source].raw = CSV2JSON(d,1);
-		this.data.scenarios[scenario].data[parameter][this.options.source].primaries = {'values':{},'fullrange':{}};
-		this.data.scenarios[scenario].data[parameter][this.options.source].LAD = {'values':{},'fullrange':{},'primarylist':{}};
-		var r,c,v,p,lad;
-		var key = "Primary";
-		
-		// Find the column number for the column containing the Primary name
-		var col = -1;
-		for(i = 0; i < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; i++){
-			n = this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i];
-			if(parseFloat(n) == n) this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i] = parseInt(n);
-			if(this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[i] == key) col = i;
-		}
-		if(col >= 0){
-			var min = 1e100;
-			var max = -1e100;
-			for(r = 0; r < this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows.length; r++){
-				// The primary key
-				pkey = this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][col];
-				this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey] = {};
+		var r,c,v,p,lad,l,key,min,max,source;
+		var data = this.data.scenarios[scenario].data[parameter][this.options.source];
 
-				for(c = 0; c < this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name.length; c++){
-					if(c != col){
-						if(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]=="") this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c] = 0;
-						v = parseFloat(this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c]);
-						this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[pkey][this.data.scenarios[scenario].data[parameter][this.options.source].raw.fields.name[c]] = (typeof v==="number") ? v : this.data.scenarios[scenario].data[parameter][this.options.source].raw.rows[r][c];
-						if(!isNaN(v)){
-							min = Math.min(min,v);
-							max = Math.max(max,v);
+		if(!data.key){
+			this.logger.error('No key provided for '+scenario+' '+parameter+' '+this.options.source);
+			return this;
+		}
+
+		if(!data.layers) data.layers = {};
+		if(!data.raw){
+			data.raw = CSV2JSON(d,1);
+
+			// Find the column number for the column containing the name
+			// And convert year headings to integers
+			var col = -1;
+			for(i = 0; i < data.raw.fields.name.length; i++){
+				n = data.raw.fields.name[i];
+				if(parseFloat(n) == n) data.raw.fields.name[i] = parseInt(n);
+				if(data.raw.fields.name[i] == data.key) col = i;
+				// Loop over columns
+				for(c = 0; c < data.raw.fields.name.length; c++){
+					if(parseInt(data.raw.fields.name[c])==data.raw.fields.name[c]){
+						for(r = 0; r < data.raw.rows.length; r++){
+							// Convert to numbers
+							data.raw.rows[r][c] = parseFloat(data.raw.rows[r][c]);
 						}
 					}
 				}
 			}
-			this.data.scenarios[scenario].data[parameter][this.options.source].primaries.fullrange = {'min':min,'max':max};
-			// Combine the data into Local Authority Districts
-			var min = 1e100;
-			var max = -1e100;
-			// For each primary
-			for(p in this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values){
-				if(this.data.primary2lad[p]){
-					// Loop over the LADs for this primary
-					for(lad in this.data.primary2lad[p]){
-						// Loop over each key
-						for(key in this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p]){
-							if(parseInt(key)==key){
-								// Zero the variable if necessary
-								if(!this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad]) this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad] = {};
-								if(!this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]) this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] = 0;
-								// Sum the fractional amount for this LAD/Primary
-								if(this.parameters[parameter].combine=="sum"){
-									this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] += this.data.primary2lad[p][lad]*this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p][key];
-								}else if(this.parameters[parameter].combine=="max"){
-									this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key] = Math.max(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key],this.data.scenarios[scenario].data[parameter][this.options.source].primaries.values[p][key]);
+			if(col >= 0) data.col = col;
+		}
+
+		if(data.col >= 0){
+			
+			// Loop over the layers
+			for(l in this.layers){
+
+				// If this layer hasn't already been defined we try to make it
+				if(!data.layers[l]){
+
+					if(this.layers[l].data){
+
+						if(this.layers[l].data.mapping && typeof this.layers[l].data.mapping==="string"){
+							// Process data layers that need a mapping
+
+							// Load from JSON file
+							S().ajax(path+this.layers[l].data.mapping,{
+								'this':this,
+								'cache':false,
+								'dataType':'json',
+								'layer':l,
+								'scenario':scenario,
+								'parameter':parameter,
+								'source':this.options.source,
+								'callback':callback,
+								'complete': function(d,attr){
+									console.info('Got '+attr.url);
+									this.layers[attr.layer].data.mapping = d;
+									this.loadedData('',attr.scenario,attr.parameter,attr.callback);
+								},
+								'error': function(e,attr){
+									this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 								}
-								if(!isNaN(this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key])){
-									min = Math.min(min,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
-									max = Math.max(max,this.data.scenarios[scenario].data[parameter][this.options.source].LAD.values[lad][key]);
-								}else{
-									console.warn('Problem with value',scenario,parameter,lad,key);
+							});
+							return this;
+
+						}else{
+							
+							source = this.layers[l].data.src;
+							if(source && this.data.scenarios[scenario].data[parameter][source]){
+
+								// No mapping needed
+								data.layers[l] = {'values':{},'fullrange':{}};
+
+								min = 1e100;
+								max = -1e100;
+								
+								// Get the data source (which may be different to the one we loaded)
+								d = this.data.scenarios[scenario].data[parameter][source];
+
+								// Loop over data rows
+								for(r = 0; r < d.raw.rows.length; r++){
+
+									// The primary key
+									pkey = d.raw.rows[r][data.col];
+									if(this.layers[l].data.mapping){
+										if(this.layers[l].data.mapping[pkey]){
+											for(lad in this.layers[l].data.mapping[pkey]){
+												if(!data.layers[l].values[lad]) data.layers[l].values[lad] = {};
+												for(c = 0; c < d.raw.fields.name.length; c++){
+													// Set values to zero
+													key = d.raw.fields.name[c];
+													if(c != col && parseInt(key)==key && !data.layers[l].values[lad][key]){
+														data.layers[l].values[lad][key] = 0;
+													}
+												}
+											}
+										}
+									}else{
+										if(!data.layers[l].values[pkey]) data.layers[l].values[pkey] = {};
+									}
+
+									// Loop over columns in the raw data
+									for(c = 0; c < d.raw.fields.name.length; c++){
+										if(c != col && parseInt(d.raw.fields.name[c])==d.raw.fields.name[c]){
+
+											if(d.raw.rows[r][c]=="") d.raw.rows[r][c] = 0;
+
+											v = d.raw.rows[r][c];
+
+											if(this.layers[l].data.mapping){
+												if(this.layers[l].data.mapping[pkey]){
+
+													key = d.raw.fields.name[c]+"";
+
+													for(lad in this.layers[l].data.mapping[pkey]){
+
+														if(this.parameters[parameter].combine=="sum"){
+
+															// Sum the fractional amount for this mapped area
+															data.layers[l].values[lad][key] += (v*this.layers[l].data.mapping[pkey][lad]);
+
+														}else if(this.parameters[parameter].combine=="max"){
+
+															// Find the maximum value for mapped areas
+															data.layers[l].values[lad][key] = Math.max(v,data.layers[l].values[lad][key]);
+
+														}
+													}
+												}
+
+											}else{
+
+												// If this layer uses the current source as "data" we can set it
+												data.layers[l].values[pkey][d.raw.fields.name[c]] = (typeof v==="number") ? v : d.raw.rows[r][c];
+											}
+										}
+									}
 								}
+
+								// Find minimum and maximum values
+								for(pkey in data.layers[l].values){
+									for(key in data.layers[l].values[pkey]){
+										if(!isNaN(data.layers[l].values[pkey][key])){
+											min = Math.min(min,data.layers[l].values[pkey][key]);
+											max = Math.max(max,data.layers[l].values[pkey][key]);
+										}else{
+											// Ignore fields that aren't years
+										}
+									}
+								}
+
+								data.layers[l].fullrange = {'min':min,'max':max};
+							}else{
+								console.error('No source data loaded for '+source);
+								return this;
 							}
 						}
+					}else{
+						console.error('No data attribute provided for layer '+l);
+						return this;
 					}
 				}
-			}
-			this.data.scenarios[scenario].data[parameter][this.options.source].LAD.fullrange = {'min':min,'max':max};
+
+			}	// End loop over layers
+
 		}
-		
+
+		this.data.scenarios[scenario].data[parameter][this.options.source] = data;
+
+		if(typeof callback==="function") callback.call(this);
+
 		return this;
-	}
-
-	FES.prototype.buildBarChart = function(attr){
-
-		if(!attr) attr = {};
-
-		if(attr.id){
-
-			var data = [];
-			
-			// Work out the Local Authority name
-			var lad19nm = attr.id;
-			if(this.layers.LAD){
-				for(var c = 0; c < this.layers.LAD.data.features.length; c++){
-					if(this.layers.LAD.data.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LAD.data.features[c].properties.lad19nm;
-				}
-			}
-			
-			for(var p in this.data.primary2lad){
-				if(this.data.primary2lad[p][attr.id]){
-					v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key];
-					fracLA = this.data.primary2lad[p][attr.id]*v;
-					fracOther = v - fracLA;
-					data.push([p+'<br />Total: %VALUE%<br />'+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
-				}
-			}
-
-			data.sort(function(a, b) {
-				if(a[1][0]===b[1][0]) return 0;
-				else return (a[1][0] < b[1][0]) ? -1 : 1;
-			}).reverse();
-
-			// Remove totals from bars now that we've sorted by total
-			for(var i = 0; i < data.length; i++){
-				data[i][1].splice(0,1);
-			}
-			
-			// Create the barchart object. We'll add a function to
-			// customise the class of the bar depending on the key.
-			var chart = new S.barchart('#barchart',{
-				'formatKey': function(key){
-					return '';
-				},
-				'formatBar': function(key,val,series){
-					return (typeof series==="number" ? "series-"+series : "");
-				}
-			});
-
-			// Send the data array and bin size then draw the chart
-			chart.setData(data).setBins({ 'mintick': 5 }).draw();
-			parameter = this.parameters[this.options.parameter].title+' '+this.options.key;
-			units = this.parameters[this.options.parameter].units;
-			dp = this.parameters[this.options.parameter].dp;
-			
-
-			// Add an event
-			chart.on('barover',function(e){
-				S('.balloon').remove();
-				S(e.event.currentTarget).find('.bar.series-1').append(
-					"<div class=\"balloon\">"+this.bins[e.bin].key.replace(/%VALUE%/,parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
-				);
-			});
-			S('.barchart table .bar').css({'background-color':'#cccccc'});
-			S('.barchart table .bar.series-0').css({'background-color':this.data.scenarios[this.options.scenario].color});
-		}else{
-			S(attr.el).find('#barchart').remove();
-		}
 	}
 
 	FES.prototype.buildMap = function(){
 
 		var bounds = L.latLngBounds(L.latLng(56.01680,2.35107),L.latLng(52.6497,-5.5151));
+		if(this.options.map && this.options.map.bounds) bounds = L.latLngBounds(L.latLng(this.options.map.bounds[0][0],this.options.map.bounds[0][1]),L.latLng(this.options.map.bounds[1][0],this.options.map.bounds[1][1]));
 		
 		function makeMarker(colour){
 			return L.divIcon({
@@ -465,8 +491,10 @@
 			this.map = L.map(mapid,{'scrollWheelZoom':true}).fitBounds(bounds);
 			
 			this.map.on('popupopen',function(e){
-				// Update the bar chart in the popup
-				_obj.buildBarChart({'el':e.popup._contentNode,'id':e.popup._source.feature.properties.lad19cd});
+				// Call any attached functions
+				if(_obj.views[_obj.options.view].popup && _obj.views[_obj.options.view].popup['open']){
+					_obj.views[_obj.options.view].popup['open'].call(_obj,{'el':e.popup._contentNode,'id':e.popup._source.feature.properties.lad19cd});
+				}
 			});
 			this.map.attributionControl._attributions = {};
 			this.map.attributionControl.addAttribution('Vis: <a href="https://odileeds.org/projects/">ODI Leeds</a>, Data: <a href="https://cms.npproductionadmin.net/generation-availability-map">Northern Powergrid</a>');
@@ -509,13 +537,13 @@
 		var min = 0;
 		var max = 1;
 		var _obj = this;
-		var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source];
+		var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers;
 
 		if(_scenario[this.options.view]){
 			var min = 1e100;
 			var max = -1e100;
-			for(i in _scenario[this.options.view]){
-				v = _scenario[this.options.view][i][this.options.key];
+			for(i in _scenario[this.options.view].values){
+				v = _scenario[this.options.view].values[i][this.options.key];
 				if(typeof v==="number"){
 					min = Math.min(v,min);
 					max = Math.max(v,max);
@@ -531,12 +559,11 @@
 
 				layer = this.views[this.options.view].layers[l];
 
-				if(!this.layers[layer.id].data){
+				if(typeof this.layers[layer.id].geojson==="string"){
 
 					// Show the spinner
 					S('#map .spinner').css({'display':''});
-
-					S().ajax(path+this.layers[layer.id].file,{
+					S().ajax(path+this.layers[layer.id].geojson,{
 						'this':this,
 						'cache':false,
 						'dataType':'json',
@@ -544,15 +571,16 @@
 						'id': layer.id,
 						'complete': function(d,attr){
 							console.info('Got '+attr.url);
-							this.layers[attr.id].data = d;
+							this.layers[attr.id].geojson = d;
 							this.buildMap();
 						},
 						'error': function(e,attr){
 							this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
 						}
 					});
+					return this;
 				}
-				if(!this.layers[layer.id].data) gotlayers = false;
+				if(!this.layers[layer.id].geojson) gotlayers = false;
 
 			}
 
@@ -561,22 +589,10 @@
 			}else{
 			
 				this.message('',{'id':'warn','type':'WARNING'});
-				if(layer.id=="primaries"){
-					var missing = '';
-					for(var p in this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values){
-						match = false;
-						for(var f = 0; f < this.layers[layer.id].data.features.length; f++){
-							if(this.layers[layer.id].data.features[f].properties.Primary==p) match = true;
-						}
-						if(!match) missing += (missing ? ', ':'')+p;
-					}
-					if(missing){
-						this.message('The following Primaries are not yet included on the map (to be done): '+missing,{'id':'warn','type':'WARNING'});
-					}
-				}
 
 				_geojson = [];
-				
+
+
 				// Remove existing layers
 				for(var l in this.layers){
 					if(this.layers[l].layer){
@@ -586,8 +602,8 @@
 				}
 
 				// Make copies of variables we'll use inside functions
-				var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source];
-				var _obj = this;
+				//_scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers;
+
 
 				// Re-build the layers for this view
 				for(var l = 0; l < this.views[this.options.view].layers.length; l++){
@@ -617,6 +633,7 @@
 						}
 					};
 
+
 					var _id = this.views[this.options.view].layers[l].id;
 
 					if(this.views[this.options.view].layers[l].heatmap){
@@ -630,7 +647,7 @@
 								if(this.options.scale == "absolute"){
 									// We have pre-calculated the range
 
-									this.views[this.options.view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source][view].fullrange;
+									this.views[this.options.view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers[view].fullrange;
 								}else{
 									v = _scenario[view].values[i][this.options.key];
 									if(typeof v==="number"){
@@ -656,22 +673,19 @@
 						this.views[this.options.view].layers[l].geoattr.style = function(feature){
 							var layer = _obj.views[_obj.options.view].layers[_l];
 							var props = {
+								"opacity": 0.1,
+								"fillOpacity": 0.8,
 								"color": (layer.boundary ? layer.boundary.color||color : color),
 								"fillColor": (layer.boundary ? layer.boundary.fillColor||color : color)
 							};
 							if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
 								var v = 0;
 								var data = _scenario[layer.id];
-								if(layer.id=="LAD"){
-									// Need to convert primaries to LAD
-									if(data.values[feature.properties.lad19cd]) v = (data.values[feature.properties.lad19cd][_obj.options.key]-layer.range.min)/(layer.range.max-layer.range.min);
-								}else if(layer.id=="primaries"){
-									if(data.values[feature.properties.Primary]){
-										v = (data.values[feature.properties.Primary][_obj.options.key] - layer.range.min)/(layer.range.max - layer.range.min);
-									}else{
-										console.warn('Unable to find Primary '+feature.properties.Primary)
-										v = 0;
-									}
+								var key = _obj.layers[layer.id].key;
+								if(feature.properties[key] && data.values[feature.properties[key]]){
+									v = (data.values[feature.properties[key]][_obj.options.key]-layer.range.min)/(layer.range.max-layer.range.min)
+								}else{
+									console.warn('Unable to find '+key,feature.properties)
 								}
 								v *= 0.8; // Maximum opacity
 								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);
@@ -694,10 +708,11 @@
 
 				}
 
+
 				for(var l = 0; l < this.views[this.options.view].layers.length; l++){
 
 					id = this.views[this.options.view].layers[l].id
-					this.layers[id].layer = L.geoJSON(this.layers[id].data,this.views[this.options.view].layers[l].geoattr);
+					this.layers[id].layer = L.geoJSON(this.layers[id].geojson,this.views[this.options.view].layers[l].geoattr);
 					_geojson.push(this.layers[id].layer);
 
 					if(this.layers[id].layer){
@@ -712,32 +727,39 @@
 
 		function popuptext(feature,attr){
 			// does this feature have a property named popupContent?
-			var popup = '';
-			var me = attr['this'];
+			var popup,me,view,key,v;
+			popup = '';
+			me = attr['this'];
 			
-			var view = me.views[me.options.view].layers[attr.layer].id;
-			var key = feature.properties[(view=="LAD" ? "lad19cd" : "Primary")];
-			var v = null;
-
-			// Define popups
-			if(view=="LAD") popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div><p style="font-size:0.8em;margin-top: 0.25em;margin-bottom:0;text-align:center;">Primary substations (ordered)</p><p style="font-size:0.8em;margin-top:0.5em;">Columns show totals for each Primary substation associated with %TITLE%. The coloured portions show the fraction considered to be in %TITLE%. Hover over each to see details.</p>';
-			else popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
-
-			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key]){
-				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key][me.options.key];
+			view = me.views[me.options.view].layers[attr.layer].id;
+			if(!me.layers[view].key || !feature.properties[me.layers[view].key]){
+				console.error('No property '+me.layers[view].key+' in ',feature.properties);
+				return "";
 			}
-			if(typeof v!=="number") console.log('popuptext',v,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values,key,me.options.key,me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source][view].values[key])
-
-			var title = '?';
-			var added = 0;
-			if(feature.properties){
-				if(feature.properties.Primary || feature.properties.lad19nm) title = (feature.properties.Primary || feature.properties.lad19nm);
+			key = feature.properties[me.layers[view].key];
+			v = null;
+			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values[key]){
+				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values[key][me.options.key];
 			}
-			var dp = (typeof me.parameters[me.options.parameter].dp==="number" ? me.parameters[me.options.parameter].dp : 2);
-			var value = (added > 0 ? '<br />':'')+'<strong>'+me.parameters[me.options.parameter].title+' '+me.options.key+':</strong> '+(dp==0 ? Math.round(v) : v.toFixed(dp)).toLocaleString()+''+(me.parameters[me.options.parameter].units ? '&thinsp;'+me.parameters[me.options.parameter].units : '');
+			if(typeof v!=="number"){
+				console.warn('No value for '+key+' '+me.options.scenario+' '+me.options.parameter);
+			}
 
-			// Replace values
-			popup = popup.replace(/\%VALUE\%/g,value).replace(/\%TITLE\%/g,title);
+			if(me.views[me.options.view].popup){
+				if(typeof me.views[me.options.view].popup['text']==="string"){
+					popup = me.views[me.options.view].popup['text'];
+				}else if(typeof me.views[me.options.view].popup['text']==="function"){
+					popup = me.views[me.options.view].popup['text'].call(me,{
+						'view':view,
+						'id':key,
+						'key': (me.layers[view].key||""),
+						'value': v,
+						'properties':feature.properties,
+						'scenario': me.data.scenarios[me.options.scenario],
+						'parameter': me.parameters[me.options.parameter]
+					});
+				}
+			}
 			return popup;
 		}
 
