@@ -62,17 +62,17 @@ S(document).ready(function(){
 							// Work out the Local Authority name
 							var lad19nm = attr.id;
 							if(this.layers.LAD){
-								for(var c = 0; c < this.layers.LAD.data.features.length; c++){
-									if(this.layers.LAD.data.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LAD.data.features[c].properties.lad19nm;
+								for(var c = 0; c < this.layers.LAD.geojson.features.length; c++){
+									if(this.layers.LAD.geojson.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LAD.geojson.features[c].properties.lad19nm;
 								}
 							}
 							
-							for(var p in this.data.primary2lad){
-								if(this.data.primary2lad[p][attr.id]){
-									v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.primaries.values[p][this.options.key];
-									fracLA = this.data.primary2lad[p][attr.id]*v;
+							for(var p in this.layers.LAD.data.mapping){
+								if(this.layers.LAD.data.mapping[p][attr.id]){
+									v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.primaries.values[p][this.options.key];
+									fracLA = this.layers.LAD.data.mapping[p][attr.id]*v;
 									fracOther = v - fracLA;
-									data.push([p+'<br />Total: %VALUE%<br />'+(this.data.primary2lad[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
+									data.push([p+'<br />Total: %VALUE%<br />'+(this.layers.LAD.data.mapping[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
 								}
 							}
 
