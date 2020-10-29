@@ -1,0 +1,262 @@
+{
+	"Steady progression": {
+		"description": "?",
+		"color": "#827B7A",
+		"css": "steady-progression",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SP.csv", "key": "Primary" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			}
+		}
+	},
+	"System transformation": {
+		"description": "?",
+		"color": "#5BCBF5",
+		"css": "system-transformation",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SP.csv", "key": "Primary" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			}
+		}
+	},
+	"Consumer transformation": {
+		"description": "?",
+		"color": "#FFBF22",
+		"css": "consumer-transformation",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SP.csv", "key": "Primary" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			}
+		}
+	},
+	"Leading the way": {
+		"description": "",
+		"color": "#C2CD23",
+		"css": "leading-the-way",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SP.csv", "key": "Primary" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			}
+		}
+	},
+	"Five-year forecast": {
+		"description": "?",
+		"color": "#CE328A",
+		"css": "five-year-forecast",
+		"data": {
+			"ev": {
+				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+			},
+			"peakdemand":{
+				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+			},
+			"peakdemandcf":{
+				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+			},
+			"peakutilisation":{
+				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
+			},
+			"peakutilisationcf":{
+				"primary": { "file": "primaries/PeakUtilisationWithCF-SP.csv", "key": "Primary" }
+			},
+			"totalconsumptioncf":{
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+			},
+			"windcapacity":{
+				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
+			},
+			"heatpumps":{
+				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+			},
+			"domestic-consumption":{
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"domestic-pv":{
+				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
+			},
+			"industrial-consumption":{
+				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+			},
+			"industrial-pv":{
+				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
+			},
+			"othergen":{
+				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			},
+			"storage":{
+				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
+			},
+			"wind":{
+				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			}
+		}
+	}
+}
