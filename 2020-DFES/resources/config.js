@@ -72,7 +72,8 @@ S(document).ready(function(){
 
 							for(var p in this.layers.LADlayer.data.mapping.data){
 								if(this.layers.LADlayer.data.mapping.data[p][attr.id]){
-									v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p][this.options.key];
+									v = 0;
+									if(this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p]) v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p][this.options.key];
 									fracLA = this.layers.LADlayer.data.mapping.data[p][attr.id]*v;
 									fracOther = v - fracLA;
 									data.push([p+'<br />Total: %VALUE%<br />'+(this.layers.LADlayer.data.mapping.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
