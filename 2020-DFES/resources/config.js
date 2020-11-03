@@ -51,7 +51,7 @@ S(document).ready(function(){
 						popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div><p style="font-size:0.8em;margin-top: 0.25em;margin-bottom:0;text-align:center;">Primary substations (ordered)</p><p style="font-size:0.8em;margin-top:0.5em;">Columns show totals for each Primary substation associated with %TITLE%. The coloured portions show the fraction considered to be in %TITLE%. Hover over each to see details.</p>';
 						title = (attr.properties.lad19nm||'?');
 						dp = (typeof attr.parameter.dp==="number" ? attr.parameter.dp : 2);
-						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '');
+						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(typeof attr.value==="number" ? (dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '') : '');
 						return popup.replace(/\%VALUE\%/g,value).replace(/\%TITLE\%/g,title); // Replace values
 					},
 					"open": function(attr){
@@ -144,7 +144,7 @@ S(document).ready(function(){
 						popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
 						title = (attr.properties.Primary||'?');
 						dp = (typeof attr.parameter.dp==="number" ? attr.parameter.dp : 2);
-						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '');
+						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(typeof attr.value==="number" ? (dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '') : '?');
 						return popup.replace(/\%VALUE\%/g,value).replace(/\%TITLE\%/g,title); // Replace values
 					}
 				}
