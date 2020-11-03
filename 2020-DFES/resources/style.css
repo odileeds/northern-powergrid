@@ -554,6 +554,7 @@ footer ul { margin-left: 2em; }
 .leaflet-container a { color: inherit; }
 .barchart .balloon { background-color: black; color: white; text-align: left; }
 .barchart .balloon::after { border-left-color: black; }
+.barchart .bar-right .balloon::after { border-right-color: black; }
 
 
 /* form toggle */

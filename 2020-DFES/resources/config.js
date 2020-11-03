@@ -97,7 +97,13 @@ S(document).ready(function(){
 									return '';
 								},
 								'formatBar': function(key,val,series){
-									return (typeof series==="number" ? "series-"+series : "");
+									var cls = (typeof series==="number" ? "series-"+series : "");
+									for(var i = 0; i < this.data.length; i++){
+										if(this.data[i][0]==key){
+											if(i > this.data.length/2) cls += " bar-right";
+										}
+									}
+									return cls;
 								}
 							});
 
