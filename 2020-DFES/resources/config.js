@@ -157,7 +157,7 @@ S(document).ready(function(){
 					"heatmap": false,
 					"boundary":{"color":"#444444","strokeWidth":1,"opacity":0.5,"fillOpacity":0}
 				},{
-					"id":"primaries",
+					"id":"PRIMARYlayer",
 					"heatmap": true,
 				}],
 				"popup": {
