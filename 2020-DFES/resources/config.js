@@ -61,6 +61,7 @@ S(document).ready(function(){
 						if(attr.id){
 
 							var data = [];
+							var balloons = [];
 							
 							// Work out the Local Authority name
 							var lad19nm = attr.id;
@@ -76,7 +77,7 @@ S(document).ready(function(){
 									if(this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p]) v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p][this.options.key];
 									fracLA = this.layers.LADlayer.data.mapping.data[p][attr.id]*v;
 									fracOther = v - fracLA;
-									data.push([p+'<br />Total: %VALUE%<br />'+(this.layers.LADlayer.data.mapping.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,[v,fracLA,fracOther]]);
+									data.push([p,[v,p+'<br />Total: %VALUE%<br />'+(this.layers.LADlayer.data.mapping.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,fracLA,fracOther]]);
 								}
 							}
 
@@ -87,7 +88,7 @@ S(document).ready(function(){
 
 							// Remove totals from bars now that we've sorted by total
 							for(var i = 0; i < data.length; i++){
-								data[i][1].splice(0,1);
+								balloons.push(data[i][1].splice(0,2));
 							}
 							
 							// Create the barchart object. We'll add a function to
@@ -116,8 +117,9 @@ S(document).ready(function(){
 							// Add an event
 							chart.on('barover',function(e){
 								S('.balloon').remove();
+								var b = balloons[e.bin];
 								S(e.event.currentTarget).find('.bar.series-1').append(
-									"<div class=\"balloon\">"+this.bins[e.bin].key.replace(/%VALUE%/,parseFloat((this.bins[e.bin].value).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
+									"<div class=\"balloon\">"+b[1].replace(/%VALUE%/,parseFloat((b[0]).toFixed(dp)).toLocaleString()+(units ? '&thinsp;'+units:''))+"</div>"
 								);
 							});
 							S('.barchart table .bar').css({'background-color':'#cccccc'});
