@@ -6,7 +6,7 @@ Element Energy create yearly predictions for each Primary sub-station over a var
 
 The following files are in this directory:
 
-* [colours.csv](colours.csv] - this is used to define the colours used for lines on the graphs.
+* [colours.csv](colours.csv) - this is used to define the colours used for lines on the graphs.
 * [graphs.pl](graphs.pl) - Perl code that generates the graphs and tables. It will need to be re-run if the graph data are updated.
 * [primaries2lad.json](primaries2lad.json) - how Primary sub-stations split between Local Authority Districts. The split was calculated using the proportion of customers attached to a Primary were within different Local Authority Districts.
 
