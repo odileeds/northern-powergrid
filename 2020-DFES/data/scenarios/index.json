@@ -133,7 +133,7 @@
 				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
-				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-CT.csv", "key": "Primary" }
 			},
 			"domestic-pv":{
 				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
