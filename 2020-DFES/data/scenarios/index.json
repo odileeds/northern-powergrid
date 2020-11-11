@@ -207,10 +207,10 @@
 			}
 		}
 	},
-	"Five-year forecast": {
+	"Best View Placeholder": {
 		"description": "?",
 		"color": "#CE328A",
-		"css": "five-year-forecast",
+		"css": "best-view",
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
