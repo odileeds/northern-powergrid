@@ -109,7 +109,7 @@
 		"css": "consumer-transformation",
 		"data": {
 			"ev": {
-				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/EV-CT.csv", "key": "Primary" }
 			},
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
