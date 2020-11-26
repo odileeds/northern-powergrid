@@ -171,6 +171,107 @@ S(document).ready(function(){
 					}
 				}
 			}
+		},
+		"on": {
+			"buildMap": function(){
+				var el,div,_obj;
+				el = document.querySelector('.leaflet-top.leaflet-left');
+				if(el){
+					// Does the place search exist?
+					if(!el.querySelector('.placesearch')){
+						div = document.createElement('div');
+						div.classList.add('leaflet-control');
+						div.classList.add('leaflet-bar');
+						div.innerHTML = '<div class="placesearch"><div class="submit" href="#" title="Search" role="button" aria-label="Search"></div><form class="placeform layersearch pop-left" action="search" method="GET" autocomplete="off"><input class="place" id="search" name="place" value="" placeholder="Search for a named area" type="text" /><div class="searchresults" id="searchresults"></div></div></form>';
+						el.appendChild(div);
+						
+						function toggleActive(state){
+							e = el.querySelector('.placesearch');
+							if(typeof state!=="boolean") state = !e.classList.contains('typing');
+							if(state){
+								e.classList.add('typing');
+								e.querySelector('input.place').focus();
+							}else{
+								e.classList.remove('typing');
+							}
+						}
+					
+						div.querySelector('.submit').addEventListener('click', function(e){ toggleActive(); });
+
+						_obj = this;
+						
+						// Stop map dragging on the element
+						el.addEventListener('mousedown', function(){ _obj.map.dragging.disable(); });
+						el.addEventListener('mouseup', function(){ _obj.map.dragging.enable(); });
+
+						// Define a function for scoring how well a string matches
+						function getScore(str1,str2,v1,v2,v3){
+							var r = 0;
+							str1 = str1.toUpperCase();
+							str2 = str2.toUpperCase();
+							if(str1.indexOf(str2)==0) r += (v1||3);
+							if(str1.indexOf(str2)>0) r += (v2||1);
+							if(str1==str2) r += (v3||4);
+							return r;
+						}
+						this.search = TypeAhead.init('#search',{
+							'items': [],
+							'render': function(d){
+								// Construct the label shown in the drop down list
+								return d['name']+(d['type'] ? ' ('+d['type']+')':'');
+							},
+							'rank': function(d,str){
+								// Calculate the weight to add to this airport
+								var r = 0;
+								if(d['name']) r += getScore(d['name'],str);
+								if(d['id']) r += getScore(d['name'],str);
+								return r;
+							},
+							'process': function(d){
+								// Format the result
+								var l,ly,key,i;
+								l = d['layer'];
+								ly = _obj.layers[l].layer;
+								key = _obj.layers[l].key;
+								for(i in ly._layers){
+									if(ly._layers[i].feature.properties[key]==d['id']){
+
+										// Zoom to feature
+										_obj.map.fitBounds(ly._layers[i]._bounds,{'padding':[5,5]});
+
+										// Open the popup for this feature
+										ly.getLayer(i).openPopup();
+										
+										// Change active state
+										toggleActive(false);
+									}
+								}
+							}
+						});
+					}
+					if(this.search){
+						var l,f,i,j;
+						this.search._added = {};
+						this.search.clearItems();
+						//console.log(this,this.options.view,this.layers[this.options.view]);
+						for(j = 0; j < this.views[this.options.view].layers.length; j++){
+							l = this.views[this.options.view].layers[j].id;
+							key = "";
+							if(l=="LADlayer") key = "lad19nm";
+							else if(l=="PRIMARYlayer") key = "Primary";
+							if(this.layers[l].geojson && this.layers[l].geojson.features && this.layers[l].key && key){
+								// If we haven't already processed this layer we do so now
+								if(!this.search._added[l]){
+									//console.log('adding',l);
+									f = this.layers[l].geojson.features;
+									for(i = 0; i < f.length; i++) this.search.addItems({'name':f[i].properties[key]||"?",'id':f[i].properties[this.layers[l].key]||"",'i':i,'layer':l});
+									this.search._added[l] = true;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	});
 });

@@ -557,6 +557,36 @@ footer ul { margin-left: 2em; }
 .barchart .bar-right .balloon::after { border-right-color: black; }
 
 
+/* Typeahead search */
+.placesearch { min-width: 30px; min-height: 30px; }
+.placesearch .submit {
+	background-image: url(search.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	cursor: pointer;
+}
+.placesearch form { position: relative; }
+.placesearch .pop-left { display: none; }
+.placesearch .typeahead-results { width: 100% }
+.placesearch .typeahead-results ol { list-style: none; margin: 0px; padding: 0px; }
+.placesearch .typeahead-results li { background-color: white; color: black; margin-bottom: 0; }
+.placesearch .typeahead-results li > a { padding: 0.25em 0.5em; background: #efefef; text-decoration: none; display: block; color: inherit; width: 100%; }
+.placesearch .typeahead-results li.selected { background-color: #dfdfdf; color: black; }
+.placesearch .typeahead-results li.selected a { background-color: #444; color: white; }
+.placesearch.typing input[type="text"]{ display: block; min-width: 16em; height: 30px; padding: 0.25em 0.5em; border: 0px; }
+.placesearch.typing .typeahead-results { display: block; }
+.placesearch.typing .typeahead-results a { border: 0px; width: 100%; height: auto; text-align: left; }
+.placesearch.typing .pop-left { display: inline-block; position: relative; top: 0px; right: 0px; }
+
 /* form toggle */
 .toggleinput { vertical-align: middle; }
 .toggle-label1, .toggle-label2 { display: inline; position: relative; cursor: pointer; }
