@@ -1040,7 +1040,7 @@
 		if(!attr.max) attr.max = 0;
 		if(!attr.units) attr.units = "";
 		if(attr.units) attr.units = "&thinsp;"+attr.units;
-		var str = '<div class="bar" style="'+grad+';"><dic class="bar-inner" style="border-color: '+attr.color+'"></div></div><div class="range" style="border-color: '+attr.color+'">';
+		var str = '<div class="bar" style="'+grad+';"><div class="bar-inner" style="border-color: '+attr.color+'"></div></div><div class="range" style="border-color: '+attr.color+'">';
 		if(attr.levels){
 			var gap,i,v;
 			gap = (attr.max-attr.min)/attr.levels;
@@ -1049,6 +1049,9 @@
 				c = attr.scale.getColourFromScale(attr.scaleid, v, attr.min, attr.max);
 				str += '<span class="lvl'+(i==0 ? ' min' : (i==attr.levels ? ' max':''))+'" style="border-color: '+(i==0 ? attr.color : c)+';left:'+(100*i/attr.levels)+'%;">'+v.toLocaleString()+attr.units+'</span>'
 			}
+		}else{
+				str += '<span class="lvl min" style="border-color: '+attr.color+';left:0%;">'+attr.min.toLocaleString()+attr.units+'</span>';
+				str += '<span class="lvl max" style="border-color: '+attr.color+';left:100%;">'+attr.max.toLocaleString()+attr.units+'</span>';
 		}
 		str += '</div>';
 		return str;
