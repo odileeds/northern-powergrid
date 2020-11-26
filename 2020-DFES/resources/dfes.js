@@ -23,7 +23,7 @@
 		this.views = (config.views||{});
 		this.events = {};
 		if(config.on) this.events = config.on;
-		
+
 		S().ajax(path+"data/scenarios/config.json",{
 			'this':this,
 			'cache':false,
@@ -81,6 +81,7 @@
 		}
 		if(this.parameters && S('#parameters').length==0){
 			var html = "";
+			if(!this.data.scenarios[this.options.scenario]) this.message('Scenario <em>"'+this.options.scenario+'"</em> is not defined in index.json.',{'id':'scenario','type':'ERROR'});
 			var css = this.data.scenarios[this.options.scenario].css;
 			for(var p in this.parameters) html += "<option"+(this.options.parameter == p ? " selected=\"selected\"":"")+" value=\""+p+"\">"+this.parameters[p].title+"</option>";
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
