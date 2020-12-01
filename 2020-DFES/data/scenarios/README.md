@@ -52,7 +52,7 @@ Where:
 
 Check that your changes are still valid JSON using [JSON Lint](https://jsonlint.com/).
 
-## Adding or changing a scenarios
+## Adding or changing scenarios
 
 The scenarios are defined in [index.json](index.json). There can be as many scenarios as we want as long as they each have different names and the associated parameter files to go with them. Each scenario is defined as follows:
 
