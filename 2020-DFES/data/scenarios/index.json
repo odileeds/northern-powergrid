@@ -207,10 +207,10 @@
 			}
 		}
 	},
-	"Best View Placeholder": {
+	"Early Net Zero": {
 		"description": "?",
-		"color": "#CE328A",
-		"css": "best-view",
+		"color": "#00AB84",
+		"css": "early-net-zero",
 		"data": {
 			"ev": {
 				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
