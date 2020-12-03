@@ -207,8 +207,8 @@
 			}
 		}
 	},
-	"Early Net Zero": {
-		"description": "?",
+	"Net Zero Early": {
+		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)</li><li>Highly accelerated electric heat & transport. Highly decentralised distributed wind, solar & other renewable generation.</li></ul>",
 		"color": "#00AB84",
 		"css": "early-net-zero",
 		"data": {
