@@ -156,7 +156,7 @@
 		}
 	},
 	"Leading the way": {
-		"description": "",
+		"description": "<ul><li>Achieves 100% decarbonisation by 2048.</li><li>ignificant lifestyle change. Mixture of hydrogen and electrification for heating.</li></ul>",
 		"color": "#C2CD23",
 		"css": "leading-the-way",
 		"data": {
