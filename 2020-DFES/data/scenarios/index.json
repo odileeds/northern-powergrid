@@ -57,7 +57,7 @@
 		"css": "system-transformation",
 		"data": {
 			"ev": {
-				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/EV-ST.csv", "key": "Primary" }
 			},
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
@@ -161,7 +161,7 @@
 		"css": "leading-the-way",
 		"data": {
 			"ev": {
-				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/EV-LTW.csv", "key": "Primary" }
 			},
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
@@ -213,7 +213,7 @@
 		"css": "early-net-zero",
 		"data": {
 			"ev": {
-				"primary": { "file": "primaries/EV-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/EV-NZE.csv", "key": "Primary" }
 			},
 			"peakdemand":{
 				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
