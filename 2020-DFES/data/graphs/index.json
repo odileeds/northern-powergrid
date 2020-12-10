@@ -67,12 +67,6 @@
 	"yaxis-label": "Network energy consumption (TWh)",
 	"left": 70
 },{
-	"csv":"Network peak demand breakdown - Net Zero Early (GW).csv",
-	"svg":"graph-peak-demand-breakdown-early-net-zero.svg",
-	"table":"graph-peak-demand-breakdown-early-net-zero.html",
-	"yaxis-label": "Network peak demand (GW)",
-	"left": 70
-},{
 	"csv":"Annual network energy consumption (TWh).csv",
 	"svg":"graph-annual-energy-consumption.svg",
 	"table":"graph-annual-energy-consumption.html",
