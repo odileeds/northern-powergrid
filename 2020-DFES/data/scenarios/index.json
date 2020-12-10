@@ -60,10 +60,10 @@
 				"primary": { "file": "primaries/EV-ST.csv", "key": "Primary" }
 			},
 			"peakdemand":{
-				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemand-ST.csv", "key": "Primary" }
 			},
 			"peakdemandcf":{
-				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemandWithCF-ST.csv", "key": "Primary" }
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
@@ -112,10 +112,10 @@
 				"primary": { "file": "primaries/EV-CT.csv", "key": "Primary" }
 			},
 			"peakdemand":{
-				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemand-CT.csv", "key": "Primary" }
 			},
 			"peakdemandcf":{
-				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemandWithCF-CT.csv", "key": "Primary" }
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
@@ -164,10 +164,10 @@
 				"primary": { "file": "primaries/EV-LTW.csv", "key": "Primary" }
 			},
 			"peakdemand":{
-				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemand-LTW.csv", "key": "Primary" }
 			},
 			"peakdemandcf":{
-				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemandWithCF-LTW.csv", "key": "Primary" }
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
@@ -216,10 +216,10 @@
 				"primary": { "file": "primaries/EV-NZE.csv", "key": "Primary" }
 			},
 			"peakdemand":{
-				"primary": { "file": "primaries/PeakDemand-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemand-NZE.csv", "key": "Primary" }
 			},
 			"peakdemandcf":{
-				"primary": { "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/PeakDemandWithCF-NZE.csv", "key": "Primary" }
 			},
 			"peakutilisation":{
 				"primary": { "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" }
