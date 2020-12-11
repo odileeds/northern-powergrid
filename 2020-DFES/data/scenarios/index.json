@@ -72,7 +72,7 @@
 				"primary": { "file": "primaries/PeakUtilisationWithCF-ST.csv", "key": "Primary" }
 			},
 			"totalconsumptioncf":{
-				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-ST.csv", "key": "Primary" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
@@ -81,13 +81,13 @@
 				"primary": { "file": "primaries/HP-ST.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
-				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-ST.csv", "key": "Primary" }
 			},
 			"domestic-pv":{
 				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
 			},
 			"industrial-consumption":{
-				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/IC_consumption_mWh-ST.csv", "key": "Primary" }
 			},
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
@@ -124,7 +124,7 @@
 				"primary": { "file": "primaries/PeakUtilisationWithCF-CT.csv", "key": "Primary" }
 			},
 			"totalconsumptioncf":{
-				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-CT.csv", "key": "Primary" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
@@ -139,7 +139,7 @@
 				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
 			},
 			"industrial-consumption":{
-				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/IC_consumption_mWh-CT.csv", "key": "Primary" }
 			},
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
@@ -176,7 +176,7 @@
 				"primary": { "file": "primaries/PeakUtilisationWithCF-LTW.csv", "key": "Primary" }
 			},
 			"totalconsumptioncf":{
-				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-LTW.csv", "key": "Primary" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
@@ -185,13 +185,13 @@
 				"primary": { "file": "primaries/HP-LTW.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
-				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-LTW.csv", "key": "Primary" }
 			},
 			"domestic-pv":{
 				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
 			},
 			"industrial-consumption":{
-				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/IC_consumption_mWh-LTW.csv", "key": "Primary" }
 			},
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
@@ -228,7 +228,7 @@
 				"primary": { "file": "primaries/PeakUtilisationWithCF-NZE.csv", "key": "Primary" }
 			},
 			"totalconsumptioncf":{
-				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/TotalConsumptionWithLCTs_mWh-NZE.csv", "key": "Primary" }
 			},
 			"windcapacity":{
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
@@ -237,13 +237,13 @@
 				"primary": { "file": "primaries/HP-NZE.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
-				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-NZE.csv", "key": "Primary" }
 			},
 			"domestic-pv":{
 				"primary": { "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" }
 			},
 			"industrial-consumption":{
-				"primary": { "file": "primaries/IC_consumption_mWh-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/IC_consumption_mWh-NZE.csv", "key": "Primary" }
 			},
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
