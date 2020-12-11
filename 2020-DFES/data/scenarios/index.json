@@ -78,7 +78,7 @@
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
 			},
 			"heatpumps":{
-				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/HP-ST.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
 				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
@@ -130,7 +130,7 @@
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
 			},
 			"heatpumps":{
-				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/HP-CT.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
 				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-CT.csv", "key": "Primary" }
@@ -182,7 +182,7 @@
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
 			},
 			"heatpumps":{
-				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/HP-LTW.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
 				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
@@ -234,7 +234,7 @@
 				"primary": { "file": "primaries/WindCapacity-SP.csv", "key": "Primary" }
 			},
 			"heatpumps":{
-				"primary": { "file": "primaries/HP-SP.csv", "key": "Primary" }
+				"primary": { "file": "primaries/HP-NZE.csv", "key": "Primary" }
 			},
 			"domestic-consumption":{
 				"primary": { "file": "primaries/DOMESTIC_consumption_mWh-SP.csv", "key": "Primary" }
