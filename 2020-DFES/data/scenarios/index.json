@@ -40,14 +40,14 @@
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" }
 			},
-			"othergen":{
-				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			"renewablegen":{
+				"primary": { "file": "primaries/RenewableGeneration_MW-SP.csv", "key": "Primary" }
 			},
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
 			},
-			"wind":{
-				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			"nonrenewable":{
+				"primary": { "file": "primaries/Non-renewableGeneration_MW-SP.csv", "key": "Primary" }
 			}
 		}
 	},
@@ -92,14 +92,14 @@
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-ST.csv", "key": "Primary" }
 			},
-			"othergen":{
-				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			"renewablegen":{
+				"primary": { "file": "primaries/RenewableGeneration_MW-ST.csv", "key": "Primary" }
 			},
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-ST.csv", "key": "Primary" }
 			},
-			"wind":{
-				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			"nonrenewable":{
+				"primary": { "file": "primaries/Non-renewableGeneration_MW-ST.csv", "key": "Primary" }
 			}
 		}
 	},
@@ -144,14 +144,14 @@
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-CT.csv", "key": "Primary" }
 			},
-			"othergen":{
-				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			"renewablegen":{
+				"primary": { "file": "primaries/RenewableGeneration_MW-CT.csv", "key": "Primary" }
 			},
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-CT.csv", "key": "Primary" }
 			},
-			"wind":{
-				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			"nonrenewable":{
+				"primary": { "file": "primaries/Non-renewableGeneration_MW-CT.csv", "key": "Primary" }
 			}
 		}
 	},
@@ -196,14 +196,14 @@
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-LTW.csv", "key": "Primary" }
 			},
-			"othergen":{
-				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			"renewablegen":{
+				"primary": { "file": "primaries/RenewableGeneration_MW-LTW.csv", "key": "Primary" }
 			},
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-LTW.csv", "key": "Primary" }
 			},
-			"wind":{
-				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			"nonrenewable":{
+				"primary": { "file": "primaries/Non-renewableGeneration_MW-LTW.csv", "key": "Primary" }
 			}
 		}
 	},
@@ -248,14 +248,14 @@
 			"industrial-pv":{
 				"primary": { "file": "primaries/Large(IC)PV_MW-NZE.csv", "key": "Primary" }
 			},
-			"othergen":{
-				"primary": { "file": "primaries/OtherGen_MW-SP.csv", "key": "Primary" }
+			"renewablegen":{
+				"primary": { "file": "primaries/RenewableGeneration_MW-NZE.csv", "key": "Primary" }
 			},
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-NZE.csv", "key": "Primary" }
 			},
-			"wind":{
-				"primary": { "file": "primaries/wind_MW-SP.csv", "key": "Primary" }
+			"nonrenewable":{
+				"primary": { "file": "primaries/Non-renewableGeneration_MW-NZE.csv", "key": "Primary" }
 			}
 		}
 	}
