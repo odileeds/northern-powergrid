@@ -46,7 +46,7 @@
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-SP.csv", "key": "Primary" }
 			},
-			"nonrenewable":{
+			"nonrenewablegen":{
 				"primary": { "file": "primaries/Non-renewableGeneration_MW-SP.csv", "key": "Primary" }
 			}
 		}
@@ -98,7 +98,7 @@
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-ST.csv", "key": "Primary" }
 			},
-			"nonrenewable":{
+			"nonrenewablegen":{
 				"primary": { "file": "primaries/Non-renewableGeneration_MW-ST.csv", "key": "Primary" }
 			}
 		}
@@ -150,7 +150,7 @@
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-CT.csv", "key": "Primary" }
 			},
-			"nonrenewable":{
+			"nonrenewablegen":{
 				"primary": { "file": "primaries/Non-renewableGeneration_MW-CT.csv", "key": "Primary" }
 			}
 		}
@@ -202,7 +202,7 @@
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-LTW.csv", "key": "Primary" }
 			},
-			"nonrenewable":{
+			"nonrenewablegen":{
 				"primary": { "file": "primaries/Non-renewableGeneration_MW-LTW.csv", "key": "Primary" }
 			}
 		}
@@ -254,7 +254,7 @@
 			"storage":{
 				"primary": { "file": "primaries/Storage_MW-NZE.csv", "key": "Primary" }
 			},
-			"nonrenewable":{
+			"nonrenewablegen":{
 				"primary": { "file": "primaries/Non-renewableGeneration_MW-NZE.csv", "key": "Primary" }
 			}
 		}
