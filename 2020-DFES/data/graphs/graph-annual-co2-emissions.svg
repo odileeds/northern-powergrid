@@ -1,0 +1,68 @@
+<svg width="640" height="320" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="overflow:display" preserveAspectRatio="xMinYMin meet" overflow="visible">
+<defs>
+	<style>
+	.data-series path.line { fill-opacity: 0; }
+	.data-series path.line.dotted { stroke-dasharray: 12 20 }
+	.data-series circle { display: none; }
+	.data-series:hover path.line, .data-series.on path.line { stroke-width: 5; }
+	.data-series:hover circle, .data-series.on circle { display: inline; }
+	.data-series circle:hover, .data-series circle.on { r: 6px!important; fill: black; }
+	.grid { font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; }
+	.grid line { stroke: rgb(0,0,0); stroke-width: 2; stroke-linecap: round; }
+	.grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(10px); }
+	.grid.grid-y text { text-anchor: end; dominant-baseline: middle; transform: translateX(-10px); }
+	</style>
+</defs>
+<g class="grid grid-y">
+	<line x1="120" y1="270" x2="630" y2="270" data-left="120"></line>
+	<text x="120" y="270" text-anchor="end">0</text>
+	<text x="120" y="194.963924963925" text-anchor="end">10</text>
+	<text x="120" y="119.92784992785" text-anchor="end">20</text>
+	<text x="120" y="44.8917748917749" text-anchor="end">30</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);">Mt CO2(e)</text>
+</g>
+<g class="grid grid-x">
+	<line class="tick" x1="120" y1="270" x2="120" y2="275"></line>
+	<text x="120" y="270" text-anchor="middle">2020</text>
+	<line class="tick" x1="284.516129032258" y1="270" x2="284.516129032258" y2="275"></line>
+	<text x="284.516129032258" y="270" text-anchor="middle">2030</text>
+	<line class="tick" x1="449.032258064516" y1="270" x2="449.032258064516" y2="275"></line>
+	<text x="449.032258064516" y="270" text-anchor="middle">2040</text>
+	<line class="tick" x1="613.548387096774" y1="270" x2="613.548387096774" y2="275"></line>
+	<text x="613.548387096774" y="270" text-anchor="middle">2050</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);"></text>
+</g>
+<g data-scenario="early-net-zero" class="data-series">	<path d="M 120.00,10.00L 136.45,19.24L 152.90,25.43L 169.35,32.41L 185.81,40.95L 202.26,50.50L 218.71,62.67L 235.16,73.45L 251.61,82.10L 268.06,93.22L 284.52,108.23L 300.97,124.44L 317.42,140.89L 333.87,156.42L 350.32,170.84L 366.77,184.46L 383.23,201.51L 399.68,216.87L 416.13,230.34L 432.58,242.25L 449.03,251.85L 465.48,257.68L 481.94,259.89L 498.39,261.54L 514.84,263.04L 531.29,263.72L 547.74,264.08L 564.19,264.72L 580.65,264.95L 597.10,265.36L 613.55,265.75" id="Net Zero Early" class="line" stroke="#00AB84" stroke-width="3" stroke-linecap="round"><title>Net Zero Early</title></path>
+	<circle cx="120.00" cy="10.00" data-y="34.65" data-x="2020" r="4" fill="#00AB84"><title>2020: 34.65</title></circle>
+	<circle cx="136.45" cy="19.24" data-y="33.419" data-x="2021" r="4" fill="#00AB84"><title>2021: 33.419</title></circle>
+	<circle cx="152.90" cy="25.43" data-y="32.594" data-x="2022" r="4" fill="#00AB84"><title>2022: 32.594</title></circle>
+	<circle cx="169.35" cy="32.41" data-y="31.664" data-x="2023" r="4" fill="#00AB84"><title>2023: 31.664</title></circle>
+	<circle cx="185.81" cy="40.95" data-y="30.525" data-x="2024" r="4" fill="#00AB84"><title>2024: 30.525</title></circle>
+	<circle cx="202.26" cy="50.50" data-y="29.253" data-x="2025" r="4" fill="#00AB84"><title>2025: 29.253</title></circle>
+	<circle cx="218.71" cy="62.67" data-y="27.631" data-x="2026" r="4" fill="#00AB84"><title>2026: 27.631</title></circle>
+	<circle cx="235.16" cy="73.45" data-y="26.194" data-x="2027" r="4" fill="#00AB84"><title>2027: 26.194</title></circle>
+	<circle cx="251.61" cy="82.10" data-y="25.041" data-x="2028" r="4" fill="#00AB84"><title>2028: 25.041</title></circle>
+	<circle cx="268.06" cy="93.22" data-y="23.559" data-x="2029" r="4" fill="#00AB84"><title>2029: 23.559</title></circle>
+	<circle cx="284.52" cy="108.23" data-y="21.559" data-x="2030" r="4" fill="#00AB84"><title>2030: 21.559</title></circle>
+	<circle cx="300.97" cy="124.44" data-y="19.399" data-x="2031" r="4" fill="#00AB84"><title>2031: 19.399</title></circle>
+	<circle cx="317.42" cy="140.89" data-y="17.206" data-x="2032" r="4" fill="#00AB84"><title>2032: 17.206</title></circle>
+	<circle cx="333.87" cy="156.42" data-y="15.137" data-x="2033" r="4" fill="#00AB84"><title>2033: 15.137</title></circle>
+	<circle cx="350.32" cy="170.84" data-y="13.215" data-x="2034" r="4" fill="#00AB84"><title>2034: 13.215</title></circle>
+	<circle cx="366.77" cy="184.46" data-y="11.4" data-x="2035" r="4" fill="#00AB84"><title>2035: 11.4</title></circle>
+	<circle cx="383.23" cy="201.51" data-y="9.127" data-x="2036" r="4" fill="#00AB84"><title>2036: 9.127</title></circle>
+	<circle cx="399.68" cy="216.87" data-y="7.08" data-x="2037" r="4" fill="#00AB84"><title>2037: 7.08</title></circle>
+	<circle cx="416.13" cy="230.34" data-y="5.286" data-x="2038" r="4" fill="#00AB84"><title>2038: 5.286</title></circle>
+	<circle cx="432.58" cy="242.25" data-y="3.698" data-x="2039" r="4" fill="#00AB84"><title>2039: 3.698</title></circle>
+	<circle cx="449.03" cy="251.85" data-y="2.419" data-x="2040" r="4" fill="#00AB84"><title>2040: 2.419</title></circle>
+	<circle cx="465.48" cy="257.68" data-y="1.642" data-x="2041" r="4" fill="#00AB84"><title>2041: 1.642</title></circle>
+	<circle cx="481.94" cy="259.89" data-y="1.348" data-x="2042" r="4" fill="#00AB84"><title>2042: 1.348</title></circle>
+	<circle cx="498.39" cy="261.54" data-y="1.128" data-x="2043" r="4" fill="#00AB84"><title>2043: 1.128</title></circle>
+	<circle cx="514.84" cy="263.04" data-y="0.928" data-x="2044" r="4" fill="#00AB84"><title>2044: 0.928</title></circle>
+	<circle cx="531.29" cy="263.72" data-y="0.837" data-x="2045" r="4" fill="#00AB84"><title>2045: 0.837</title></circle>
+	<circle cx="547.74" cy="264.08" data-y="0.789" data-x="2046" r="4" fill="#00AB84"><title>2046: 0.789</title></circle>
+	<circle cx="564.19" cy="264.72" data-y="0.704" data-x="2047" r="4" fill="#00AB84"><title>2047: 0.704</title></circle>
+	<circle cx="580.65" cy="264.95" data-y="0.673" data-x="2048" r="4" fill="#00AB84"><title>2048: 0.673</title></circle>
+	<circle cx="597.10" cy="265.36" data-y="0.618" data-x="2049" r="4" fill="#00AB84"><title>2049: 0.618</title></circle>
+	<circle cx="613.55" cy="265.75" data-y="0.566" data-x="2050" r="4" fill="#00AB84"><title>2050: 0.566</title></circle>
+</g>
+</svg>

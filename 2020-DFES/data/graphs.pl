@@ -46,7 +46,7 @@ close(FILE);
 $graph = ODILeeds::NPG->new();
 $graph->setScenarios(%scenarios);
 
-
+$html = "";
 for($i = 0; $i < (@graphs); $i++){
 	
 	$graph->load('graphs/'.$graphs[$i]{'csv'})->process();
@@ -65,7 +65,21 @@ for($i = 0; $i < (@graphs); $i++){
 	open(FILE,'>','graphs/'.$graphs[$i]{'table'});
 	print FILE $graph->table(());
 	close(FILE);
+	
+	$html .= "\t\t\t<figure class=\"jekyll-parse\">\n";
+	$html .= "\t\t\t\t<figcaption><strong>Figure ".($i+1).":</strong> $graphs[$i]{'title'}</figcaption>\n";
+	$html .= "\t\t\t\t<div class=\"table-holder\">{% include_relative data/graphs/$graphs[$i]{'table'} %}</div>\n";
+	$html .= "\t\t\t\t{% include_relative data/graphs/$graphs[$i]{'svg'} %}\n";
+	$html .= "\t\t\t\t<div class=\"download\">\n";
+	$html .= "\t\t\t\t\t<a href=\"data/graphs/$graphs[$i]{'svg'}\"><img src=\"resources/download.svg\" alt=\"download\" title=\"Download graph from Figure ".($i+1)."\" /> SVG</a>\n";
+	$html .= "\t\t\t\t\t<a href=\"data/graphs/$graphs[$i]{'csv'}\"><img src=\"resources/download.svg\" alt=\"download\" title=\"Download data from Figure ".($i+1)."\" /> CSV</a>\n";
+	$html .= "\t\t\t\t</div>\n";
+	$html .= "\t\t\t</figure>\n\n";
 }
+
+open(FILE,">","graphs.txt");
+print FILE $html;
+close(FILE);
 
 
 
