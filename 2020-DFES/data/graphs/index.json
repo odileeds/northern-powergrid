@@ -91,4 +91,18 @@
 	"table":"graph-fuel-consumption-early-net-zero.html",
 	"yaxis-label": "Fuel consumption (GWh-yr)",
 	"left": 100
+},{
+	"title":"Additional industrial peak demand breakdown - Net Zero Early (MW)",
+	"csv":"Industry additional peak demand breakdown - Net Zero Early (MW).csv",
+	"svg":"graph-industry-additional-peak-demand-early-net-zero.svg",
+	"table":"graph-industry-additional-peak-demand-early-net-zero.html",
+	"yaxis-label": "Peak demand (MW)",
+	"left": 100
+},{
+	"title":"Additional industrial energy consumption breakdown - Net Zero Early (GWh)",
+	"csv":"Industry additional energy consumption breakdown - Net Zero Early (GWh).csv",
+	"svg":"graph-industry-additional-energy-consumption-early-net-zero.svg",
+	"table":"graph-industry-additional-energy-consumption-early-net-zero.html",
+	"yaxis-label": "Peak demand (GWh)",
+	"left": 100
 }]

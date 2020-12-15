@@ -28,8 +28,10 @@ close(FILE);
 foreach $line  (@lines){
 	$line =~ s/[\n\r]//g;
 	(@cols) = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$line);
-	$scenarios{$cols[0]} = ();
-	$scenarios{$cols[0]}{'color'} = $cols[1];
+	if($cols[0]){
+		$scenarios{$cols[0]} = ();
+		$scenarios{$cols[0]}{'color'} = $cols[1];
+	}
 }
 
 
