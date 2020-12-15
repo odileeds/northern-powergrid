@@ -212,7 +212,9 @@ sub table {
 
 	$html .= "<tr><th>Scenario</th>";
 	for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
-		$html .= "<th>$y</th>";
+		if($y ge $minyr){
+			$html .= "<th>$y</th>";
+		}
 	}
 	$html .= "</tr>\n";
 	for($s = 0; $s < @{$self->{'scenariolookup'}}; $s++){
@@ -227,7 +229,9 @@ sub table {
 		$html .= "<tr data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||safeID($scenario))."".($scenario =~ "customer flexibility" ? "-customer-flexibility":"")."\"><td ".($self->{'scenario-props'}{$t}{'css'} ? "class=\"".$self->{'scenario-props'}{$t}{'css'}."\"" : "style=\"background-color:".($c->{'hex'}).";color:".($c->{'text'})."\"")."><span>".$safescenario."</span></td>";
 		
 		for($y = $ticks{'data-0'}; $y <= $maxyr; $y += 10){
-			$html .= "<td>".($self->{'scenarios'}{$scenario}{$y}||"")."</td>";
+			if($y ge $minyr){
+				$html .= "<td>".($self->{'scenarios'}{$scenario}{$y}||"")."</td>";
+			}
 		}
 		$html .= "</tr>\n";
 	}
