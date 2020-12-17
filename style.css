@@ -49,6 +49,8 @@ table {
 
 
 /* Main site styling */
+.early-net-zero { background-color: #00AB84!important; color: white!important; }
+.early-net-zero-text { color: #00AB84!important; }
 .deep-electrification { background-color: #AB1236!important; color: white!important; }
 .deep-electrification-text { color: #AB1236!important; }
 .high-hydrogen { background-color: #0085CA!important; color: white!important; }
