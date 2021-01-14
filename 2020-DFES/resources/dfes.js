@@ -128,7 +128,9 @@
 		});
 		
 		this.setScenario(this.options.scenario);
-		this.setParameter(this.options.parameter);
+
+		// Trigger the setParameter callback (because we aren't explicity calling it)
+		if(typeof this.events.setParameter==="function") this.events.setParameter.call(this);
 
 		S('#play').on('click',{me:this},function(e){
 			e.preventDefault();
