@@ -189,7 +189,7 @@ S(document).ready(function(){
 				if(ODI.log) ODI.log.add('action=click&content='+this.options.scenario);
 			},
 			"setParameter": function(){
-				if(ODI.log) ODI.log.add('action=click&content='+this.options.parameter);				
+				if(ODI.log) ODI.log.add('action=click&content='+this.parameters[this.options.parameter].title);				
 			},
 			"buildMap": function(){
 				var el,div,_obj;
