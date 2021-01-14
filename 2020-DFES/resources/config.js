@@ -13,24 +13,24 @@ S(document).ready(function(){
 			"source": null,
 			"years": {"min":2020, "max":2050},
 			"map": {
-				"bounds": [[52.6497,-5.5151],[56.01680,2.35107]]
+				"bounds": [[52.6497,-5.5151],[56.01680,2.35107]],
+				"attribution": "Vis: <a href=\"https://odileeds.org/projects/\">ODI Leeds</a>, Data: NPG/Element Energy",
+			}
+		},
+		"mapping": {
+			"primary": {
+				"LADlayer": {
+					"file": "data/primaries2lad.json"
+				},
+				"PRIMARYlayer": {}
 			}
 		},
 		"layers": {
 			"LADlayer":{
 				"geojson": "data/maps/LAD2019-npg.geojson",
-				"key": "lad19cd",
-				"data": {
-					"mapping": {
-						"src": "data/primaries2lad.json"	// JSON that maps from primaries -> LADs
-					},
-					"src": "primary"
-				}
+				"key": "lad19cd"
 			},
 			"PRIMARYlayer":{
-				"data": {
-					"src": "primary"	// This is the key used in data/scenarios/index.json
-				},
 				"geojson":"data/maps/primaries-unique-all.geojson",
 				"key": "Primary"
 			}
@@ -38,7 +38,6 @@ S(document).ready(function(){
 		"views":{
 			"LAD":{
 				"title":"Local Authorities",
-				"file":"data/maps/LAD-npg.geojson",
 				"source": "primary",
 				"layers":[{
 					"id": "LADlayer",
@@ -58,11 +57,15 @@ S(document).ready(function(){
 
 						if(!attr) attr = {};
 
-						if(attr.id){
+						l = this.views[this.options.view].layers[0].id;
+						key = this.layers[l].key;
+
+						if(attr.id && key){
 
 							var data = [];
 							var balloons = [];
-							
+							var raw = this.data.scenarios[this.options.scenario].data[this.options.parameter].raw;
+
 							// Work out the Local Authority name
 							var lad19nm = attr.id;
 							if(this.layers.LADlayer){
@@ -70,14 +73,24 @@ S(document).ready(function(){
 									if(this.layers.LADlayer.geojson.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LADlayer.geojson.features[c].properties.lad19nm;
 								}
 							}
+							
+							// Find the column for the year
+							var yy = -1;
+							for(var i = 0; i < raw.fields.title.length; i++){
+								if(raw.fields.title[i]==this.options.key) yy = i;
+							}
+							if(yy < 0) return;
 
-							for(var p in this.layers.LADlayer.data.mapping.data){
-								if(this.layers.LADlayer.data.mapping.data[p][attr.id]){
+							for(var p in this.mapping.primary.LADlayer.data){
+								if(this.mapping.primary.LADlayer.data[p][attr.id]){
 									v = 0;
-									if(this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p]) v = this.data.scenarios[this.options.scenario].data[this.options.parameter].primary.layers.PRIMARYlayer.values[p][this.options.key];
-									fracLA = this.layers.LADlayer.data.mapping.data[p][attr.id]*v;
+									for(var i = 0; i < raw.rows.length; i++){
+										if(raw.rows[i][0]==p) v = raw.rows[i][yy];
+									}
+
+									fracLA = this.mapping.primary.LADlayer.data[p][attr.id]*v;
 									fracOther = v - fracLA;
-									data.push([p,[v,p+'<br />Total: %VALUE%<br />'+(this.layers.LADlayer.data.mapping.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,fracLA,fracOther]]);
+									data.push([p,[v,p+'<br />Total: %VALUE%<br />'+(this.mapping.primary.LADlayer.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,fracLA,fracOther]]);
 								}
 							}
 
@@ -132,7 +145,6 @@ S(document).ready(function(){
 			},
 			"primaries":{
 				"title":"Primary Substations",
-				"file":"data/maps/primaries-unique-all.geojson",
 				"source": "primary",
 				"layers":[{
 					"id": "PRIMARYlayer",

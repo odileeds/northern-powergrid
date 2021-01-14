@@ -13,7 +13,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.2.4";
+		this.version = "1.3.0";
 		if(!config) config = {};
 		this.options = (config.options||{});
 		this.parameters = {};
@@ -21,6 +21,7 @@
 		this.logging = true;		
 		this.layers = (config.layers||{});
 		this.views = (config.views||{});
+		this.mapping = (config.mapping||{});
 		this.events = {};
 		if(config.on) this.events = config.on;
 
@@ -35,7 +36,7 @@
 					'cache':false,
 					'dataType':'json',
 					'success': function(d,attr){
-						console.info('Got '+attr.url);
+						this.log('INFO','Got '+attr.url);
 						this.data.scenarios = d;
 						this.init();
 					},
@@ -167,9 +168,9 @@
 		return this;
 	}
 	
-	FES.prototype.loadScenarioData = function(callback){
+	FES.prototype.loadData = function(callback){
 
-		S().ajax(path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].file,{
+		S().ajax(path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter].file,{
 			'this':this,
 			'cache':false,
 			'dataType':'text',
@@ -177,7 +178,7 @@
 			'parameter': this.options.parameter,
 			'callback': callback,
 			'success': function(d,attr){
-				console.info('Got '+attr.url);
+				this.log('INFO','Got '+attr.url);
 				this.loadedData(d,attr.scenario,attr.parameter,attr.callback);
 			},
 			'error': function(e,attr){
@@ -212,24 +213,23 @@
 		// Clear messages
 		this.message('',{'id':'warn','type':'WARNING'});
 		this.message('',{'id':'error','type':'ERROR'});
-				
-				
+
 		// Update the CSS class
 		this.setScenarioColours(scenario);
 
-		this.options.source = this.views[this.options.view].source;
 		if(!this.data.scenarios[scenario].data[this.options.parameter]){
 			this.message('We have no data for '+this.parameters[this.options.parameter].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
 		}else{
 			this.message('',{'id':'error','type':'ERROR'});
-			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
-				this.loadScenarioData(function(){
-					this.buildMap();
+			if(!this.data.scenarios[this.options.scenario].data[this.options.parameter].raw){
+				this.loadData(function(){
+					// Map the data
+					this.mapData();
 				});
 			}else{
 				this.message('',{'id':'error'});
-				// Re-draw the map
-				this.buildMap();
+				// Map the data
+				this.mapData();
 			}
 		}
 
@@ -244,8 +244,7 @@
 
 		if(this.views[v]){
 			this.options.view = v;
-			this.options.source = this.views[this.options.view].source;
-			this.buildMap();
+			this.mapData();
 		}else{
 			this.message('The view '+v+' does not exist!',{'id':'error','type':'ERROR'});
 		}
@@ -270,11 +269,16 @@
 				if(!this.data.scenarios[this.options.scenario].data[this.options.parameter]){
 					this.message('We have no data for '+this.parameters[v].title+' under '+this.options.scenario,{'id':'error','type':'ERROR'});
 				}else{
-					if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
+					// We don't have the raw data for this scenario/parameter
+					if(!this.data.scenarios[this.options.scenario].data[this.options.parameter].raw){
 						// Load the scenario data
-						this.loadScenarioData(function(){ this.buildMap(); });
+						this.loadData(function(){
+							// Map the data
+							this.mapData();
+						});
 					}else{
-						this.buildMap();
+						// Map the data
+						this.mapData();
 					}
 				}
 			}
@@ -286,28 +290,191 @@
 		this.options.scale = (checked ? "absolute":"relative");
 		if(checked) S('#scale-holder').addClass('checked');
 		else S('#scale-holder').removeClass('checked');
-		this.buildMap();
+		this.mapData();
 	}
 
 	FES.prototype.setYear = function(y){
 		if(this.map){
 			this.options.key = y;
-			this.buildMap();
+			this.mapData();
 		}
 		S('.year').html(y);
 		return this;
 	}
 
-	FES.prototype.loadedData = function(d,scenario,parameter,callback){
-	
-		var r,c,v,p,a,l,key,min,max,source;
-		var data = this.data.scenarios[scenario].data[parameter][this.options.source];
+	FES.prototype.mapData = function(){
 
-		if(!data.key){
-			this.log('ERROR','No key provided for '+scenario+' '+parameter+' '+this.options.source);
+		var s,p,v,data,l,id;
+		s = this.options.scenario;
+		p = this.options.parameter;
+		v = this.options.view;
+		data = this.data.scenarios[s].data[p];
+
+		// Check we have the raw data
+		if(!data.raw){
+			this.log('ERROR','No raw data available for '+s+'/'+p+'');
+			return this;
+		}
+		
+		// Check we have columns
+		if(typeof data.col==="undefined"){
+			this.log('ERROR','No columns in the data',data);
 			return this;
 		}
 
+		// Have we defined the layers object?
+		if(!data.layers) data.layers = {};
+
+		id = "";
+		// We need to loop over the view's layers
+		for(l = 0; l < this.views[v].layers.length; l++){
+			// If this is a heatmap layer we need mapping
+			if(this.views[v].layers[l].heatmap) id = this.views[v].layers[l].id;
+		}
+		
+		if(!id){
+			this.log('ERROR','No heatmap defined for '+v);
+			return this;
+		}
+		
+		
+		if(!data.layers[v]){
+			// Have we loaded the code mapping for this view's 
+			if(!this.mapping[data.dataBy][id].data && typeof this.mapping[data.dataBy][id].file==="string"){
+				// Load from JSON file
+				S().ajax(path+this.mapping[data.dataBy][id].file,{
+					'this':this,
+					'cache':false,
+					'dataType':'json',
+					'id':id,
+					'dataBy':data.dataBy,
+					'scenario':s,
+					'parameter':p,
+					'complete': function(d,attr){
+						this.log('INFO','Got '+attr.url);
+						this.mapping[attr.dataBy][attr.id].raw = d;
+						if(typeof this.mapping[attr.dataBy][attr.id].process==="function") d = this.mapping[attr.dataBy][attr.id].process.call(this,d);
+						this.mapping[attr.dataBy][attr.id].data = d;
+						this.mapData();
+					},
+					'error': function(e,attr){
+						this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+					}
+				});
+				return this;
+			}else{
+				
+				if(!data.layers[v]){
+					// Default with no mapping needed
+					data.layers[v] = {'values':{},'fullrange':{}};
+
+					min = 1e100;
+					max = -1e100;
+					
+					// Get the data source (which may be different to the one we loaded)
+					d = this.data.scenarios[s].data[p];
+
+					// Loop over data rows
+					for(r = 0; r < d.raw.rows.length; r++){
+
+						// The primary key
+						pkey = d.raw.rows[r][data.col];
+
+						if(this.mapping[data.dataBy][id].data){
+							if(this.mapping[data.dataBy][id].data[pkey]){
+								for(a in this.mapping[data.dataBy][id].data[pkey]){
+									if(!data.layers[v].values[a]) data.layers[v].values[a] = {};
+									for(c = 0; c < d.raw.fields.name.length; c++){
+										// Set values to zero
+										key = d.raw.fields.name[c];
+										if(c != data.col && parseInt(key)==key && !data.layers[v].values[a][key]){
+											data.layers[v].values[a][key] = 0;
+										}
+									}
+								}
+							}
+						}else{
+							if(!data.layers[v].values[pkey]) data.layers[v].values[pkey] = {};
+						}
+						
+
+						// Loop over columns in the raw data
+						for(c = 0; c < d.raw.fields.name.length; c++){
+							if(c != data.col && parseInt(d.raw.fields.name[c])==d.raw.fields.name[c]){
+
+								if(d.raw.rows[r][c]=="") d.raw.rows[r][c] = 0;
+
+								val = d.raw.rows[r][c];
+
+								if(this.mapping[data.dataBy][id].data){
+									if(this.mapping[data.dataBy][id].data[pkey]){
+
+										key = d.raw.fields.name[c]+"";
+
+										for(a in this.mapping[data.dataBy][id].data[pkey]){
+
+											if(this.parameters[p].combine=="sum"){
+
+												// Sum the fractional amount for this mapped area
+												data.layers[v].values[a][key] += (val*this.mapping[data.dataBy][id].data[pkey][a]);
+
+											}else if(this.parameters[p].combine=="max"){
+
+												// Find the maximum value for mapped areas
+												data.layers[v].values[a][key] = Math.max(val,data.layers[v].values[a][key]);
+
+											}
+										}
+									}
+
+								}else{
+									// If this layer uses the current source as "data" we can set it
+									data.layers[v].values[pkey][d.raw.fields.name[c]] = (typeof val==="number") ? val : d.raw.rows[r][c];
+								}
+							}
+						}
+					}
+				}else{
+					console.info('Already processed '+v+' '+id)
+				}
+
+				// Find minimum and maximum values
+				for(pkey in data.layers[v].values){
+					for(key in data.layers[v].values[pkey]){
+						if(!isNaN(data.layers[v].values[pkey][key])){
+							min = Math.min(min,data.layers[v].values[pkey][key]);
+							max = Math.max(max,data.layers[v].values[pkey][key]);
+						}else{
+							// Ignore fields that aren't years
+						}
+					}
+				}
+
+				data.layers[v].fullrange = {'min':min,'max':max};
+			}
+		}
+
+		// Save the result
+		this.data.scenarios[s].data[p] = data;
+
+		// Update the map
+		this.buildMap();
+		return this;
+	}
+
+	FES.prototype.loadedData = function(d,scenario,parameter,callback){
+
+		var r,c,v,p,a,l,key,min,max,data;
+		data = this.data.scenarios[scenario].data[parameter];
+
+		if(!data.dataBy){
+			this.log('ERROR','No dataBy property set for '+scenario+' '+parameter);
+			return this;
+		}
+		if(!data.key){
+			this.log('ERROR','No key provided for '+scenario+' '+parameter+' '+data.dataBy);
+			return this;
+		}
 		if(!data.layers) data.layers = {};
 		if(!data.raw){
 			data.raw = CSV2JSON(d,1);
@@ -332,146 +499,8 @@
 			if(col >= 0) data.col = col;
 		}
 
-		if(data.col >= 0){
-			
-			// Loop over the layers
-			for(l in this.layers){
-
-				// If this layer hasn't already been defined we try to make it
-				if(!data.layers[l]){
-
-					if(this.layers[l].data){
-
-						if(this.layers[l].data.mapping && !this.layers[l].data.mapping.data && typeof this.layers[l].data.mapping.src==="string"){
-							// Process data layers that need a mapping
-
-							// Load from JSON file
-							S().ajax(path+this.layers[l].data.mapping.src,{
-								'this':this,
-								'cache':false,
-								'dataType':'json',
-								'layer':l,
-								'scenario':scenario,
-								'parameter':parameter,
-								'source':this.options.source,
-								'callback':callback,
-								'complete': function(d,attr){
-									console.info('Got '+attr.url);
-									this.layers[attr.layer].data.mapping.raw = d;
-									if(typeof this.layers[attr.layer].data.mapping.process==="function"){
-										d = this.layers[attr.layer].data.mapping.process.call(this,d);
-									}
-									this.layers[attr.layer].data.mapping.data = d;
-									this.loadedData('',attr.scenario,attr.parameter,attr.callback);
-								},
-								'error': function(e,attr){
-									this.message('Unable to load '+attr.url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
-								}
-							});
-							return this;
-
-						}else{
-							
-							source = this.layers[l].data.src;
-							if(source && this.data.scenarios[scenario].data[parameter][source]){
-
-								// No mapping needed
-								data.layers[l] = {'values':{},'fullrange':{}};
-
-								min = 1e100;
-								max = -1e100;
-								
-								// Get the data source (which may be different to the one we loaded)
-								d = this.data.scenarios[scenario].data[parameter][source];
-
-								// Loop over data rows
-								for(r = 0; r < d.raw.rows.length; r++){
-
-									// The primary key
-									pkey = d.raw.rows[r][data.col];
-									if(this.layers[l].data.mapping && this.layers[l].data.mapping.data){
-										if(this.layers[l].data.mapping.data[pkey]){
-											for(a in this.layers[l].data.mapping.data[pkey]){
-												if(!data.layers[l].values[a]) data.layers[l].values[a] = {};
-												for(c = 0; c < d.raw.fields.name.length; c++){
-													// Set values to zero
-													key = d.raw.fields.name[c];
-													if(c != col && parseInt(key)==key && !data.layers[l].values[a][key]){
-														data.layers[l].values[a][key] = 0;
-													}
-												}
-											}
-										}
-									}else{
-										if(!data.layers[l].values[pkey]) data.layers[l].values[pkey] = {};
-									}
-
-									// Loop over columns in the raw data
-									for(c = 0; c < d.raw.fields.name.length; c++){
-										if(c != col && parseInt(d.raw.fields.name[c])==d.raw.fields.name[c]){
-
-											if(d.raw.rows[r][c]=="") d.raw.rows[r][c] = 0;
-
-											v = d.raw.rows[r][c];
-
-											if(this.layers[l].data.mapping && this.layers[l].data.mapping.data){
-												if(this.layers[l].data.mapping.data[pkey]){
-
-													key = d.raw.fields.name[c]+"";
-
-													for(a in this.layers[l].data.mapping.data[pkey]){
-
-														if(this.parameters[parameter].combine=="sum"){
-
-															// Sum the fractional amount for this mapped area
-															data.layers[l].values[a][key] += (v*this.layers[l].data.mapping.data[pkey][a]);
-
-														}else if(this.parameters[parameter].combine=="max"){
-
-															// Find the maximum value for mapped areas
-															data.layers[l].values[a][key] = Math.max(v,data.layers[l].values[a][key]);
-
-														}
-													}
-												}
-
-											}else{
-												// If this layer uses the current source as "data" we can set it
-												data.layers[l].values[pkey][d.raw.fields.name[c]] = (typeof v==="number") ? v : d.raw.rows[r][c];
-											}
-										}
-									}
-								}
-
-								// Find minimum and maximum values
-								for(pkey in data.layers[l].values){
-									for(key in data.layers[l].values[pkey]){
-										if(!isNaN(data.layers[l].values[pkey][key])){
-											min = Math.min(min,data.layers[l].values[pkey][key]);
-											max = Math.max(max,data.layers[l].values[pkey][key]);
-										}else{
-											// Ignore fields that aren't years
-										}
-									}
-								}
-
-								data.layers[l].fullrange = {'min':min,'max':max};
-							}else{
-								this.log('ERROR','No source data loaded for '+source);
-								return this;
-							}
-						}
-					}else{
-						this.log('ERROR','No data attribute provided for layer '+l);
-						return this;
-					}
-				}
-
-			}	// End loop over layers
-
-		}
-
-		this.data.scenarios[scenario].data[parameter][this.options.source] = data;
+		// Set the data
+		this.data.scenarios[scenario].data[parameter] = data;
 
 		if(typeof callback==="function") callback.call(this);
 
@@ -540,7 +569,7 @@
 
 		var color = (this.data.scenarios[this.options.scenario].color||"#000000");
 
-		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].raw){
+		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter].raw){
 			this.log('ERROR','Scenario '+this.options.scenario+' not loaded',this.data.scenarios[this.options.scenario].data[this.options.parameter]);
 			return this;
 		}
@@ -548,7 +577,7 @@
 		var min = 0;
 		var max = 1;
 		var _obj = this;
-		var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers;
+		var _scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter].layers;
 
 		if(_scenario[this.options.view]){
 			var min = 1e100;
@@ -581,7 +610,7 @@
 						'view': this.options.view,
 						'id': layer.id,
 						'complete': function(d,attr){
-							console.info('Got '+attr.url);
+							this.log('INFO','Got '+attr.url);
 							this.layers[attr.id].geojson = d;
 							this.buildMap();
 						},
@@ -612,10 +641,6 @@
 					}
 				}
 
-				// Make copies of variables we'll use inside functions
-				//_scenario = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers;
-
-
 				// Re-build the layers for this view
 				for(var l = 0; l < this.views[this.options.view].layers.length; l++){
 					
@@ -644,31 +669,31 @@
 						}
 					};
 
-
 					var _id = this.views[this.options.view].layers[l].id;
 
 					if(this.views[this.options.view].layers[l].heatmap){
 
 						var _l = l;
 						this.views[this.options.view].layers[l].range = {'min':0,'max':1};
-						view = this.views[this.options.view].layers[l].id;
+						lid = this.views[this.options.view].layers[l].id;
+						view = this.options.view;
 						if(_scenario[view]){
-							this.views[this.options.view].layers[l].range = {'min':1e100,'max':-1e100};
+							this.views[view].layers[l].range = {'min':1e100,'max':-1e100};
 							for(i in _scenario[view].values){
 								if(this.options.scale == "absolute"){
 									// We have pre-calculated the range
 
-									this.views[this.options.view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter][this.options.source].layers[view].fullrange;
+									this.views[view].layers[l].range = this.data.scenarios[this.options.scenario].data[this.options.parameter].layers[view].fullrange;
 								}else{
 									v = _scenario[view].values[i][this.options.key];
 									if(typeof v==="number"){
-										this.views[this.options.view].layers[l].range.min = Math.min(v,this.views[this.options.view].layers[l].range.min);
-										this.views[this.options.view].layers[l].range.max = Math.max(v,this.views[this.options.view].layers[l].range.max);
+										this.views[view].layers[l].range.min = Math.min(v,this.views[view].layers[l].range.min);
+										this.views[view].layers[l].range.max = Math.max(v,this.views[view].layers[l].range.max);
 									}
 								}
 							}
 						}
-						
+
 						// Get a nicer range
 						this.views[this.options.view].layers[l].range = niceRange(this.views[this.options.view].layers[l].range.min,this.views[this.options.view].layers[l].range.max);
 						if(!this.views[this.options.view].layers[l].colour){
@@ -693,7 +718,7 @@
 							'scaleid': this.views[this.options.view].layers[l].colourscale,
 							'levels': (typeof this.options.map.quantised==="number" ? this.options.map.quantised : undefined)
 						}));
-						
+
 						// Define the GeoJSON attributes for this layer
 						this.views[this.options.view].layers[l].geoattr.style = function(feature){
 							var layer = _obj.views[_obj.options.view].layers[_l];
@@ -706,12 +731,12 @@
 							if(layer.boundary && typeof layer.boundary.stroke==="boolean") props.stroke = layer.boundary.stroke;
 							if(feature.geometry.type == "Polygon" || feature.geometry.type == "MultiPolygon"){
 								var c = {'r':0,'g':0,'b':0,'alpha':0};
-								var data = _scenario[layer.id];
+								var data = _scenario[_obj.options.view];
 								var key = _obj.layers[layer.id].key;
 								if(feature.properties[key] && data.values[feature.properties[key]]){
 									c = layer.colour.getColourFromScale( layer.colourscale, data.values[feature.properties[key]][_obj.options.key],layer.range.min,layer.range.max,true);
 								}else{
-									console.warn('Unable to find '+key,feature.properties)
+									//console.warn('Unable to find '+key,feature.properties)
 								}
 								props.fillColor = 'rgb('+c.r+','+c.g+','+c.b+')';
 								props.weight = (layer.boundary ? layer.boundary.strokeWidth||1 : 1);
@@ -753,22 +778,23 @@
 
 		function popuptext(feature,attr){
 			// does this feature have a property named popupContent?
-			var popup,me,view,key,v;
+			var popup,me,view,key,v,lid;
 			popup = '';
 			me = attr['this'];
 			
-			view = me.views[me.options.view].layers[attr.layer].id;
-			if(!me.layers[view].key || !feature.properties[me.layers[view].key]){
-				me.log('ERROR','No property '+me.layers[view].key+' in ',feature.properties);
+			lid = me.views[me.options.view].layers[attr.layer].id;
+			if(!me.layers[lid].key || !feature.properties[me.layers[lid].key]){
+				me.log('ERROR','No property '+me.layers[lid].key+' in ',feature.properties);
 				return "";
 			}
-			key = feature.properties[me.layers[view].key];
+			key = feature.properties[me.layers[lid].key];
 			v = null;
-			if(me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values[key]){
-				v = me.data.scenarios[me.options.scenario].data[me.options.parameter][me.options.source].layers[view].values[key][me.options.key];
+			view = me.options.view;
+			if(me.data.scenarios[me.options.scenario].data[me.options.parameter].layers[view].values && me.data.scenarios[me.options.scenario].data[me.options.parameter].layers[view].values[key]){
+				v = me.data.scenarios[me.options.scenario].data[me.options.parameter].layers[view].values[key][me.options.key];
 			}
 			if(typeof v!=="number"){
-				console.warn('No value for '+key+' '+me.options.scenario+' '+me.options.parameter);
+				//console.warn('No value for '+key+' '+me.options.scenario+' '+me.options.parameter);
 			}
 
 			if(me.views[me.options.view].popup){
@@ -778,7 +804,7 @@
 					popup = me.views[me.options.view].popup['text'].call(me,{
 						'view':view,
 						'id':key,
-						'key': (me.layers[view].key||""),
+						'key': (me.layers[lid].key||""),
 						'value': v,
 						'properties':feature.properties,
 						'scenario': me.data.scenarios[me.options.scenario],
@@ -802,6 +828,7 @@
 			if(console && typeof console.log==="function"){
 				if(arguments[0] == "ERROR") console.error('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
 				else if(arguments[0] == "WARNING") console.warn('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
+				else if(arguments[0] == "INFO") console.info('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
 				else console.log('%cFES%c: '+args[1],'font-weight:bold;','',(args.splice(2).length > 0 ? args.splice(2):""));
 			}
 		}
