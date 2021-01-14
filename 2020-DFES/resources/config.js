@@ -185,6 +185,12 @@ S(document).ready(function(){
 			}
 		},
 		"on": {
+			"setScenario": function(){
+				if(ODI.log) ODI.log.add('action=click&content='+this.options.scenario);
+			},
+			"setParameter": function(){
+				if(ODI.log) ODI.log.add('action=click&content='+this.options.parameter);				
+			},
 			"buildMap": function(){
 				var el,div,_obj;
 				el = document.querySelector('.leaflet-top.leaflet-left');
