@@ -3,7 +3,7 @@
 use Data::Dumper;
 use POSIX qw(strftime);
 use JSON::XS;
-use lib "./lib/";
+use rlib '../lib';	# Add relative path to modules
 use ODILeeds::NPG;
 
 # Get directory
