@@ -26,7 +26,11 @@ jobs:
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: cpan -i 'JSON::XS'
+
+      - name: install cpanm and multiple modules
+        uses: perl-actions/install-with-cpanm@v1
+        with:
+          install: JSON::XS
 
       # Runs script
       - name: Run update script and push
