@@ -1,15 +1,18 @@
 #!/usr/bin/perl
 
+# Get directory
+my $dir;
+BEGIN {
+	$dir = $0;
+	$dir =~ s/[^\/]*$//g;
+	if(!$dir){ $dir = "./"; }
+	$lib = $dir."lib/";
+}
+use lib $lib;
 use Data::Dumper;
 use POSIX qw(strftime);
 use JSON::XS;
-use rlib '../lib';	# Add relative path to modules
 use ODILeeds::NPG;
-
-# Get directory
-$dir = $0;
-if($dir =~ /\//){ $dir =~ s/^(.*)\/([^\/]*)/$1/g; }
-else{ $dir = "./"; }
 
 
 # Get the scenario config
