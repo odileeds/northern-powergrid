@@ -1,16 +1,18 @@
 #!/usr/bin/perl
 
+# Get directory
+my $dir;
+BEGIN {
+	$dir = $0;
+	$dir =~ s/[^\/]*$//g;
+	if(!$dir){ $dir = "./"; }
+	$lib = $dir."lib/";
+}
+use lib $lib;
 use Data::Dumper;
 use POSIX qw(strftime);
 use JSON::XS;
-use lib "./lib/";
 use ODILeeds::NPG;
-
-# Get directory
-$dir = $0;
-if($dir =~ /\//){ $dir =~ s/^(.*)\/([^\/]*)/$1/g; }
-else{ $dir = "./"; }
-
 
 # Get the scenario config
 open(FILE,$dir."scenarios/index.json");
@@ -51,7 +53,7 @@ $graph->setScenarios(%scenarios);
 $html = "";
 for($i = 0; $i < (@graphs); $i++){
 	
-	$graph->load('graphs/'.$graphs[$i]{'csv'})->process();
+	$graph->load($dir.'graphs/'.$graphs[$i]{'csv'})->process();
 	
 	# If we have a y-axis scaling we scale the values
 	if($graphs[$i]{'yscale'}){
@@ -59,12 +61,12 @@ for($i = 0; $i < (@graphs); $i++){
 	}
 	
 	# Output the SVG
-	open(FILE,'>','graphs/'.$graphs[$i]{'svg'});
+	open(FILE,'>',$dir.'graphs/'.$graphs[$i]{'svg'});
 	print FILE $graph->draw(('yaxis-label'=>$graphs[$i]{'yaxis-label'},'yscale'=>$graphs[$i]{'yscale'},'yaxis-max'=>$graphs[$i]{'yaxis-max'},'width'=>'640','xaxis-max'=>2051,'xaxis-line'=>1,'stroke'=>3,'strokehover'=>5,'point'=>4,'pointhover'=>6,'line'=>2,'yaxis-format'=>"commify",'yaxis-labels-baseline'=>'middle','xaxis-ticks'=>1,'left'=>$graphs[$i]{'left'}));
 	close(FILE);
 	
 	# Output the HTML table
-	open(FILE,'>','graphs/'.$graphs[$i]{'table'});
+	open(FILE,'>',$dir.'graphs/'.$graphs[$i]{'table'});
 	print FILE $graph->table(());
 	close(FILE);
 	
@@ -79,7 +81,7 @@ for($i = 0; $i < (@graphs); $i++){
 	$html .= "\t\t\t</figure>\n\n";
 }
 
-open(FILE,">","graphs.txt");
+open(FILE,">",$dir."graphs.txt");
 print FILE $html;
 close(FILE);
 
