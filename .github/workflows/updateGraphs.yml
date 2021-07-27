@@ -8,9 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 2020-emerging-thinking/data/graphs/index.json
-      - 2020-emerging-thinking/data/graphs.pl
       - .github/workflows/updateGraphs.yml
+      - 2020-DFES/data/graphs.pl
+      - 2020-DFES/data/graphs/index.json
+      - 2020-DFES/data/graphs/*.csv
+      - 2020-emerging-thinking/data/graphs.pl
+      - 2020-emerging-thinking/data/graphs/index.json
+      - 2020-emerging-thinking/data/graphs/*.csv
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,6 +40,11 @@ jobs:
       # Runs script
       - name: Run update script and push
         run: |
+          perl 2020-DFES/data/graphs.pl
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update 2020 DFES graphs"
           perl 2020-emerging-thinking/data/graphs.pl
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
