@@ -3,7 +3,7 @@
 	"svg":"graph-ev.svg",
 	"table":"graph-ev.html",
 	"yaxis-label": "Number",
-	"left": 121
+	"left": 120
 },{
 	"csv":"Annual carbon emissions (MtCO2).csv",
 	"svg":"graph-annual-co2-emissions.svg",
