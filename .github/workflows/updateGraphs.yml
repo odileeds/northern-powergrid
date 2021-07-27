@@ -9,6 +9,7 @@ on:
     branches: [ master ]
     paths:
       - 2020-emerging-thinking/data/graphs/index.json
+      - 2020-emerging-thinking/data/graphs.pl
       - .github/workflows/updateGraphs.yml
 
   # Allows you to run this workflow manually from the Actions tab
