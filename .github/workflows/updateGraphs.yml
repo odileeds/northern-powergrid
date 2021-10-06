@@ -9,6 +9,9 @@ on:
     branches: [ master ]
     paths:
       - .github/workflows/updateGraphs.yml
+      - 2021-DFES/data/graphs.pl
+      - 2021-DFES/data/graphs/index.json
+      - 2021-DFES/data/graphs/*.csv
       - 2020-DFES/data/graphs.pl
       - 2020-DFES/data/graphs/index.json
       - 2020-DFES/data/graphs/*.csv
@@ -40,6 +43,11 @@ jobs:
       # Runs script
       - name: Run update script and push
         run: |
+          perl 2021-DFES/data/graphs.pl
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update 2021 DFES graphs" || exit 0
           perl 2020-DFES/data/graphs.pl
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
