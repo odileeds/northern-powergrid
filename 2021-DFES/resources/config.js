@@ -7,10 +7,9 @@ S(document).ready(function(){
 		"options": {
 			"scenario": "Net Zero Early",
 			"view": "LAD",
-			"key": (new Date()).getFullYear()+'',
+			"key": "2021",
 			"parameter": "ev",
 			"scale": "relative",
-			"source": null,
 			"years": {"min":2020, "max":2050},
 			"map": {
 				"bounds": [[52.6497,-5.5151],[56.01680,2.35107]],
@@ -197,12 +196,35 @@ S(document).ready(function(){
 				if(el){
 					// Does the place search exist?
 					if(!el.querySelector('.placesearch')){
+						
+						_obj = this;
+
 						div = document.createElement('div');
-						div.classList.add('leaflet-control');
-						div.classList.add('leaflet-bar');
-						div.innerHTML = '<div class="placesearch"><div class="submit" href="#" title="Search" role="button" aria-label="Search"></div><form class="placeform layersearch pop-left" action="search" method="GET" autocomplete="off"><input class="place" id="search" name="place" value="" placeholder="Search for a named area" type="text" /><div class="searchresults" id="searchresults"></div></div></form>';
+						div.classList.add('leaflet-control','leaflet-bar');
+						div.innerHTML = '<div class="placesearch leaflet-button"><button class="submit" href="#" title="Search" role="button" aria-label="Search"></button><form class="placeform layersearch pop-left" action="search" method="GET" autocomplete="off"><input class="place" id="search" name="place" value="" placeholder="Search for a named area" type="text" /><div class="searchresults" id="searchresults"></div></div></form></div>';
 						el.appendChild(div);
 						
+						if("geolocation" in navigator){
+							div2 = document.createElement('div');
+							div2.classList.add('leaflet-control','leaflet-bar');
+							div2.innerHTML = '<div class="geolocate leaflet-button"><button id="geolocate" role="button" title="Centre map on my location" aria-label="Centre map on my location"></button></div>';
+							el.appendChild(div2);
+							S(div2).on('click',{},function(e){
+								var btn = e.currentTarget;
+								btn.classList.add('searching');
+								navigator.geolocation.getCurrentPosition(function(position){
+									_obj.map.panTo({lat: position.coords.latitude, lng: position.coords.longitude});
+									btn.classList.remove('searching');
+								},function(error){
+									_obj.log('ERROR','Sorry, no position available.',`ERROR(${error.code}): ${error.message}`);
+								},{
+									enableHighAccuracy: true, 
+									maximumAge        : 2000, 
+									timeout           : 10000
+								});
+							});
+						}
+
 						function toggleActive(state){
 							e = el.querySelector('.placesearch');
 							if(typeof state!=="boolean") state = !e.classList.contains('typing');
@@ -241,6 +263,15 @@ S(document).ready(function(){
 							'rank': function(d,str){
 								// Calculate the weight to add to this airport
 								var r = 0;
+								if(postcodes[postcode] && postcodes[postcode].data){
+									_obj.log(d,d.id,postcodes[postcode].data.attributes.lep1);
+									for(var cd in postcodes[postcode].data.attributes){
+										if(postcodes[postcode].data.attributes[cd]==d.id){
+											r += 1;
+										}
+									}
+									
+								}
 								if(d['name']) r += getScore(d['name'],str);
 								if(d['id']) r += getScore(d['name'],str);
 								return r;
@@ -265,6 +296,29 @@ S(document).ready(function(){
 									}
 								}
 							}
+						});
+						var postcode = "";
+						var postcodes = {};
+						var regex = new RegExp(/^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([AZa-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))[0-9][A-Za-z]{2})$/);
+						this.search.on('change',{'me':this.search},function(e){
+							var v = e.target.value.replace(/ /g,"");
+							var m = v.match(regex)||[];
+							if(m.length){
+								_obj.log('INFO','Looks like a postcode',m[0]);
+								postcode = m[0];
+								if(!postcodes[m[0]]){
+									postcodes[m[0]] = {};
+									S().ajax('https://findthatpostcode.uk/postcodes/'+m[0]+'.json',{
+										'dataType':'json',
+										'postcode':m[0],
+										'this': e.data.me,
+										'success': function(data,attr){
+											postcodes[attr.postcode] = data;
+											this.update();
+										}
+									});
+								}
+							}else postcode = "";
 						});
 					}
 					if(this.search){

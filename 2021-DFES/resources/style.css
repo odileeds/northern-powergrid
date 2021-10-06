@@ -45,9 +45,6 @@ table {
 
 
 
-
-
-
 /* Main site styling */
 .steady-progression { background-color: #827B7A!important; color: white!important; }
 .steady-progression-text { color: #827B7A!important; }
@@ -67,14 +64,14 @@ ol li { margin-bottom: 1em; }
 ol li:last-child { margin-bottom: 0px; }
 body {
 	background-color: #000000;
-	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-family: Montserrat, Lato, "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	font-size: 16px;
 	color: #efefef;
 	margin: 0px;
 	padding: 0px;
 	line-height: 1.44em;
 }
-p, time, li, td, th, footer, div { font-weight: 300; }
+p, time, li, td, th, footer, div { font-weight: 400; }
 header {
 	width: 100%;
 	padding: 0px;
@@ -129,10 +126,9 @@ header .holder nav { line-height: 1em; }
 	float: right;
 	padding-left: 1em;
 }
-.padded {
-	padding: 1em;
-}
-h1, h2, h3, h4 { font-weight: 600; }
+.padded { padding: 1em; }
+.tallpadded { padding: 3rem 1.5rem; }
+h1, h2, h3, h4 { font-weight: 700; font-family: Montserrat,sans-serif; }
 h1 { font-size: 2em; }
 h2 { font-size: 1.7em; }
 h3 { font-size: 1.4em; }
@@ -518,9 +514,7 @@ h1 { line-height: 1em; font-size: 1.5em; padding: 0.5em 0; }
 }
 header .holder, .holder, footer .holder { padding-left: 1em; padding-right: 1em; }
 footer { padding-left: 0px; padding-right: 0px; }
-.columns { display: flex; padding-top: 2em; padding-bottom: 2em; }
-.left { width: 30%; max-width: 300px; margin-right: 2em; }
-.right { width: 70%; }
+.columns { display: grid; grid-template-columns: 300px 1fr; grid-gap: 2em; padding: 3rem; max-width: 100%; margin: auto; }
 h2 { font-size: 1.4em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.5em; }
 .left h2 { font-size: 1em; }
 footer h3 { font-size: 1.4em; margin-top: 1.5em; margin-bottom: 0.5em; }
@@ -562,22 +556,40 @@ footer ul { margin-left: 2em; }
 .barchart .bar-right .balloon::after { border-right-color: black; }
 
 
+
 /* Typeahead search */
-.placesearch { min-width: 30px; min-height: 30px; }
-.placesearch .submit {
-	background-image: url(search.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 50% 50%;
+.leaflet-button { min-width: 30px; min-height: 30px; background-color: white; }
+.leaflet-button button {
 	width: 30px;
 	height: 30px;
-	background-color: white;
-	float: right;
-	position: absolute;
-	top: 0px;
-	right: 0px;
+	border-radius: 2px;
 	z-index: 2;
+	display: block;
 	cursor: pointer;
+	position: relative;
+	padding:0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 60% 60%;
+	background-color: transparent;
+}
+.leaflet-button button:hover, .leaflet-button button:focus { background-color: #f4f4f4!important; }
+.geolocate button {
+	background-image: url(geolocate.svg);
+}
+.searching {
+	animation: myanim 2s infinite;
+}
+@keyframes myanim {
+	20% {
+		border-color: red;
+	}
+	40% {
+		border-color: red;
+	}
+}
+.placesearch .submit {
+	background-image: url(search.svg);
 }
 .placesearch form { position: relative; }
 .placesearch .pop-left { display: none; }
@@ -587,10 +599,11 @@ footer ul { margin-left: 2em; }
 .placesearch .typeahead-results li > a { padding: 0.25em 0.5em; background: #efefef; text-decoration: none; display: block; color: inherit; width: 100%; }
 .placesearch .typeahead-results li.selected { background-color: #dfdfdf; color: black; }
 .placesearch .typeahead-results li.selected a { background-color: #444; color: white; }
-.placesearch.typing input[type="text"]{ display: block; min-width: 16em; height: 30px; padding: 0.25em 0.5em; border: 0px; }
+.placesearch.typing { width: 250px; }
+.placesearch.typing input[type="text"]{ display: block; height: 30px; padding: 0.25em 0.5em 0.25em 2em; border: 0px; }
 .placesearch.typing .typeahead-results { display: block; }
 .placesearch.typing .typeahead-results a { border: 0px; width: 100%; height: auto; text-align: left; }
-.placesearch.typing .pop-left { display: inline-block; position: relative; top: 0px; right: 0px; }
+.placesearch.typing .pop-left { display: inline-block; position: absolute!important; top: 0px; right: 0px; width: 100%; }
 
 /* form toggle */
 .toggleinput { vertical-align: middle; }
