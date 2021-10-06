@@ -508,7 +508,7 @@ a.b1-bg:hover, a.b2-bg:hover, a.b3-bg:hover, a.b4-bg:hover, a.b5-bg:hover, a.b6-
 /* DFES styles */
 h1 { line-height: 1em; font-size: 1.5em; padding: 0.5em 0; }
 #map { 
-	height: 550px;
+	height: 650px;
 	display: block;
 	width: 100%;
 }
