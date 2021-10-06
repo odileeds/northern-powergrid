@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "PseudoPrimary": "Northumberland Direct to Supply Points", "OBJECTID": 29, "Name_Prop": "Blyth", "Name_Ten": "Blyth Offshore Wind Limited", "Wind_Round": "1", "Lease_Stat": "Lease - Marine", "Inf_Status": "Active\/In Operation", "Shape__Area": 5.66761337879029e-05, "Shape__Length": 0.0308454150688574 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -1.48465123899996, 55.133381272000101 ], [ -1.49244430199997, 55.132076548 ], [ -1.49584753499994, 55.138806243 ], [ -1.48809041099997, 55.140091032 ], [ -1.48465123899996, 55.133381272000101 ] ] ] } }
+]
+}

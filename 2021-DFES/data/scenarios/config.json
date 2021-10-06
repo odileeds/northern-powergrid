@@ -1,0 +1,17 @@
+{
+	"ev": { "title": "Electric Vehicles (number)", "combine": "sum", "units":"", "dp": 0, "description": "Number of registered plug in electric vehicles (pure and hybrid)" },
+	"heatpumps": { "title": "Heat Pumps (number)", "combine": "sum", "units":"", "dp": 0, "description": "Number of heat pumps per residential household and commercial properties including hybrids" },
+	"domestic-pv": { "title": "Domestic photovoltaic installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Capacity of solar PV panels on domestic roofs for installations less than 4kW" },
+	"industrial-pv": { "title": "Large solar generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Installed capacity of industrial and commercial solar farms" },
+	"windcapacity": { "title": "Wind generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Installed capacity of industrial and commercial onshore and offshore wind farms" },
+	"renewablegen": { "title": "Renewable generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Installed capacity of all renewable generation including solar PV, wind, biomass, renewable gas engines, hydro" },
+	"nonrenewablegen": { "title": "Non-renewable generation installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Installed capacity of all non-renewable generation including CHP, waste incineration, non-renewable engines, other thermal" },
+	"storage": { "title": "Energy storage installed capacity (MW)", "combine": "sum", "units":"MW", "dp": 3, "description": "Installed capacity of domestic, industrial and commercial batteries" },
+	"domestic-consumption": { "title": "Domestic underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0, "description": "Annual energy consumption by residential households excluding electric vehicle and heat pump consumption" },
+	"industrial-consumption": { "title": "Industrial and commercial underlying energy consumption (MWh)", "combine": "sum", "units":"MWh", "dp": 0, "description": "Annual energy consumption by industrial and commercial properties excluding electric vehicles and heat pump consumption" },
+	"totalconsumptioncf": { "title": "Total energy consumption including electric vehicles and heat pumps (MWh)", "combine": "sum", "units":"MWh", "dp": 0, "description": "Total energy consumption by domestic households and industrial and commercial properties including electric vehicle and heat pump consumption" },
+	"peakdemand": { "title": "Peak demand (MW) at Primary Substations", "combine": "max", "units":"MW", "dp": 3, "description": "Peak half hourly demand within the year" },
+	"peakdemandcf": { "title": "Peak demand with customer flexibility (MW) at Primary Substations", "combine": "max", "units":"MW", "dp": 3, "description": "Peak half hourly demand within the year after load shifted by time of use tariffs and price driven smart charging of EVs" },
+	"peakutilisation": { "title": "Peak utilisation (%) at Primary Substations", "combine": "max", "units":"%", "dp": 1, "description": "Peak half hourly demand within the year as proportion of primary substation capacity" },
+	"peakutilisationcf": { "title": "Peak utilisation with customer flexibility (%) at Primary Substations", "combine": "max", "units":"%", "dp": 1, "description": "Peak half hourly demand within the year as proportion of primary substation capacity after load shifted by time of use tariffs and smart charging of EVs" }
+}
