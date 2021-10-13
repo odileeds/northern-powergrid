@@ -4,7 +4,7 @@
 	"svg":"graph-annual-co2-emissions.svg",
 	"table":"graph-annual-co2-emissions.html",
 	"yaxis-label": "Mt CO2(e)",
-	"left": 120
+	"left": 30
 },{
 	"title":"Cumulative carbon emissions (MtCO2)",
 	"csv":"Cumulative carbon emissions (MtCO2).csv",
