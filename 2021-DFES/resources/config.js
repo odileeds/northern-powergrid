@@ -5,7 +5,7 @@ S(document).ready(function(){
 
 	dfes = new FES({
 		"options": {
-			"scenario": "Net Zero Early",
+			"scenario": "NPg Planning Scenario",
 			"view": "LAD",
 			"key": "2021",
 			"parameter": "ev",
