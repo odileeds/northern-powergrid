@@ -13,7 +13,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.4.3";
+		this.version = "1.4.4";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
