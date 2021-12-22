@@ -48,7 +48,7 @@
 	"Consumer transformation": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.</li><li>Electrified heating. Consumers willing to change behaviour. High energy efficiency. High Demand side flexibility.</li></ul>",
 		"color": "#FFBF22",
-		"negativecolor": "#5ab4ac",
+		"negativecolor": "#5e3c99",
 		"css": "consumer-transformation",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-CT.csv", "key": "Primary" },
