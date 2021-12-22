@@ -2,6 +2,7 @@
 	"Steady progression": {
 		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Minimal behaviour change. Decarbonisation in power and transport but not heat.</li></ul>",
 		"color": "#827B7A",
+		"negativecolor": "#d7191c",
 		"css": "steady-progression",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-SP.csv", "key": "Primary" },
@@ -24,6 +25,7 @@
 	"System transformation": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.</li><li>Hydrogen for heating. Consumers less inclined to change behaviour. Lower energy efficiency. Supply side flexibility</li></ul>",
 		"color": "#5BCBF5",
+		"negativecolor": "#d7191c",
 		"css": "system-transformation",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-ST.csv", "key": "Primary" },
@@ -46,6 +48,7 @@
 	"Consumer transformation": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.</li><li>Electrified heating. Consumers willing to change behaviour. High energy efficiency. High Demand side flexibility.</li></ul>",
 		"color": "#FFBF22",
+		"negativecolor": "#5ab4ac",
 		"css": "consumer-transformation",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-CT.csv", "key": "Primary" },
@@ -68,6 +71,7 @@
 	"Leading the way": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2048.</li><li>Significant lifestyle change. Mixture of hydrogen and electrification for heating.</li></ul>",
 		"color": "#C2CD23",
+		"negativecolor": "#d01c8b",
 		"css": "leading-the-way",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-LTW.csv", "key": "Primary" },

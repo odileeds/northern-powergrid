@@ -610,7 +610,7 @@
 	FES.prototype.buildMap = function(){
 		this.log('INFO','buildMap');
 
-		var _obj,i,mapel,mapid,info,color,min,max,v,l,_id,_l,lid,view,bounds;
+		var _obj,i,mapel,mapid,info,color,ncolor,min,max,v,l,_id,_l,lid,view,bounds;
 		bounds = L.latLngBounds(L.latLng(56.01680,2.35107),L.latLng(52.6497,-5.5151));
 		if(this.options.map && this.options.map.bounds) bounds = L.latLngBounds(L.latLng(this.options.map.bounds[0][0],this.options.map.bounds[0][1]),L.latLng(this.options.map.bounds[1][0],this.options.map.bounds[1][1]));
 
@@ -662,6 +662,7 @@
 		}
 
 		color = (this.data.scenarios[this.options.scenario].color||"#000000");
+		ncolor = (this.data.scenarios[this.options.scenario].negativecolor||"#404040");
 
 		if(!this.data.scenarios[this.options.scenario].data[this.options.parameter].raw){
 			this.log('ERROR','Scenario '+this.options.scenario+' not loaded',this.data.scenarios[this.options.scenario].data[this.options.parameter]);
@@ -793,11 +794,24 @@
 						if(!this.views[this.options.view].layers[l].colour){
 							this.views[this.options.view].layers[l].colour = new Colours();
 						}
+
 						// Add/update a continuous colour scale
 						this.views[this.options.view].layers[l].colourscale = 'DFES-continuous';
 						this.views[this.options.view].layers[l].colour.addScale(this.views[this.options.view].layers[l].colourscale,getRGBAstr(color,0.0)+' 0%, '+getRGBAstr(color,0.8)+' 100%');
+
+						// If the colourscale for this parameter is diverging we change the scale
+						if(this.parameters[this.options.parameter].diverging){
+							// Set a text label (not used anywhere yet)
+							this.views[this.options.view].layers[l].colourscale = 'DFES-diverging';
+							// Set the colour stops from ncolour (opacity 1) to white (opacity 0) to colour (opacity 1)
+							this.views[this.options.view].layers[l].colour.addScale(this.views[this.options.view].layers[l].colourscale,getRGBAstr(ncolor,1)+' 0%, rgba(255,255,255,0) 50%, '+getRGBAstr(color,0.8)+' 100%');
+							// Update the range to be the same amount either side of zero
+							this.views[this.options.view].layers[l].range.max = Math.max(Math.abs(this.views[this.options.view].layers[l].range.min),Math.abs(this.views[this.options.view].layers[l].range.max));
+							this.views[this.options.view].layers[l].range.min = -this.views[this.options.view].layers[l].range.max;
+						}
+
+						// If the map scale needs to be quantised we now quantise the colour scale
 						if(typeof this.options.map.quantised==="number"){
-							// Add/update a quantised colour scale
 							this.views[this.options.view].layers[l].colour.quantiseScale(this.views[this.options.view].layers[l].colourscale,this.options.map.quantised,'DFES-quantised');
 							this.views[this.options.view].layers[l].colourscale = 'DFES-quantised';
 						}
