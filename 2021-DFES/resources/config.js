@@ -13,7 +13,7 @@ S(document).ready(function(){
 			"years": {"min":2020, "max":2050},
 			"map": {
 				"bounds": [[52.6497,-5.5151],[56.01680,2.35107]],
-				"attribution": "Vis: <a href=\"https://odileeds.org/projects/\">ODI Leeds</a>, Data: NPG/Element Energy",
+				"attribution": "Vis: <a href=\"https://open-innovations.org/projects/\">Open Innovations</a>, Data: NPG/Element Energy"
 			}
 		},
 		"mapping": {
@@ -185,10 +185,10 @@ S(document).ready(function(){
 		},
 		"on": {
 			"setScenario": function(){
-				if(ODI.log) ODI.log.add('action=click&content='+this.options.scenario);
+				if(OI.log) OI.log.add('action=click&content='+this.options.scenario);
 			},
 			"setParameter": function(){
-				if(ODI.log) ODI.log.add('action=click&content='+this.parameters[this.options.parameter].title);				
+				if(OI.log) OI.log.add('action=click&content='+this.parameters[this.options.parameter].title);				
 			},
 			"buildMap": function(){
 				var el,div,_obj;
