@@ -13,7 +13,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.4.4";
+		this.version = "1.4.5";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -353,7 +353,7 @@
 			for(y = 0; y < years.length; y++){
 				k = 100*(years[y]-min)/(max-min);
 				if(k >= 0){
-					range[k] = years[y];
+					range[k.toFixed(2)+'%'] = years[y];
 				}
 			}
 		}
