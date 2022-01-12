@@ -238,8 +238,6 @@ S(document).ready(function(){
 					
 						div.querySelector('.submit').addEventListener('click', function(e){ toggleActive(); });
 
-						_obj = this;
-						
 						// Stop map dragging on the element
 						el.addEventListener('mousedown', function(){ _obj.map.dragging.disable(); });
 						el.addEventListener('mouseup', function(){ _obj.map.dragging.enable(); });
@@ -265,12 +263,17 @@ S(document).ready(function(){
 								var r = 0;
 								if(postcodes[postcode] && postcodes[postcode].data){
 									_obj.log(d,d.id,postcodes[postcode].data.attributes.lep1);
-									for(var cd in postcodes[postcode].data.attributes){
-										if(postcodes[postcode].data.attributes[cd]==d.id){
-											r += 1;
+									if(d.layer=="PRIMARYlayer"){
+										if(d.id == matchedprimary){
+											r += 10;
+										}
+									}else{
+										for(var cd in postcodes[postcode].data.attributes){
+											if(postcodes[postcode].data.attributes[cd]==d.id){
+												r += 1;
+											}
 										}
 									}
-									
 								}
 								if(d['name']) r += getScore(d['name'],str);
 								if(d['id']) r += getScore(d['name'],str);
@@ -300,6 +303,7 @@ S(document).ready(function(){
 						var postcode = "";
 						var postcodes = {};
 						var regex = new RegExp(/^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([AZa-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))[0-9][A-Za-z]{2})$/);
+						var matchedprimary = "";
 						this.search.on('change',{'me':this.search},function(e){
 							var v = e.target.value.replace(/ /g,"");
 							var m = v.match(regex)||[];
@@ -314,12 +318,30 @@ S(document).ready(function(){
 										'this': e.data.me,
 										'success': function(data,attr){
 											postcodes[attr.postcode] = data;
+											matchedprimary = findPrimary(_obj,data);
 											this.update();
 										}
 									});
+								}else{
+									if(postcodes[m[0]].data) matchedprimary = findPrimary(_obj,postcodes[m[0]]);
 								}
 							}else postcode = "";
 						});
+					}
+					function findPrimary(_obj,data){
+						var matched,j,l,i,geojson;
+
+						// Loop through layers
+						for(j = 0; j < _obj.views[_obj.options.view].layers.length; j++){
+							l = _obj.views[_obj.options.view].layers[j].id;
+							// If the layer is PRIMARYlayer we see if we can match a polygon
+							if(l=="PRIMARYlayer"){
+								geojson = L.geoJSON(_obj.layers[l].geojson);
+								matched = leafletPip.pointInLayer([data.data.attributes.long,data.data.attributes.lat],geojson);
+								if(matched.length==1) return matched[0].feature.properties['Primary'];
+							}
+						}
+						return "";
 					}
 					if(this.search){
 						var l,f,i,j;
