@@ -1,10 +1,10 @@
 /*!
-	Typeahead search v0.1.5
+	Typeahead search v0.1.6
 */
 (function(root){
 
 	function Builder(){
-		this.version = "0.1.5";
+		this.version = "0.1.6";
 		this.init = function(el,opt){ return new TA(el,opt); };
 		return this;
 	}
@@ -22,6 +22,7 @@
 		}
 		var _obj = this;
 		var evs = {};
+		var items = [];
 		var results,form;
 		var inline = (typeof opt.inline==="boolean" ? opt.inline : false);
 
@@ -33,12 +34,12 @@
 			// Rank the results
 			tmp = [];
 			if(str){
-				for(i = 0 ; i < opt.items.length; i++){
-					datum = {'rank':0,'key':i,'value':opt.items[i]};
-					if(typeof opt.rank==="function") datum.rank = opt.rank(opt.items[i],s);
+				for(i = 0 ; i < items.length; i++){
+					datum = {'rank':0,'key':i,'value':items[i]};
+					if(typeof opt.rank==="function") datum.rank = opt.rank(items[i],s);
 					else{
-						if(opt.items[i].toUpperCase().indexOf(str) == 0) datum.rank += 3;
-						if(opt.items[i].toUpperCase().indexOf(str) > 0) datum.rank += 1;
+						if(items[i].toUpperCase().indexOf(str) == 0) datum.rank += 3;
+						if(items[i].toUpperCase().indexOf(str) > 0) datum.rank += 1;
 					}
 					tmp.push(datum);
 				}
@@ -63,7 +64,7 @@
 				n = Math.min(tmp.length,(typeof opt.max==="number" ? opt.max : 10));
 				html = "<ol>";
 				for(i = 0; i < n; i++){
-					if(tmp[i].rank > 0) html += '<li data-id="'+tmp[i].key+'" '+(i==0 ? ' class="selected"':'')+'><a tabindex="0" href="#" class="name">'+(typeof opt.render==="function" ? opt.render(opt.items[tmp[i].key]) : opt.items[tmp[i].key])+"</a></li>";
+					if(tmp[i].rank > 0) html += '<li data-id="'+tmp[i].key+'" '+(i==0 ? ' class="selected"':'')+'><a tabindex="0" href="#" class="name">'+(typeof opt.render==="function" ? opt.render(items[tmp[i].key]) : items[tmp[i].key])+"</a></li>";
 				}
 				html += "</ol>";
 			}
@@ -100,8 +101,8 @@
 		function selectLI(i){
 			if(i){
 				_obj.input = el;
-				if(typeof opt.process==="function") opt.process.call(_obj,opt.items[i]);
-				else console.log(opt.items[i]);
+				if(typeof opt.process==="function") opt.process.call(_obj,items[i]);
+				else console.log(items[i]);
 			}
 			if(results) results.innerHTML = "";
 			if(inline) el.style.marginBottom = "0px";
@@ -131,7 +132,12 @@
 			if(sel >= 0) li[sel].classList.remove('selected');
 			li[s].classList.add('selected');
 		}
-
+		this.update = function(){
+			var ev = document.createEvent('HTMLEvents');
+			ev.initEvent('keyup', false, true);
+			el.dispatchEvent(ev);
+			return this;
+		}
 		this.on = function(event,data,fn){
 			if(!el){
 				console.warn('Unable to attach event '+event);
@@ -183,10 +189,10 @@
 			el.setAttribute('autocomplete','off');
 		}
 		this.addItems = function(d){
-			if(!opt.items) opt.items = [];
-			opt.items = opt.items.concat(d);
+			if(!items) items = [];
+			items = items.concat(d);
 		};
-		this.clearItems = function(){ opt.items = []; }
+		this.clearItems = function(){ items = []; }
 		this.on('change',{'test':'blah'},function(e){  });
 
 		return this;
