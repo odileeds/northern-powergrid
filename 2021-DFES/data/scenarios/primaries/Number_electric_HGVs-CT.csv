@@ -1,0 +1,583 @@
+Primary,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,Licence area,Voltage level,Scenario name,Output parameter
+ACKLAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AMBERTON ROAD,0,0,1,1,1,2,3,3,4,5,5,6,7,8,9,10,12,13,14,16,18,19,21,23,25,27,29,32,34,36,39,41,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ANNFIELD 66/20KV,0,0,1,1,2,2,3,4,5,6,7,8,9,10,12,13,15,16,18,20,22,24,27,29,32,34,37,40,43,46,49,52,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ASHINGTON,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AYCLIFFE FORREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AYCLIFFE INDUSTRIAL,0,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,12,13,15,16,18,19,21,23,25,27,29,31,33,36,38,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARDEN FRIAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BEDALE,0,0,1,2,3,4,6,7,9,10,12,14,16,18,20,23,26,29,32,35,39,42,46,51,55,60,64,69,74,80,85,90,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BELMONT,0,0,0,1,1,1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,17,18,19,21,22,24,26,27,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BENSHAM,0,0,1,1,1,2,3,3,4,5,6,6,7,8,10,11,12,13,15,16,18,20,22,24,26,28,30,33,35,37,40,42,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BENTON SQUARE,0,0,1,2,3,4,6,7,9,10,12,14,16,18,20,23,25,28,32,35,38,42,46,50,55,59,64,69,74,79,84,89,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BENWELL,0,0,1,2,3,4,5,6,7,9,10,12,13,15,17,19,22,24,27,30,33,36,39,43,47,50,55,59,63,67,72,76,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BILLINGHAM MARSH HOUSE,0,1,3,5,8,11,15,19,23,27,32,36,42,48,54,61,68,76,84,93,102,112,123,134,146,158,170,183,197,210,224,238,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BILLY MILL,0,0,1,2,2,3,4,5,7,8,9,11,12,14,16,18,20,22,24,27,30,33,36,39,42,46,50,53,57,61,65,69,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BIRTLEY GROVE 66/11KV,0,1,4,7,11,15,20,26,31,37,43,49,57,64,73,82,92,102,114,126,138,152,166,181,197,214,231,248,267,285,304,323,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BIRTLEY GROVE 66/20KV,0,0,1,1,2,2,3,4,5,6,7,8,9,10,12,13,15,16,18,20,22,24,26,29,31,34,36,39,42,45,48,51,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BLAYDON BURN,0,0,2,3,5,7,9,11,13,16,18,21,24,28,31,35,39,44,49,54,60,65,71,78,85,92,99,107,115,123,131,139,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BLUCHER 33/11KV,0,0,1,1,2,3,4,5,6,7,9,10,12,13,15,17,19,21,23,26,28,31,34,37,40,44,47,51,55,58,62,66,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOLDON DOWNHILL,0,0,1,1,2,2,3,4,4,5,6,7,8,9,11,12,13,15,16,18,20,22,24,26,28,31,33,36,39,41,44,47,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOROUGHBRIDGE/ROECLIFFE INDUSTRIAL,0,1,3,6,9,12,16,20,24,29,33,39,44,50,57,64,72,80,89,98,108,119,130,142,154,167,181,195,209,223,238,253,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOWESFIELD 33/11KV,0,1,3,4,7,9,12,16,19,22,26,30,35,39,45,50,56,63,70,77,85,93,102,111,121,131,141,152,163,175,186,198,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOWESFIELD 66/11KV,0,0,0,1,1,2,2,3,4,4,5,6,7,7,8,9,11,12,13,14,16,18,19,21,23,25,27,29,31,33,35,37,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRANCEPETH,0,0,0,0,1,1,1,2,2,2,3,3,4,4,5,5,6,7,8,8,9,10,11,12,13,14,15,16,18,19,20,21,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BREAMISH STREET,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRENDA TRADING,0,1,3,6,9,12,16,20,24,29,33,39,44,50,57,64,72,80,89,98,108,119,130,142,154,167,180,194,208,223,238,252,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CAMPLESHON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CARLEY HILL,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,35,38,41,44,47,50,54,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CARLIN HOW T3 T4,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CARR HILL,0,0,1,2,3,5,6,8,10,11,13,15,18,20,23,25,29,32,35,39,43,47,52,56,61,66,72,77,83,89,94,100,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CATTERICK CAMP,0,0,0,1,1,2,2,2,3,4,4,5,6,6,7,8,9,10,11,12,14,15,16,18,19,21,23,24,26,28,30,32,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLOSE,0,0,0,1,1,1,1,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,17,18,19,21,22,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CONEYTHORPE,0,0,1,1,1,2,3,3,4,5,6,7,8,9,10,11,12,14,15,17,18,20,22,24,26,28,31,33,35,38,40,43,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CONSETT,0,0,2,3,5,6,8,11,13,15,18,20,23,27,30,34,38,42,47,52,57,63,69,75,82,88,96,103,110,118,126,134,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CORPORATION STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+COWTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CRAMLINGTON T1 T3,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,13,15,17,19,21,23,25,27,30,32,35,38,41,44,47,50,53,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CRAMLINGTON T2 T4,0,0,1,2,4,5,6,8,10,12,14,16,18,21,23,26,29,33,36,40,44,48,53,58,63,68,73,79,85,91,97,103,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLINGTON 132/6KV,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,4,5,5,6,7,7,8,8,9,10,11,11,12,13,14,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLINGTON 33/11KV,0,0,0,1,1,1,1,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,17,18,19,21,22,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLINGTON CENTRAL 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLINGTON EAST,0,1,3,5,8,11,14,17,21,25,29,34,39,44,50,56,63,70,77,86,94,104,113,124,134,146,157,169,182,194,207,220,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARLINGTON WEST,0,1,4,7,11,15,20,25,30,35,41,47,54,62,70,79,88,98,109,121,133,146,160,174,189,205,222,239,256,274,292,310,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DENWICK,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,35,38,41,44,47,50,54,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DUNSTON 66/11KV,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,13,15,17,19,21,23,25,27,30,32,35,38,41,44,47,50,53,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DUNSTON 66/20KV,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,12,13,14,15,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DURHAM EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EASTFIELD,0,0,1,2,3,5,6,7,9,11,13,14,17,19,21,24,27,30,33,37,41,45,49,53,58,63,68,73,78,84,89,95,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EASTGATE CEMENT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EDUCATIONAL PRECINCT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELVINGTON,0,0,1,2,2,3,5,6,7,8,10,11,13,14,16,18,20,23,25,28,31,34,37,40,44,48,51,55,59,63,68,72,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FARADAY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FAWDON T1 & SEATON BURN T1,0,0,1,2,4,5,7,9,10,12,14,17,19,22,24,28,31,34,38,42,47,51,56,61,66,72,78,83,90,96,102,108,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FISHBURN,0,0,1,3,4,6,7,9,11,13,15,18,20,23,26,30,33,37,41,45,50,55,60,66,71,77,83,90,96,103,110,117,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FLATWORTH CENTRAL,0,0,1,2,3,4,6,7,9,10,12,14,16,18,21,24,26,29,33,36,40,44,48,52,57,61,66,71,77,82,87,93,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOSS ISLANDS,0,0,1,2,3,4,5,6,7,9,10,12,13,15,17,19,22,24,27,29,32,36,39,43,46,50,54,58,62,67,71,76,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOSSWAY 33/11KV,0,0,1,2,3,5,6,7,9,11,13,14,17,19,21,24,27,30,33,37,41,45,49,53,58,63,68,73,78,84,89,95,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOURSTONES 20KV,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FYLANDS BRIDGE,0,0,1,1,2,3,4,5,6,7,8,9,11,12,14,16,18,20,22,24,27,29,32,35,38,41,44,48,51,55,58,62,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GALE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GARWOOD STREET,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,29,32,34,37,40,42,45,48,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GATESHEAD CENTRAL,0,0,1,2,3,4,5,6,8,9,11,12,14,16,18,20,23,26,28,31,35,38,42,45,49,53,58,62,67,71,76,81,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GATESHEAD EAST,0,1,2,4,6,8,10,13,15,18,21,25,28,32,36,41,46,51,57,63,69,76,83,91,99,107,115,124,133,143,152,161,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GOSFORTH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GRANGETOWN,0,2,8,13,20,28,38,47,57,67,79,91,104,119,134,151,169,189,210,232,256,281,307,335,364,394,426,458,492,526,561,595,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GREATHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GUISBOROUGH T1 T2,0,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,8,8,9,10,11,12,13,14,14,15,16,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GUISBOROUGH T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARLOW GREEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARMIRE BRIDGE,0,0,1,2,4,5,7,8,10,12,14,16,19,21,24,27,30,34,37,41,45,50,55,60,65,70,76,81,87,94,100,106,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARRATON,0,0,1,2,3,4,5,6,7,8,10,11,13,15,17,19,21,24,26,29,32,35,39,42,46,50,54,58,62,66,71,75,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARROGATE 132/11KV,0,0,1,2,2,3,5,6,7,8,10,11,13,14,16,18,20,23,25,28,31,34,37,40,44,48,51,55,59,63,68,72,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARROGATE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARTMOOR 66/20KV,0,0,0,1,1,2,2,2,3,4,4,5,6,6,7,8,9,10,11,12,14,15,16,18,19,21,23,24,26,28,30,32,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAWTHORN PIT,0,1,2,3,5,7,9,12,14,16,19,22,26,29,33,37,41,46,51,57,62,69,75,82,89,96,104,112,120,129,137,146,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAXBY ROAD T2 T3,0,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,15,16,18,19,21,23,24,26,28,30,32,34,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEBBURN,0,0,1,2,3,4,6,7,9,10,12,14,16,18,20,23,26,29,32,35,39,42,46,51,55,60,64,69,74,80,85,90,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEBBURN WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEDWORTH,0,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,16,18,19,21,23,25,27,29,31,33,35,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEIGHINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEXHAM,0,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,17,18,20,22,23,25,27,29,31,33,35,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HIGH BARMSTON,0,2,5,9,14,20,26,33,40,48,56,64,74,84,95,107,120,133,148,164,180,198,217,236,257,278,301,324,347,371,396,420,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HIGH FLATTS,0,0,0,0,1,1,1,1,2,2,3,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,19,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOUGHTON,0,0,1,2,3,5,6,8,9,11,13,15,17,19,21,24,27,30,34,37,41,45,49,54,58,63,68,73,79,84,90,95,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOWDON,0,0,1,1,2,3,4,5,6,7,8,9,11,12,14,16,17,19,22,24,26,29,32,34,37,40,44,47,50,54,58,61,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HUNTINGTON NEW LANE,0,0,1,1,2,2,3,4,5,5,6,7,8,9,11,12,13,15,17,18,20,22,24,27,29,31,34,36,39,42,45,47,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HUSTHWAITE 33/11KV,0,0,1,1,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,24,26,29,31,34,37,40,43,47,50,53,57,60,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+JARROW,0,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,8,9,10,12,13,14,15,17,18,20,21,23,24,26,28,30,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KENTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIELDER,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KILLINGWORTH,0,0,1,1,2,3,4,5,6,8,9,10,12,13,15,17,19,21,24,26,29,31,34,38,41,44,48,51,55,59,63,67,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIRBYMOORSIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEAM CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LINTON 66/20KV,0,0,0,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,13,14,15,17,18,20,21,23,25,27,28,30,32,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LONGBENTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LOW SPENNYMOOR,0,0,1,1,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,25,28,30,33,36,39,42,45,48,52,55,59,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LYNEMOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MADDISON STREET,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MALLEABLE,0,0,2,3,4,6,8,10,12,15,17,20,23,26,29,33,37,41,46,50,55,61,67,73,79,86,92,99,107,114,122,129,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MALTON,0,0,1,2,3,4,6,7,9,10,12,14,16,18,21,23,26,29,32,36,39,43,47,52,56,61,66,71,76,81,87,92,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MEADOWFIELD,0,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,12,13,15,16,18,19,21,23,25,27,29,31,33,36,38,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MELROSEGATE 33/11KV,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MILLBANK LANE,0,0,1,1,2,3,4,5,6,7,9,10,11,13,15,16,18,20,23,25,28,30,33,36,39,43,46,49,53,57,61,64,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MONKSEATON,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MOOR MONKTON PUMPS,0,0,0,1,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,27,28,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MORPETH,0,0,1,1,2,3,4,5,5,6,8,9,10,11,13,15,16,18,20,22,25,27,30,32,35,38,41,44,47,51,54,57,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MOUNT ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWBURN HAUGH,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,12,13,15,16,18,20,22,24,26,28,30,33,35,38,41,43,46,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWBY,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWCASTLE AIRPORT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWTON AYCLIFFE SOUTH,0,0,0,0,1,1,1,1,2,2,2,3,3,4,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTH STREET,0,0,0,0,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,9,9,10,11,12,13,15,16,17,18,19,21,22,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTH TEES T1 T2,0,1,5,8,13,18,24,30,36,43,50,57,66,75,85,95,107,119,132,146,161,177,194,211,230,249,269,289,310,332,354,376,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTH TEES T3 T4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTHALLERTON,0,0,1,1,2,2,3,4,5,5,6,7,8,9,11,12,13,15,17,18,20,22,24,27,29,31,34,36,39,42,45,47,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTON 132/11KV,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,4,5,5,6,7,7,8,8,9,10,11,11,12,13,14,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OATLANDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OFFERTON 33/11KV,0,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,12,14,15,16,18,20,22,23,25,27,30,32,34,36,38,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PALLION TRADING,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PETERLEE INDUSTRIAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PETERLEE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PILGRIM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+POTTER HOUSE T1 T3,0,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,12,13,15,16,18,19,21,23,25,27,29,31,33,36,38,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+POTTER HOUSE T4 T5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PRISSICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAVENSCAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWCLIFFE LANE,0,0,0,1,1,1,1,2,2,3,3,3,4,5,5,6,6,7,8,9,10,11,12,13,14,15,16,17,19,20,21,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+REDCAR,0,1,4,7,10,14,19,23,28,33,39,45,52,59,67,75,84,94,104,115,127,139,152,166,180,195,211,227,244,261,278,295,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RESERVOIR,0,1,2,4,5,8,10,12,15,18,21,24,28,31,36,40,45,50,55,61,68,74,81,89,96,104,113,121,130,139,148,158,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RICHMOND T1,0,0,1,2,3,4,6,7,9,10,12,14,16,18,21,24,26,29,33,36,40,44,48,52,57,61,66,71,77,82,87,93,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RICHMOND T2,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RIPON,0,1,2,4,7,9,12,15,18,22,25,29,34,38,43,49,55,61,67,75,82,90,99,108,117,127,137,147,158,169,181,192,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RISE CARR,0,0,0,0,1,1,1,2,2,2,3,3,4,4,5,5,6,7,8,8,9,10,11,12,13,14,15,16,18,19,20,21,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ROMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RUDBY,0,0,1,1,2,3,3,4,5,6,7,8,10,11,12,14,16,17,19,21,24,26,28,31,34,36,39,42,45,48,52,55,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCARBOROUGH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCARBOROUGH 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SEGHILL,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,12,13,14,15,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SESSAY BRIDGE_SOWERBY,0,0,1,1,2,2,3,4,5,5,6,7,8,9,11,12,13,15,17,18,20,22,24,27,29,31,34,36,39,42,45,47,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SEVERUS HILL,0,0,1,2,3,4,5,6,8,9,11,13,14,16,18,21,23,26,29,32,35,39,42,46,50,54,59,63,68,72,77,82,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHERIFF HUTTON,0,0,1,1,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,24,26,29,31,34,37,40,43,47,50,53,57,60,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHOTTON,0,0,1,1,1,2,3,3,4,4,5,6,7,8,9,10,11,13,14,15,17,19,20,22,24,26,28,31,33,35,37,40,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SIMONSIDE,0,0,1,2,3,4,5,7,8,10,11,13,15,17,19,22,24,27,30,33,37,40,44,48,52,56,61,65,70,75,80,85,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SKELDERGATE,0,0,0,0,1,1,1,1,2,2,3,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,19,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SKERNESIDE,0,1,3,5,8,11,15,19,23,27,32,37,42,48,54,61,68,76,84,93,103,113,123,135,146,159,171,184,198,212,226,239,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPADEADAM 20KV,0,0,0,0,1,1,1,1,2,2,3,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,19,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPENCERBECK,0,0,2,3,4,6,8,10,12,15,17,20,23,26,29,33,37,41,46,50,55,61,67,73,79,86,92,99,107,114,122,129,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPENNYMOOR 66/20KV,0,1,2,3,5,7,9,12,14,17,19,22,26,29,33,37,42,47,52,57,63,69,76,83,90,97,105,113,121,130,138,147,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STARBECK,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,10,10,11,12,13,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOBSWOOD COAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOKESLEY,0,0,1,1,2,3,3,4,5,6,7,8,10,11,12,14,16,17,19,21,24,26,28,31,34,36,39,42,45,48,52,55,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STONEY CUT,0,0,1,1,2,2,3,4,5,6,7,8,9,10,11,13,14,16,18,20,22,24,26,28,31,33,36,39,42,45,48,50,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SUNDERLAND T1 T2,0,0,1,1,2,3,4,5,5,6,8,9,10,11,13,15,16,18,20,22,25,27,30,32,35,38,41,44,47,51,54,57,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SUNDERLAND T5 T6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TANFIELD,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TEAM VALLEY,0,1,4,8,12,16,22,27,33,39,46,53,60,69,78,87,98,109,121,134,148,162,177,193,210,228,246,265,284,304,324,344,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TEES INDUSTRIAL T1 T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TEMPLE PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THIRSK,0,0,2,3,4,6,8,10,13,15,17,20,23,26,30,33,37,42,46,51,56,62,68,74,80,87,94,101,108,116,124,131,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THORNTON DALE,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TORONTO 66/20KV,0,0,1,1,2,3,4,5,6,8,9,10,12,13,15,17,19,21,24,26,29,31,34,38,41,44,48,51,55,59,63,67,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TUNSTALL,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,35,38,41,44,47,50,54,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TYNEMOUTH CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+UNIVERSITY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+URLAY NOOK,0,0,1,1,1,2,3,3,4,5,5,6,7,8,9,10,12,13,14,16,18,19,21,23,25,27,29,32,34,36,39,41,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+USWORTH,0,0,1,2,3,5,6,8,9,11,13,15,17,19,21,24,27,30,34,37,41,45,49,54,58,63,68,73,79,84,90,95,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WALKER,0,0,0,0,1,1,1,1,2,2,3,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,19,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WANSBECK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WARDLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WARKWORTH,0,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,15,16,18,19,21,23,24,26,28,30,32,34,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WENSLEYDALE,0,0,1,3,4,5,7,9,11,13,15,17,20,22,25,29,32,36,40,44,48,53,58,63,69,74,80,86,93,99,106,112,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST HARTFORD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST SOUTHWICK,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,7,7,8,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST WYLAM,0,0,2,3,4,6,8,10,12,14,16,19,22,25,28,31,35,39,44,48,53,58,64,69,75,82,88,95,102,109,116,123,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WESTERHOPE,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,4,5,6,6,7,7,8,9,10,10,11,12,13,14,15,16,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WESTOE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITBY T1,0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,8,8,9,9,10,11,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITBY T2,0,0,1,1,1,2,3,3,4,5,6,6,7,8,9,11,12,13,15,16,18,20,21,23,25,28,30,32,34,37,39,42,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITBY WEST T1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITBY WEST T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WILLINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WORMALD GREEN 132/11KV,0,0,1,1,1,2,3,3,4,5,5,6,7,8,9,10,11,13,14,16,17,19,21,23,25,27,29,31,33,36,38,40,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WYNYARD,0,0,0,0,1,1,1,1,2,2,3,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,19,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YEDINGHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YORK UNIVERSITY,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ABBEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AIREDALE ROAD,0,1,2,3,5,7,8,10,13,15,17,20,23,26,30,33,38,42,46,51,57,62,68,74,81,87,94,101,109,116,124,132,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ALDHAM,0,0,1,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,15,16,17,19,20,22,24,26,27,29,31,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ALFRED GELDER STREET,0,0,1,1,2,2,3,4,5,6,7,8,9,10,11,13,14,16,17,19,21,23,26,28,30,33,35,38,41,44,47,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ALLERTON HILL T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ALLERTON HILL T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ALVERTHORPE ROAD,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ARMOURIES DRIVE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ARMTHORPE,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,16,18,20,21,23,25,27,29,31,33,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ARUNDEL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ASKERN,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,16,17,18,19,20,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AUDBY LANE,0,1,2,3,4,6,8,9,11,13,16,18,21,24,27,30,34,38,42,46,51,56,61,67,73,79,85,92,98,105,112,119,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+AUSTERFIELD,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,6,7,7,8,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BAILIFF BRIDGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BALBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BALME STREET,0,0,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,11,13,14,15,17,18,20,22,23,25,27,29,31,33,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARNBURGH,0,0,1,2,3,4,5,7,8,9,11,13,15,17,19,21,24,26,29,33,36,39,43,47,51,55,60,64,69,74,79,83,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARNOLDSWICK,0,0,1,1,1,2,2,3,3,4,4,5,6,7,8,9,10,11,12,13,15,16,17,19,21,22,24,26,28,30,32,34,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARNSLEY,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARNSLEY ROAD,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARROW,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARUGH 66/11KV,0,1,2,3,4,5,7,9,10,12,14,17,19,22,25,28,31,34,38,42,47,51,56,61,66,72,78,84,90,96,102,109,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BARWICK,0,0,1,1,1,2,2,3,4,4,5,6,6,7,8,9,11,12,13,14,16,17,19,21,23,24,26,28,31,33,35,37,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BASLOW ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BATLEY,0,1,2,3,4,5,7,8,10,12,14,16,18,20,23,26,29,33,36,40,44,48,53,58,63,68,73,79,85,91,97,103,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BEAL,0,0,1,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,26,29,32,35,38,41,45,49,53,57,61,65,69,73,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BEESTON ROYDS 33/11KV,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,17,18,20,21,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BEESTON ROYDS 6/7,0,1,2,3,5,6,8,10,12,14,17,19,22,25,29,32,36,40,45,49,54,60,65,71,77,84,90,97,105,112,119,127,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BEIGHTON,0,1,2,3,5,7,9,11,13,15,17,20,23,26,30,34,38,42,47,51,57,62,68,74,81,88,95,102,109,117,125,132,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BELLHOUSE ROAD,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BELMONT AVENUE,0,1,2,4,5,7,9,11,13,15,18,21,24,27,30,34,38,43,47,53,58,64,70,76,82,89,96,104,111,119,127,135,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BELMONT COVERT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BELTHORPE LANE,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,7,8,9,9,10,11,12,13,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BENTLEY,0,0,0,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,14,15,16,18,19,20,22,23,25,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BILLET LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BINBROOK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BINGLEY 33/11KV,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BIRKBY,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,25,28,30,33,36,39,42,45,48,52,55,59,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BLACKBURN MEADOWS 33/11KV,0,0,0,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,14,15,17,18,20,21,23,25,27,28,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BLUE BOY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOC BRINSWORTH,0,0,1,2,2,3,4,5,6,7,9,10,12,13,15,17,19,21,23,26,28,31,34,37,40,44,47,51,55,58,62,66,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOLTON ROAD,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BOTTESFORD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRAMHOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRAMLEY,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRETT STREET,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,25,28,30,33,36,39,42,45,48,52,55,59,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRIDGES ROAD,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,13,15,17,19,21,23,25,27,30,32,35,38,41,44,47,50,53,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRIGHOUSE 33/11KV,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,7,8,9,9,10,11,12,13,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BRODSWORTH,0,2,5,8,11,15,19,24,28,34,39,45,52,59,67,75,84,94,104,115,127,140,153,167,181,196,212,228,245,262,279,296,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BROOKFIELD STREET,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BTP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BURLEY STREET,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BURMANTOFTS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BURNLEYVILLE,0,1,3,5,7,9,12,15,18,21,24,28,32,37,41,47,52,58,65,71,79,86,95,103,112,122,131,141,152,162,173,183,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BURTON PIDSEA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BURTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BUSLINGTHORPE GREEN,0,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,8,9,10,12,13,14,15,17,18,20,21,23,24,26,28,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+BUTTERWICK,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CAISTOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CALDER WHARF,0,1,2,3,4,5,7,8,10,12,14,16,18,20,23,26,29,32,36,40,44,48,53,57,62,68,73,79,84,90,96,102,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CARLTON HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CARR LANE,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,35,38,41,44,47,50,53,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CHELKER RESERVOIR,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CHEVIN END,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLARENCE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLARENDON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLARENDON STREET,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,7,8,9,9,10,11,12,13,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLAYWHEELS LANE,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,13,15,17,19,21,23,25,27,30,32,35,38,41,44,47,50,53,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CLOUGH LANE,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,7,8,9,9,10,11,12,13,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+COMMONSIDE LANE,0,0,1,2,3,4,5,6,8,9,11,12,14,16,18,21,23,26,29,32,35,38,42,46,50,54,58,63,67,72,77,81,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CONVAMORE ROAD,0,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,13,14,15,16,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CONYARD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CORNWALL STREET,0,2,5,8,12,15,20,24,29,35,40,47,54,61,69,78,87,97,108,119,131,144,158,172,187,203,219,236,253,271,288,306,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CORRINGHAM ROAD,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,13,14,16,17,19,21,23,25,27,30,32,34,37,40,42,45,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+COSTHORPE,0,0,1,1,2,2,3,3,4,5,6,6,7,8,9,11,12,13,15,16,18,20,22,23,26,28,30,32,34,37,39,42,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+COUNTY ROAD NORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CRACOE,0,0,0,1,1,1,2,2,3,3,4,4,5,5,6,7,8,9,9,11,12,13,14,15,16,18,19,21,22,24,25,27,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CROOKESMOOR ROAD,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,5,6,6,7,7,8,8,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CROSSHILLS,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,16,17,19,22,24,26,29,32,34,37,41,44,47,51,54,58,61,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CROWLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+CROWN STREET,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,8,8,9,10,11,11,12,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DALTON,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DARNALL,0,0,1,2,2,3,4,5,6,7,8,10,11,12,14,16,18,20,22,24,27,30,32,35,38,41,45,48,52,55,59,63,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DEARNE ROAD,0,0,0,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,14,16,17,19,20,22,23,25,27,29,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DEIGHTON,0,0,1,2,3,4,5,7,8,9,11,13,14,16,18,21,23,26,29,32,35,39,42,46,50,54,58,63,68,72,77,82,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DENBY DALE ROAD,0,0,1,2,3,4,6,7,8,10,11,13,15,17,19,22,25,27,30,34,37,41,44,48,53,57,62,66,71,76,81,86,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DENBY GRANGE,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DENHOLME,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DINNINGTON,0,1,2,3,5,6,8,10,12,14,16,19,21,24,28,31,35,39,43,48,52,58,63,69,75,81,87,94,101,108,115,122,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DOUGHTY ROAD,0,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,13,14,15,16,17,18,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DOWKER STREET,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,13,14,15,17,18,19,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DRAX PRIMARY,0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,11,12,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DRIFFIELD,0,0,1,1,2,3,4,4,5,6,7,8,10,11,12,14,15,17,19,21,23,26,28,31,33,36,39,42,45,48,51,54,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DRONFIELD,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DUDLEY HILL,0,1,4,6,9,12,15,19,23,27,31,36,41,47,53,60,67,75,83,92,101,111,122,133,144,156,169,182,195,209,223,236,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DUNKESWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+DURKAR LOW LANE,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,16,18,20,21,23,25,27,29,31,33,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EASINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EASTFIELD ROAD,0,3,9,14,21,28,35,44,53,62,73,84,97,110,124,140,157,175,194,214,236,259,284,310,336,365,394,424,455,486,519,550,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ECCLESFIELD,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,30,32,35,37,40,43,45,48,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EDLINGTON,0,1,2,3,4,6,8,10,11,14,16,18,21,24,27,30,34,38,42,47,51,56,62,67,73,79,86,92,99,106,113,120,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EGGBOROUGH,0,1,3,4,6,8,11,13,16,19,22,26,29,33,38,42,48,53,59,65,72,79,86,94,102,111,119,129,138,148,157,167,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELGAR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELLAND 33/11KV,0,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,8,9,10,12,13,14,15,17,18,20,21,23,24,26,28,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELLIFOOT LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELLIN STREET 1/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELLIN STREET 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELMHIRST LANE 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELMHIRST LANE 2,0,0,1,2,3,4,5,6,8,9,11,12,14,16,18,21,23,26,29,32,35,38,42,46,50,54,58,63,67,72,77,81,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ELSECAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ENDIKE LANE,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,5,5,5,6,6,7,7,7,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+EPWORTH,0,1,2,4,5,7,9,11,14,16,19,22,25,28,32,36,41,45,50,56,61,67,74,80,87,94,102,110,118,126,134,143,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FARNLEY CRESCENT,0,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,7,8,9,10,11,12,12,13,14,15,16,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FENTON LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FERRYBRIDGE A 11KV,0,0,1,1,2,3,3,4,5,6,7,8,9,10,11,13,14,16,18,20,22,24,26,28,31,33,36,39,42,45,48,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FIR TREE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FIRST AVENUE,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,11,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FIRTH BROWN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FISH DAM LANE,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,24,26,28,31,34,37,40,43,47,50,53,57,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FLIXBOROUGH,0,1,3,5,7,10,13,16,19,23,26,30,35,40,45,51,57,63,70,77,85,94,102,112,121,132,142,153,164,176,187,199,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOLLY HALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOUR LANE ENDS,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FOXHILLS,0,1,3,5,7,9,12,14,17,20,24,27,31,36,41,46,51,57,63,70,77,85,93,101,110,119,128,138,148,159,169,180,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FULLERTON ROAD,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,16,18,20,21,23,25,27,29,31,33,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+FURNESS AVENUE,0,0,0,1,1,1,2,2,3,3,3,4,5,5,6,7,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GAISBY LANE,0,0,1,1,2,2,3,3,4,5,6,6,7,8,9,11,12,13,15,16,18,20,22,23,26,28,30,32,34,37,39,42,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GIBRALTAR ROAD,0,1,2,3,4,6,8,10,11,14,16,18,21,24,27,30,34,38,42,47,51,56,62,67,73,79,86,92,99,106,113,120,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GIBSON LANE,0,1,3,4,6,9,11,14,16,19,22,26,30,34,38,43,48,54,60,66,73,80,87,95,104,112,121,131,140,150,160,170,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GILDERSOME,0,1,2,3,5,6,8,10,12,14,16,19,22,25,28,31,35,39,44,48,53,58,64,69,75,82,88,95,102,109,116,123,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GLEADLESS VALLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GOOLE,0,2,5,8,12,15,20,24,29,35,41,47,54,61,69,78,87,97,108,119,132,144,158,172,187,203,219,236,253,271,289,307,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GRAINTHORPE,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,7,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GREAT COATES,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GREENHILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GREYFRIARS RD,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,5,6,6,7,7,8,8,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GREYFRIARS ROAD 3/4,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,6,7,7,8,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GRIMETHORPE,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,16,18,20,22,24,27,29,32,35,38,41,44,48,51,55,58,62,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GROVE STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+GUARDIAN GLASS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HACKENTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HALIFAX 33/11KV,0,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,11,12,13,14,15,17,18,19,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HALLAM STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARDEN,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,11,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARPSWELL,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HARWORTH,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,18,21,23,25,27,30,33,36,39,42,45,48,51,55,58,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAWORTH 1,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAWORTH 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAXEY,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAYTON,0,0,1,2,3,4,5,6,7,8,10,11,13,14,16,18,21,23,26,28,31,34,37,41,44,48,52,56,60,64,68,73,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HAZLEHEAD,0,0,1,1,2,3,3,4,5,6,7,8,9,10,11,13,14,16,18,19,21,24,26,28,31,33,36,38,41,44,47,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEBDEN BRIDGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEDLEY CHASE,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEDON ROAD,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,13,14,15,17,18,19,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HEMSWORTH,0,0,1,1,2,3,3,4,5,6,7,8,9,10,11,13,14,16,18,19,21,24,26,28,31,33,36,38,41,44,47,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HESSLE ROAD 1,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,5,5,6,6,7,8,8,9,10,11,12,12,13,14,15,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HESSLE ROAD 2,0,0,1,1,2,3,3,4,5,6,7,8,9,10,11,13,14,16,18,19,21,24,26,28,31,33,36,38,41,44,47,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HIBALDSTOW,0,0,1,2,3,4,5,6,7,8,9,11,12,14,16,18,20,22,25,27,30,33,36,40,43,47,50,54,58,62,66,70,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HICKLETON,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HILLCREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOLBECK,0,0,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,20,22,25,27,30,33,36,39,42,45,49,52,56,60,63,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOLDERNESS,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOLME UPON SPALDING MOOR,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,15,16,17,18,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HONLEY,0,0,1,1,1,2,3,3,4,4,5,6,7,8,9,10,11,13,14,15,17,19,20,22,24,26,28,30,33,35,37,40,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOPE,0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,11,12,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HORBURY,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,11,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HOUGHTON MAIN,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,29,32,34,37,40,42,45,48,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HULL EAST 33/11KV,0,1,2,4,6,7,9,12,14,17,20,23,26,29,33,37,42,47,52,57,63,69,76,83,90,98,105,113,122,130,139,147,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HUMBER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+HUNMANBY,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ICI FIBRES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+IDLE,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ILKLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+INGS LANE,0,0,0,1,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,27,28,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+IVESON HOUSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+JARRATT STREET,0,0,1,2,3,5,6,7,9,10,12,14,16,18,20,23,26,29,32,35,39,43,47,51,55,60,65,70,75,80,85,90,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KEDDINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KEIGHLEY,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KENMORE ROAD,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,25,28,30,33,36,39,42,45,48,52,55,59,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KILLINGHALL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KILNHURST,0,0,1,1,1,2,2,3,3,4,4,5,6,7,8,9,10,11,12,13,14,16,17,19,20,22,24,26,28,30,32,33,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KING GEORGE DOCK,0,1,3,5,8,10,13,16,19,23,27,31,35,40,45,51,57,64,71,78,86,94,103,113,123,133,143,154,166,177,189,200,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIRK DRIVE,0,0,0,1,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,27,28,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIRK SANDALL,0,2,5,8,12,16,21,26,31,36,43,49,56,64,73,82,91,102,113,125,138,151,166,181,196,213,230,247,265,284,303,321,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIRKBURN,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,35,38,41,44,47,50,53,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KIVETON PARK,0,0,0,1,1,1,2,2,3,3,3,4,5,5,6,7,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+KNOSTROP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEA ROAD,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEASOWE ROAD,0,3,8,13,18,25,31,39,47,55,64,75,85,97,110,124,139,155,172,190,209,230,251,274,298,323,349,375,403,431,459,487,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEDSTON,0,0,1,2,2,3,4,5,6,7,9,10,11,13,15,16,18,21,23,25,28,31,33,36,40,43,46,50,54,57,61,65,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEEDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEGRAMS MILL LANE,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LEYLANDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LIVERSEDGE,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LOUTH,0,0,0,1,1,1,2,2,3,3,4,4,5,5,6,7,8,8,9,10,11,13,14,15,16,18,19,20,22,23,25,27,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LOW MOOR,0,1,3,5,7,9,11,14,17,20,23,27,31,35,40,45,50,56,62,69,76,83,91,99,108,117,126,136,145,156,166,176,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LOWFIELDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+LOXLEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MANCHESTER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MANSFIELD ROAD 1,0,0,0,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,14,16,17,19,20,22,23,25,27,29,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MANSFIELD ROAD 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MARKHAM GATES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MARMION ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MARSDEN ROAD,0,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,5,6,6,7,7,8,9,10,11,12,12,13,14,15,16,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MARTONGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MELTHAM,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MEXBOROUGH 1_2,0,0,1,2,3,4,5,6,7,9,10,12,13,15,17,20,22,24,27,30,33,36,40,43,47,51,55,59,64,68,73,77,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MIDDLETON TOWN STREET,0,0,1,2,3,4,5,7,8,10,11,13,15,17,19,21,24,27,30,33,36,40,43,47,51,56,60,65,69,74,79,84,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MILLHOUSES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MILLROYD STREET,0,0,1,2,2,3,4,5,6,7,9,10,12,13,15,17,19,21,23,26,28,31,34,37,40,43,47,51,54,58,62,66,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MILTON PLACE,0,1,2,2,4,5,6,8,9,11,13,14,17,19,21,24,27,30,33,37,41,45,49,53,58,63,68,73,78,84,89,95,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MIRFIELD,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,16,17,18,19,20,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MONCKTON,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MOOR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MOORSIDE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MORLEY,0,1,2,4,5,7,9,11,13,16,18,21,24,28,31,35,39,44,49,54,60,65,72,78,85,92,99,107,115,123,131,139,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MOUNT STREET,0,1,2,3,5,6,8,10,12,14,17,19,22,25,28,32,36,40,44,49,54,59,64,70,76,83,89,96,103,110,118,125,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+MYTHOLMROYD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NAB LANE,0,1,2,3,4,5,6,8,9,11,13,15,17,20,22,25,28,31,34,38,42,46,50,55,60,65,70,75,81,86,92,98,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NABWOOD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NATIONAL AVENUE,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEW DROPPINGWELL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEW ORCHARD LANE,0,1,4,7,10,14,17,21,26,30,35,41,47,54,61,68,76,85,95,105,115,126,138,151,164,178,192,207,222,237,253,268,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWHALL ROAD,0,0,0,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,11,13,14,15,16,18,19,21,22,24,26,27,29,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWPORT 1,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,26,28,31,34,37,40,43,46,50,53,57,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NEWPORT 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NINELANDS LANE,0,0,1,2,3,4,5,6,8,9,11,12,14,16,18,21,23,26,28,32,35,38,42,45,49,54,58,62,67,71,76,81,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORFOLK PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORMANTON,0,3,8,13,19,25,33,40,49,57,67,77,89,101,114,129,144,161,178,197,217,239,261,285,309,335,362,390,418,447,477,506,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTH AVENUE,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,6,7,7,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORTH THORESBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+NORWOOD,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OAKES ROAD,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,4,4,4,5,5,6,7,7,8,9,9,10,11,11,12,13,14,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OAKWOOD LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ODSAL,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,12,13,14,16,18,19,21,23,25,27,29,31,34,36,39,41,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OLYMPIA MILLS,0,1,2,3,4,5,7,8,10,12,13,16,18,20,23,26,29,32,36,40,44,48,52,57,62,67,73,78,84,90,96,102,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ORGREAVE,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+OUTWOOD,0,1,2,3,5,6,8,10,12,14,16,19,21,24,27,31,35,39,43,47,52,57,63,68,74,81,87,94,101,108,115,122,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PARK HILL,0,1,2,3,4,5,6,8,9,11,13,15,17,20,22,25,28,31,35,38,42,46,51,55,60,65,70,76,81,87,93,98,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PARK ROAD,0,1,2,3,5,6,8,10,12,14,17,19,22,25,29,32,36,40,45,49,54,60,65,71,77,84,90,97,105,112,119,127,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PARK STREET,0,1,2,3,4,5,6,8,9,11,13,15,17,20,22,25,28,31,35,38,42,47,51,56,60,65,71,76,82,87,93,99,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PASTURE ROAD SOUTH,0,0,0,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,14,16,17,19,20,22,23,25,27,29,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PATRINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PENISTONE,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,16,17,18,19,20,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PENISTONE ROAD,0,0,0,1,1,1,1,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,15,16,18,19,20,22,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PLANGEO,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,5,5,6,6,7,8,8,9,10,11,12,12,13,14,15,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+POLLINGTON,0,0,1,1,2,2,3,4,5,6,7,8,9,10,11,13,14,16,17,19,21,23,26,28,30,33,35,38,41,44,47,50,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PONTEFRACT LANE 1/2,0,2,6,9,14,18,23,29,35,41,48,55,63,72,82,92,103,115,127,141,155,170,186,203,221,239,258,278,299,319,341,361,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+POOL,0,0,0,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,11,12,13,14,16,17,19,20,22,23,25,27,29,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PRINCE OF WALES,0,0,0,1,1,1,2,2,3,3,3,4,5,5,6,7,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+PROSPECT ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+QUEENS ROAD,0,3,10,16,22,30,38,47,57,67,79,91,104,119,135,151,170,189,210,232,256,281,307,335,364,395,426,459,492,526,561,596,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+QUEENSBURY,0,0,1,2,2,3,4,5,6,7,9,10,12,13,15,17,19,21,23,26,28,31,34,37,40,43,47,51,54,58,62,66,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWCLIFFE,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWDON,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,9,9,10,11,12,12,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWMARSH ROAD 1_2,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,13,14,16,17,19,21,23,25,27,30,32,34,37,40,42,45,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWMARSH ROAD 3_4,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,25,28,30,33,36,39,42,45,48,52,55,59,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWSON ROAD,0,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,8,9,10,12,13,14,15,17,18,20,21,23,24,26,28,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RAWSON SPRING ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+REVILL LANE,0,0,0,1,1,1,1,2,2,3,3,3,4,5,5,6,6,7,8,9,10,11,12,13,14,15,16,17,19,20,21,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ROCKWARE,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,13,14,16,17,19,21,22,24,26,29,31,33,35,38,40,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+RODLEY LANE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ROMAN AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+ROYDS LANE,0,1,3,4,6,8,11,13,16,19,22,25,29,33,37,42,47,52,58,64,70,77,85,92,100,109,117,126,135,145,154,164,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SAINT ANDREWS ROAD 33/11KV,0,1,2,3,5,7,8,10,12,15,17,20,23,26,29,33,37,41,46,51,56,61,67,73,79,86,93,100,107,115,123,130,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SAINT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SALTERFORTH,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,5,6,6,7,7,8,8,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SALTERHEBBLE,0,1,2,3,5,7,8,10,13,15,17,20,23,26,30,33,37,42,46,51,56,62,68,74,80,87,94,101,108,116,124,131,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SALTSHOUSE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SANDHILL LANE,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SAXON ROAD,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCARTHO,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,6,7,8,9,9,10,11,12,13,14,15,17,18,19,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCHOLES,0,0,0,1,1,1,2,2,2,3,3,4,4,5,5,6,7,7,8,9,10,11,12,13,14,16,17,18,19,21,22,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCISSETT,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SCULCOATES A,0,0,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,14,15,17,18,20,22,24,26,29,31,33,36,38,41,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SEACROFT,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,13,14,16,17,19,21,22,24,26,29,31,33,35,38,40,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SEATON,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,26,28,31,34,37,40,43,46,50,53,57,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SELBY,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,26,28,31,34,37,40,43,46,50,53,57,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SELBY ROAD,0,0,0,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,14,15,17,18,19,21,22,24,25,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHARLSTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHEPCOTE TINSLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHERBURN,0,1,4,7,10,14,18,22,26,31,36,42,48,55,62,70,78,87,97,107,118,129,141,154,167,181,196,211,226,242,258,274,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHIPLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SHIRLAND LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SILVER STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SILVERWOOD,0,0,1,1,1,2,2,3,4,4,5,6,6,7,8,9,11,12,13,14,16,17,19,21,23,24,26,28,31,33,35,37,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SKILLINGS LANE,0,0,0,1,1,1,2,2,2,3,3,4,4,5,5,6,7,8,9,9,10,11,13,14,15,16,17,19,20,22,23,24,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SKIPTON,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SLAITHWAITE,0,0,0,1,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,14,15,16,18,19,21,22,24,25,27,29,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SLEDMERE GARTH,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SMITH STREET,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,12,14,15,17,18,20,22,23,25,27,29,31,33,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SMITHY GREEN,0,1,2,4,6,8,10,12,14,17,20,23,26,30,34,38,42,47,53,58,64,70,77,84,91,99,107,115,123,132,141,149,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SNAITHING PARK ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SNELSINS LANE,0,0,0,1,1,1,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,14,16,17,18,20,21,23,25,26,28,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTH ELMSALL,0,1,3,5,8,10,13,16,20,23,27,31,36,41,46,52,58,65,72,79,88,96,105,115,125,135,146,157,168,180,192,204,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTH FERRIBY,0,0,0,1,1,1,2,2,3,3,3,4,5,5,6,7,7,8,9,10,11,12,13,15,16,17,19,20,22,23,25,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTH KIRKBY,0,1,3,4,6,8,10,13,15,18,21,24,28,32,36,40,45,50,56,62,68,75,82,89,97,105,114,122,131,140,150,159,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTH RESTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTH STREET,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,16,17,18,19,20,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTHGATE,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,13,14,16,17,19,21,23,25,27,29,32,34,37,39,42,44,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOUTHWOOD ROAD,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,30,32,35,37,40,43,45,48,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SOWERBY BRIDGE 33/11KV,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,12,13,15,16,18,20,22,24,26,28,31,33,35,38,41,43,46,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPARK MILL LANE,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,12,13,14,16,18,20,22,24,26,28,30,33,35,38,40,43,46,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPENBOROUGH,0,0,1,2,2,3,4,5,6,7,8,9,11,12,14,15,17,19,21,24,26,29,31,34,37,40,44,47,50,54,57,61,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SPRING MILL STREET,0,0,1,1,2,2,3,4,5,6,6,7,9,10,11,12,14,15,17,19,21,23,25,27,30,32,35,37,40,43,46,49,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STAINFORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STAIRFOOT,0,0,1,1,2,2,3,4,4,5,6,7,8,9,10,11,13,14,16,18,19,21,23,25,28,30,32,35,37,40,43,45,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STANLEY STREET,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,5,5,6,6,7,8,8,9,10,11,12,12,13,14,15,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STANNINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STATION ROAD,0,1,4,6,8,11,14,18,22,25,30,34,39,45,51,57,64,71,79,87,96,106,116,126,137,149,160,173,185,198,211,224,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STEVENSON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOKE STREET,0,0,1,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,26,29,32,35,38,41,45,49,53,57,61,65,69,73,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOURTON 132/11KV,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,9,10,11,11,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOURTON 33/11KV,0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,7,8,9,9,10,11,12,13,13,14,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+STOW,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,8,9,10,11,12,13,14,16,17,18,19,20,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SWAN BANK LANE,0,0,0,0,1,1,1,1,2,2,2,2,3,3,4,4,5,5,6,6,7,8,8,9,10,11,12,12,13,14,15,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SWEET STREET,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,29,32,34,37,40,42,45,48,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+SWINNOW MOOR,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TADCASTER,0,0,1,2,3,4,5,6,7,8,9,11,13,14,16,18,20,23,25,28,31,34,37,40,44,48,51,55,59,63,68,72,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TANKERSLEY PARK,0,0,0,1,1,1,1,2,2,2,3,3,4,4,5,5,6,7,8,8,9,10,11,12,13,14,15,16,18,19,20,21,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TEMPLEBOROUGH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THORNBURY,0,0,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,11,13,14,15,17,18,20,22,24,26,27,29,32,34,36,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THORNE,0,1,2,3,5,6,8,10,12,14,16,19,22,25,28,31,35,39,44,48,53,58,64,70,76,82,89,95,102,110,117,124,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THORNTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+THORPE ROAD,0,2,5,8,12,16,20,25,30,35,41,47,54,62,70,79,88,98,109,121,133,146,160,174,190,205,222,239,256,274,292,310,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TICKHILL ROAD,0,0,1,2,3,4,5,6,7,8,10,11,13,14,16,18,21,23,25,28,31,34,37,41,44,48,52,56,60,64,68,72,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TINGLEY,0,0,1,1,2,2,3,4,5,6,6,7,9,10,11,12,14,15,17,19,21,23,25,27,30,32,35,37,40,43,46,49,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TINSLEY PARK ROAD,0,1,2,3,4,5,7,8,10,12,14,16,18,20,23,26,29,32,36,40,44,48,53,57,62,68,73,79,84,90,96,102,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TINSLEY WIRE INDUSTRIES,0,1,3,4,6,8,11,13,16,19,22,26,29,33,38,42,48,53,59,65,72,79,86,94,102,111,119,129,138,148,157,167,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TIVERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TODMORDEN,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,7,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TOLLER LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+TONG STREET,0,0,1,1,2,2,3,3,4,5,5,6,7,8,9,10,12,13,15,16,18,19,21,23,25,27,30,32,34,37,39,41,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+UPPER BASINGHALL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+VARLEY STREET,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,26,28,31,34,36,39,43,46,49,53,56,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+VICTORIA STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WALESBY,0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,11,12,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WARREN LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WATH UPON DEARNE,0,1,2,4,5,7,9,11,13,15,18,21,24,27,30,34,38,43,47,52,58,63,69,76,82,89,96,103,111,119,127,134,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WAVERLEY BUSINESS PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WAWNE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEELAND ROAD,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,14,15,17,19,21,23,25,28,30,33,36,39,42,45,48,51,54,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WELLINGTON STREET,0,2,5,8,11,15,19,24,29,34,40,46,53,60,68,77,86,96,106,118,130,142,156,170,184,200,216,232,249,267,284,302,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WESLEY CRESCENT,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,6,6,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST DOCKS,0,0,1,1,2,2,3,4,5,5,6,7,8,10,11,12,14,15,17,19,21,23,25,27,29,32,34,37,40,42,45,48,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST END LANE,0,1,2,3,5,6,8,10,12,14,17,20,22,26,29,32,36,41,45,50,55,60,66,72,78,85,91,98,106,113,120,128,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST MOOR PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WEST PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WESTCOTT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHEATACRE ROAD,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHEATLEY PARK,0,1,2,3,4,5,6,8,10,11,13,15,18,20,23,25,28,32,35,39,43,47,52,56,61,66,72,77,83,88,94,100,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHINGATE,0,0,1,1,2,3,3,4,5,6,7,8,9,11,12,13,15,17,19,20,23,25,27,30,32,35,38,41,43,46,50,53,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITE LEE,0,0,0,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,14,15,16,18,19,20,22,23,25,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITEHALL ROAD 2/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WHITEHALL ROAD 4/5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WIBSEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WITHERNSEA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WOODCOCK STREET,0,0,0,1,1,1,2,2,2,3,3,4,4,5,6,6,7,8,9,10,11,12,13,14,15,16,18,19,20,22,23,25,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WOODSEATS,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,4,4,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WOOLLEY,0,0,1,1,1,2,2,3,4,4,5,6,7,8,9,10,11,12,13,15,16,18,20,21,23,25,27,29,31,33,36,38,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WORSBROUGH PARK,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,16,18,20,23,25,27,30,33,35,38,41,45,48,51,54,58,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+WRAWBY,0,1,2,3,4,5,7,9,10,12,14,17,19,22,24,28,31,34,38,42,46,51,56,61,66,72,77,83,89,96,102,108,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YARBOROUGH ROAD 33/11KV,0,1,2,3,4,6,8,9,11,13,16,18,21,24,27,30,34,38,42,46,51,56,61,67,72,78,85,91,98,105,111,118,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YEW GREEN ROAD,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,4,4,4,5,5,5,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YORK ROAD,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,3,3,3,4,4,5,5,5,6,6,7,7,8,8,9,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+YORK STREET,0,0,1,2,2,3,4,5,6,7,8,9,10,12,13,15,17,19,21,23,26,28,31,34,36,39,43,46,49,53,56,60,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Barnsley Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Bradford Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Calderdale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+County Durham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Darlington Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Doncaster Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+East Riding of Yorkshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Gateshead Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Hambleton Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Harrogate Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Hartlepool Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+"Kingston upon Hull, City of Direct to Supply Points",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Kirklees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Leeds Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Newcastle upon Tyne Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+North East Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+North Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+North Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Northumberland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Redcar and Cleveland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Rotherham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Ryedale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Scarborough Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Selby Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Sheffield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+South Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Stockton-on-Tees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Sunderland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+Wakefield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+West Lindsey Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
+York Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric HGVs
