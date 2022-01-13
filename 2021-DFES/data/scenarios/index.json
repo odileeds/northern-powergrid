@@ -6,6 +6,8 @@
 		"css": "steady-progression",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-SP.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-SP.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-SP.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-SP.csv", "key": "Primary" },
 			"peakdemandcf":{ "dataBy": "primary", "file": "primaries/PeakDemandWithCF-SP.csv", "key": "Primary" },
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" },
@@ -29,6 +31,8 @@
 		"css": "system-transformation",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-ST.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-ST.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-ST.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-ST.csv", "key": "Primary" },
 			"peakdemandcf":{ "dataBy": "primary", "file": "primaries/PeakDemandWithCF-ST.csv", "key": "Primary" },
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-ST.csv", "key": "Primary" },
@@ -52,6 +56,8 @@
 		"css": "consumer-transformation",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-CT.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-CT.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-CT.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-CT.csv", "key": "Primary" },
 			"peakdemandcf":{ "dataBy": "primary", "file": "primaries/PeakDemandWithCF-CT.csv", "key": "Primary" },
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-CT.csv", "key": "Primary" },
@@ -75,6 +81,8 @@
 		"css": "leading-the-way",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-LTW.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-LTW.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-LTW.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-LTW.csv", "key": "Primary" },
 			"peakdemandcf":{ "dataBy": "primary", "file": "primaries/PeakDemandWithCF-LTW.csv", "key": "Primary" },
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-LTW.csv", "key": "Primary" },
@@ -97,6 +105,8 @@
 		"css": "planning-scenario",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-PS.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-PS.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-PS.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-PS.csv", "key": "Primary" },
 			"peakdemandcf":{ "dataBy": "primary", "file": "primaries/PeakDemandWithCF-PS.csv", "key": "Primary" },
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-PS.csv", "key": "Primary" },
