@@ -1,6 +1,6 @@
 {
 	"Steady progression": {
-		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.</li><li>Minimal behaviour change. Decarbonisation in power and transport but not heat.</li></ul>",
+		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.<ul><li>Minimal behaviour change.</li><li>Decarbonisation in power and transport but not heat.</li></ul></li></ul>",
 		"color": "#827B7A",
 		"negativecolor": "#d7191c",
 		"css": "steady-progression",
@@ -25,7 +25,7 @@
 		}
 	},
 	"System transformation": {
-		"description": "<ul><li>Achieves 100% decarbonisation by 2050.</li><li>Hydrogen for heating. Consumers less inclined to change behaviour. Lower energy efficiency. Supply side flexibility</li></ul>",
+		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Hydrogen for heating.</li><li>Consumers less inclined to change behaviour.</li><li>Lower energy efficiency.</li><li>Supply side flexibility</li></ul></li></ul>",
 		"color": "#5BCBF5",
 		"negativecolor": "#d7191c",
 		"css": "system-transformation",
@@ -50,7 +50,7 @@
 		}
 	},
 	"Consumer transformation": {
-		"description": "<ul><li>Achieves 100% decarbonisation by 2050.</li><li>Electrified heating. Consumers willing to change behaviour. High energy efficiency. High Demand side flexibility.</li></ul>",
+		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Electrified heating.</li><li>Consumers willing to change behaviour.</li><li>High energy efficiency.</li><li>Demand side flexibility.</li></ul></li></ul>",
 		"color": "#FFBF22",
 		"negativecolor": "#5e3c99",
 		"css": "consumer-transformation",
@@ -75,7 +75,7 @@
 		}
 	},
 	"Leading the way": {
-		"description": "<ul><li>Achieves 100% decarbonisation by 2048.</li><li>Significant lifestyle change. Mixture of hydrogen and electrification for heating.</li></ul>",
+		"description": "<ul><li>Achieves 100% decarbonisation by 2047.<ul><li>Fastest credible decarbonisation</li><li>Significant lifestyle change.</li><li>Mixture of hydrogen and electrification for heating.</li></ul></li></ul>",
 		"color": "#C2CD23",
 		"negativecolor": "#d01c8b",
 		"css": "leading-the-way",
@@ -100,7 +100,7 @@
 		}
 	},
 	"NPg Planning Scenario": {
-		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)</li><li>Highly accelerated electric heat & transport. Highly decentralised distributed wind, solar & other renewable generation.</li></ul>",
+		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
 		"color": "#ab1236",
 		"css": "planning-scenario",
 		"data": {
