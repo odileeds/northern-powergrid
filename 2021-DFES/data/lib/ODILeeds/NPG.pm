@@ -171,7 +171,7 @@ sub draw {
 		$safescenario = safeXML($scenario);
 		$t = $scenario;
 		$t =~ s/ \(.*\)//g;
-		$t =~ s/ with customer flexibility//g;
+		$t =~ s/ without customer flexibility//g;
 		$path = "";
 		$svg .= "<g data-scenario=\"".($self->{'scenario-props'}{$t}{'css'}||safeID($scenario)).($scenario =~ "customer flexibility" ? "-customer-flexibility":"")."\" class=\"data-series\">";
 		$circles = "";
@@ -222,7 +222,7 @@ sub table {
 		$safescenario = safeXML($scenario).($scenario =~ "customer flexibility" ? "&nbsp;-&nbsp;-&nbsp;-":"");
 		$t = $scenario;
 		$t =~ s/ \(.*\)//g;
-		$t =~ s/ with customer flexibility//g;
+		$t =~ s/ without customer flexibility//g;
 
 		$c = ODILeeds::Colour->new('colour'=>($self->{'scenario-props'}{$t}{'color'}||"#cc0935"));
 
