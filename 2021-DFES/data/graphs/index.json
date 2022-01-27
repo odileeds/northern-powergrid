@@ -1,13 +1,13 @@
 [{
 	"title": "Annual carbon emissions (MtCO2)",
-	"csv":"Annual carbon emissions (MtCO2).csv",
+	"csv":"AnnualCarbonEmissions_MtCO2.csv",
 	"svg":"graph-annual-co2-emissions.svg",
 	"table":"graph-annual-co2-emissions.html",
 	"yaxis-label": "Mt CO2(e)",
 	"left": 50
 },{
 	"title":"Cumulative carbon emissions (MtCO2)",
-	"csv":"Cumulative carbon emissions (MtCO2).csv",
+	"csv":"CumulativeCarbonEmissions_MtCO2.csv",
 	"svg":"graph-cumulative-carbon-emissions.svg",
 	"table":"graph-cumulative-carbon-emissions.html",
 	"yaxis-label": "Cumulative emissions (MtCO2)",
