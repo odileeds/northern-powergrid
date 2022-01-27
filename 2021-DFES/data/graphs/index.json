@@ -21,7 +21,7 @@
 	"left": 70
 },{
 	"title":"Electric vehicle uptake forecast.",
-	"csv":"Total number of EVs (#).csv",
+	"csv":"TotalNumberOfEVs.csv",
 	"svg":"graph-ev.svg",
 	"table":"graph-ev.html",
 	"yaxis-label": "Number",
@@ -37,7 +37,7 @@
 	"left": 70
 },{
 	"title": "Total number of heat pumps",
-	"csv":"Total number of heat pumps (#).csv",
+	"csv":"TotalNumberOfHeatPumps.csv",
 	"svg":"graph-heatpumps.svg",
 	"table":"graph-heatpumps.html",
 	"yaxis-label": "Number",
