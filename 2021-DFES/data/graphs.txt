@@ -74,7 +74,7 @@
 				{% include_relative data/graphs/graph-renewable-generation-installed.svg %}
 				<div class="download">
 					<a href="data/graphs/graph-renewable-generation-installed.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 8" /> SVG</a>
-					<a href="data/graphs/Renewable generation installed (GW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 8" /> CSV</a>
+					<a href="data/graphs/RenewableGenerationInstalled_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 8" /> CSV</a>
 				</div>
 			</figure>
 
