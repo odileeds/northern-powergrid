@@ -58,7 +58,7 @@
 	"left": 70
 },{
 	"title":"Annual peak demand (GW)",
-	"csv":"Annual peak demand (GW).csv",
+	"csv":"AnnualPeakDemand_GW.csv",
 	"svg":"graph-annual-peak-demand.svg",
 	"table":"graph-annual-peak-demand.html",
 	"yaxis-label": "Annual peak demand (GW)",
