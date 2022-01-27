@@ -51,7 +51,7 @@
 	"left": 70
 },{
 	"title":"Renewable generation installed (GW)",
-	"csv":"Renewable generation installed (GW).csv",
+	"csv":"RenewableGenerationInstalled_GW.csv",
 	"svg":"graph-renewable-generation-installed.svg",
 	"table":"graph-renewable-generation-installed.html",
 	"yaxis-label": "Renewable generation (GW)",
