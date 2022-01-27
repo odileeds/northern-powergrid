@@ -327,6 +327,10 @@ sub getXY {
 sub makeTicks(){
 	my ($mn,$mx,%opts) = @_;
 	my ($v,$l,$i,$d,$vmx,%ticks);
+	if(!defined($mx)){
+		print "WARNING: No maximum value is set.\n";
+		return ();
+	}
 
 	# If the range is negative we cowardly quit
 	if($mn > $mx){ return (); }
@@ -356,6 +360,10 @@ sub makeTicks(){
 
 sub log10 {
 	my $n = shift;
+	if($n==0){
+		print "Unable to take log of $n\n";
+		exit;
+	}
 	return log($n)/log(10);
 }
 
@@ -371,6 +379,11 @@ sub defaultSpacing {
 
 	# Start off by finding the exact spacing
 	$dv = abs($mx - $mn) / $n;
+	
+	if($dv == 0){
+		print "WARNING: The spacing appears to be zero. Min = $mn, Max = $mx, n = $n. So returning a dummy spacing of '1'.\n";
+		return 1;
+	}
 	
 	# In any given order of magnitude interval, we allow the spacing to be
 	# 1, 2, 5, or 10 (since all divide 10 evenly). We start off by finding the

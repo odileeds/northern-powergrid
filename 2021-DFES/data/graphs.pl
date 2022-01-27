@@ -52,7 +52,7 @@ $graph->setScenarios(%scenarios);
 
 $html = "";
 for($i = 0; $i < (@graphs); $i++){
-	
+	print "Processing ".$dir."graphs/$graphs[$i]{'csv'}\n";
 	$graph->load($dir.'graphs/'.$graphs[$i]{'csv'})->process();
 	
 	# If we have a y-axis scaling we scale the values
