@@ -44,7 +44,7 @@
 	"left": 120
 },{
 	"title":"Battery storage capacity installed (GW)",
-	"csv":"Battery storage capacity installed (GW).csv",
+	"csv":"BatteryStorageCapacityInstalled_GW.csv",
 	"svg":"graph-battery-storage.svg",
 	"table":"graph-battery-storage.html",
 	"yaxis-label": "Installed capacity (GW)",
