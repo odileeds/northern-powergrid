@@ -79,7 +79,7 @@
 	"left": 70
 },{
 	"title":"Annual network energy consumption (TWh)",
-	"csv":"Annual network energy consumption (TWh).csv",
+	"csv":"AnnualNetworkEnergyConsumption_TWh.csv",
 	"svg":"graph-annual-energy-consumption.svg",
 	"table":"graph-annual-energy-consumption.html",
 	"yaxis-label": "Energy consumption (TWh)",
