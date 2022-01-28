@@ -86,7 +86,7 @@
 	"left": 70
 },{
 	"title":"Network annual fuel consumption breakdown - Net Zero Early (GWh-yr)",
-	"csv":"Network annual fuel consumption breakdown - Net Zero Early (GWh-yr).csv",
+	"csv":"NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv",
 	"svg":"graph-fuel-consumption-early-net-zero.svg",
 	"table":"graph-fuel-consumption-early-net-zero.html",
 	"yaxis-label": "Fuel consumption (GWh-yr)",
