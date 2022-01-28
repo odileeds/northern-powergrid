@@ -64,10 +64,10 @@
 	"yaxis-label": "Annual peak demand (GW)",
 	"left": 70
 },{
-	"title":"Network peak demand breakdown - Net Zero Early (GW)",
-	"csv":"Network annual gross peak demand breakdown - Net Zero Early (GW).csv",
-	"svg":"graph-annual-peak-demand-early-net-zero.svg",
-	"table":"graph-annual-peak-demand-early-net-zero.html",
+	"title":"Network peak demand breakdown (GW)",
+	"csv":"NetworkAnnualGrossPeakDemandBreakdown_NPgPlanningScenario_GW.csv",
+	"svg":"graph-annual-peak-demand-breakdown.svg",
+	"table":"graph-annual-peak-demand-breakdown.html",
 	"yaxis-label": "Annual gross peak demand (GW)",
 	"left": 80
 },{
@@ -86,7 +86,7 @@
 	"left": 70
 },{
 	"title":"Network annual fuel consumption breakdown - Net Zero Early (GWh-yr)",
-	"csv":"NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv",
+	"csv":"Network annual fuel consumption breakdown - Net Zero Early (GWh-yr).csv",
 	"svg":"graph-fuel-consumption-early-net-zero.svg",
 	"table":"graph-fuel-consumption-early-net-zero.html",
 	"yaxis-label": "Fuel consumption (GWh-yr)",
