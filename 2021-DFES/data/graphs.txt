@@ -124,7 +124,7 @@
 				{% include_relative data/graphs/graph-fuel-consumption-early-net-zero.svg %}
 				<div class="download">
 					<a href="data/graphs/graph-fuel-consumption-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 13" /> SVG</a>
-					<a href="data/graphs/Network annual fuel consumption breakdown - Net Zero Early (GWh-yr).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 13" /> CSV</a>
+					<a href="data/graphs/NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 13" /> CSV</a>
 				</div>
 			</figure>
 
