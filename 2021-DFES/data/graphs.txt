@@ -44,7 +44,7 @@
 				{% include_relative data/graphs/graph-ev-percent.svg %}
 				<div class="download">
 					<a href="data/graphs/graph-ev-percent.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 5" /> SVG</a>
-					<a href="data/graphs/Electric vehicle penetration of total car stock (%).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 5" /> CSV</a>
+					<a href="data/graphs/ElectricVehiclePenetrationOfTotalCarStock_percent.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 5" /> CSV</a>
 				</div>
 			</figure>
 
