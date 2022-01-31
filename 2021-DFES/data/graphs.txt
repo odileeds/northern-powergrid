@@ -20,10 +20,10 @@
 
 			<figure class="jekyll-parse">
 				<figcaption><strong>Figure 3:</strong> Network annual carbon emission breakdown - Planning Scenario (MtCO2)</figcaption>
-				<div class="table-holder">{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.html %}</div>
-				{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.svg %}
+				<div class="table-holder">{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.html %}</div>
+				{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.svg %}
 				<div class="download">
-					<a href="data/graphs/graph-annual-carbon-emissions-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a>
+					<a href="data/graphs/graph-annual-carbon-emissions-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a>
 					<a href="data/graphs/NetworkAnnualCarbonEmissionBreakdown_NPgPlanningScenario_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a>
 				</div>
 			</figure>
