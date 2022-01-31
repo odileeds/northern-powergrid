@@ -19,7 +19,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 3:</strong> Network annual carbon emission breakdown - Net Zero Early (MtCO2)</figcaption>
+				<figcaption><strong>Figure 3:</strong> Network annual carbon emission breakdown - Planning Scenario (MtCO2)</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.html %}</div>
 				{% include_relative data/graphs/graph-annual-carbon-emissions-early-net-zero.svg %}
 				<div class="download">
@@ -29,7 +29,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 4:</strong> Electric vehicle uptake forecast.</figcaption>
+				<figcaption><strong>Figure 4:</strong> Electric vehicle uptake forecast (#)</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-ev.html %}</div>
 				{% include_relative data/graphs/graph-ev.svg %}
 				<div class="download">
@@ -49,7 +49,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 6:</strong> Total number of heat pumps</figcaption>
+				<figcaption><strong>Figure 6:</strong> Total number of heat pumps (#)</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-heatpumps.html %}</div>
 				{% include_relative data/graphs/graph-heatpumps.svg %}
 				<div class="download">
@@ -89,7 +89,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 10:</strong> Network peak demand breakdown (GW)</figcaption>
+				<figcaption><strong>Figure 10:</strong> Network peak demand breakdown (GW) - Planning Scenario</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand-breakdown.html %}</div>
 				{% include_relative data/graphs/graph-annual-peak-demand-breakdown.svg %}
 				<div class="download">
@@ -99,12 +99,12 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 11:</strong> Network energy consumption breakdown - Net Zero Early (TWh)</figcaption>
-				<div class="table-holder">{% include_relative data/graphs/graph-energy-consumption-early-net-zero.html %}</div>
-				{% include_relative data/graphs/graph-energy-consumption-early-net-zero.svg %}
+				<figcaption><strong>Figure 11:</strong> Network energy consumption breakdown (TWh) - Planning Scenario</figcaption>
+				<div class="table-holder">{% include_relative data/graphs/graph-energy-consumption-breakdown.html %}</div>
+				{% include_relative data/graphs/graph-energy-consumption-breakdown.svg %}
 				<div class="download">
-					<a href="data/graphs/graph-energy-consumption-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 11" /> SVG</a>
-					<a href="data/graphs/Network energy consumption breakdown - Net Zero Early (TWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 11" /> CSV</a>
+					<a href="data/graphs/graph-energy-consumption-breakdown.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 11" /> SVG</a>
+					<a href="data/graphs/NetworkEnergyConsumptionBreakdown_NPgPlanningScenario.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 11" /> CSV</a>
 				</div>
 			</figure>
 
