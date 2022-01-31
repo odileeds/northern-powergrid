@@ -28,7 +28,7 @@
 	"left": 120
 },{
 	"title":"Electric vehicle penetration of total car stock (%)",
-	"csv":"Electric vehicle penetration of total car stock (%).csv",
+	"csv":"ElectricVehiclePenetrationOfTotalCarStock_percent.csv",
 	"svg":"graph-ev-percent.svg",
 	"table":"graph-ev-percent.html",
 	"yaxis-label": "EVs (%)",
