@@ -62,7 +62,7 @@
 	"svg":"graph-ebus-ehgv.svg",
 	"table":"graph-ebus-ehgv.html",
 	"yaxis-label": "Number",
-	"left": 110
+	"left": 90
 },{
 	"title":"Annual peak demand (GW)",
 	"csv":"AnnualPeakDemand_GW.csv",
