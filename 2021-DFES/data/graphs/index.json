@@ -64,14 +64,14 @@
 	"yaxis-label": "Annual peak demand (GW)",
 	"left": 70
 },{
-	"title":"Network peak demand breakdown (GW) - Planning Scenario",
+	"title":"Network peak demand breakdown - Planning Scenario (GW)",
 	"csv":"NetworkAnnualGrossPeakDemandBreakdown_NPgPlanningScenario_GW.csv",
 	"svg":"graph-annual-peak-demand-breakdown.svg",
 	"table":"graph-annual-peak-demand-breakdown.html",
 	"yaxis-label": "Annual gross peak demand (GW)",
 	"left": 80
 },{
-	"title":"Network energy consumption breakdown (TWh) - Planning Scenario",
+	"title":"Network energy consumption breakdown - Planning Scenario (TWh)",
 	"csv":"NetworkEnergyConsumptionBreakdown_NPgPlanningScenario.csv",
 	"svg":"graph-energy-consumption-breakdown.svg",
 	"table":"graph-energy-consumption-breakdown.html",
@@ -85,24 +85,24 @@
 	"yaxis-label": "Energy consumption (TWh)",
 	"left": 70
 },{
-	"title":"Network annual fuel consumption breakdown - Net Zero Early (GWh-yr)",
+	"title":"Network annual fuel consumption breakdown - Planning Scenario (GWh-yr)",
 	"csv":"NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv",
-	"svg":"graph-fuel-consumption-early-net-zero.svg",
-	"table":"graph-fuel-consumption-early-net-zero.html",
+	"svg":"graph-fuel-consumption-planning-scenario.svg",
+	"table":"graph-fuel-consumption-planning-scenario.html",
 	"yaxis-label": "Fuel consumption (GWh-yr)",
 	"left": 100
 },{
-	"title":"Additional industrial peak demand breakdown - Net Zero Early (MW)",
-	"csv":"Industry additional peak demand breakdown - Net Zero Early (MW).csv",
-	"svg":"graph-industry-additional-peak-demand-early-net-zero.svg",
-	"table":"graph-industry-additional-peak-demand-early-net-zero.html",
+	"title":"Additional industrial peak demand breakdown - Planning Scenario (MW)",
+	"csv":"Industry additional peak demand breakdown - Planning Scenario (MW).csv",
+	"svg":"graph-industry-additional-peak-demand-planning-scenario.svg",
+	"table":"graph-industry-additional-peak-demand-planning-scenario.html",
 	"yaxis-label": "Peak demand (MW)",
 	"left": 100
 },{
-	"title":"Additional industrial energy consumption breakdown - Net Zero Early (GWh)",
-	"csv":"Industry additional energy consumption breakdown - Net Zero Early (GWh).csv",
-	"svg":"graph-industry-additional-energy-consumption-early-net-zero.svg",
-	"table":"graph-industry-additional-energy-consumption-early-net-zero.html",
+	"title":"Additional industrial energy consumption breakdown - Planning Scenario (GWh)",
+	"csv":"Industry additional energy consumption breakdown - Planning Scenario (GWh).csv",
+	"svg":"graph-industry-additional-energy-consumption-planning-scenario.svg",
+	"table":"graph-industry-additional-energy-consumption-planning-scenario.html",
 	"yaxis-label": "Peak demand (GWh)",
 	"left": 100
 }]
