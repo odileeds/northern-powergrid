@@ -536,8 +536,8 @@ footer ul { margin-left: 2em; }
 #scale .bar .bar-inner { display: block; border-width: 1px; border-style: solid; height: 100%; }
 #scale .range { display: block; height: 1.5em; position: relative; }
 #scale .lvl { position: absolute; transform: translate3d(-50%,0,0); }
-#scale .min { padding-left: 0.25em; border-left-width: 1px; border-left-style: solid; border-right:0px; transform: none; }
-#scale .max { padding-right: 0.25em; padding-left: 0; border-right-width: 1px; border-right-style: solid; transform: translate3d(-100%, 0, 0); border-left: 0; }
+#scale .min { padding-left: 0.25em; border-left-width: 1px; border-left-style: solid; border-right:0px; transform: none; white-space: nowrap; }
+#scale .max { padding-right: 0.25em; padding-left: 0; border-right-width: 1px; border-right-style: solid; transform: translate3d(-100%, 0, 0); border-left: 0; white-space: nowrap; }
 #about h2 + p, #about h3 + p, #about h4 + p { margin-top: 0.5em; }
 #about h2 { margin-top: 3em; }
 #about h3 { margin-top: 2em; }
