@@ -15,8 +15,8 @@
 },{
 	"title":"Network annual carbon emission breakdown - Planning Scenario (MtCO2)",
 	"csv":"NetworkAnnualCarbonEmissionBreakdown_NPgPlanningScenario_MtCO2.csv",
-	"svg":"graph-annual-carbon-emissions-early-net-zero.svg",
-	"table":"graph-annual-carbon-emissions-early-net-zero.html",
+	"svg":"graph-annual-carbon-emissions-planning-scenario.svg",
+	"table":"graph-annual-carbon-emissions-planning-scenario.html",
 	"yaxis-label": "Annual emissions (MtCO2)",
 	"left": 70
 },{
