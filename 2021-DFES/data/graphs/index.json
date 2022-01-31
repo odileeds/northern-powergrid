@@ -57,6 +57,13 @@
 	"yaxis-label": "Renewable generation (GW)",
 	"left": 50
 },{
+	"title":"Electric bus and HGV uptake forecast (#)",
+	"csv":"TotalNumberOfBusesAndHGVs.csv",
+	"svg":"graph-ebus-ehgv.svg",
+	"table":"graph-ebus-ehgv.html",
+	"yaxis-label": "Number",
+	"left": 110
+},{
 	"title":"Annual peak demand (GW)",
 	"csv":"AnnualPeakDemand_GW.csv",
 	"svg":"graph-annual-peak-demand.svg",
