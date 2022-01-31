@@ -353,7 +353,7 @@
 			for(y = 0; y < years.length; y++){
 				k = 100*(years[y]-min)/(max-min);
 				if(k >= 0){
-					range[k.toFixed(2)+'%'] = years[y];
+					range[Math.round(k)+'%'] = years[y];
 				}
 			}
 		}
