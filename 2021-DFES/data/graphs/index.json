@@ -93,16 +93,16 @@
 	"left": 100
 },{
 	"title":"Additional industrial peak demand breakdown - Planning Scenario (MW)",
-	"csv":"Industry additional peak demand breakdown - Planning Scenario (MW).csv",
+	"csv":"IndustryAdditionalPeakDemandBreakdown_NPgPlanningScenario_MW.csv",
 	"svg":"graph-industry-additional-peak-demand-planning-scenario.svg",
 	"table":"graph-industry-additional-peak-demand-planning-scenario.html",
 	"yaxis-label": "Peak demand (MW)",
 	"left": 100
 },{
 	"title":"Additional industrial energy consumption breakdown - Planning Scenario (GWh)",
-	"csv":"Industry additional energy consumption breakdown - Planning Scenario (GWh).csv",
+	"csv":"IndustryAdditionalEnergyConsumptionBreakdown_NPgPlanningScenario_GWh.csv",
 	"svg":"graph-industry-additional-energy-consumption-planning-scenario.svg",
 	"table":"graph-industry-additional-energy-consumption-planning-scenario.html",
-	"yaxis-label": "Peak demand (GWh)",
+	"yaxis-label": "Energy consumption (GWh)",
 	"left": 100
 }]
