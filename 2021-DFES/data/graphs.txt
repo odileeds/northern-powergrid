@@ -89,7 +89,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 10:</strong> Network peak demand breakdown (GW) - Planning Scenario</figcaption>
+				<figcaption><strong>Figure 10:</strong> Network peak demand breakdown - Planning Scenario (GW)</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand-breakdown.html %}</div>
 				{% include_relative data/graphs/graph-annual-peak-demand-breakdown.svg %}
 				<div class="download">
@@ -99,7 +99,7 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 11:</strong> Network energy consumption breakdown (TWh) - Planning Scenario</figcaption>
+				<figcaption><strong>Figure 11:</strong> Network energy consumption breakdown - Planning Scenario (TWh)</figcaption>
 				<div class="table-holder">{% include_relative data/graphs/graph-energy-consumption-breakdown.html %}</div>
 				{% include_relative data/graphs/graph-energy-consumption-breakdown.svg %}
 				<div class="download">
@@ -119,32 +119,32 @@
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 13:</strong> Network annual fuel consumption breakdown - Net Zero Early (GWh-yr)</figcaption>
-				<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-early-net-zero.html %}</div>
-				{% include_relative data/graphs/graph-fuel-consumption-early-net-zero.svg %}
+				<figcaption><strong>Figure 13:</strong> Network annual fuel consumption breakdown - Planning Scenario (GWh-yr)</figcaption>
+				<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.html %}</div>
+				{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.svg %}
 				<div class="download">
-					<a href="data/graphs/graph-fuel-consumption-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 13" /> SVG</a>
+					<a href="data/graphs/graph-fuel-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 13" /> SVG</a>
 					<a href="data/graphs/NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 13" /> CSV</a>
 				</div>
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 14:</strong> Additional industrial peak demand breakdown - Net Zero Early (MW)</figcaption>
-				<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-peak-demand-early-net-zero.html %}</div>
-				{% include_relative data/graphs/graph-industry-additional-peak-demand-early-net-zero.svg %}
+				<figcaption><strong>Figure 14:</strong> Additional industrial peak demand breakdown - Planning Scenario (MW)</figcaption>
+				<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.html %}</div>
+				{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg %}
 				<div class="download">
-					<a href="data/graphs/graph-industry-additional-peak-demand-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 14" /> SVG</a>
-					<a href="data/graphs/Industry additional peak demand breakdown - Net Zero Early (MW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
+					<a href="data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 14" /> SVG</a>
+					<a href="data/graphs/Industry additional peak demand breakdown - Planning Scenario (MW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
 				</div>
 			</figure>
 
 			<figure class="jekyll-parse">
-				<figcaption><strong>Figure 15:</strong> Additional industrial energy consumption breakdown - Net Zero Early (GWh)</figcaption>
-				<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-energy-consumption-early-net-zero.html %}</div>
-				{% include_relative data/graphs/graph-industry-additional-energy-consumption-early-net-zero.svg %}
+				<figcaption><strong>Figure 15:</strong> Additional industrial energy consumption breakdown - Planning Scenario (GWh)</figcaption>
+				<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.html %}</div>
+				{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg %}
 				<div class="download">
-					<a href="data/graphs/graph-industry-additional-energy-consumption-early-net-zero.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 15" /> SVG</a>
-					<a href="data/graphs/Industry additional energy consumption breakdown - Net Zero Early (GWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
+					<a href="data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 15" /> SVG</a>
+					<a href="data/graphs/Industry additional energy consumption breakdown - Planning Scenario (GWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
 				</div>
 			</figure>
 
