@@ -134,7 +134,7 @@
 				{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg %}
 				<div class="download">
 					<a href="data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 14" /> SVG</a>
-					<a href="data/graphs/Industry additional peak demand breakdown - Planning Scenario (MW).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
+					<a href="data/graphs/IndustryAdditionalPeakDemandBreakdown_NPgPlanningScenario_MW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
 				</div>
 			</figure>
 
@@ -144,7 +144,7 @@
 				{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg %}
 				<div class="download">
 					<a href="data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 15" /> SVG</a>
-					<a href="data/graphs/Industry additional energy consumption breakdown - Planning Scenario (GWh).csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
+					<a href="data/graphs/IndustryAdditionalEnergyConsumptionBreakdown_NPgPlanningScenario_GWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
 				</div>
 			</figure>
 
