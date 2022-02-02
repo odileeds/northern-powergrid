@@ -1,15 +1,16 @@
-# Northern Powergrid Future Energy Scenarios 2020
+# Northern Powergrid Future Energy Scenarios 2021
 
 **This directory contains a prototype tool and none of the data should be taken as real or representative of the scenarios listed.**
 
-
 ## About this visualisation
 
-### Future Energy Scenarios 2020
+### Future Energy Scenarios 2021
+Four of the scenarios presented are aligned with Nationalgrid|ESO's [Future Energy Scenarios](https://www.nationalgrideso.com/future-energy/future-energy-scenarios):
 
-
-### Predictions
-
+* Steady progression
+* System transformation
+* Customer transformation
+* Leading the way
 
 ### Geographies
 
