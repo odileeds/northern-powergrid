@@ -1,0 +1,583 @@
+Primary,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,Licence area,Voltage level,Scenario name,Output parameter
+ACKLAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AMBERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ANNFIELD 66/20KV,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,19,21,23,25,27,28,27,26,25,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ASHINGTON,0,0,0,1,1,1,2,2,3,4,5,6,8,9,12,14,17,21,25,30,36,41,48,54,61,67,74,79,82,80,77,74,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AYCLIFFE FORREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AYCLIFFE INDUSTRIAL,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,13,13,12,12,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARDEN FRIAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BEDALE,0,0,0,1,1,1,1,2,3,3,4,5,7,9,11,13,16,19,23,28,33,38,44,50,56,62,67,73,75,73,70,67,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BELMONT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BENSHAM,0,1,1,1,2,2,3,4,6,7,10,12,16,19,24,30,36,44,53,63,74,86,99,112,126,140,153,165,170,165,159,153,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BENTON SQUARE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BENWELL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BILLINGHAM MARSH HOUSE,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BILLY MILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BIRTLEY GROVE 66/11KV,0,1,1,1,2,2,3,4,6,7,9,12,15,19,23,28,35,42,50,60,71,82,95,108,121,134,146,158,163,158,153,147,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BIRTLEY GROVE 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BLAYDON BURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BLUCHER 33/11KV,0,3,4,5,7,9,12,16,22,28,36,46,59,73,90,111,136,164,198,235,277,323,371,422,473,524,573,619,638,619,597,574,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOLDON DOWNHILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOROUGHBRIDGE/ROECLIFFE INDUSTRIAL,0,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,6,8,9,11,13,15,17,19,21,22,24,25,24,23,22,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOWESFIELD 33/11KV,0,0,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,14,17,20,24,28,32,36,41,45,49,53,55,53,51,49,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOWESFIELD 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRANCEPETH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BREAMISH STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRENDA TRADING,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,25,26,25,24,23,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CAMPLESHON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CARLEY HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CARLIN HOW T3 T4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CARR HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CATTERICK CAMP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLOSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CONEYTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CONSETT,0,0,0,1,1,1,2,2,3,4,5,6,8,9,12,14,17,21,25,30,36,41,48,54,61,67,74,79,82,80,77,74,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CORPORATION STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+COWTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CRAMLINGTON T1 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CRAMLINGTON T2 T4,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,11,11,11,10,10,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLINGTON 132/6KV,0,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,6,8,9,11,13,15,17,19,21,22,24,25,24,23,22,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLINGTON 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLINGTON CENTRAL 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLINGTON EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARLINGTON WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DENWICK,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,15,19,23,27,32,38,45,51,58,65,72,79,85,88,85,82,79,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DUNSTON 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DUNSTON 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DURHAM EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EASTFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EASTGATE CEMENT,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,9,11,13,15,17,20,22,25,27,29,30,29,28,27,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EDUCATIONAL PRECINCT,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,15,19,23,27,32,38,45,51,58,65,72,79,85,88,85,82,79,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELVINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FARADAY STREET,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,12,14,16,18,20,22,24,26,27,26,25,24,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FAWDON T1 & SEATON BURN T1,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,19,21,23,25,27,28,27,26,25,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FISHBURN,0,0,0,0,1,1,1,2,2,3,3,4,6,7,9,11,13,16,19,23,27,31,36,40,45,50,55,59,61,59,57,55,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FLATWORTH CENTRAL,0,0,0,1,1,1,2,2,3,4,5,6,8,10,12,15,18,22,26,31,37,43,49,56,63,70,76,82,85,82,80,76,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOSS ISLANDS,0,1,1,1,1,2,2,3,4,5,7,9,12,14,18,22,27,32,39,46,54,63,73,83,93,103,112,121,125,121,117,112,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOSSWAY 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOURSTONES 20KV,0,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,6,8,9,11,13,15,17,19,21,22,24,25,24,23,22,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FYLANDS BRIDGE,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,15,17,20,23,26,30,33,36,39,40,39,37,36,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GALE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GARWOOD STREET,0,2,3,5,6,9,12,16,20,26,34,43,55,69,85,104,128,155,186,221,261,304,349,397,445,493,539,582,600,582,562,540,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GATESHEAD CENTRAL,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,9,11,13,15,17,20,22,25,27,29,30,29,28,27,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GATESHEAD EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GOSFORTH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GRANGETOWN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GREATHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GUISBOROUGH T1 T2,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,8,9,11,14,16,19,22,26,29,33,36,40,43,44,43,41,40,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GUISBOROUGH T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARLOW GREEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARMIRE BRIDGE,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,15,17,20,23,26,30,33,36,39,40,39,37,36,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARRATON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARROGATE 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARROGATE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARTMOOR 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAWTHORN PIT,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAXBY ROAD T2 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEBBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEBBURN WEST,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEDWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEIGHINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEXHAM,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,18,21,24,28,31,34,38,41,42,41,39,38,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HIGH BARMSTON,0,0,0,0,1,1,1,2,2,3,3,4,6,7,8,10,13,15,19,22,26,30,35,40,44,49,54,58,60,58,56,54,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HIGH FLATTS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOUGHTON,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOWDON,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HUNTINGTON NEW LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HUSTHWAITE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+JARROW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KENTON,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIELDER,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KILLINGWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIRBYMOORSIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEAM CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LINTON 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LONGBENTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LOW SPENNYMOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LYNEMOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MADDISON STREET,0,0,1,1,1,1,2,3,3,4,6,7,9,11,14,17,21,26,31,37,43,51,58,66,74,82,90,97,100,97,94,90,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MALLEABLE,0,2,3,4,5,7,9,12,15,20,26,33,42,52,65,79,97,118,141,168,198,231,265,302,338,375,410,442,456,442,427,410,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MALTON,0,0,0,1,1,1,1,2,2,3,4,5,7,8,10,12,15,18,22,26,31,36,41,47,53,58,64,69,71,69,66,64,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MEADOWFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MELROSEGATE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MILLBANK LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MONKSEATON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MOOR MONKTON PUMPS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MORPETH,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,15,15,15,14,13,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MOUNT ROAD,0,1,1,1,2,2,3,4,5,6,8,10,13,16,20,24,30,36,43,52,61,71,81,93,104,115,126,136,140,136,131,126,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWBURN HAUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWCASTLE AIRPORT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWTON AYCLIFFE SOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTH STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTH TEES T1 T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTH TEES T3 T4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTHALLERTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTON 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OATLANDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OFFERTON 33/11KV,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PALLION TRADING,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PETERLEE INDUSTRIAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PETERLEE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PILGRIM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+POTTER HOUSE T1 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+POTTER HOUSE T4 T5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PRISSICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAVENSCAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWCLIFFE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+REDCAR,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,18,20,22,23,24,23,22,22,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RESERVOIR,0,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,6,8,9,11,13,15,17,19,21,22,24,25,24,23,22,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RICHMOND T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RICHMOND T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RIPON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RISE CARR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ROMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RUDBY,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,13,13,12,12,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCARBOROUGH 33/11KV,0,0,1,1,1,1,2,2,3,4,5,7,8,10,13,16,19,23,28,34,40,46,53,60,67,75,82,88,91,88,85,82,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCARBOROUGH 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SEGHILL,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SESSAY BRIDGE_SOWERBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SEVERUS HILL,0,0,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,14,17,21,24,28,33,37,42,46,50,54,56,54,52,50,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHERIFF HUTTON,0,0,0,1,1,1,1,2,2,3,4,5,7,8,10,13,15,19,22,27,31,36,42,48,53,59,65,70,72,70,67,65,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHOTTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SIMONSIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SKELDERGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SKERNESIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPADEADAM 20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPENCERBECK,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,12,14,16,18,20,22,24,26,27,26,25,24,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPENNYMOOR 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STARBECK,0,0,0,1,1,1,2,2,3,4,5,6,8,10,12,15,18,22,27,32,37,44,50,57,64,71,77,83,86,83,80,77,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOBSWOOD COAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOKESLEY,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,8,9,10,11,12,12,12,11,11,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STONEY CUT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SUNDERLAND T1 T2,0,2,3,5,6,9,12,16,20,26,34,43,55,69,85,104,128,155,186,221,261,304,349,397,445,493,539,582,600,582,562,540,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SUNDERLAND T5 T6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TANFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TEAM VALLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TEES INDUSTRIAL T1 T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TEMPLE PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THIRSK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THORNTON DALE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TORONTO 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TUNSTALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TYNEMOUTH CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+UNIVERSITY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+URLAY NOOK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+USWORTH,0,0,0,0,1,1,1,2,2,3,3,4,6,7,8,10,13,15,19,22,26,30,35,40,44,49,54,58,60,58,56,54,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WALKER,0,1,1,1,2,2,3,4,5,7,8,11,14,17,21,26,32,39,46,55,65,76,87,99,111,123,135,145,150,145,140,135,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WANSBECK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WARDLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WARKWORTH,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,10,10,10,9,9,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WENSLEYDALE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST HARTFORD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST SOUTHWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST WYLAM,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WESTERHOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WESTOE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITBY T1,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,11,13,15,18,20,23,26,29,31,34,35,34,33,31,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITBY T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITBY WEST T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITBY WEST T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WILLINGTON,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WORMALD GREEN 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WYNYARD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YEDINGHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YORK UNIVERSITY,0,0,0,1,1,1,2,2,3,4,5,6,7,9,11,14,17,21,25,30,35,41,47,54,60,67,73,79,81,79,76,73,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ABBEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AIREDALE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ALDHAM,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ALFRED GELDER STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ALLERTON HILL T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ALLERTON HILL T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ALVERTHORPE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ARMOURIES DRIVE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ARMTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ARUNDEL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ASKERN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AUDBY LANE,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,25,26,25,24,23,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+AUSTERFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BAILIFF BRIDGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BALBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BALME STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARNBURGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARNOLDSWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARNSLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARNSLEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARROW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARUGH 66/11KV,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,25,26,25,24,23,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BARWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BASLOW ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BATLEY,0,0,0,0,1,1,1,1,1,2,2,3,4,4,6,7,8,10,12,14,17,20,23,26,29,32,35,38,39,38,36,35,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BEAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BEESTON ROYDS 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BEESTON ROYDS 6/7,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BEIGHTON,0,0,1,1,1,1,2,2,3,3,4,5,7,8,10,12,15,18,22,26,31,36,41,47,53,58,64,69,71,69,67,64,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BELLHOUSE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BELMONT AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BELMONT COVERT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BELTHORPE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BENTLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BILLET LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BINBROOK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BINGLEY 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BIRKBY,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,10,12,13,15,17,19,21,22,23,22,21,21,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BLACKBURN MEADOWS 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BLUE BOY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOC BRINSWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOLTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BOTTESFORD,0,0,0,0,0,1,1,1,1,1,2,2,3,4,5,6,7,8,10,12,14,16,19,21,24,26,29,31,32,31,30,29,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRAMHOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRAMLEY,0,5,7,9,11,15,19,24,31,39,50,63,79,98,122,150,183,222,266,317,374,435,501,569,638,706,773,834,860,834,805,773,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRETT STREET,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRIDGES ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRIGHOUSE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BRODSWORTH,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,18,20,23,25,27,28,27,26,25,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BROOKFIELD STREET,0,1,1,1,2,2,3,3,4,5,7,8,11,13,16,20,24,30,36,42,50,58,67,76,85,94,103,111,115,111,107,103,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BTP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BURLEY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BURMANTOFTS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BURNLEYVILLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BURTON PIDSEA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BURTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BUSLINGTHORPE GREEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+BUTTERWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CAISTOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CALDER WHARF,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CARLTON HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CARR LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CHELKER RESERVOIR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CHEVIN END,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLARENCE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLARENDON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLARENDON STREET,0,1,1,1,2,2,3,4,5,6,7,9,12,14,18,22,27,33,39,47,55,64,73,83,94,104,113,122,126,122,118,113,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLAYWHEELS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CLOUGH LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+COMMONSIDE LANE,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,9,10,11,12,14,15,16,17,16,16,15,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CONVAMORE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CONYARD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CORNWALL STREET,0,3,3,4,6,7,10,12,16,20,25,32,40,50,62,76,93,112,135,161,189,220,254,288,323,358,391,422,436,423,408,392,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CORRINGHAM ROAD,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,9,11,13,15,18,20,23,25,27,30,31,30,29,27,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+COSTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+COUNTY ROAD NORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CRACOE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CROOKESMOOR ROAD,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,13,15,16,18,19,20,19,19,18,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CROSSHILLS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CROWLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+CROWN STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DALTON,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,17,19,22,25,28,31,34,37,38,37,36,34,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DARNALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DEARNE ROAD,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,9,10,11,12,14,15,16,17,16,16,15,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DEIGHTON,0,5,7,9,11,15,19,24,31,40,50,64,80,99,123,151,185,224,269,320,377,439,505,574,644,713,780,842,868,842,813,781,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DENBY DALE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DENBY GRANGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DENHOLME,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DINNINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DOUGHTY ROAD,0,1,1,1,1,1,2,2,3,4,5,6,8,10,12,15,19,23,27,32,38,44,51,58,65,72,79,85,88,85,82,79,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DOWKER STREET,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,17,19,22,25,28,31,34,37,38,37,36,34,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DRAX PRIMARY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DRIFFIELD,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,13,14,15,15,15,14,14,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DRONFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DUDLEY HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DUNKESWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+DURKAR LOW LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EASINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EASTFIELD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ECCLESFIELD,0,0,0,1,1,1,1,2,2,3,4,4,6,7,9,11,13,16,19,23,27,31,36,40,45,50,55,59,61,59,57,55,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EDLINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EGGBOROUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELGAR ROAD,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,9,11,13,15,18,20,23,25,27,30,31,30,29,27,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELLAND 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELLIFOOT LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELLIN STREET 1/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELLIN STREET 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELMHIRST LANE 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELMHIRST LANE 2,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ELSECAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ENDIKE LANE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,9,10,11,11,11,11,10,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+EPWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FARNLEY CRESCENT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FENTON LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FERRYBRIDGE A 11KV,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,10,11,10,10,10,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FIR TREE LANE,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,13,13,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FIRST AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FIRTH BROWN,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,17,19,22,25,28,31,34,37,38,37,36,34,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FISH DAM LANE,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,8,9,10,12,14,15,17,19,20,21,20,19,19,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FLIXBOROUGH,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,9,11,12,14,16,18,19,21,21,21,20,19,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOLLY HALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOUR LANE ENDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FOXHILLS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FULLERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+FURNESS AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GAISBY LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GIBRALTAR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GIBSON LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GILDERSOME,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GLEADLESS VALLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GOOLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GRAINTHORPE,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,19,21,23,25,27,28,27,26,25,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GREAT COATES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GREENHILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GREYFRIARS RD,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,11,12,14,15,16,18,18,18,17,16,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GREYFRIARS ROAD 3/4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GRIMETHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GROVE STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+GUARDIAN GLASS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HACKENTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HALIFAX 33/11KV,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,12,14,16,18,20,22,24,26,27,26,25,24,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HALLAM STREET,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,10,12,13,15,17,19,21,22,23,22,21,21,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARDEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARPSWELL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HARWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAWORTH 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAWORTH 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAXEY,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,5,6,7,8,9,10,10,11,10,10,10,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAYTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HAZLEHEAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEBDEN BRIDGE,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEDLEY CHASE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEDON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HEMSWORTH,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,8,9,11,12,14,16,18,20,22,24,24,24,23,22,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HESSLE ROAD 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HESSLE ROAD 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HIBALDSTOW,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,9,11,13,15,18,20,23,25,27,30,31,30,29,27,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HICKLETON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HILLCREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOLBECK,0,1,1,2,2,3,4,5,6,8,10,13,16,20,24,30,37,44,53,63,75,87,100,114,128,141,155,167,172,167,161,155,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOLDERNESS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOLME UPON SPALDING MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HONLEY,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,10,11,13,15,17,19,21,23,25,26,25,24,23,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HORBURY,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,9,10,11,12,14,15,16,17,16,16,15,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HOUGHTON MAIN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HULL EAST 33/11KV,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,9,11,13,15,18,20,23,25,27,30,31,30,29,27,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HUMBER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+HUNMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ICI FIBRES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+IDLE,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,18,20,23,25,27,28,27,26,25,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ILKLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+INGS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+IVESON HOUSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+JARRATT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KEDDINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KEIGHLEY,0,1,1,1,2,2,3,4,5,6,7,9,12,14,18,22,27,33,39,47,55,64,73,83,94,104,113,122,126,122,118,113,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KENMORE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KILLINGHALL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KILNHURST,0,1,1,2,3,3,4,5,7,9,11,14,18,22,27,33,41,49,59,70,83,97,111,126,142,157,172,185,191,185,179,172,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KING GEORGE DOCK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIRK DRIVE,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIRK SANDALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIRKBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KIVETON PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+KNOSTROP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEA ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEASOWE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEDSTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEEDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEGRAMS MILL LANE,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LEYLANDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LIVERSEDGE,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,10,12,15,18,21,25,29,33,38,43,47,52,56,57,56,54,52,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LOW MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LOWFIELDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+LOXLEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MANCHESTER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MANSFIELD ROAD 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MANSFIELD ROAD 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MARKHAM GATES,0,1,1,1,1,2,2,3,4,5,6,7,9,11,14,17,21,26,31,37,43,50,58,66,74,82,89,96,99,96,93,89,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MARMION ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MARSDEN ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MARTONGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MELTHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MEXBOROUGH 1_2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MIDDLETON TOWN STREET,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,17,19,22,25,28,31,34,37,38,37,36,34,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MILLHOUSES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MILLROYD STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MILTON PLACE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MIRFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MONCKTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MOOR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MOORSIDE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MORLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MOUNT STREET,0,5,7,9,11,15,19,24,31,40,50,64,80,100,123,151,185,224,269,321,378,440,506,575,645,714,782,843,870,844,814,782,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+MYTHOLMROYD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NAB LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NABWOOD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NATIONAL AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEW DROPPINGWELL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEW ORCHARD LANE,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,19,21,23,25,27,28,27,26,25,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWHALL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWPORT 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NEWPORT 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NINELANDS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORFOLK PARK,0,3,3,4,6,7,9,12,15,19,24,31,39,48,60,73,89,108,130,155,183,213,245,278,312,345,378,408,420,408,393,378,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORMANTON,0,1,1,1,2,2,3,4,5,7,8,11,13,17,21,25,31,37,45,54,63,73,85,96,108,119,130,141,145,141,136,131,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTH AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORTH THORESBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+NORWOOD,0,0,0,1,1,1,1,2,2,3,4,4,6,7,9,11,13,16,19,23,27,31,36,40,45,50,55,59,61,59,57,55,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OAKES ROAD,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OAKWOOD LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ODSAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OLYMPIA MILLS,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,9,10,11,12,14,15,16,17,16,16,15,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ORGREAVE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+OUTWOOD,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,5,5,6,7,8,8,9,9,9,9,8,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PARK HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PARK ROAD,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,10,12,15,18,21,25,29,33,38,43,47,52,56,57,56,54,52,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PARK STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PASTURE ROAD SOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PATRINGTON ROAD,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,13,14,15,15,15,14,14,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PENISTONE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PENISTONE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PLANGEO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+POLLINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PONTEFRACT LANE 1/2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+POOL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PRINCE OF WALES,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,10,11,13,14,16,17,19,19,19,18,17,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+PROSPECT ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+QUEENS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+QUEENSBURY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWCLIFFE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWDON,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,5,6,8,9,10,12,13,14,16,17,18,17,16,16,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWMARSH ROAD 1_2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWMARSH ROAD 3_4,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,10,11,13,14,16,17,19,19,19,18,17,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWSON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RAWSON SPRING ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+REVILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ROCKWARE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+RODLEY LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ROMAN AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+ROYDS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SAINT ANDREWS ROAD 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SAINT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SALTERFORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SALTERHEBBLE,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,16,18,21,23,26,28,30,31,30,29,28,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SALTSHOUSE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SANDHILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SAXON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCARTHO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCHOLES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCISSETT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SCULCOATES A,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,13,14,15,15,15,14,14,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SEACROFT,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SEATON,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,13,13,12,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SELBY,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,16,18,21,23,26,28,30,31,30,29,28,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SELBY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHARLSTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHEPCOTE TINSLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHERBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHIPLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SHIRLAND LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SILVER STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SILVERWOOD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SKILLINGS LANE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,13,13,12,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SKIPTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SLAITHWAITE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SLEDMERE GARTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SMITH STREET,0,0,0,1,1,1,1,2,2,2,3,4,5,6,8,9,11,14,17,20,23,27,31,35,40,44,48,52,53,52,50,48,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SMITHY GREEN,0,1,2,2,3,4,5,6,8,10,12,16,20,25,30,37,46,55,66,79,93,108,125,142,159,176,192,208,214,208,200,192,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SNAITHING PARK ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SNELSINS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTH ELMSALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTH FERRIBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTH KIRKBY,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,9,10,11,11,11,11,10,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTH RESTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTH STREET,0,0,0,1,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,18,22,25,29,33,37,41,45,48,50,48,47,45,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTHGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOUTHWOOD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SOWERBY BRIDGE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPARK MILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPENBOROUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SPRING MILL STREET,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,13,13,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STAINFORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STAIRFOOT,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,10,12,13,15,17,19,21,22,23,22,21,21,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STANLEY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STANNINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STATION ROAD,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,10,12,14,17,19,22,25,28,31,34,37,38,37,36,34,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STEVENSON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOKE STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOURTON 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOURTON 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+STOW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SWAN BANK LANE,0,5,7,9,12,15,19,25,32,40,51,64,81,101,124,153,187,227,272,324,382,445,512,581,652,722,790,852,879,853,823,790,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SWEET STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+SWINNOW MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TADCASTER,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TANKERSLEY PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TEMPLEBOROUGH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THORNBURY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THORNE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THORNTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+THORPE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TICKHILL ROAD,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,13,13,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TINGLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TINSLEY PARK ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TINSLEY WIRE INDUSTRIES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TIVERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TODMORDEN,0,5,7,9,11,15,19,24,31,39,50,63,79,98,122,150,183,222,266,317,374,435,501,569,638,706,773,834,860,834,805,773,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TOLLER LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+TONG STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+UPPER BASINGHALL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+VARLEY STREET,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,8,9,11,12,14,16,18,19,21,21,21,20,19,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+VICTORIA STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WALESBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WARREN LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WATH UPON DEARNE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WAVERLEY BUSINESS PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WAWNE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEELAND ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WELLINGTON STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WESLEY CRESCENT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST DOCKS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST END LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST MOOR PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WEST PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WESTCOTT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHEATACRE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHEATLEY PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHINGATE,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,8,9,11,13,15,18,20,23,25,27,30,31,30,29,27,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITE LEE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITEHALL ROAD 2/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WHITEHALL ROAD 4/5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WIBSEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WITHERNSEA,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,13,13,12,12,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WOODCOCK STREET,0,1,1,1,2,2,3,3,4,6,7,9,11,14,17,21,26,31,37,45,52,61,70,80,90,99,109,117,121,117,113,109,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WOODSEATS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WOOLLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WORSBROUGH PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+WRAWBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YARBOROUGH ROAD 33/11KV,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,11,13,15,17,20,23,26,28,31,33,34,33,32,31,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YEW GREEN ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YORK ROAD,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,3,4,4,5,6,6,7,7,8,7,7,7,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+YORK STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Barnsley Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Bradford Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Calderdale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+County Durham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Darlington Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Doncaster Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+East Riding of Yorkshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Gateshead Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Hambleton Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Harrogate Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Hartlepool Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+"Kingston upon Hull, City of Direct to Supply Points",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Kirklees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Leeds Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Newcastle upon Tyne Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+North East Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+North Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+North Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Northumberland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Redcar and Cleveland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Rotherham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Ryedale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Scarborough Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Selby Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Sheffield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+South Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Stockton-on-Tees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Sunderland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+Wakefield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+West Lindsey Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - System Transformation (EE CF),Number of electric buses
+York Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - System Transformation (EE CF),Number of electric buses

@@ -1,0 +1,583 @@
+Primary,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,Licence area,Voltage level,Scenario name,Output parameter
+ACKLAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AMBERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ANNFIELD 66/20KV,0,0,0,0,0,1,1,1,2,2,3,3,4,5,7,8,10,12,14,16,18,20,23,25,27,29,30,32,33,33,33,32,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ASHINGTON,0,0,1,1,1,2,3,4,5,6,8,10,12,15,19,23,28,34,40,46,53,59,66,72,78,84,89,93,97,97,95,93,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AYCLIFFE FORREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AYCLIFFE INDUSTRIAL,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARDEN FRIAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BEDALE,0,0,1,1,1,2,2,3,4,6,7,9,11,14,17,21,26,31,36,42,48,54,60,66,71,77,81,85,89,89,87,85,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BELMONT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BENSHAM,0,1,1,2,3,4,6,7,10,13,16,20,26,32,40,49,59,70,82,96,109,123,137,150,162,174,184,193,201,202,197,193,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BENTON SQUARE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BENWELL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BILLINGHAM MARSH HOUSE,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BILLY MILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BIRTLEY GROVE 66/11KV,0,1,1,2,3,4,5,7,9,12,15,20,25,31,38,47,56,67,79,92,105,118,131,144,155,166,176,185,193,193,189,185,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BIRTLEY GROVE 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BLAYDON BURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BLUCHER 33/11KV,0,3,5,8,11,15,21,28,37,47,60,76,96,120,149,182,220,263,309,359,411,462,513,562,608,651,691,724,756,756,741,723,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOLDON DOWNHILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOROUGHBRIDGE/ROECLIFFE INDUSTRIAL,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,14,16,18,20,22,24,26,27,28,30,30,29,28,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOWESFIELD 33/11KV,0,0,0,1,1,1,2,2,3,4,5,7,8,10,13,16,19,23,27,31,35,40,44,48,52,56,60,62,65,65,64,62,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOWESFIELD 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRANCEPETH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BREAMISH STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRENDA TRADING,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,30,31,31,30,29,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CAMPLESHON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CARLEY HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CARLIN HOW T3 T4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CARR HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CATTERICK CAMP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLOSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CONEYTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CONSETT,0,0,1,1,1,2,3,4,5,6,8,10,12,15,19,23,28,34,40,46,53,59,66,72,78,84,89,93,97,97,95,93,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CORPORATION STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+COWTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CRAMLINGTON T1 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CRAMLINGTON T2 T4,0,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,5,6,7,8,9,10,10,11,12,12,13,13,13,12,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLINGTON 132/6KV,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,14,16,18,20,22,24,26,27,28,30,30,29,28,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLINGTON 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLINGTON CENTRAL 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLINGTON EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARLINGTON WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DENWICK,0,0,1,1,2,2,3,4,5,6,8,11,13,17,21,25,30,36,43,50,57,64,71,78,84,90,95,100,104,104,102,100,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DUNSTON 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DUNSTON 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DURHAM EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EASTFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EASTGATE CEMENT,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,15,17,19,22,24,26,29,31,32,34,36,36,35,34,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EDUCATIONAL PRECINCT,0,0,1,1,2,2,3,4,5,6,8,11,13,17,21,25,30,36,43,50,57,64,71,78,84,90,95,100,104,104,102,100,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELVINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FARADAY STREET,0,0,0,0,0,1,1,1,2,2,3,3,4,5,6,8,9,11,13,15,17,20,22,24,26,28,29,31,32,32,31,31,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FAWDON T1 & SEATON BURN T1,0,0,0,0,0,1,1,1,2,2,3,3,4,5,7,8,10,12,14,16,18,20,23,25,27,29,30,32,33,33,33,32,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FISHBURN,0,0,0,1,1,1,2,3,4,4,6,7,9,11,14,17,21,25,30,34,39,44,49,54,58,62,66,69,72,72,71,69,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FLATWORTH CENTRAL,0,0,1,1,1,2,3,4,5,6,8,10,13,16,20,24,29,35,41,48,55,62,68,75,81,87,92,97,101,101,99,96,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOSS ISLANDS,0,1,1,1,2,3,4,6,7,9,12,15,19,24,29,36,43,52,61,70,80,91,101,110,119,128,135,142,148,148,145,142,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOSSWAY 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOURSTONES 20KV,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,14,16,18,20,22,24,26,27,28,30,30,29,28,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FYLANDS BRIDGE,0,0,0,0,1,1,1,2,2,3,4,5,6,8,9,11,14,16,19,23,26,29,32,35,38,41,43,45,47,47,46,45,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GALE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GARWOOD STREET,0,2,5,7,10,14,20,26,34,44,57,72,90,113,140,171,207,247,291,338,386,435,483,529,572,613,650,681,711,711,697,679,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GATESHEAD CENTRAL,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,15,17,19,22,24,26,29,31,32,34,36,36,35,34,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GATESHEAD EAST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GOSFORTH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GRANGETOWN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GREATHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GUISBOROUGH T1 T2,0,0,0,1,1,1,1,2,3,3,4,5,7,8,10,13,15,18,21,25,28,32,35,39,42,45,48,50,52,52,51,50,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GUISBOROUGH T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARLOW GREEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARMIRE BRIDGE,0,0,0,0,1,1,1,2,2,3,4,5,6,8,9,11,14,16,19,23,26,29,32,35,38,41,43,45,47,47,46,45,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARRATON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARROGATE 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARROGATE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARTMOOR 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAWTHORN PIT,0,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAXBY ROAD T2 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEBBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEBBURN WEST,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEDWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEIGHINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEXHAM,0,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,15,17,20,24,27,30,34,37,40,43,45,48,50,50,49,48,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HIGH BARMSTON,0,0,0,1,1,1,2,3,3,4,6,7,9,11,14,17,21,25,29,34,39,43,48,53,57,61,65,68,71,71,70,68,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HIGH FLATTS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOUGHTON,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOWDON,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HUNTINGTON NEW LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HUSTHWAITE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+JARROW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KENTON,0,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIELDER,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KILLINGWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIRBYMOORSIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEAM CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LINTON 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LONGBENTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LOW SPENNYMOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LYNEMOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MADDISON STREET,0,0,1,1,2,2,3,4,6,7,9,12,15,19,23,29,35,41,49,56,64,72,80,88,95,102,108,114,118,119,116,113,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MALLEABLE,0,2,3,5,8,11,15,20,26,34,43,55,69,86,106,130,158,188,221,257,293,330,367,402,435,466,494,518,540,541,530,516,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MALTON,0,0,1,1,1,2,2,3,4,5,7,8,11,13,17,20,25,29,34,40,46,51,57,63,68,72,77,81,84,84,82,80,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MEADOWFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MELROSEGATE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MILLBANK LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MONKSEATON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MOOR MONKTON PUMPS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MORPETH,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,18,17,17,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MOUNT ROAD,0,1,1,2,2,3,5,6,8,10,13,17,21,26,33,40,48,58,68,79,90,101,113,123,133,143,152,159,166,166,163,159,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWBURN HAUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWCASTLE AIRPORT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWTON AYCLIFFE SOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTH STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTH TEES T1 T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTH TEES T3 T4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTHALLERTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTON 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OATLANDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OFFERTON 33/11KV,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PALLION TRADING,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PETERLEE INDUSTRIAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PETERLEE WEST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PILGRIM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+POTTER HOUSE T1 T3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+POTTER HOUSE T4 T5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PRISSICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAVENSCAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWCLIFFE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+REDCAR,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,12,14,15,17,19,21,23,25,26,27,28,28,28,27,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RESERVOIR,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,10,12,14,16,18,20,22,24,26,27,28,30,30,29,28,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RICHMOND T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RICHMOND T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RIPON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RISE CARR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ROMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RUDBY,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCARBOROUGH 33/11KV,0,0,1,1,2,2,3,4,5,7,9,11,14,17,21,26,31,38,44,51,59,66,73,80,87,93,99,103,108,108,106,103,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCARBOROUGH 66/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SEGHILL,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SESSAY BRIDGE_SOWERBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SEVERUS HILL,0,0,0,1,1,1,2,2,3,4,5,7,8,11,13,16,19,23,27,32,36,41,45,49,53,57,61,64,66,66,65,63,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHERIFF HUTTON,0,0,1,1,1,2,2,3,4,5,7,9,11,14,17,21,25,30,35,41,46,52,58,63,69,74,78,82,85,85,84,82,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHOTTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SIMONSIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SKELDERGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SKERNESIDE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPADEADAM 20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPENCERBECK,0,0,0,0,0,1,1,1,2,2,3,3,4,5,6,8,9,11,13,15,17,20,22,24,26,28,29,31,32,32,31,31,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPENNYMOOR 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STARBECK,0,0,1,1,1,2,3,4,5,6,8,10,13,16,20,25,30,35,42,48,55,62,69,76,82,88,93,98,102,102,100,97,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOBSWOOD COAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOKESLEY,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,11,12,13,14,14,14,14,14,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STONEY CUT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SUNDERLAND T1 T2,0,2,5,7,10,14,20,26,34,44,57,72,90,113,140,171,207,247,291,338,386,435,483,529,572,613,650,681,711,711,697,679,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SUNDERLAND T5 T6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TANFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TEAM VALLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TEES INDUSTRIAL T1 T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TEMPLE PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THIRSK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THORNTON DALE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TORONTO 66/20KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TUNSTALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TYNEMOUTH CENTRAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+UNIVERSITY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+URLAY NOOK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+USWORTH,0,0,0,1,1,1,2,3,3,4,6,7,9,11,14,17,21,25,29,34,39,43,48,53,57,61,65,68,71,71,70,68,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WALKER,0,1,1,2,3,4,5,7,9,11,14,18,23,28,35,43,52,62,73,84,97,109,121,132,143,153,162,170,178,178,174,170,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WANSBECK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WARDLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WARKWORTH,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,3,4,5,6,6,7,8,9,10,10,11,11,12,12,12,11,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WENSLEYDALE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST HARTFORD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST SOUTHWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST WYLAM,0,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WESTERHOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WESTOE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITBY T1,0,0,0,0,1,1,1,2,2,3,3,4,5,7,8,10,12,14,17,20,23,25,28,31,33,36,38,40,41,41,41,40,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITBY T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITBY WEST T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITBY WEST T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WILLINGTON,0,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WORMALD GREEN 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WYNYARD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YEDINGHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YORK UNIVERSITY,0,0,1,1,1,2,3,4,5,6,8,10,12,15,19,23,28,33,39,46,52,59,65,71,77,83,88,92,96,96,94,92,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ABBEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AIREDALE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ALDHAM,0,0,0,0,0,1,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ALFRED GELDER STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ALLERTON HILL T1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ALLERTON HILL T2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ALVERTHORPE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ARMOURIES DRIVE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ARMTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ARUNDEL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ASKERN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AUDBY LANE,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,30,31,31,30,29,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+AUSTERFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BAILIFF BRIDGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BALBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BALME STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARNBURGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARNOLDSWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARNSLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARNSLEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARROW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARUGH 66/11KV,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,30,31,31,30,29,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BARWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BASLOW ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BATLEY,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,37,40,42,44,46,46,45,44,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BEAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BEESTON ROYDS 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BEESTON ROYDS 6/7,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BEIGHTON,0,0,1,1,1,2,2,3,4,5,7,9,11,13,17,20,25,29,34,40,46,52,57,63,68,73,77,81,84,84,83,81,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BELLHOUSE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BELMONT AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BELMONT COVERT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BELTHORPE LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BENTLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BILLET LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BINBROOK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BINGLEY 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BIRKBY,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,9,11,13,15,17,18,20,22,23,25,26,27,27,27,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BLACKBURN MEADOWS 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BLUE BOY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOC BRINSWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOLTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BOTTESFORD,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,18,21,23,26,28,31,33,35,36,38,38,37,36,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRAMHOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRAMLEY,0,5,8,12,16,22,29,38,49,63,81,103,130,162,201,246,297,354,417,484,553,623,692,758,819,878,931,976,1018,1019,999,974,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRETT STREET,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRIDGES ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRIGHOUSE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BRODSWORTH,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,10,11,13,15,18,20,22,24,26,28,30,31,33,33,32,31,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BROOKFIELD STREET,0,1,1,2,2,3,4,5,7,8,11,14,17,22,27,33,40,47,56,65,74,83,92,101,109,117,124,130,136,136,133,130,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BTP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BURLEY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BURMANTOFTS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BURNLEYVILLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BURTON PIDSEA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BURTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BUSLINGTHORPE GREEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+BUTTERWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CAISTOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CALDER WHARF,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CARLTON HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CARR LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CHELKER RESERVOIR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CHEVIN END,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLARENCE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLARENDON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLARENDON STREET,0,1,1,2,2,3,4,6,7,9,12,15,19,24,29,36,44,52,61,71,81,91,101,111,120,129,137,143,149,150,146,143,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLAYWHEELS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CLOUGH LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+COMMONSIDE LANE,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,11,12,14,15,16,17,18,19,20,20,20,19,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CONVAMORE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CONYARD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CORNWALL STREET,0,3,4,6,8,11,15,19,25,32,41,52,66,82,102,124,151,180,211,245,280,316,350,384,415,445,472,495,516,516,506,493,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CORRINGHAM ROAD,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,20,22,25,27,29,31,33,35,36,36,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+COSTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+COUNTY ROAD NORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CRACOE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CROOKESMOOR ROAD,0,0,0,0,0,1,1,1,1,1,2,2,3,4,5,6,7,8,10,11,13,14,16,18,19,20,22,23,24,24,23,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CROSSHILLS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CROWLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+CROWN STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DALTON,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,36,39,41,43,45,45,44,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DARNALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DEARNE ROAD,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,11,12,14,15,16,17,18,19,20,20,20,19,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DEIGHTON,0,5,8,12,16,22,29,38,50,64,82,104,131,164,203,248,300,358,421,489,559,629,698,765,827,887,940,986,1028,1029,1008,983,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DENBY DALE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DENBY GRANGE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DENHOLME,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DINNINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DOUGHTY ROAD,0,1,1,1,2,2,3,4,5,6,8,11,13,17,20,25,30,36,43,49,57,64,71,77,84,90,95,100,104,104,102,100,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DOWKER STREET,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,36,39,41,43,45,45,44,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DRAX PRIMARY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DRIFFIELD,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,6,7,9,10,11,12,13,15,16,17,17,18,18,18,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DRONFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DUDLEY HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DUNKESWICK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+DURKAR LOW LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EASINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EASTFIELD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ECCLESFIELD,0,0,1,1,1,2,2,3,4,5,6,7,9,12,14,17,21,25,30,34,39,44,49,54,58,62,66,69,72,72,71,69,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EDLINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EGGBOROUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELGAR ROAD,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,20,22,25,27,29,31,33,35,36,36,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELLAND 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELLIFOOT LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELLIN STREET 1/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELLIN STREET 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELMHIRST LANE 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELMHIRST LANE 2,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ELSECAR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ENDIKE LANE,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,6,7,8,9,10,11,12,12,13,14,14,13,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+EPWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FARNLEY CRESCENT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FENTON LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FERRYBRIDGE A 11KV,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,9,10,11,12,12,13,13,12,12,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FIR TREE LANE,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,14,15,16,16,16,16,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FIRST AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FIRTH BROWN,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,36,39,41,43,45,45,44,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FISH DAM LANE,0,0,0,0,0,1,1,1,1,2,2,2,3,4,5,6,7,9,10,12,13,15,17,18,20,21,22,23,24,24,24,23,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FLIXBOROUGH,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,17,19,20,22,23,24,25,25,25,24,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOLLY HALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOUR LANE ENDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FOXHILLS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FULLERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+FURNESS AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GAISBY LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GIBRALTAR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GIBSON LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GILDERSOME,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GLEADLESS VALLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GOOLE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GRAINTHORPE,0,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,10,12,14,16,18,20,23,25,27,29,31,32,33,34,33,32,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GREAT COATES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GREENHILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GREYFRIARS RD,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,9,10,12,13,15,16,17,19,20,21,22,22,21,21,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GREYFRIARS ROAD 3/4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GRIMETHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GROVE STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+GUARDIAN GLASS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HACKENTHORPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HALIFAX 33/11KV,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,9,11,13,15,17,19,22,24,25,27,29,30,32,32,31,30,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HALLAM STREET,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,9,11,13,15,17,18,20,22,23,25,26,27,27,27,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARDEN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARPSWELL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HARWORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAWORTH 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAWORTH 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAXEY,0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,9,10,11,12,12,13,13,12,12,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAYTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HAZLEHEAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEBDEN BRIDGE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEDLEY CHASE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEDON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HEMSWORTH,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,8,10,12,14,16,18,20,22,23,25,26,28,29,29,28,28,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HESSLE ROAD 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HESSLE ROAD 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HIBALDSTOW,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,20,22,25,27,29,31,33,35,36,36,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HICKLETON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HILLCREST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOLBECK,0,1,2,2,3,4,6,8,10,13,16,21,26,32,40,49,59,71,83,97,111,125,138,152,164,176,186,195,204,204,200,195,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOLDERNESS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOLME UPON SPALDING MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HONLEY,0,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,30,31,31,30,29,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HORBURY,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,11,12,14,15,16,17,18,19,20,20,20,19,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HOUGHTON MAIN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HULL EAST 33/11KV,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,20,22,25,27,29,31,33,35,36,36,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HUMBER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+HUNMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ICI FIBRES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+IDLE,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,8,10,11,13,15,18,20,22,24,26,28,30,31,33,33,32,31,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ILKLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+INGS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+IVESON HOUSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+JARRATT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KEDDINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KEIGHLEY,0,1,1,2,2,3,4,6,7,9,12,15,19,24,29,36,44,52,61,71,81,91,101,111,120,129,137,143,149,150,146,143,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KENMORE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KILLINGHALL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KILNHURST,0,1,2,3,4,5,6,8,11,14,18,23,29,36,45,55,66,79,93,108,123,138,154,168,182,195,207,217,226,227,222,216,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KING GEORGE DOCK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIRK DRIVE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIRK SANDALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIRKBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KIVETON PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+KNOSTROP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEA ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEASOWE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEDSTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEEDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEGRAMS MILL LANE,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LEYLANDS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LIVERSEDGE,0,0,1,1,1,1,2,3,3,4,5,7,9,11,13,16,20,24,28,32,37,42,46,51,55,59,62,65,68,68,67,65,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LOW MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LOWFIELDS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+LOXLEY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MANCHESTER ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MANSFIELD ROAD 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MANSFIELD ROAD 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MARKHAM GATES,0,1,1,1,2,3,3,4,6,7,9,12,15,19,23,28,34,41,48,56,64,72,80,88,95,101,108,113,118,118,115,113,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MARMION ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MARSDEN ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MARTONGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MELTHAM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MEXBOROUGH 1_2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MIDDLETON TOWN STREET,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,36,39,41,43,45,45,44,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MILLHOUSES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MILLROYD STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MILTON PLACE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MIRFIELD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MONCKTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MOOR ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MOORSIDE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MORLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MOUNT STREET,0,5,8,12,16,22,29,39,50,64,82,104,131,164,203,248,301,358,422,490,560,630,700,767,829,888,942,988,1030,1031,1010,985,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+MYTHOLMROYD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NAB LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NABWOOD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NATIONAL AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEW DROPPINGWELL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEW ORCHARD LANE,0,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,10,12,14,16,18,20,23,25,27,29,31,32,33,34,33,32,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWHALL ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWPORT 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NEWPORT 2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NINELANDS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORFOLK PARK,0,3,4,6,8,11,14,19,24,31,40,50,63,79,98,120,145,173,204,237,271,305,338,371,401,429,455,477,498,498,488,476,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORMANBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORMANTON,0,1,1,2,3,4,5,6,8,11,14,17,22,27,34,41,50,60,70,82,93,105,117,128,138,148,157,165,172,172,169,164,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTH AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORTH THORESBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+NORWOOD,0,0,1,1,1,2,2,3,4,5,6,7,9,12,14,17,21,25,30,34,39,44,49,54,58,62,66,69,72,72,71,69,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OAKES ROAD,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OAKWOOD LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ODSAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OLYMPIA MILLS,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,11,12,14,15,16,17,18,19,20,20,20,19,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ORGREAVE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+OUTWOOD,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,7,7,8,9,9,10,10,11,11,11,10,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PARK HILL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PARK ROAD,0,0,1,1,1,1,2,3,3,4,5,7,9,11,13,16,20,24,28,32,37,42,46,51,55,59,62,65,68,68,67,65,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PARK STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PASTURE ROAD SOUTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PATRINGTON ROAD,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,6,7,9,10,11,12,13,15,16,17,17,18,18,18,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PENISTONE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PENISTONE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PLANGEO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+POLLINGTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PONTEFRACT LANE 1/2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+POOL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PRINCE OF WALES,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,7,8,9,11,12,14,15,17,18,20,21,22,23,23,22,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+PROSPECT ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+QUEENS ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+QUEENSBURY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWCLIFFE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWDON,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,11,13,14,15,17,18,19,20,21,21,20,20,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWMARSH ROAD 1_2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWMARSH ROAD 3_4,0,0,0,0,0,0,1,1,1,1,2,2,3,4,4,5,7,8,9,11,12,14,15,17,18,20,21,22,23,23,22,22,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWSON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RAWSON SPRING ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+REVILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ROCKWARE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+RODLEY LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ROMAN AVENUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+ROYDS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SAINT ANDREWS ROAD 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SAINT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SALTERFORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SALTERHEBBLE,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,18,20,23,25,28,30,32,34,36,37,37,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SALTSHOUSE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SANDHILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SAXON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCARTHO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCHOLES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCISSETT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SCULCOATES A,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,6,7,9,10,11,12,13,15,16,17,17,18,18,18,17,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SEACROFT,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SEATON,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SELBY,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,18,20,23,25,28,30,32,34,36,37,37,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SELBY ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHARLSTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHEPCOTE TINSLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHERBURN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHIPLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SHIRLAND LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SILVER STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SILVERWOOD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SKILLINGS LANE,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SKIPTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SLAITHWAITE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SLEDMERE GARTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SMITH STREET,0,0,1,1,1,1,2,2,3,4,5,6,8,10,12,15,18,22,26,30,34,39,43,47,51,55,58,61,63,63,62,61,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SMITHY GREEN,0,1,2,3,4,5,7,9,12,16,20,26,32,40,50,61,74,88,104,121,138,155,172,189,204,219,232,243,253,254,249,242,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SNAITHING PARK ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SNELSINS LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTH ELMSALL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTH FERRIBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTH KIRKBY,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,5,6,6,7,8,9,10,11,12,12,13,14,14,13,13,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTH RESTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTH STREET,0,0,0,1,1,1,2,2,3,4,5,6,7,9,12,14,17,20,24,28,32,36,40,44,47,51,54,56,59,59,58,56,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTHGATE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOUTHWOOD ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SOWERBY BRIDGE 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPARK MILL LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPENBOROUGH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SPRING MILL STREET,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,14,15,16,16,16,16,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STAINFORTH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STAIRFOOT,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,7,8,9,11,13,15,17,18,20,22,23,25,26,27,27,27,26,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STANLEY STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STANNINGTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STATION ROAD,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,16,19,22,25,28,31,34,36,39,41,43,45,45,44,43,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STEVENSON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOKE STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOURTON 132/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOURTON 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+STOW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SWAN BANK LANE,0,5,8,12,17,22,30,39,50,65,83,105,133,166,205,251,304,362,426,495,566,637,707,775,838,897,952,998,1041,1042,1021,996,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SWEET STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+SWINNOW MOOR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TADCASTER,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TANKERSLEY PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TEMPLEBOROUGH 33/11KV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THORNBURY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THORNE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THORNTON,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+THORPE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TICKHILL ROAD,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,14,15,16,16,16,16,16,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TINGLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TINSLEY PARK ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TINSLEY WIRE INDUSTRIES,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TIVERTON ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TODMORDEN,0,5,8,12,16,22,29,38,49,63,81,103,130,162,201,246,297,354,417,484,553,623,692,758,819,878,931,976,1018,1019,999,974,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TOLLER LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+TONG STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+UPPER BASINGHALL STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+VARLEY STREET,0,0,0,0,0,1,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,16,17,19,20,22,23,24,25,25,25,24,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+VICTORIA STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WALESBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WARREN LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WATH UPON DEARNE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WAVERLEY BUSINESS PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WAWNE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEELAND ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WELLINGTON STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WESLEY CRESCENT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST DOCKS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST END LANE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST MOOR PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WEST PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WESTCOTT STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHEATACRE ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHEATLEY PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHINGATE,0,0,0,0,1,1,1,1,2,2,3,4,5,6,7,9,11,13,15,17,20,22,25,27,29,31,33,35,36,36,36,35,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITE LEE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITEHALL ROAD 2/3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WHITEHALL ROAD 4/5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WIBSEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WITHERNSEA,0,0,0,0,0,0,0,1,1,1,1,2,2,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,15,15,15,15,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WOODCOCK STREET,0,1,1,2,2,3,4,5,7,9,11,14,18,23,28,34,42,50,59,68,78,88,97,106,115,123,131,137,143,143,140,137,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WOODSEATS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WOOLLEY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WORSBROUGH PARK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+WRAWBY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YARBOROUGH ROAD 33/11KV,0,0,0,0,1,1,1,2,2,3,3,4,5,6,8,10,12,14,17,19,22,25,28,30,33,35,37,39,41,41,40,39,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YEW GREEN ROAD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YORK ROAD,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,3,4,4,5,6,6,7,7,8,8,9,9,9,9,9,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+YORK STREET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Barnsley Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Bradford Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Calderdale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+County Durham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Darlington Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Doncaster Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+East Riding of Yorkshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Gateshead Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Hambleton Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Harrogate Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Hartlepool Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+"Kingston upon Hull, City of Direct to Supply Points",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Kirklees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Leeds Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Newcastle upon Tyne Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+North East Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+North Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+North Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Northumberland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Redcar and Cleveland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Rotherham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Ryedale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Scarborough Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Selby Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Sheffield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+South Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Stockton-on-Tees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Sunderland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+Wakefield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+West Lindsey Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
+York Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Consumer Transformation (EE CF),Number of electric buses
