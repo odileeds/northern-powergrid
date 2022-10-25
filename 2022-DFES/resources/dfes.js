@@ -1,5 +1,18 @@
 /*!
- * Open Innovations Future Energy Scenario viewer
+	Open Innovations Future Energy Scenario viewer
+	Changeset:
+	1.5.4
+	- Bug fix for CSV columns with quotation marks
+	1.5.3
+	- Improve large pips to deal with not including 2020
+	1.5.2
+	- Allow values in files to be scaled on load
+	- Fix minor pips on year slider
+	- Add callback for setScale
+	1.5.1
+	- If the initial parameter key in the config is set to one that doesn't exist we need to fail nicely with an error message.
+	1.5.0
+	- scenario and parameter config is now in an array (rather than an object) to make sure order is preserved
  */
 (function(root){
 	
@@ -13,7 +26,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.4.5";
+		this.version = "1.5.4";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -21,7 +34,7 @@
 		this.data = { };
 		this.logging = (location.search.indexOf('debug=true') >= 0);	
 		this.log = function(){
-			var a,extra;
+			var a,ext;
 			// Version 1.1.1
 			if(this.logging || arguments[0]=="ERROR" || arguments[0]=="WARNING"){
 				a = Array.prototype.slice.call(arguments, 0);
@@ -37,26 +50,41 @@
 				}
 			}
 			return this;
-		};	
+		};
 		this.layers = (config.layers||{});
 		this.views = (config.views||{});
 		this.mapping = (config.mapping||{});
 		this.events = {};
 		if(config.on) this.events = config.on;
+		if(!this.options.files) this.options.files = {};
+		if(!this.options.files.parameters) this.options.files.parameters = path+"data/scenarios/config.json";
+		if(!this.options.files.scenarios) this.options.files.scenarios = path+"data/scenarios/index.json";
 
-		S().ajax(path+"data/scenarios/config.json",{
+		S().ajax(this.options.files.parameters,{
 			'this':this,
 			'cache':false,
 			'dataType':'json',
 			'success': function(d){
-				this.parameters = d;
-				S().ajax(path+"data/scenarios/index.json",{
+				if(d.length){
+					this.parameters = {};
+					// New style (1.5.0) config is an array to preserve order - convert into object
+					for(var i = 0; i < d.length; i++){
+						if(d[i].key) this.parameters[d[i].key] = d[i];
+					}
+				}else this.parameters = d;
+				S().ajax(this.options.files.scenarios,{
 					'this':this,
 					'cache':false,
 					'dataType':'json',
 					'success': function(d,attr){
 						this.log('INFO','Got '+attr.url);
-						this.data.scenarios = d;
+						if(d.length){
+							this.data.scenarios = {};
+							// New style (1.5.0) config is an array to preserve order - convert into object
+							for(var i = 0; i < d.length; i++){
+								if(d[i].key) this.data.scenarios[d[i].key] = d[i];
+							}
+						}else this.data.scenarios = d;
 						this.init();
 					},
 					'error': function(e,attr){
@@ -73,7 +101,7 @@
 	}
 
 	FES.prototype.init = function(){
-		var html,s,l,p,css,g,gorder,groups;
+		var html,s,i,j,l,p,css,g,gorder,groups;
 		if(this.options.scale=="absolute"){
 			S('#scale-holder input').attr('checked','checked');
 			S('#scale-holder').addClass('checked');
@@ -122,8 +150,11 @@
 				}
 				if(g != "all") html += '</optgroup>';
 			}
+			if(!this.parameters[this.options.parameter]){
+				this.message('No parameter '+this.options.parameter+' exists. Sorry.',{'id':'parameter','type':'ERROR'});
+			}
 			S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
-			S('#parameter-holder .about').html(this.parameters[this.options.parameter].description||'').attr('class','about '+css+'');
+			S('#parameter-holder .about').html(this.parameters[this.options.parameter] ? (this.parameters[this.options.parameter].description||'') : '').attr('class','about '+css+'');
 			S('#parameters').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setParameter(e.currentTarget.value);
@@ -143,7 +174,9 @@
 
 		// Create the slider
 		this.slider = document.getElementById('slider');
-		console.log(parseInt(this.options.key));
+		var pips = [];
+		var dy = 10;
+		for(var i = Math.ceil(this.options.years.min/10)*10; i <= this.options.years.max; i += dy) pips.push(i);
 		noUiSlider.create(this.slider, {
 			start: [parseInt(this.options.key)],
 			step: 1,
@@ -153,20 +186,21 @@
 			pips: {
 				mode: 'values',
 				stepped: true,
-				values: [2020,2030,2040,2050],
-				density: 3
+				values: pips,
+				density: 100/(2050-2020)
 			}
 		});
 		var _obj = this;
 		// Bind the changing function to the update event.
-		this.slider.noUiSlider.on('update',function(){ console.log('setYear',this.get()	); _obj.setYear(''+parseInt(this.get())); });
-		
+		this.slider.noUiSlider.on('update',function(){ _obj.setYear(''+parseInt(this.get())); });
+
 		this.setScenario(this.options.scenario);
-		
+
 		// Trigger the setParameter callback (because we aren't explicity calling it)
 		if(typeof this.events.setParameter==="function") this.events.setParameter.call(this);
 
-		this.updateSlider();
+		// Trigger the setScale callback (because we aren't explicity calling it)
+		if(typeof this.events.setScale==="function") this.events.setScale.call(this,this.options.scale);
 
 		S('#play').on('click',{me:this},function(e){
 			e.preventDefault();
@@ -179,10 +213,10 @@
 			e.stopPropagation();
 			e.data.me.stopAnimate();
 		});
-		
+
 		return this;
 	};
-	
+
 	FES.prototype.startAnimate = function(){
 		//this.slider.noUiSlider.set(this.options.years.min);
 		S('#play')[0].disabled = true;
@@ -197,7 +231,7 @@
 		},500);
 		return this;
 	};
-	
+
 	FES.prototype.stopAnimate = function(){
 		clearInterval(this.options.years.interval);
 		S('#play')[0].disabled = false;
@@ -205,7 +239,7 @@
 
 		return this;
 	};
-	
+
 	FES.prototype.loadData = function(callback){
 
 		S().ajax(path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter].file,{
@@ -229,7 +263,7 @@
 		var css = this.data.scenarios[scenario].css;
 		if(S('#scenario-holder .about').length==0) S('#scenario-holder').append('<div class="about"></div>');
 		S('#scenario-holder .about').html(this.data.scenarios[scenario].description||'').attr('class','about '+css+'');
-		S('#parameter-holder .about').html(this.parameters[this.options.parameter].description||'').attr('class','about '+css+'');
+		S('#parameter-holder .about').html(this.parameters[this.options.parameter] ? (this.parameters[this.options.parameter].description||'') : '').attr('class','about '+css+'');
 
 		for(var s in this.data.scenarios){
 			S('#scenarios').removeClass(this.data.scenarios[s].css);
@@ -358,8 +392,7 @@
 			}
 		}
 		// Update the slider range and position
-		this.slider.noUiSlider.updateOptions({range:range});
-		this.slider.noUiSlider.updateOptions({start:this.options.key});
+		this.slider.noUiSlider.updateOptions({range:range,start:this.options.key});
 		return this;
 	};
 	
@@ -369,6 +402,7 @@
 		if(checked) S('#scale-holder').addClass('checked');
 		else S('#scale-holder').removeClass('checked');
 		this.mapData();
+		if(typeof this.events.setScale==="function") this.events.setScale.call(this,this.options.scale);
 		return this;
 	};
 
@@ -518,17 +552,19 @@
 					for(a in data.layers[v].processing){
 						for(key in data.layers[v].processing[a]){
 							val = 0;
-							for(i = 0; i < data.layers[v].processing[a][key].length; i++){
-								if(this.parameters[p].combine=="sum" || this.parameters[p].combine=="average"){
-									// Find the fractional contribution
-									val += data.layers[v].processing[a][key][i].v*data.layers[v].processing[a][key][i].f;
-								}else if(this.parameters[p].combine=="max"){
-									// Find the maximum of any contribution
-									val = Math.max(val,data.layers[v].processing[a][key][i].v);
+							if(this.parameters[p]){
+								for(i = 0; i < data.layers[v].processing[a][key].length; i++){
+									if(this.parameters[p].combine=="sum" || this.parameters[p].combine=="average"){
+										// Find the fractional contribution
+										val += data.layers[v].processing[a][key][i].v*data.layers[v].processing[a][key][i].f;
+									}else if(this.parameters[p].combine=="max"){
+										// Find the maximum of any contribution
+										val = Math.max(val,data.layers[v].processing[a][key][i].v);
+									}
 								}
-							}
-							if(this.parameters[p].combine=="average"){
-								val /= data.layers[v].processing[a][key].length;
+								if(this.parameters[p].combine=="average"){
+									val /= data.layers[v].processing[a][key].length;
+								}
 							}
 							data.layers[v].values[a][key] = val;
 						}
@@ -582,17 +618,15 @@
 			// Find the column number for the column containing the name
 			// And convert year headings to integers
 			col = -1;
-			for(i = 0; i < data.raw.fields.name.length; i++){
-				n = data.raw.fields.name[i];
-				if(parseFloat(n) == n) data.raw.fields.name[i] = parseInt(n);
-				if(data.raw.fields.name[i] == data.key) col = i;
-				// Loop over columns
-				for(c = 0; c < data.raw.fields.name.length; c++){
-					if(parseInt(data.raw.fields.name[c])==data.raw.fields.name[c]){
-						for(r = 0; r < data.raw.rows.length; r++){
-							// Convert to numbers - if the number doesn't parse replace with zero
-							data.raw.rows[r][c] = (parseFloat(data.raw.rows[r][c])||0);
-						}
+			for(c = 0; c < data.raw.fields.name.length; c++){
+				n = data.raw.fields.name[c];
+				if(parseFloat(n) == n) data.raw.fields.name[c] = parseInt(n);
+				if(data.raw.fields.name[c] == data.key) col = c;
+				if(parseInt(data.raw.fields.name[c])==data.raw.fields.name[c]){
+					for(r = 0; r < data.raw.rows.length; r++){
+						// Convert to numbers - if the number doesn't parse replace with zero
+						data.raw.rows[r][c] = (parseFloat(data.raw.rows[r][c])||0);
+						if(typeof this.parameters[parameter].scaleValuesBy==="number") data.raw.rows[r][c] *= this.parameters[parameter].scaleValuesBy;
 					}
 				}
 			}
@@ -685,9 +719,7 @@
 			}
 		}
 
-		this.log('INFO','buildMap2');
-
-		var layer,_geojson,gotlayers,visible,id;
+		var layer,_geojson,gotlayers,id;
 
 		if(this.map){
 
@@ -745,7 +777,7 @@
 				};
 
 				// Remove existing layers
-				for(var l in this.layers){
+				for(l in this.layers){
 					if(this.layers[l].layer){
 						this.layers[l].layer.remove();
 						delete this.layers[l].layer;
@@ -800,7 +832,7 @@
 						this.views[this.options.view].layers[l].colour.addScale(this.views[this.options.view].layers[l].colourscale,getRGBAstr(color,0.0)+' 0%, '+getRGBAstr(color,0.8)+' 100%');
 
 						// If the colourscale for this parameter is diverging we change the scale
-						if(this.parameters[this.options.parameter].diverging){
+						if(this.parameters[this.options.parameter] && this.parameters[this.options.parameter].diverging){
 							// Set a text label (not used anywhere yet)
 							this.views[this.options.view].layers[l].colourscale = 'DFES-diverging';
 							// Set the colour stops from ncolour (opacity 1) to white (opacity 0) to colour (opacity 1)
@@ -879,13 +911,9 @@
 			}
 		}
 		
-
-		this.log('INFO','buildMap3');
-		
 		// Trigger any event callback
 		if(typeof this.events.buildMap==="function") this.events.buildMap.call(this);
 
-		this.log('INFO','buildMap4');
 		return this;
 	};
 
@@ -920,7 +948,7 @@
 					'value': v,
 					'properties':feature.properties,
 					'scenario': me.data.scenarios[me.options.scenario],
-					'parameter': me.parameters[me.options.parameter]
+					'parameter': me.parameters[me.options.parameter]||{}
 				});
 			}
 		}
@@ -933,8 +961,8 @@
 		if(!attr.type) attr.type = 'message';
 		if(msg) this.log(attr.type,msg);
 		var css = "b5-bg";
-		if(attr.type=="ERROR") css = "c12-bg";
-		if(attr.type=="WARNING") css = "c14-bg";
+		if(attr.type=="ERROR") css = "error";
+		if(attr.type=="WARNING") css = "warning";
 
 		var msgel = S('.message');
 		if(msgel.length == 0){
@@ -959,18 +987,21 @@
 	
 	FES.prototype.formatValue = function(v,param){
 		if(!param) param = this.options.parameter;
-		var units = this.parameters[param].units;
-		var format;
-		// Do we need to round it?
-		if(typeof this.parameters[param].dp==="number") v = parseFloat(v.toFixed(this.parameters[param].dp));
-		if(this.parameters[param].format){
-			try {
-				format = eval('('+this.parameters[param].format+')');
-			}catch(e){ }
-			return format.call(this,v,units);
-		}else{
-			return v.toLocaleString()+(units ? '&thinsp;'+units : '');
+		if(this.parameters[param]){
+			var units = this.parameters[param].units;
+			var format;
+			// Do we need to round it?
+			if(typeof this.parameters[param].dp==="number") v = parseFloat(v.toFixed(this.parameters[param].dp));
+			if(this.parameters[param].format){
+				try {
+					format = eval('('+this.parameters[param].format+')');
+				}catch(e){ }
+				return format.call(this,v,units);
+			}else{
+				return v.toLocaleString()+(units ? '&thinsp;'+units : '');
+			}
 		}
+		return '?';
 	};
 
 	FES.prototype.makeScaleBar = function(grad,attr){
@@ -1082,7 +1113,8 @@
 			for(j=0; j < line.length; j++){
 
 				// Remove any quotes around the column value
-				datum[j] = (line[j][0]=='"' && line[j][line[j].length-1]=='"') ? line[j].substring(1,line[j].length-1) : line[j];
+				datum[j] = (line[j] && line[j][0]=='"' && line[j][line[j].length-1]=='"') ? line[j].substring(1,line[j].length-1) : line[j];
+				if(typeof datum[j]==="undefined") datum[j] = "";
 
 				// If the value parses as a float
 				if(typeof parseFloat(datum[j])==="number" && parseFloat(datum[j]) == datum[j]){
@@ -1171,6 +1203,7 @@
 		var stringToWorkWith = this.substring(0, startpos + 1);
 		var lastIndexOf = -1;
 		var nextStop = 0;
+		var result;
 		while((result = regex.exec(stringToWorkWith)) != null) {
 			lastIndexOf = result.index;
 			regex.lastIndex = ++nextStop;
@@ -1385,7 +1418,7 @@
 			var cs,v2,pc,c,cfinal;
 			if(typeof inParts!=="boolean") inParts = false;
 			if(!scales[s]){
-				console.warn('No colour scale '+s+' exists');
+				this.log('WARNING','No colour scale '+s+' exists');
 				return '';
 			}
 			if(typeof v!=="number") v = 0;
