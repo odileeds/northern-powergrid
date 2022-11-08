@@ -1,6 +1,8 @@
 /*!
 	Open Innovations Future Energy Scenario viewer
 	Changeset:
+	1.5.5
+	- Check if drop-downs already exist in DOM
 	1.5.4
 	- Bug fix for CSV columns with quotation marks
 	1.5.3
@@ -107,27 +109,35 @@
 			S('#scale-holder').addClass('checked');
 		}
 
-		if(this.data.scenarios && S('#scenarios').length==0){
+		// Update scenarios drop-down
+		if(this.data.scenarios){
+			if(S('#scenarios').length==0) S('#scenario-holder').html('<select id="scenarios"></select>');
 			html = "";
 			for(s in this.data.scenarios) html += "<option"+(this.options.scenario == s ? " selected=\"selected\"":"")+" class=\"b1-bg\" value=\""+s+"\">"+s+"</option>";	//  class=\""+this.options.scenarios[s].css+"\"
-			S('#scenario-holder').html('<select id="scenarios">'+html+'</select>');
+			S('#scenarios').html(html);
 			S('#scenarios').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setScenario(e.currentTarget.value);
 			});
 		}
-		if(this.views && S('#view').length==0){
+
+		// Update view drop-down
+		if(this.views){
+			if(S('#view').length==0) S('#view-holder').html('<select id="views">'+html+'</select>');
 			html = "";
 			for(l in this.views){
 				if(!this.views[l].inactive) html += "<option"+(this.options.view == l ? " selected=\"selected\"":"")+" value=\""+l+"\">"+this.views[l].title+"</option>";
 			}
-			S('#view-holder').html('<select id="views">'+html+'</select>');
+			S('#views').html(html);
 			S('#views').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setView(e.currentTarget.value);
 			});
 		}
-		if(this.parameters && S('#parameters').length==0){
+
+		// Update parameters drop-down
+		if(this.parameters){
+			if(S('#parameters').length==0) S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
 			html = "";
 			if(!this.data.scenarios[this.options.scenario]) this.message('Scenario <em>"'+this.options.scenario+'"</em> is not defined in index.json.',{'id':'scenario','type':'ERROR'});
 			css = this.data.scenarios[this.options.scenario].css;
@@ -153,8 +163,12 @@
 			if(!this.parameters[this.options.parameter]){
 				this.message('No parameter '+this.options.parameter+' exists. Sorry.',{'id':'parameter','type':'ERROR'});
 			}
-			S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
-			S('#parameter-holder .about').html(this.parameters[this.options.parameter] ? (this.parameters[this.options.parameter].description||'') : '').attr('class','about '+css+'');
+			S('#parameters').html(html);
+			// Add about section after
+			var about = document.createElement('div');
+			about.setAttribute('class','about '+css);
+			about.innerHTML = this.parameters[this.options.parameter] ? (this.parameters[this.options.parameter].description||'') : '';
+			document.getElementById('parameter-holder').appendChild(about);
 			S('#parameters').on('change',{'me':this},function(e){
 				e.preventDefault();
 				e.data.me.setParameter(e.currentTarget.value);

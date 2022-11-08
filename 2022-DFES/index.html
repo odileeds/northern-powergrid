@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Northern Powergrid Future Energy Scenarios 2022</title>
-	<link rel="shortcut icon" type="image/png" href="https://www.northernpowergrid.com/public/images/favicon.png"></link>
-	<link rel="StyleSheet" href="resources/nouislider.min.css" type="text/css"></link>
-	<link rel="StyleSheet" href="resources/leaflet.css" type="text/css"></link>
-	<link rel="stylesheet" href="resources/stuquery.barchart.css" type="text/css"></link>
-	<link rel="StyleSheet" href="resources/style.css" type="text/css"></link>
+	<link rel="shortcut icon" type="image/png" href="https://www.northernpowergrid.com/sites/default/files/favicon.png" />
+	<link rel="StyleSheet" href="resources/nouislider.min.css" type="text/css" />
+	<link rel="StyleSheet" href="resources/leaflet.css" type="text/css" />
+	<link rel="stylesheet" href="resources/stuquery.barchart.css" type="text/css" />
+	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
 	<script src="resources/stuquery.js"></script>
 	<script src="resources/stuquery.barchart.min.js"></script>
 	<script src="resources/nouislider.min.js"></script>
@@ -56,11 +56,17 @@
 		<div class="columns">
 			<div class="left">
 				<h2><label for="scenarios">Choose a scenario</label>:</h2>
-				<div id="scenario-holder"></div>
+				<div id="scenario-holder">
+					<select id="scenarios"></select>
+				</div>
 				<h2><label for="parameters">Choose a parameter</label>:</h2>
-				<div id="parameter-holder"></div>
+				<div id="parameter-holder">
+					<select id="parameters"></select>
+				</div>
 				<h2><label for="views">View by</label>:</h2>
-				<div id="view-holder"></div>
+				<div id="view-holder">
+					<select id="views"></select>
+				</div>
 				<h2>Select year (<span class="year"></span>):</h2>
 				<div id="slider"></div>
 				<div><button id="play" class="scenario" title="Play">&#9658;</button> <button id="pause" class="scenario" title="Pause" disabled>&#10074;&#10074;</button></div>
