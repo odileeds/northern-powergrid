@@ -8,18 +8,18 @@
 			"ev": { "dataBy": "primary", "file": "primaries/EV-FS.csv", "key": "Primary" },
 			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-FS.csv", "key": "Primary" },
 			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-FS.csv", "key": "Primary" },
-			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-SP.csv", "key": "Primary" },			
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-FS.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-SP.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-FS.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-FS.csv", "key": "Primary" },
-			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-SP.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-FS.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-FS.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-SP.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-SP.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-SP.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-SP.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-FS.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-FS.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-FS.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS.csv", "key": "Primary" }
 		}
 	},
 	"System transformation": {
