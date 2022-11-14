@@ -9,7 +9,7 @@
 			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-FS.csv", "key": "Primary" },
 			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-FS.csv", "key": "Primary" },
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },			
-			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-SP.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-FS.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-FS.csv", "key": "Primary" },
 			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-FS.csv", "key": "Primary" },
