@@ -550,34 +550,34 @@ YARBOROUGH ROAD 33/11KV,1.455,1.474,1.496,1.518,1.539,1.605,1.68,1.767,1.853,1.9
 YEW GREEN ROAD,0.634,0.651,0.665,0.679,0.693,0.737,0.787,0.844,0.901,0.971,1.041,1.109,1.178,1.246,1.316,1.39,1.463,1.536,1.609,1.681,1.752,1.824,1.896,1.968,2.04,2.111,2.183,2.255,2.327,2.399,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
 YORK ROAD,0.297,0.317,0.334,0.351,0.368,0.419,0.479,0.548,0.615,0.699,0.783,0.865,0.947,1.029,1.113,1.2,1.287,1.375,1.461,1.547,1.633,1.718,1.804,1.89,1.975,2.061,2.147,2.232,2.318,2.404,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
 YORK STREET,0.456,0.464,0.472,0.48,0.489,0.514,0.543,0.576,0.609,0.65,0.692,0.733,0.774,0.816,0.857,0.899,0.94,0.982,1.023,1.065,1.106,1.148,1.189,1.23,1.272,1.313,1.355,1.396,1.438,1.479,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Barnsley Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Bradford Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Calderdale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-County Durham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Darlington Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Doncaster Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-East Riding of Yorkshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Gateshead Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Hambleton Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Harrogate Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Hartlepool Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-"Kingston upon Hull, City of Direct to Supply Points",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Kirklees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Leeds Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Newcastle upon Tyne Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-North East Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-North Lincolnshire Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-North Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Northumberland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Redcar and Cleveland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Rotherham Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Ryedale Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Scarborough Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Selby Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Sheffield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-South Tyneside Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Stockton-on-Tees Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Sunderland Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-Wakefield Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-West Lindsey Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgY,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
-York Direct to Supply Points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NPgN,Primary,NG FES - Falling Short (EE CF),Total installed renewable generation capacity (MW)
+Barnsley Direct to Supply Points,0,6.659,6.741,6.898,7.098,7.303,7.651,8.071,8.632,9.37,10.34,11.518,12.659,14.196,15.195,15.987,15.928,15.87,16.227,16.299,16.787,17.27,17.752,18.231,18.705,19.176,19.644,20.109,20.57,21.029,0,0,,
+Bradford Direct to Supply Points,0,2.698,2.732,2.795,2.876,2.959,3.101,3.271,3.498,3.797,4.19,4.668,5.13,5.753,6.157,6.479,6.455,6.432,6.576,6.606,6.803,6.999,7.194,7.388,7.58,7.771,7.961,8.149,8.336,8.522,0,0,,
+Calderdale Direct to Supply Points,38.629,40.812,40.838,40.89,40.955,41.022,41.136,41.274,41.458,41.699,42.017,42.403,42.777,43.281,43.608,43.868,43.849,43.829,43.947,43.97,44.13,44.288,44.446,44.602,44.758,44.913,45.066,45.218,45.369,45.52,0,0,,
+County Durham Direct to Supply Points,38.8,70.36,70.755,71.432,72.268,73.098,74.566,76.347,78.751,81.937,86.149,91.284,96.249,102.968,107.32,110.759,110.44,110.123,111.662,111.958,114.098,116.222,118.331,120.426,122.508,124.573,126.625,128.663,130.685,132.691,0,0,,
+Darlington Direct to Supply Points,12.3,19.124,19.21,19.357,19.538,19.717,20.035,20.42,20.94,21.628,22.539,23.65,24.723,26.176,27.118,27.861,27.792,27.724,28.056,28.121,28.583,29.043,29.499,29.952,30.402,30.848,31.292,31.733,32.17,32.605,0,0,,
+Doncaster Direct to Supply Points,93.299,104.958,105.102,105.378,105.727,106.086,106.697,107.431,108.413,109.706,111.403,113.467,115.463,118.155,119.904,121.29,121.189,121.085,121.713,121.839,122.692,123.54,124.384,125.22,126.051,126.876,127.695,128.509,129.318,130.12,0,0,,
+East Riding of Yorkshire Direct to Supply Points,162.91,195.526,195.93,196.7,197.679,198.681,200.388,202.444,205.19,208.806,213.556,219.33,224.913,232.443,237.335,241.214,240.926,240.641,242.397,242.745,245.135,247.508,249.864,252.206,254.531,256.839,259.132,261.409,263.669,265.913,0,0,,
+Gateshead Direct to Supply Points,0,12.652,12.811,13.081,13.416,13.749,14.338,15.052,16.016,17.293,18.981,21.04,23.03,25.724,27.469,28.846,28.72,28.592,29.209,29.329,30.186,31.037,31.883,32.722,33.557,34.386,35.207,36.024,36.834,37.64,0,0,,
+Hambleton Direct to Supply Points,49,77.418,77.774,78.382,79.135,79.883,81.204,82.808,84.972,87.842,91.634,96.258,100.729,106.778,110.696,113.793,113.506,113.22,114.607,114.874,116.8,118.712,120.612,122.499,124.372,126.233,128.08,129.915,131.736,133.542,0,0,,
+Harrogate Direct to Supply Points,16.055,22.112,22.188,22.318,22.478,22.637,22.92,23.261,23.723,24.334,25.142,26.128,27.081,28.371,29.206,29.866,29.804,29.743,30.039,30.096,30.506,30.914,31.319,31.721,32.12,32.517,32.911,33.302,33.69,34.075,0,0,,
+Hartlepool Direct to Supply Points,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+"Kingston upon Hull, City of Direct to Supply Points",36.2,37.559,37.575,37.608,37.648,37.69,37.761,37.847,37.961,38.111,38.309,38.55,38.783,39.097,39.301,39.462,39.45,39.438,39.511,39.526,39.626,39.724,39.823,39.92,40.017,40.113,40.209,40.303,40.398,40.491,0,0,,
+Kirklees Direct to Supply Points,0,2.494,2.525,2.584,2.658,2.734,2.865,3.023,3.233,3.509,3.872,4.314,4.741,5.317,5.69,5.987,5.966,5.943,6.078,6.105,6.287,6.468,6.649,6.827,7.005,7.182,7.357,7.531,7.705,7.876,0,0,,
+Leeds Direct to Supply Points,9.696,26.095,26.299,26.685,27.176,27.68,28.539,29.572,30.955,32.771,35.16,38.062,40.869,44.656,47.117,49.065,48.921,48.778,49.66,49.836,51.038,52.231,53.416,54.592,55.761,56.922,58.074,59.219,60.355,61.483,0,0,,
+Newcastle upon Tyne Direct to Supply Points,0,1.019,1.032,1.053,1.08,1.107,1.154,1.212,1.289,1.393,1.528,1.693,1.854,2.071,2.211,2.322,2.312,2.302,2.351,2.361,2.43,2.499,2.567,2.634,2.702,2.768,2.835,2.9,2.966,3.031,0,0,,
+North East Lincolnshire Direct to Supply Points,65.4,102.931,103.394,104.28,105.406,106.559,108.525,110.888,114.05,118.209,123.675,130.317,136.742,145.407,151.036,155.498,155.169,154.839,156.86,157.263,160.01,162.741,165.453,168.147,170.82,173.477,176.115,178.734,181.336,183.919,0,0,,
+North Lincolnshire Direct to Supply Points,126.587,138.139,138.282,138.554,138.902,139.256,139.862,140.59,141.562,142.842,144.526,146.57,148.548,151.214,152.948,154.322,154.22,154.119,154.741,154.864,155.711,156.551,157.386,158.214,159.039,159.856,160.668,161.474,162.275,163.07,0,0,,
+North Tyneside Direct to Supply Points,0,0.388,0.393,0.401,0.412,0.422,0.44,0.462,0.492,0.531,0.583,0.646,0.707,0.79,0.844,0.886,0.882,0.878,0.896,0.901,0.927,0.953,0.979,1.004,1.03,1.056,1.081,1.106,1.131,1.156,0,0,,
+Northumberland Direct to Supply Points,80.651,95.87,96.061,96.387,96.79,97.19,97.898,98.757,99.916,101.453,103.484,105.96,108.355,111.594,113.693,115.351,115.197,115.044,115.787,115.93,116.961,117.985,119.003,120.013,121.017,122.013,123.002,123.985,124.96,125.928,0,0,,
+Redcar and Cleveland Direct to Supply Points,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+Rotherham Direct to Supply Points,0,6.046,6.121,6.264,6.445,6.631,6.948,7.329,7.838,8.508,9.389,10.459,11.494,12.89,13.797,14.516,14.463,14.41,14.735,14.8,15.243,15.683,16.119,16.553,16.984,17.412,17.837,18.259,18.678,19.095,0,0,,
+Ryedale Direct to Supply Points,0,30,30.376,31.019,31.813,32.603,33.998,35.691,37.976,41.005,45.008,49.89,54.61,60.996,65.133,68.402,68.098,67.797,69.261,69.543,71.576,73.595,75.6,77.592,79.57,81.534,83.484,85.421,87.343,89.251,0,0,,
+Scarborough Direct to Supply Points,0,6.904,6.991,7.138,7.321,7.503,7.824,8.214,8.74,9.437,10.358,11.481,12.568,14.037,14.989,15.742,15.672,15.602,15.939,16.004,16.472,16.937,17.398,17.857,18.312,18.764,19.213,19.658,20.101,20.54,0,0,,
+Selby Direct to Supply Points,38.577,42.658,42.708,42.805,42.927,43.052,43.266,43.523,43.867,44.319,44.913,45.636,46.334,47.276,47.888,48.374,48.338,48.302,48.522,48.565,48.864,49.161,49.456,49.749,50.04,50.328,50.615,50.9,51.183,51.464,0,0,,
+Sheffield Direct to Supply Points,32,32.573,32.58,32.594,32.611,32.629,32.659,32.695,32.744,32.807,32.891,32.992,33.091,33.223,33.308,33.377,33.372,33.367,33.398,33.404,33.446,33.488,33.529,33.57,33.612,33.652,33.693,33.732,33.772,33.811,0,0,,
+South Tyneside Direct to Supply Points,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+Stockton-on-Tees Direct to Supply Points,10.26,19.409,19.523,19.72,19.962,20.203,20.629,21.145,21.842,22.765,23.987,25.476,26.915,28.862,30.124,31.121,31.028,30.936,31.383,31.469,32.089,32.704,33.316,33.924,34.527,35.126,35.721,36.311,36.897,37.48,0,0,,
+Sunderland Direct to Supply Points,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+Wakefield Direct to Supply Points,41.77,51.558,51.678,51.91,52.204,52.504,53.016,53.634,54.458,55.542,56.97,58.7,60.376,62.636,64.104,65.269,65.182,65.097,65.623,65.728,66.444,67.158,67.865,68.567,69.265,69.956,70.647,71.328,72.008,72.681,0,0,,
+West Lindsey Direct to Supply Points,0,18.571,18.8,19.239,19.796,20.366,21.339,22.509,24.073,26.131,28.836,32.123,35.302,39.589,42.375,44.583,44.42,44.257,45.256,45.455,46.816,48.167,49.509,50.841,52.165,53.479,54.785,56.081,57.368,58.646,0,0,,
+York Direct to Supply Points,0,6.417,6.497,6.635,6.805,6.973,7.272,7.634,8.123,8.771,9.627,10.671,11.681,13.046,13.931,14.63,14.566,14.501,14.814,14.875,15.309,15.741,16.17,16.596,17.019,17.439,17.856,18.271,18.682,19.09,0,0,,

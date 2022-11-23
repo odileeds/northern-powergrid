@@ -11,15 +11,15 @@
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-FS.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-FS.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-FS.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-FS.csv", "key": "Primary" },
 			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-FS.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-FS.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-FS.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-FS.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-FS.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-FS_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-FS_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-FS_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS_withDirects.csv", "key": "Primary" }
 		}
 	},
 	"System transformation": {
@@ -34,15 +34,15 @@
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-ST.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-ST.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-ST.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-ST.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-ST_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-ST.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-ST.csv", "key": "Primary" },
 			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-ST.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-ST.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-ST.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-ST.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-ST.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-ST.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-ST_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-ST_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-ST_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-ST_withDirects.csv", "key": "Primary" }
 		}
 	},
 	"Consumer transformation": {
@@ -57,15 +57,15 @@
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-CT.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-CT.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-CT.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-CT.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-CT_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-CT.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-CT.csv", "key": "Primary" },
 			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-CT.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-CT.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-CT.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-CT.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-CT.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-CT.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-CT_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-CT_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-CT_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-CT_withDirects.csv", "key": "Primary" }
 		}
 	},
 	"Leading the way": {
@@ -80,15 +80,15 @@
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-LTW.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-LTW.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-LTW.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-LTW.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-LTW_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-LTW.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-LTW.csv", "key": "Primary" },
 			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-LTW.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-LTW.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-LTW.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-LTW.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-LTW.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-LTW.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-LTW_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-LTW_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" }
 		}
 	},
 	"NPg Planning Scenario": {
@@ -102,15 +102,15 @@
 			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-PS.csv", "key": "Primary" },			
 			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-PS.csv", "key": "Primary" },			
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-PS.csv", "key": "Primary" },
-			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-PS.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-PS_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-PS.csv", "key": "Primary" },
 			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-PS.csv", "key": "Primary" },
 			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-PS.csv", "key": "Primary" },
 			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-PS.csv", "key": "Primary" },
-			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-PS.csv", "key": "Primary" },
-			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-PS.csv", "key": "Primary" },
-			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-PS.csv", "key": "Primary" },
-			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-PS.csv", "key": "Primary" }
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-PS_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-PS_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-PS_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-PS_withDirects.csv", "key": "Primary" }
 		}
 	}
 }
