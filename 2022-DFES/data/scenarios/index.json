@@ -1,5 +1,5 @@
 {
-	"Falling short": {
+	"Falling Short": {
 		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.<ul><li>Minimal behaviour change.</li><li>Decarbonisation in power and transport but not heat.</li></ul></li></ul>",
 		"color": "#827B7A",
 		"negativecolor": "#d7191c",
@@ -22,7 +22,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"System transformation": {
+	"System Transformation": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Hydrogen for heating.</li><li>Consumers less inclined to change behaviour.</li><li>Lower energy efficiency.</li><li>Supply side flexibility</li></ul></li></ul>",
 		"color": "#5BCBF5",
 		"negativecolor": "#d7191c",
@@ -45,7 +45,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-ST_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"Consumer transformation": {
+	"Consumer Transformation": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Electrified heating.</li><li>Consumers willing to change behaviour.</li><li>High energy efficiency.</li><li>Demand side flexibility.</li></ul></li></ul>",
 		"color": "#FFBF22",
 		"negativecolor": "#5e3c99",
@@ -68,7 +68,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-CT_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"Leading the way": {
+	"Leading The Way": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2047.<ul><li>Fastest credible decarbonisation</li><li>Significant lifestyle change.</li><li>Mixture of hydrogen and electrification for heating.</li></ul></li></ul>",
 		"color": "#C2CD23",
 		"negativecolor": "#d01c8b",
