@@ -30,4 +30,4 @@ We wanted to also show the pseudo-Primaries on the map as small "cut-outs" at th
 11. The difference of the existing Primaries and the pseudo-Primary layer was found using the `Difference` tool in QGIS. This gives us holes where the pseudo-Primaries are;
 12. Use the `Merge vector layers` tool to combine the new difference layer with the pseudo-Primary layer;
 13. Export the result with only the `Primary` key and with coordinate precision set to 4 decimal places;
-14. Use a JSON minifier to shrink the file size.
+14. Use a [GeoJSON minifier](https://open-innovations.github.io/geojson-minify/) to shrink the file size.
