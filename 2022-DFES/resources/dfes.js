@@ -1,6 +1,8 @@
 /*!
 	Open Innovations Future Energy Scenario viewer
 	Changeset:
+	1.5.6
+	- Add error message when missing mapping
 	1.5.5
 	- Check if drop-downs already exist in DOM
 	1.5.4
@@ -28,7 +30,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.5.4";
+		this.version = "1.5.6";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -137,7 +139,7 @@
 
 		// Update parameters drop-down
 		if(this.parameters){
-			if(S('#parameters').length==0) S('#parameter-holder').html('<select id="parameters">'+html+'</select><div class="about"></div>');
+			if(S('#parameters').length==0) S('#parameter-holder').html('<select id="parameters">'+html+'</select>');
 			html = "";
 			if(!this.data.scenarios[this.options.scenario]) this.message('Scenario <em>"'+this.options.scenario+'"</em> is not defined in index.json.',{'id':'scenario','type':'ERROR'});
 			css = this.data.scenarios[this.options.scenario].css;
@@ -469,6 +471,10 @@
 		
 		if(!data.layers[v]){
 			// Have we loaded the code mapping for this view's 
+			if(!this.mapping[data.dataBy][id]){
+				this.message('Unable to load mapping from <em>'+data.dataBy+'</em> to <em>'+id+'</em>',{'id':'error','type':'ERROR'});
+				return this;
+			}
 			if(!this.mapping[data.dataBy][id].data && typeof this.mapping[data.dataBy][id].file==="string"){
 				// Load from JSON file
 				S().ajax(path+this.mapping[data.dataBy][id].file,{
