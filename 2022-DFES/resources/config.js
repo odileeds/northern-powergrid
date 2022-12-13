@@ -10,7 +10,7 @@ S(document).ready(function(){
 			"key": "2021",
 			"parameter": "ev",
 			"scale": "relative",
-			"years": {"min":2020, "max":2050},
+			"years": {"min":2021, "max":2050},
 			"map": {
 				"bounds": [[52.6497,-5.5151],[56.01680,2.35107]],
 				"attribution": "Vis: <a href=\"https://open-innovations.org/projects/\">Open Innovations</a>, Data: NPG/Element Energy"
