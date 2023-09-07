@@ -1,6 +1,8 @@
 /*!
 	Open Innovations Future Energy Scenario viewer
 	Changeset:
+	1.5.7
+	- Send name key to popup
 	1.5.6
 	- Add error message when missing mapping
 	1.5.5
@@ -30,7 +32,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.5.6";
+		this.version = "1.5.7";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -965,6 +967,7 @@
 					'view':view,
 					'id':key,
 					'key': (me.layers[lid].key||""),
+					'name': (me.layers[lid].name||""),
 					'value': v,
 					'properties':feature.properties,
 					'scenario': me.data.scenarios[me.options.scenario],

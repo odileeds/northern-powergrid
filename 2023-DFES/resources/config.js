@@ -27,11 +27,13 @@ S(document).ready(function(){
 		"layers": {
 			"LADlayer":{
 				"geojson": "data/maps/LAD2019-npg.geojson",
-				"key": "lad19cd"
+				"key": "lad19cd",
+				"name": "lad19nm"
 			},
 			"PRIMARYlayer":{
 				"geojson":"data/maps/npg-primaries-polygons-unique-2023.geojson",
-				"key": "PRIMARYNM"
+				"key": "PRIMARYNM",
+				"name": "PRIMARYNM"
 			}
 		},
 		"views":{
@@ -47,7 +49,7 @@ S(document).ready(function(){
 					"text": function(attr){
 						var popup,title,dp,value;
 						popup = '<h3>%TITLE%</h3><p>%VALUE%</p><div id="barchart"></div><p style="font-size:0.8em;margin-top: 0.25em;margin-bottom:0;text-align:center;">Primary substations (ordered)</p><p style="font-size:0.8em;margin-top:0.5em;">Columns show totals for each Primary substation associated with %TITLE%. The coloured portions show the fraction considered to be in %TITLE%. Hover over each to see details.</p>';
-						title = (attr.properties.lad19nm||'?');
+						title = (attr.properties[attr.name]||'?');
 						dp = (typeof attr.parameter.dp==="number" ? attr.parameter.dp : 2);
 						if(typeof attr.value!=="number") this.log('WARNING','No numeric value for '+attr.id)
 						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(typeof attr.value==="number" ? (dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '') : '');
@@ -67,10 +69,10 @@ S(document).ready(function(){
 							var raw = this.data.scenarios[this.options.scenario].data[this.options.parameter].raw;
 
 							// Work out the Local Authority name
-							var lad19nm = attr.id;
+							var name = attr.id;
 							if(this.layers.LADlayer){
 								for(var c = 0; c < this.layers.LADlayer.geojson.features.length; c++){
-									if(this.layers.LADlayer.geojson.features[c].properties.lad19cd==attr.id) lad19nm = this.layers.LADlayer.geojson.features[c].properties.lad19nm;
+									if(this.layers.LADlayer.geojson.features[c].properties[attr.key]==attr.id) name = this.layers.LADlayer.geojson.features[c].properties.lad19nm;
 								}
 							}
 							
@@ -90,7 +92,7 @@ S(document).ready(function(){
 
 									fracLA = this.mapping.primary.LADlayer.data[p][attr.id]*v;
 									fracOther = v - fracLA;
-									data.push([p,[v,p+'<br />Total: %VALUE%<br />'+(this.mapping.primary.LADlayer.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+lad19nm,fracLA,fracOther]]);
+									data.push([p,[v,p+'<br />Total: %VALUE%<br />'+(this.mapping.primary.LADlayer.data[p][attr.id]*100).toFixed(2).replace(/\.?0+$/,"")+'% is in '+name,fracLA,fracOther]]);
 								}
 							}
 
@@ -154,7 +156,7 @@ S(document).ready(function(){
 					"text": function(attr){
 						var popup,title,dp,value;
 						popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
-						title = (attr.properties.PRIMARYNM||'?');
+						title = (attr.properties[attr.name]||'?');
 						dp = (typeof attr.parameter.dp==="number" ? attr.parameter.dp : 2);
 						if(typeof attr.value!=="number") this.log('WARNING','No numeric value for '+attr.id)
 						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(typeof attr.value==="number" ? (dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '') : '?');
@@ -177,7 +179,7 @@ S(document).ready(function(){
 					"text": function(attr){
 						var popup,title,dp,value;
 						popup = '<h3>%TITLE%</h3><p>%VALUE%</p>';
-						title = (attr.properties.PRIMARYNM||'?');
+						title = (attr.properties[attr.name]||'?');
 						dp = (typeof attr.parameter.dp==="number" ? attr.parameter.dp : 2);
 						if(typeof attr.value!=="number") this.log('WARNING','No numeric value for '+attr.id)
 						value = '<strong>'+attr.parameter.title+' '+this.options.key+':</strong> '+(typeof attr.value==="number" ? (dp==0 ? Math.round(attr.value) : attr.value.toFixed(dp)).toLocaleString()+''+(attr.parameter.units ? '&thinsp;'+attr.parameter.units : '') : '?');
@@ -333,7 +335,6 @@ S(document).ready(function(){
 					}
 					function findPrimary(_obj,data){
 						var matched,j,l,i,geojson;
-
 						// Loop through layers
 						for(j = 0; j < _obj.views[_obj.options.view].layers.length; j++){
 							l = _obj.views[_obj.options.view].layers[j].id;
@@ -341,26 +342,24 @@ S(document).ready(function(){
 							if(l=="PRIMARYlayer"){
 								geojson = L.geoJSON(_obj.layers[l].geojson);
 								matched = leafletPip.pointInLayer([data.data.attributes.long,data.data.attributes.lat],geojson);
-								if(matched.length==1) return matched[0].feature.properties['PRIMARYNM'];
+								if(matched.length==1) return matched[0].feature.properties[_obj.layers[l].name];
 							}
 						}
 						return "";
 					}
 					if(this.search){
-						var l,f,i,j;
+						var l,f,i,j,name,code;
 						this.search._added = {};
 						this.search.clearItems();
 						for(j = 0; j < this.views[this.options.view].layers.length; j++){
 							l = this.views[this.options.view].layers[j].id;
-							key = "";
-							if(l=="LADlayer") key = "lad19nm";
-							else if(l=="PRIMARYlayer") key = "PRIMARYNM";
-							if(this.layers[l].geojson && this.layers[l].geojson.features && this.layers[l].key && key){
+							name = this.layers[l].name;
+							code = this.layers[l].key;
+							if(this.layers[l].geojson && this.layers[l].geojson.features && code && name){
 								// If we haven't already processed this layer we do so now
 								if(!this.search._added[l]){
-									//console.log('adding',l);
 									f = this.layers[l].geojson.features;
-									for(i = 0; i < f.length; i++) this.search.addItems({'name':f[i].properties[key]||"?",'id':f[i].properties[this.layers[l].key]||"",'i':i,'layer':l});
+									for(i = 0; i < f.length; i++) this.search.addItems({'name':f[i].properties[name]||"?",'id':f[i].properties[code]||"",'i':i,'layer':l});
 									this.search._added[l] = true;
 								}
 							}
