@@ -1,0 +1,116 @@
+{
+	"Falling Short": {
+		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.<ul><li>Minimal behaviour change.</li><li>Decarbonisation in power and transport but not heat.</li></ul></li></ul>",
+		"color": "#827B7A",
+		"negativecolor": "#d7191c",
+		"css": "falling-short",
+		"data": {
+			"ev": { "dataBy": "primary", "file": "primaries/EV-FS.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-FS.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-FS.csv", "key": "Primary" },
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-FS.csv", "key": "Primary" },			
+			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-FS.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS_withDirects.csv", "key": "Primary" },
+			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-FS.csv", "key": "Primary" },
+			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-FS.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-FS.csv", "key": "Primary" },
+			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-FS.csv", "key": "Primary" },
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-FS_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-FS_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-FS_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS_withDirects.csv", "key": "Primary" }
+		}
+	},
+	"System Transformation": {
+		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Hydrogen for heating.</li><li>Consumers less inclined to change behaviour.</li><li>Lower energy efficiency.</li><li>Supply side flexibility</li></ul></li></ul>",
+		"color": "#5BCBF5",
+		"negativecolor": "#d7191c",
+		"css": "system-transformation",
+		"data": {
+			"ev": { "dataBy": "primary", "file": "primaries/EV-ST.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-ST.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-ST.csv", "key": "Primary" },
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-ST.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-ST.csv", "key": "Primary" },			
+			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-ST.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-ST_withDirects.csv", "key": "Primary" },
+			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-ST.csv", "key": "Primary" },
+			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-ST.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-ST.csv", "key": "Primary" },
+			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-ST.csv", "key": "Primary" },
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-ST_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-ST_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-ST_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-ST_withDirects.csv", "key": "Primary" }
+		}
+	},
+	"Consumer Transformation": {
+		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Electrified heating.</li><li>Consumers willing to change behaviour.</li><li>High energy efficiency.</li><li>Demand side flexibility.</li></ul></li></ul>",
+		"color": "#FFBF22",
+		"negativecolor": "#5e3c99",
+		"css": "consumer-transformation",
+		"data": {
+			"ev": { "dataBy": "primary", "file": "primaries/EV-CT.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-CT.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-CT.csv", "key": "Primary" },
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-CT.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-CT.csv", "key": "Primary" },			
+			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-CT.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-CT_withDirects.csv", "key": "Primary" },
+			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-CT.csv", "key": "Primary" },
+			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-CT.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-CT.csv", "key": "Primary" },
+			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-CT.csv", "key": "Primary" },
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-CT_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-CT_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-CT_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-CT_withDirects.csv", "key": "Primary" }
+		}
+	},
+	"Leading The Way": {
+		"description": "<ul><li>Achieves 100% decarbonisation by 2047.<ul><li>Fastest credible decarbonisation</li><li>Significant lifestyle change.</li><li>Mixture of hydrogen and electrification for heating.</li></ul></li></ul>",
+		"color": "#C2CD23",
+		"negativecolor": "#d01c8b",
+		"css": "leading-the-way",
+		"data": {
+			"ev": { "dataBy": "primary", "file": "primaries/EV-LTW.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-LTW.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-LTW.csv", "key": "Primary" },
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-LTW.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-LTW.csv", "key": "Primary" },			
+			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-LTW.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-LTW_withDirects.csv", "key": "Primary" },
+			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-LTW.csv", "key": "Primary" },
+			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-LTW.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-LTW.csv", "key": "Primary" },
+			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-LTW.csv", "key": "Primary" },
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-LTW_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-LTW_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" }
+		}
+	},
+	"NPg Planning Scenario": {
+		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
+		"color": "#ab1236",
+		"css": "planning-scenario",
+		"data": {
+			"ev": { "dataBy": "primary", "file": "primaries/EV-PS.csv", "key": "Primary" },
+			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-PS.csv", "key": "Primary" },
+			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-PS.csv", "key": "Primary" },
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-PS.csv", "key": "Primary" },			
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-PS.csv", "key": "Primary" },			
+			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-PS.csv", "key": "Primary" },
+			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-PS_withDirects.csv", "key": "Primary" },
+			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-PS.csv", "key": "Primary" },
+			"domestic-consumption":{ "dataBy": "primary", "file": "primaries/DOMESTIC_consumption_mWh-PS.csv", "key": "Primary" },
+			"domestic-pv":{ "dataBy": "primary", "file": "primaries/DOMPV_MW-PS.csv", "key": "Primary" },
+			"industrial-consumption":{ "dataBy": "primary", "file": "primaries/IC_consumption_mWh-PS.csv", "key": "Primary" },
+			"industrial-pv":{ "dataBy": "primary", "file": "primaries/Large(IC)PV_MW-PS_withDirects.csv", "key": "Primary" },
+			"renewablegen":{ "dataBy": "primary", "file": "primaries/RenewableGeneration_MW-PS_withDirects.csv", "key": "Primary" },
+			"storage":{ "dataBy": "primary", "file": "primaries/Storage_MW-PS_withDirects.csv", "key": "Primary" },
+			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-PS_withDirects.csv", "key": "Primary" }
+		}
+	}
+}
