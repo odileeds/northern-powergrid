@@ -13,6 +13,7 @@
 	<script src="resources/stuquery.barchart.min.js"></script>
 	<script src="resources/nouislider.min.js"></script>
 	<script src="resources/typeahead.js"></script>
+	<script src="resources/dom-to-image.min.js"></script>
 	<script src="resources/dfes.js"></script>
 	<script src="resources/config.js"></script>
 	<script src="resources/leaflet.js"></script>
@@ -72,37 +73,52 @@
 				<div id="view-holder">
 					<select id="views"></select>
 				</div>
+				<div class="info-bubble warning" data-scale="absolute" style="display:none;"><p>To improve the contrast between areas within your chosen year you may wish to change the colour scale.</p></div>
+
 				<h2>Select year (<span class="year"></span>):</h2>
 				<div id="slider"></div>
 				<div><button id="play" class="scenario" title="Play">&#9658;</button> <button id="pause" class="scenario" title="Pause" disabled>&#10074;&#10074;</button></div>
-				<h2><label for="scale-mode">Colour scale</label>:</h2>
-				<div id="scale-holder" class="toggleinput toggler">
-					<span class="toggle-label1" title="To compare the values of different areas for the current year">In year</span>
-					<div class="toggle-bg">
-						<input type="checkbox" id="scale-mode" name="scale-mode" title="Select for an absolute scale" />
-						<span class="switch"></span>
-					</div>
-					<label class="toggle-label2" for="scale-mode" title="To compare the values of different areas across the the full range of years">By 2050</label>
+				<div class="info-bubble warning" data-scale="relative"><p>To better show changes in values over time you may wish to change the colour scale.</p></div>
+
+				<div id="download">
+					<button class="page-header__branding scenario" id="download-csv"><svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 0 32 l 32 0 l 0 -10 l -4 0 l 0 6 l -24 0 l 0 -6 l -4 0 l 0 10 M 12 5 l 8 0 l 0 10 l 8 0 l -12 12 l -12 -12 l 8 0"></path></svg> Download CSV for this view</button>
 				</div>
 			</div>
 			<div class="right">
-				<div id="map">
-					<div class="spinner">
-						<div class="sk-cube-grid">
-						<div class="sk-cube sk-cube1"></div>
-						<div class="sk-cube sk-cube2"></div>
-						<div class="sk-cube sk-cube3"></div>
-						<div class="sk-cube sk-cube4"></div>
-						<div class="sk-cube sk-cube5"></div>
-						<div class="sk-cube sk-cube6"></div>
-						<div class="sk-cube sk-cube7"></div>
-						<div class="sk-cube sk-cube8"></div>
-						<div class="sk-cube sk-cube9"></div>
+				<div id="screenshot">
+					<div id="map">
+						<div class="spinner">
+							<div class="sk-cube-grid">
+							<div class="sk-cube sk-cube1"></div>
+							<div class="sk-cube sk-cube2"></div>
+							<div class="sk-cube sk-cube3"></div>
+							<div class="sk-cube sk-cube4"></div>
+							<div class="sk-cube sk-cube5"></div>
+							<div class="sk-cube sk-cube6"></div>
+							<div class="sk-cube sk-cube7"></div>
+							<div class="sk-cube sk-cube8"></div>
+							<div class="sk-cube sk-cube9"></div>
+							</div>
 						</div>
 					</div>
+					<div id="scale"></div>
 				</div>
-				<div id="scale"></div>
-				<div id="issues"><a href="graphs.html">Graphs to accompany this tool</a> | <a href="https://github.com/odileeds/northern-powergrid/tree/master/2023-DFES/data/scenarios/primaries">Get the data</a> | <a href="https://github.com/odileeds/northern-powergrid/issues/">Report any issues you find</a> with our tool</div>
+				<div id="scale-holder" class="toggleinput toggler">
+					<label for="scale-mode">Colour scale</label>:
+					<div id="scale-holder" class="toggleinput toggler">
+						<span class="toggle-label1" title="To compare the values of different areas for the current year">In year</span>
+						<div class="toggle-bg">
+							<input type="checkbox" id="scale-mode" name="scale-mode" title="Select for an absolute scale" />
+							<span class="switch"></span>
+						</div>
+						<label class="toggle-label2" for="scale-mode" title="To compare the values of different areas across the the full range of years">By 2050</label>
+					</div>
+						
+					<div class="info-bubble warning">
+						<p>Select <strong>In year</strong> and the colour scale will change depending on the year you have selected. This will help improve contrast for each area within your chosen year. Select <strong>By 2050</strong> and the colour scale will stay the same as you move through the years.</p>
+					</div>
+				</div>
+				<div id="issues"><a href="#" onClick="saveDOMImage(document.getElementById('screenshot'));">Save map as PNG</a> | <a href="graphs.html">Graphs to accompany this tool</a> | <a href="https://github.com/odileeds/northern-powergrid/tree/master/2023-DFES/data/scenarios/primaries">Get the data</a> | <a href="https://github.com/odileeds/northern-powergrid/issues/">Report any issues you find</a> with our tool</div>
 			</div>
 		</div>
 	</div>
@@ -196,7 +212,8 @@
 			</dl>
 			
 			<h3>Geographies</h3>
-			<p>For the DFES visualisations <a href="https://open-innovations.org/blog/2019-11-27-building-electricity-distribution-geography">we created</a> <a href="data/maps/primaries-unique-all.geojson">geographies (polygons) for each Primary substation</a> in Northern Powergrid's network. We chose to use <a href="https://www.ons.gov.uk/census/2001censusandearlier/dataandproducts/outputgeography/outputareas">Output Areas</a> (2011) as these are the building blocks of census geography as used by the <a href="https://www.ons.gov.uk/">Office of National Statistics</a>. We used customer postcodes to identify each Output Area supplied by each Primary substation. Output Areas with fewer than 10 customers connected to a Primary substation were excluded. This helped with anonymisation and also reduced data issues in the customer database e.g. incorrect customer postcodes. We constructed representative geographies for each Primary substation from the remaining Output Areas. In cases where multiple Primary substations serve the same Output Area, that Output Area was assigned to the Primary substation that serves the most customers. </p>
+			<p>To show data on a map we need to have unique polygons for each Primary substation. To do this we used customer postcodes to identify each ONS <a href="https://www.ons.gov.uk/methodology/geography/ukgeographies/statisticalgeographies#england-and-wales">Output Area</a> supplied by each Primary substation using <a href="https://geoportal.statistics.gov.uk/datasets/ons::nspl-online-latest-centroids/about">a lookup table from ONS</a>. Output Areas with fewer than 10 customers connected to a Primary substation were excluded. This helped with anonymisation and also reduced data issues in the customer database e.g. incorrect customer postcodes. We constructed representative geographies for each Primary substation from the remaining Output Areas. In cases where multiple Primary substations serve the same Output Area, that Output Area was assigned to the Primary substation that serves the most customers. For the 2023 DFES, we have built new <a href="data/maps/npg-primaries-polygons-unique-2023.geojson">polygons for each Primary substation</a> in Northern Powergrid's network using the latest postcode data and the latest <a href="https://geoportal.statistics.gov.uk/datasets/ons::output-areas-2021-boundaries-ew-bfe/explore">Output Areas</a> produced from the 2021 Census.</p>
+			<p>Knowing the Output Areas connected to each Primary allows us to also build a mapping from Primary to Local Authority.</p>
 			<p>Some Primary substation geographies may show larger areas on the map than they cover in practice particularly in rural areas where network connectivity may be concentrated in specific parts of an Output Area. The areas shown here are representative for the purpose of showing the Future Energy Scenario model data and should not be relied upon for checking connectivity or to assess the terms of connection for specific premises.</p>
 			<p>In the Primaries layer we have included Bulk and Grid Supply Points as "pseudo-Primaries" to give Local Authorities the full picture in their area. These pseudo-Primaries appear as small cut-outs. They are used to include large generation and storage connections that are not seen by Primary substations.</p>
 			<h3>Local Authority view</h3>
