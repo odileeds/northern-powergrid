@@ -58,7 +58,7 @@ S(document).ready(function(){
 				"name": "lad19nm"
 			},
 			"PRIMARYlayer":{
-				"geojson":"data/maps/npg-primaries-polygons-unique-2023.geojson",
+				"geojson":"data/maps/npg-primaries-polygons-unique-2023_BGC.geojson",
 				"key": "PRIMARYNM",
 				"name": "PRIMARYNM"
 			}
