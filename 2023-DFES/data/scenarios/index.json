@@ -91,7 +91,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"NPg Planning Scenario": {
+	"NPg Best View": {
 		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2040-45)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
 		"color": "#ab1236",
 		"css": "planning-scenario",
