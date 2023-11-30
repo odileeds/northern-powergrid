@@ -32,7 +32,7 @@ S(document).ready(function(){
 
 	dfes = new FES({
 		"options": {
-			"scenario": "NPg Planning Scenario",
+			"scenario": "NPg Best View",
 			"view": "LAD",
 			"key": "2022",
 			"parameter": "ev",
