@@ -53,9 +53,9 @@ S(document).ready(function(){
 		},
 		"layers": {
 			"LADlayer":{
-				"geojson": "data/maps/LAD2019-npg.geojson",
-				"key": "lad19cd",
-				"name": "lad19nm"
+				"geojson": "data/maps/LAD2023-npg.geojson",
+				"key": "LAD23CD",
+				"name": "LAD23NM"
 			},
 			"PRIMARYlayer":{
 				"geojson":"data/maps/npg-primaries-polygons-unique-2023_BGC.geojson",
@@ -99,7 +99,7 @@ S(document).ready(function(){
 							var name = attr.id;
 							if(this.layers.LADlayer){
 								for(var c = 0; c < this.layers.LADlayer.geojson.features.length; c++){
-									if(this.layers.LADlayer.geojson.features[c].properties[attr.key]==attr.id) name = this.layers.LADlayer.geojson.features[c].properties.lad19nm;
+									if(this.layers.LADlayer.geojson.features[c].properties[attr.key]==attr.id) name = this.layers.LADlayer.geojson.features[c].properties.LAD23NM;
 								}
 							}
 							
