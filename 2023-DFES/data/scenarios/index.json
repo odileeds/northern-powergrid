@@ -92,7 +92,7 @@
 		}
 	},
 	"NPg Best View": {
-		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (approximately 2047)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
+		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (by the late 2040s)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
 		"color": "#ab1236",
 		"css": "planning-scenario",
 		"data": {
