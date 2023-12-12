@@ -225,7 +225,6 @@ S(document).ready(function(){
 			"setScale": function(t){
 				var abs = document.querySelectorAll("[data-scale='absolute']");
 				var rel = document.querySelectorAll("[data-scale='relative']");
-				console.log('setScale',abs,rel,t);
 				if(abs.length > 0) abs.forEach(function(e){ e.style.display = (t=="absolute") ? '' : 'none'; });
 				if(rel.length > 0) rel.forEach(function(e){ e.style.display = (t=="relative") ? '' : 'none'; });
 				return this;
