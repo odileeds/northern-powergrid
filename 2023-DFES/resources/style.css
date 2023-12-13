@@ -34,16 +34,13 @@
 .planning-scenario-text { color: #ab1236!important; }
 
 
-.message {
-	text-align: center;
-	padding: 2em;
-}
+.message { text-align: center; }
 .warning {
 	color: rgb(95, 82, 7);
 	background-color: rgb(251, 245, 208);
 	filter: drop-shadow(0px 0px 1px rgb(95, 82, 7));
 }
-
+.holder > *:last-child { margin-bottom: 0; }
 
 ol { list-style: decimal; margin-left: 2em; margin-bottom: 1em; }
 ol li { margin-bottom: 1em; }
@@ -526,7 +523,7 @@ footer ul, footer ol { margin-left: 2em; }
 #download { margin-top: 2em; text-align: center; }
 #download button { margin: auto; width: 100%; line-height: 1.5em; margin-bottom: 0.5em; }
 #about h2 + p, #about h3 + p, #about h4 + p { margin-top: 0.5em; }
-#about h2 { margin-top: 3em; }
+#about h2 { margin-top: 0em; }
 #about h3 { margin-top: 2em; }
 #about h4 { margin-top: 1em; }
 .thickline { height: 10px; }
