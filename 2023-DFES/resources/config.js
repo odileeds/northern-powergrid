@@ -229,6 +229,39 @@ S(document).ready(function(){
 				if(rel.length > 0) rel.forEach(function(e){ e.style.display = (t=="relative") ? '' : 'none'; });
 				return this;
 			},
+			"initMap": function(){
+				// CartoDB map
+				L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
+					attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+					subdomains: 'abcd',
+					maxZoom: 19
+				}).addTo(this.map);
+
+				// Create a map label pane so labels can sit above polygons
+				var labels = L.LayerGroup.placeNameLayer('https://open-innovations.org/projects/leaflet-place-name-layer/tileset/{z}/{x}/{y}.tsv',{
+					zooms: [2, 4, 7, 9],
+					attribution: 'Labels © <a href="http://www.geonames.org/">GeoNames</a>/<a href="https://open-innovatons.org/">OI</a>',
+					padding: 3,
+					styleMarker: function(zoom,options){
+						var sty = {'color':(zoom < 9 ? '#dfdfdf':'white')};
+						if(options.code=="PPLA"){
+							sty.fontSize = (zoom >= 8 ? "0.9em" : "0.8em");
+						}else if(options.code=="PPLA2"){
+							sty.fontSize = (zoom >= 8 ? "0.8em" : "0.7em");
+						}else if(options.code=="PPLA3" || options.code=="PPL"){
+							sty.fontSize = (zoom >= 8 ? "0.65em" : "0.6em");
+							sty.color = '#dfdfdf';
+						}else if(options.code=="PPLC"){
+							sty.textTransform = "uppercase";
+							sty.color = "white";
+						}else{
+							sty.fontSize = "0.6em";
+							sty.color = "#ccc";
+						}
+						return sty;
+					}
+				}).addTo(this.map);
+			},
 			"buildMap": function(){
 				var el,div,_obj;
 				el = document.querySelector('.leaflet-top.leaflet-left');

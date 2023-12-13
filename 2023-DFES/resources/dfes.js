@@ -1,6 +1,8 @@
 /*!
 	Open Innovations Future Energy Scenario viewer
 	Changeset:
+	1.5.8
+	- Can set different map tiles/labels with on.initMap
 	1.5.7
 	- Send name key to popup
 	1.5.6
@@ -32,7 +34,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.5.7";
+		this.version = "1.5.8";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -689,23 +691,26 @@
 			this.map.attributionControl._attributions = {};
 			if(this.options.map && this.options.map.attribution) this.map.attributionControl.setPrefix('').addAttribution(this.options.map.attribution);
 
-			// Create a map label pane so labels can sit above polygons
-			this.map.createPane('labels');
-			this.map.getPane('labels').style.zIndex = 650;
-			this.map.getPane('labels').style.pointerEvents = 'none';
+			if(typeof this.events.initMap==="function") this.events.initMap.call(this);
+			else{
+				// Create a map label pane so labels can sit above polygons
+				this.map.createPane('labels');
+				this.map.getPane('labels').style.zIndex = 650;
+				this.map.getPane('labels').style.pointerEvents = 'none';
 
-			L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
-				attribution: '',
-				pane: 'labels'
-			}).addTo(this.map);
-			
-			// CartoDB map
-			L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
-				attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-				subdomains: 'abcd',
-				maxZoom: 19
-			}).addTo(this.map);
-			
+				L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+					attribution: '',
+					pane: 'labels'
+				}).addTo(this.map);
+				
+				// CartoDB map
+				L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
+					attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+					subdomains: 'abcd',
+					maxZoom: 19
+				}).addTo(this.map);
+			}
+				
 			info = L.control({'position':'topright'});
 			info.onAdd = function(map){
 				this._div = L.DomUtil.create('div','scenario');
