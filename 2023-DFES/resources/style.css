@@ -684,7 +684,7 @@ button:disabled { opacity: 0.8; filter: grayscale(100%); cursor: not-allowed; }
 .leaflet-place-name-layer-marker > span {
 	-webkit-text-stroke: 0.3em rgba(255,255,255,0.9);
 	paint-order: stroke fill;
-	color: rgba(0,0,0,0.7);
+	color: #48545e;
 	font-weight: 300;
 	mix-blend-mode: difference;
 }
