@@ -156,7 +156,6 @@
 				pane.setAttribute('data-zoom',this._zoom);
 				if(typeof this.options.styleLayer==="function"){
 					sty = this.options.styleLayer.call(this,this._zoom)||{};
-					console.log('here',sty);
 					if(this._prevsty){
 						for(p in this._prevsty){
 							if(typeof sty[p]==="undefined"){
