@@ -1,0 +1,64 @@
+<svg width="640" height="320" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="overflow:display" preserveAspectRatio="xMinYMin meet" overflow="visible">
+<defs>
+	<style>
+	.data-series path.line { fill-opacity: 0; }
+	.data-series path.line.dotted { stroke-dasharray: 12 20 }
+	.data-series circle { display: none; }
+	.data-series:hover path.line, .data-series.on path.line { stroke-width: 5; }
+	.data-series:hover circle, .data-series.on circle { display: inline; }
+	.data-series circle:hover, .data-series circle.on { r: 6px!important; fill: black; }
+	.grid { font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; }
+	.grid line { stroke: rgb(0,0,0); stroke-width: 2; stroke-linecap: round; }
+	.grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(10px); }
+	.grid.grid-y text { text-anchor: end; dominant-baseline: middle; transform: translateX(-10px); }
+	</style>
+</defs>
+<g class="grid grid-y">
+	<line x1="50" y1="270" x2="630" y2="270" data-left="50"></line>
+	<text x="50" y="270" text-anchor="end">0</text>
+	<text x="50" y="194.406406877767" text-anchor="end">10</text>
+	<text x="50" y="118.812813755533" text-anchor="end">20</text>
+	<text x="50" y="43.2192206332996" text-anchor="end">30</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);">Mt CO2(e)</text>
+</g>
+<g class="grid grid-x">
+	<line class="tick" x1="210" y1="270" x2="210" y2="275"></line>
+	<text x="210" y="270" text-anchor="middle">2030</text>
+	<line class="tick" x1="410" y1="270" x2="410" y2="275"></line>
+	<text x="410" y="270" text-anchor="middle">2040</text>
+	<line class="tick" x1="610" y1="270" x2="610" y2="275"></line>
+	<text x="610" y="270" text-anchor="middle">2050</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);"></text>
+</g>
+<g data-scenario="npg-planning-scenario" class="data-series">	<path d="M 50.00,10.00L 70.00,19.63L 90.00,25.67L 110.00,36.50L 130.00,55.83L 150.00,72.06L 170.00,87.21L 190.00,101.43L 210.00,117.12L 230.00,131.38L 250.00,147.19L 270.00,161.51L 290.00,175.07L 310.00,187.66L 330.00,197.57L 350.00,206.75L 370.00,215.16L 390.00,223.20L 410.00,230.89L 430.00,238.95L 450.00,245.21L 470.00,250.50L 490.00,254.92L 510.00,259.05L 530.00,262.07L 550.00,265.05L 570.00,267.12L 590.00,267.84L 610.00,268.34" id="NPg Planning scenario" class="line" stroke="#cc0935" stroke-width="3" stroke-linecap="round"><title>NPg Planning scenario</title></path>
+	<circle cx="50.00" cy="10.00" data-y="34.39444922" data-x="2022" r="4" fill="#cc0935"><title>2022: 34.39444922</title></circle>
+	<circle cx="70.00" cy="19.63" data-y="33.12113949" data-x="2023" r="4" fill="#cc0935"><title>2023: 33.12113949</title></circle>
+	<circle cx="90.00" cy="25.67" data-y="32.3219204" data-x="2024" r="4" fill="#cc0935"><title>2024: 32.3219204</title></circle>
+	<circle cx="110.00" cy="36.50" data-y="30.88868177" data-x="2025" r="4" fill="#cc0935"><title>2025: 30.88868177</title></circle>
+	<circle cx="130.00" cy="55.83" data-y="28.33214507" data-x="2026" r="4" fill="#cc0935"><title>2026: 28.33214507</title></circle>
+	<circle cx="150.00" cy="72.06" data-y="26.18467277" data-x="2027" r="4" fill="#cc0935"><title>2027: 26.18467277</title></circle>
+	<circle cx="170.00" cy="87.21" data-y="24.18075712" data-x="2028" r="4" fill="#cc0935"><title>2028: 24.18075712</title></circle>
+	<circle cx="190.00" cy="101.43" data-y="22.29941961" data-x="2029" r="4" fill="#cc0935"><title>2029: 22.29941961</title></circle>
+	<circle cx="210.00" cy="117.12" data-y="20.22364966" data-x="2030" r="4" fill="#cc0935"><title>2030: 20.22364966</title></circle>
+	<circle cx="230.00" cy="131.38" data-y="18.33698608" data-x="2031" r="4" fill="#cc0935"><title>2031: 18.33698608</title></circle>
+	<circle cx="250.00" cy="147.19" data-y="16.24639693" data-x="2032" r="4" fill="#cc0935"><title>2032: 16.24639693</title></circle>
+	<circle cx="270.00" cy="161.51" data-y="14.35157228" data-x="2033" r="4" fill="#cc0935"><title>2033: 14.35157228</title></circle>
+	<circle cx="290.00" cy="175.07" data-y="12.55832502" data-x="2034" r="4" fill="#cc0935"><title>2034: 12.55832502</title></circle>
+	<circle cx="310.00" cy="187.66" data-y="10.89264661" data-x="2035" r="4" fill="#cc0935"><title>2035: 10.89264661</title></circle>
+	<circle cx="330.00" cy="197.57" data-y="9.582072095" data-x="2036" r="4" fill="#cc0935"><title>2036: 9.582072095</title></circle>
+	<circle cx="350.00" cy="206.75" data-y="8.367612352" data-x="2037" r="4" fill="#cc0935"><title>2037: 8.367612352</title></circle>
+	<circle cx="370.00" cy="215.16" data-y="7.254486171" data-x="2038" r="4" fill="#cc0935"><title>2038: 7.254486171</title></circle>
+	<circle cx="390.00" cy="223.20" data-y="6.191408758" data-x="2039" r="4" fill="#cc0935"><title>2039: 6.191408758</title></circle>
+	<circle cx="410.00" cy="230.89" data-y="5.173389698" data-x="2040" r="4" fill="#cc0935"><title>2040: 5.173389698</title></circle>
+	<circle cx="430.00" cy="238.95" data-y="4.108110367" data-x="2041" r="4" fill="#cc0935"><title>2041: 4.108110367</title></circle>
+	<circle cx="450.00" cy="245.21" data-y="3.279335993" data-x="2042" r="4" fill="#cc0935"><title>2042: 3.279335993</title></circle>
+	<circle cx="470.00" cy="250.50" data-y="2.579018768" data-x="2043" r="4" fill="#cc0935"><title>2043: 2.579018768</title></circle>
+	<circle cx="490.00" cy="254.92" data-y="1.995023632" data-x="2044" r="4" fill="#cc0935"><title>2044: 1.995023632</title></circle>
+	<circle cx="510.00" cy="259.05" data-y="1.448057442" data-x="2045" r="4" fill="#cc0935"><title>2045: 1.448057442</title></circle>
+	<circle cx="530.00" cy="262.07" data-y="1.049046159" data-x="2046" r="4" fill="#cc0935"><title>2046: 1.049046159</title></circle>
+	<circle cx="550.00" cy="265.05" data-y="0.654529489" data-x="2047" r="4" fill="#cc0935"><title>2047: 0.654529489</title></circle>
+	<circle cx="570.00" cy="267.12" data-y="0.380736615" data-x="2048" r="4" fill="#cc0935"><title>2048: 0.380736615</title></circle>
+	<circle cx="590.00" cy="267.84" data-y="0.285127765" data-x="2049" r="4" fill="#cc0935"><title>2049: 0.285127765</title></circle>
+	<circle cx="610.00" cy="268.34" data-y="0.219863684" data-x="2050" r="4" fill="#cc0935"><title>2050: 0.219863684</title></circle>
+</g>
+</svg>
