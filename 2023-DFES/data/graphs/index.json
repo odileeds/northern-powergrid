@@ -79,7 +79,7 @@
 	"left": 50
 },{
 	"title":"Network energy consumption breakdown - NPg Best View Scenario (TWh)",
-	"csv":"NetworkEnergyConsumptionBreakdown_NPgBestView.csv",
+	"csv":"NetworkEnergyConsumptionBreakdown_NPgBestView_TWh.csv",
 	"svg":"graph-energy-consumption-breakdown.svg",
 	"table":"graph-energy-consumption-breakdown.html",
 	"yaxis-label": "Network energy consumption (TWh)",
