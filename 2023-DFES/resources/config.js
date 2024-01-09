@@ -229,7 +229,7 @@ S(document).ready(function(){
 				if(rel.length > 0) rel.forEach(function(e){ e.style.display = (t=="relative") ? '' : 'none'; });
 				return this;
 			},
-			"initMap": function(){
+			/*"initMap": function(){
 				// CartoDB map
 				L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
 					attribution: 'Tiles: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
@@ -261,7 +261,7 @@ S(document).ready(function(){
 						return sty;
 					}
 				}).addTo(this.map);
-			},
+			},*/
 			"buildMap": function(){
 				var el,div,_obj;
 				el = document.querySelector('.leaflet-top.leaflet-left');
