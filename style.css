@@ -58,6 +58,7 @@ table {
 .net-zero { background-color: #00AB84!important; color: white!important; }
 .net-zero-text { color: #00AB84!important; }
 .planning-scenario { background-color: #ab1236!important; color: white!important; }
+.npg-best-view { background-color: #ab1236!important; color: white!important; } /* mirror of planning-scenario - ML 2024-01-05 */
 
 ol { list-style: decimal; margin-left: 1em; }
 ol li { margin-bottom: 1em; }
