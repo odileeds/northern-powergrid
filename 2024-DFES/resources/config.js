@@ -39,7 +39,7 @@ OI.ready(function(){
 
 	dfes = new FES({
 		"options": {
-			"scenario": "NPg Best View",
+			"scenario": "NPg Reference Scenario",
 			"view": "LAD",
 			"key": "2022",
 			"parameter": "ev",
