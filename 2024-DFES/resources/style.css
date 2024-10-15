@@ -20,18 +20,18 @@
 
 
 /* Main site styling */
-.falling-short { background-color: #827B7A!important; color: white!important; }
-.falling-short-text { color: #827B7A!important; }
-.system-transformation { background-color: #5BCBF5!important; color: black!important; }
-.system-transformation-text { color: #5BCBF5!important; }
-.consumer-transformation { background-color: #FFBF22!important; color: black!important; }
-.consumer-transformation-text { color: #FFBF22!important; }
-.leading-the-way { background-color: #C2CD23!important; color: black!important; }
-.leading-the-way-text { color: #C2CD23!important; }
+.counterfactual { background-color: #827B7A!important; color: white!important; }
+.counterfactual-text { color: #827B7A!important; }
+.hydrogen-evolution { background-color: #5BCBF5!important; color: black!important; }
+.hydrogen-evolution-text { color: #5BCBF5!important; }
+.electric-engagement { background-color: #FFBF22!important; color: black!important; }
+.electric-engagement-text { color: #FFBF22!important; }
+.holistic-transition { background-color: #C2CD23!important; color: black!important; }
+.holistic-transition-text { color: #C2CD23!important; }
 .early-net-zero { background-color: #00AB84!important; color: white!important; }
 .early-net-zero-text { color: #00AB84!important; }
-.planning-scenario { background-color: #ab1236!important; color: white!important; }
-.planning-scenario-text { color: #ab1236!important; }
+.reference-scenario { background-color: #ab1236!important; color: white!important; }
+.reference-scenario-text { color: #ab1236!important; }
 
 
 .message { text-align: center; }

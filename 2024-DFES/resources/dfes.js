@@ -1,6 +1,9 @@
 /*!
 	Open Innovations Future Energy Scenario viewer
 	Changeset:
+	1.6.0
+	- Remove stuquery dependency
+	- There is now a "processData" event so that we can reshape an API return
 	1.5.8
 	- Can set different map tiles/labels with on.initMap
 	1.5.7
@@ -43,7 +46,7 @@
 	// Main function
 	function FES(config){
 
-		this.version = "1.5.8";
+		this.version = "1.6.0";
 		this.title = "FES";
 		if(!config) config = {};
 		this.options = (config.options||{});
@@ -280,12 +283,16 @@
 	
 	FES.prototype.setScenarioColours = function(scenario){
 		var css = this.data.scenarios[scenario].css;
+		var classes = [];
+		for(var id in this.data.scenarios) classes.push(this.data.scenarios[id].css);
 		if(!document.querySelector('#scenario-holder .about')) appendHTML(document.getElementById('scenario-holder'),'<div class="about"></div>');
 		var el = document.querySelector('#scenario-holder .about');
-		el.innerHTML = (this.data.scenarios[scenario].description||'');
+		el.classList.remove(...classes);
 		el.classList.add(css); 
+		el.innerHTML = (this.data.scenarios[scenario].description||'');
 		el = document.querySelector('#parameter-holder .about');
 		el.innerHTML = (this.parameters[this.options.parameter] ? (this.parameters[this.options.parameter].description||'') : '');
+		el.classList.remove(...classes);
 		el.classList.add(css);
 
 		for(var s in this.data.scenarios){

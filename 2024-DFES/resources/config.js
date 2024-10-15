@@ -237,7 +237,6 @@ OI.ready(function(){
 							for(c = 0; c < header.length; c++){
 								id = header[c];
 								if(id==data.key){
-									id = data.api||"substation_name";
 									v = cols[head[id]].toUpperCase();
 								}else{
 									v = cols[head[id]];
