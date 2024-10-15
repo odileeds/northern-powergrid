@@ -35,11 +35,9 @@
 
 
 .message { text-align: center; }
-.warning {
-	color: rgb(95, 82, 7);
-	background-color: rgb(251, 245, 208);
-	filter: drop-shadow(0px 0px 1px rgb(95, 82, 7));
-}
+.warning { color: rgb(95, 82, 7); background-color: rgb(251, 245, 208); filter: drop-shadow(0px 0px 1px rgb(95, 82, 7)); }
+.error { color: #721c24; background-color: #f8d7da; filter: drop-shadow(0 0 1px #f5c6cb)); }
+
 .holder > *:last-child { margin-bottom: 0; }
 
 ol { list-style: decimal; margin-left: 2em; margin-bottom: 1em; }

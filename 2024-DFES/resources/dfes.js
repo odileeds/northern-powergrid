@@ -80,35 +80,34 @@
 		if(!this.options.files.parameters) this.options.files.parameters = path+"data/scenarios/config.json";
 		if(!this.options.files.scenarios) this.options.files.scenarios = path+"data/scenarios/index.json";
 
-		fetch(this.options.files.parameters,{}).then(response => {
-			if(!response.ok) throw new Error('Network response was not OK');
-			return response.json();
-		}).then(d => {
-			if(d.length){
-				this.parameters = {};
-				// New style (1.5.0) config is an array to preserve order - convert into object
-				for(var i = 0; i < d.length; i++){
-					if(d[i].key) this.parameters[d[i].key] = d[i];
-				}
-			}else this.parameters = d;
-			fetch(this.options.files.scenarios,{}).then(response => {
-				if(!response.ok) throw new Error('Network response was not OK');
-				return response.json();
-			}).then(d => {
-				this.log('MSG','Got '+this.options.files.scenarios);
+		this.fetch(this.options.files.parameters,{
+			'type':'json',
+			'callback': function(d){
 				if(d.length){
-					this.data.scenarios = {};
+					this.parameters = {};
 					// New style (1.5.0) config is an array to preserve order - convert into object
 					for(var i = 0; i < d.length; i++){
-						if(d[i].key) this.data.scenarios[d[i].key] = d[i];
+						if(d[i].key) this.parameters[d[i].key] = d[i];
 					}
-				}else this.data.scenarios = d;
-				this.init();
-			}).catch(e => {
-				this.message('Unable to load scenarios from '+this.options.files.scenarios.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
-			});
-		}).catch(e => {
-			this.message('Unable to load parameters from '+this.options.files.parameters.replace(/\?.*/,""),{'id':'error','type':'ERROR'})
+				}else this.parameters = d;
+
+				this.fetch(this.options.files.scenarios,{
+					'type':'json',
+					'callback': function(d){
+						this.log('MSG','Got '+this.options.files.scenarios);
+						if(d.length){
+							this.data.scenarios = {};
+							// New style (1.5.0) config is an array to preserve order - convert into object
+							for(var i = 0; i < d.length; i++){
+								if(d[i].key) this.data.scenarios[d[i].key] = d[i];
+							}
+						}else this.data.scenarios = d;
+						this.init();
+					},
+					'error':'Unable to load scenarios from '
+				});
+			},
+			'error': 'Unable to load parameters from '
 		});
 
 		return this;
@@ -270,14 +269,13 @@
 		var url = this.data.scenarios[this.options.scenario].data[this.options.parameter].file;
 		if(!url.match(/^https/)) url = path+"data/scenarios/"+this.data.scenarios[this.options.scenario].data[this.options.parameter].file;
 		this.log('INFO','Getting data from %c'+url.replace(/\%/g,'\\%')+'%c','font-style:italic;','')
-		fetch(url,{}).then(response => {
-			if(!response.ok) throw new Error('Network response was not OK');
-			return response.text();
-		}).then(d => {
-			this.log('MSG','Got '+url);
-			this.loadedData(d,this.options.scenario,this.options.parameter,callback,url);
-		}).catch(e => {
-			this.message('Unable to load data from '+url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+		this.fetch(url,{
+			'type':'text',
+			'callback': function(d){
+				this.log('MSG','Got '+url);
+				this.loadedData(d,this.options.scenario,this.options.parameter,callback,url);
+			},
+			'error':'Unable to load data from '
 		});
 	};
 	
@@ -491,17 +489,16 @@
 			if(!this.mapping[data.dataBy][id].data && typeof this.mapping[data.dataBy][id].file==="string"){
 				// Load from JSON file
 				var url = path+this.mapping[data.dataBy][id].file;
-				fetch(url,{}).then(response => {
-					if(!response.ok) throw new Error('Network response was not OK');
-					return response.json();
-				}).then(d => {
-					this.log('MSG','Got '+url);
-					this.mapping[data.dataBy][id].raw = d;
-					if(typeof this.mapping[data.dataBy][id].process==="function") d = this.mapping[data.dataBy][id].process.call(this,d);
-					this.mapping[data.dataBy][id].data = d;
-					this.mapData();
-				}).catch(e => {
-					this.message('Unable to load '+url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+				this.fetch(url,{
+					'type':'json',
+					'callback': function(d){
+						this.log('MSG','Got '+url);
+						this.mapping[data.dataBy][id].raw = d;
+						if(typeof this.mapping[data.dataBy][id].process==="function") d = this.mapping[data.dataBy][id].process.call(this,d);
+						this.mapping[data.dataBy][id].data = d;
+						this.mapData();
+					},
+					'error': 'Unable to load '
 				});
 
 				return this;
@@ -774,15 +771,14 @@
 					document.querySelector('#map .spinner').style.display = '';
 					var url = path+this.layers[layer.id].geojson;
 					
-					fetch(url,{}).then(response => {
-						if(!response.ok) throw new Error('Network response was not OK');
-						return response.json();
-					}).then(d => {
-						this.log('MSG','Got '+url);
-						this.layers[layer.id].geojson = d;
-						this.buildMap();
-					}).catch(e => {
-						this.message('Unable to load GeoJSON '+url.replace(/\?.*/,""),{'id':'error','type':'ERROR'});
+					this.fetch(url,{
+						'type':'json',
+						'callback':function(d){
+							this.log('MSG','Got '+url);
+							this.layers[layer.id].geojson = d;
+							this.buildMap();
+						},
+						'error':'Unable to load GeoJSON '
 					});
 					return this;
 				}
@@ -952,6 +948,27 @@
 
 		return this;
 	};
+
+	FES.prototype.fetch = function(resource, options = {}) {
+		var { timeout = 3000 } = options;
+		var controller = new AbortController();
+		var id = setTimeout(() => controller.abort(), timeout);
+		this.log('INFO','Get '+resource);
+		var response = fetch(resource,{
+			...options,
+			signal: controller.signal
+		}).then(response=>{
+			if(!response.ok) throw new Error('Network response was not OK');
+			if(options.type=="json") return response.json();
+			else return response.text();
+		}).then(d=>{
+			if(typeof options.callback==="function") options.callback.call(this,d);
+		}).catch(e => {
+			this.message((options.error ? options.error : 'Unable to load from ')+resource.replace(/\?.*/,""),{'id':'error','type':'ERROR'})
+		});
+		clearTimeout(id);
+		return this;
+	}
 
 	function popuptext(feature,attr){
 		// does this feature have a property named popupContent?

@@ -224,27 +224,31 @@ OI.ready(function(){
 				if(url.match("https://northernpowergrid.opendatasoft.com/api/explore/v2.1/")){
 					var rows = d.replace(/[\n\r]+$/,'').split(/\r\n/);
 					var r,cols,c,head = {},header = [],orows = new Array(rows.length-1);
-					for(r = 0; r < rows.length; r++){
-						cols = rows[r].split(/\;/);
-						if(r==0){
-							header = [data.key];
-							for(c = 0; c < cols.length; c++){
-								head[cols[c]] = c;
-								if(cols[c]==parseInt(cols[c])) header.push(parseInt(cols[c]));
-							}
-						}else{
-							orows[r-1] = new Array(header.length);
-							for(c = 0; c < header.length; c++){
-								id = header[c];
-								if(id==data.key){
-									v = cols[head[id]].toUpperCase();
-								}else{
-									v = cols[head[id]];
-									if(parseFloat(v)==v) v = parseFloat(v);
+					if(rows.length > 1){
+						for(r = 0; r < rows.length; r++){
+							cols = rows[r].split(/\;/);
+							if(r==0){
+								header = [data.key];
+								for(c = 0; c < cols.length; c++){
+									head[cols[c]] = c;
+									if(cols[c]==parseInt(cols[c])) header.push(parseInt(cols[c]));
 								}
-								orows[r-1][c] = v;
+							}else{
+								orows[r-1] = new Array(header.length);
+								for(c = 0; c < header.length; c++){
+									id = header[c];
+									if(id==data.key){
+										v = cols[head[id]].toUpperCase();
+									}else{
+										v = cols[head[id]];
+										if(parseFloat(v)==v) v = parseFloat(v);
+									}
+									orows[r-1][c] = v;
+								}
 							}
 						}
+					}else{
+						this.message('No data loaded from API',{'id':'error','type':'ERROR'});
 					}
 					// We need to add a "raw" variable that consists of { header: [], rows: [] }
 					data.raw = {'rows':orows,'header':header};
