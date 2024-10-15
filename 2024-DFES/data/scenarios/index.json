@@ -1,15 +1,15 @@
 {
-	"Falling Short": {
+	"Counterfactual": {
 		"description": "<ul><li>Does not achieve 80% decarbonisation by 2050.<ul><li>Minimal behaviour change.</li><li>Decarbonisation in power and transport but not heat.</li></ul></li></ul>",
-		"color": "#827B7A",
+		"color": "#454546",
 		"negativecolor": "#d7191c",
 		"css": "falling-short",
 		"data": {
 			"ev": { "dataBy": "primary", "file": "primaries/EV-FS.csv", "key": "Primary" },
 			"ebus": { "dataBy": "primary", "file": "primaries/Number_electric_buses-FS.csv", "key": "Primary" },
 			"ehgv": { "dataBy": "primary", "file": "primaries/Number_electric_HGVs-FS.csv", "key": "Primary" },
-			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },			
-			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-FS.csv", "key": "Primary" },			
+			"peakdemand":{ "dataBy": "primary", "file": "primaries/PeakDemand-FS.csv", "key": "Primary" },
+			"peakutilisation":{ "dataBy": "primary", "file": "primaries/PeakUtilisation-FS.csv", "key": "Primary" },
 			"totalconsumptioncf":{ "dataBy": "primary", "file": "primaries/TotalConsumptionWithLCTs_mWh-FS.csv", "key": "Primary" },
 			"windcapacity":{ "dataBy": "primary", "file": "primaries/WindCapacity-FS_withDirects.csv", "key": "Primary" },
 			"heatpumps":{ "dataBy": "primary", "file": "primaries/HP-FS.csv", "key": "Primary" },
@@ -22,9 +22,9 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-FS_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"System Transformation": {
+	"Hydrogen Evolution": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Hydrogen for heating.</li><li>Consumers less inclined to change behaviour.</li><li>Lower energy efficiency.</li><li>Supply side flexibility</li></ul></li></ul>",
-		"color": "#5BCBF5",
+		"color": "#0079C1",
 		"negativecolor": "#d7191c",
 		"css": "system-transformation",
 		"data": {
@@ -45,9 +45,9 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-ST_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"Consumer Transformation": {
+	"Electric Engagement": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2050.<ul><li>Electrified heating.</li><li>Consumers willing to change behaviour.</li><li>High energy efficiency.</li><li>Demand side flexibility.</li></ul></li></ul>",
-		"color": "#FFBF22",
+		"color": "#F26522",
 		"negativecolor": "#5e3c99",
 		"css": "consumer-transformation",
 		"data": {
@@ -68,7 +68,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-CT_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"Leading The Way": {
+	"Holistic Transition": {
 		"description": "<ul><li>Achieves 100% decarbonisation by 2047.<ul><li>Fastest credible decarbonisation</li><li>Significant lifestyle change.</li><li>Mixture of hydrogen and electrification for heating.</li></ul></li></ul>",
 		"color": "#C2CD23",
 		"negativecolor": "#d01c8b",
@@ -91,7 +91,7 @@
 			"nonrenewablegen":{ "dataBy": "primary", "file": "primaries/Non-renewableGeneration_MW-LTW_withDirects.csv", "key": "Primary" }
 		}
 	},
-	"NPg Best View": {
+	"NPg Reference Scenario": {
 		"description": "<ul><li>Reaches net zero earlier than Government ascribed 2050 target (by the late 2040s)<ul><li>Highly accelerated electric heat & transport.</li><li>Highly decentralised distributed wind, solar & other renewable generation.</li></ul></li></ul>",
 		"color": "#ab1236",
 		"css": "planning-scenario",
