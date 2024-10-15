@@ -1,0 +1,189 @@
+<svg width="640" height="320" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="overflow:display" preserveAspectRatio="xMinYMin meet" overflow="visible">
+<defs>
+	<style>
+	.data-series path.line { fill-opacity: 0; }
+	.data-series path.line.dotted { stroke-dasharray: 12 20 }
+	.data-series circle { display: none; }
+	.data-series:hover path.line, .data-series.on path.line { stroke-width: 5; }
+	.data-series:hover circle, .data-series.on circle { display: inline; }
+	.data-series circle:hover, .data-series circle.on { r: 6px!important; fill: black; }
+	.grid { font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; }
+	.grid line { stroke: rgb(0,0,0); stroke-width: 2; stroke-linecap: round; }
+	.grid.grid-x text { text-anchor: middle; dominant-baseline: hanging; transform: translateY(10px); }
+	.grid.grid-y text { text-anchor: end; dominant-baseline: middle; transform: translateX(-10px); }
+	</style>
+</defs>
+<g class="grid grid-y">
+	<line x1="70" y1="270" x2="630" y2="270" data-left="70"></line>
+	<text x="70" y="270" text-anchor="end">0</text>
+	<text x="70" y="215.240101095198" text-anchor="end">5</text>
+	<text x="70" y="160.480202190396" text-anchor="end">10</text>
+	<text x="70" y="105.720303285594" text-anchor="end">15</text>
+	<text x="70" y="50.9604043807919" text-anchor="end">20</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);">Network energy consumption (TWh)</text>
+</g>
+<g class="grid grid-x">
+	<line class="tick" x1="224.48275862069" y1="270" x2="224.48275862069" y2="275"></line>
+	<text x="224.48275862069" y="270" text-anchor="middle">2030</text>
+	<line class="tick" x1="417.586206896552" y1="270" x2="417.586206896552" y2="275"></line>
+	<text x="417.586206896552" y="270" text-anchor="middle">2040</text>
+	<line class="tick" x1="610.689655172414" y1="270" x2="610.689655172414" y2="275"></line>
+	<text x="610.689655172414" y="270" text-anchor="middle">2050</text>
+	<text style="text-anchor:middle;dominant-baseline:hanging;font-weight:bold;transform: translateY(140px) rotate(-90deg);"></text>
+</g>
+<g data-scenario="domestic" class="data-series">	<path d="M 70.00,154.89L 89.31,155.44L 108.62,155.44L 127.93,155.55L 147.24,155.44L 166.55,155.44L 185.86,155.22L 205.17,155.00L 224.48,154.79L 243.79,154.35L 263.10,154.24L 282.41,154.13L 301.72,154.02L 321.03,154.02L 340.34,154.57L 359.66,155.11L 378.97,155.55L 398.28,156.10L 417.59,156.54L 436.90,157.09L 456.21,157.52L 475.52,157.96L 494.83,158.51L 514.14,158.95L 533.45,159.39L 552.76,159.82L 572.07,160.37L 591.38,160.81L 610.69,161.14" id="Domestic" class="line" stroke="#F1060E" stroke-width="3" stroke-linecap="round"><title>Domestic</title></path>
+	<circle cx="70.00" cy="154.89" data-y="10.51" data-x="2022" r="4" fill="#F1060E"><title>2022: 10.51</title></circle>
+	<circle cx="89.31" cy="155.44" data-y="10.46" data-x="2023" r="4" fill="#F1060E"><title>2023: 10.46</title></circle>
+	<circle cx="108.62" cy="155.44" data-y="10.46" data-x="2024" r="4" fill="#F1060E"><title>2024: 10.46</title></circle>
+	<circle cx="127.93" cy="155.55" data-y="10.45" data-x="2025" r="4" fill="#F1060E"><title>2025: 10.45</title></circle>
+	<circle cx="147.24" cy="155.44" data-y="10.46" data-x="2026" r="4" fill="#F1060E"><title>2026: 10.46</title></circle>
+	<circle cx="166.55" cy="155.44" data-y="10.46" data-x="2027" r="4" fill="#F1060E"><title>2027: 10.46</title></circle>
+	<circle cx="185.86" cy="155.22" data-y="10.48" data-x="2028" r="4" fill="#F1060E"><title>2028: 10.48</title></circle>
+	<circle cx="205.17" cy="155.00" data-y="10.50" data-x="2029" r="4" fill="#F1060E"><title>2029: 10.50</title></circle>
+	<circle cx="224.48" cy="154.79" data-y="10.52" data-x="2030" r="4" fill="#F1060E"><title>2030: 10.52</title></circle>
+	<circle cx="243.79" cy="154.35" data-y="10.56" data-x="2031" r="4" fill="#F1060E"><title>2031: 10.56</title></circle>
+	<circle cx="263.10" cy="154.24" data-y="10.57" data-x="2032" r="4" fill="#F1060E"><title>2032: 10.57</title></circle>
+	<circle cx="282.41" cy="154.13" data-y="10.58" data-x="2033" r="4" fill="#F1060E"><title>2033: 10.58</title></circle>
+	<circle cx="301.72" cy="154.02" data-y="10.59" data-x="2034" r="4" fill="#F1060E"><title>2034: 10.59</title></circle>
+	<circle cx="321.03" cy="154.02" data-y="10.59" data-x="2035" r="4" fill="#F1060E"><title>2035: 10.59</title></circle>
+	<circle cx="340.34" cy="154.57" data-y="10.54" data-x="2036" r="4" fill="#F1060E"><title>2036: 10.54</title></circle>
+	<circle cx="359.66" cy="155.11" data-y="10.49" data-x="2037" r="4" fill="#F1060E"><title>2037: 10.49</title></circle>
+	<circle cx="378.97" cy="155.55" data-y="10.45" data-x="2038" r="4" fill="#F1060E"><title>2038: 10.45</title></circle>
+	<circle cx="398.28" cy="156.10" data-y="10.40" data-x="2039" r="4" fill="#F1060E"><title>2039: 10.40</title></circle>
+	<circle cx="417.59" cy="156.54" data-y="10.36" data-x="2040" r="4" fill="#F1060E"><title>2040: 10.36</title></circle>
+	<circle cx="436.90" cy="157.09" data-y="10.31" data-x="2041" r="4" fill="#F1060E"><title>2041: 10.31</title></circle>
+	<circle cx="456.21" cy="157.52" data-y="10.27" data-x="2042" r="4" fill="#F1060E"><title>2042: 10.27</title></circle>
+	<circle cx="475.52" cy="157.96" data-y="10.23" data-x="2043" r="4" fill="#F1060E"><title>2043: 10.23</title></circle>
+	<circle cx="494.83" cy="158.51" data-y="10.18" data-x="2044" r="4" fill="#F1060E"><title>2044: 10.18</title></circle>
+	<circle cx="514.14" cy="158.95" data-y="10.14" data-x="2045" r="4" fill="#F1060E"><title>2045: 10.14</title></circle>
+	<circle cx="533.45" cy="159.39" data-y="10.10" data-x="2046" r="4" fill="#F1060E"><title>2046: 10.10</title></circle>
+	<circle cx="552.76" cy="159.82" data-y="10.06" data-x="2047" r="4" fill="#F1060E"><title>2047: 10.06</title></circle>
+	<circle cx="572.07" cy="160.37" data-y="10.01" data-x="2048" r="4" fill="#F1060E"><title>2048: 10.01</title></circle>
+	<circle cx="591.38" cy="160.81" data-y="9.97" data-x="2049" r="4" fill="#F1060E"><title>2049: 9.97</title></circle>
+	<circle cx="610.69" cy="161.14" data-y="9.94" data-x="2050" r="4" fill="#F1060E"><title>2050: 9.94</title></circle>
+</g>
+<g data-scenario="i-and-c" class="data-series">	<path d="M 70.00,15.80L 89.31,12.74L 108.62,10.55L 127.93,10.00L 147.24,11.20L 166.55,12.41L 185.86,13.83L 205.17,15.15L 224.48,16.02L 243.79,17.12L 263.10,18.21L 282.41,19.20L 301.72,20.08L 321.03,16.46L 340.34,17.23L 359.66,17.99L 378.97,18.65L 398.28,19.31L 417.59,19.86L 436.90,20.40L 456.21,20.95L 475.52,21.39L 494.83,21.83L 514.14,22.27L 533.45,22.70L 552.76,23.14L 572.07,23.47L 591.38,23.91L 610.69,24.35" id="I &amp; C" class="line" stroke="#6DC2C7" stroke-width="3" stroke-linecap="round"><title>I &amp; C</title></path>
+	<circle cx="70.00" cy="15.80" data-y="23.21" data-x="2022" r="4" fill="#6DC2C7"><title>2022: 23.21</title></circle>
+	<circle cx="89.31" cy="12.74" data-y="23.49" data-x="2023" r="4" fill="#6DC2C7"><title>2023: 23.49</title></circle>
+	<circle cx="108.62" cy="10.55" data-y="23.69" data-x="2024" r="4" fill="#6DC2C7"><title>2024: 23.69</title></circle>
+	<circle cx="127.93" cy="10.00" data-y="23.74" data-x="2025" r="4" fill="#6DC2C7"><title>2025: 23.74</title></circle>
+	<circle cx="147.24" cy="11.20" data-y="23.63" data-x="2026" r="4" fill="#6DC2C7"><title>2026: 23.63</title></circle>
+	<circle cx="166.55" cy="12.41" data-y="23.52" data-x="2027" r="4" fill="#6DC2C7"><title>2027: 23.52</title></circle>
+	<circle cx="185.86" cy="13.83" data-y="23.39" data-x="2028" r="4" fill="#6DC2C7"><title>2028: 23.39</title></circle>
+	<circle cx="205.17" cy="15.15" data-y="23.27" data-x="2029" r="4" fill="#6DC2C7"><title>2029: 23.27</title></circle>
+	<circle cx="224.48" cy="16.02" data-y="23.19" data-x="2030" r="4" fill="#6DC2C7"><title>2030: 23.19</title></circle>
+	<circle cx="243.79" cy="17.12" data-y="23.09" data-x="2031" r="4" fill="#6DC2C7"><title>2031: 23.09</title></circle>
+	<circle cx="263.10" cy="18.21" data-y="22.99" data-x="2032" r="4" fill="#6DC2C7"><title>2032: 22.99</title></circle>
+	<circle cx="282.41" cy="19.20" data-y="22.90" data-x="2033" r="4" fill="#6DC2C7"><title>2033: 22.90</title></circle>
+	<circle cx="301.72" cy="20.08" data-y="22.82" data-x="2034" r="4" fill="#6DC2C7"><title>2034: 22.82</title></circle>
+	<circle cx="321.03" cy="16.46" data-y="23.15" data-x="2035" r="4" fill="#6DC2C7"><title>2035: 23.15</title></circle>
+	<circle cx="340.34" cy="17.23" data-y="23.08" data-x="2036" r="4" fill="#6DC2C7"><title>2036: 23.08</title></circle>
+	<circle cx="359.66" cy="17.99" data-y="23.01" data-x="2037" r="4" fill="#6DC2C7"><title>2037: 23.01</title></circle>
+	<circle cx="378.97" cy="18.65" data-y="22.95" data-x="2038" r="4" fill="#6DC2C7"><title>2038: 22.95</title></circle>
+	<circle cx="398.28" cy="19.31" data-y="22.89" data-x="2039" r="4" fill="#6DC2C7"><title>2039: 22.89</title></circle>
+	<circle cx="417.59" cy="19.86" data-y="22.84" data-x="2040" r="4" fill="#6DC2C7"><title>2040: 22.84</title></circle>
+	<circle cx="436.90" cy="20.40" data-y="22.79" data-x="2041" r="4" fill="#6DC2C7"><title>2041: 22.79</title></circle>
+	<circle cx="456.21" cy="20.95" data-y="22.74" data-x="2042" r="4" fill="#6DC2C7"><title>2042: 22.74</title></circle>
+	<circle cx="475.52" cy="21.39" data-y="22.70" data-x="2043" r="4" fill="#6DC2C7"><title>2043: 22.70</title></circle>
+	<circle cx="494.83" cy="21.83" data-y="22.66" data-x="2044" r="4" fill="#6DC2C7"><title>2044: 22.66</title></circle>
+	<circle cx="514.14" cy="22.27" data-y="22.62" data-x="2045" r="4" fill="#6DC2C7"><title>2045: 22.62</title></circle>
+	<circle cx="533.45" cy="22.70" data-y="22.58" data-x="2046" r="4" fill="#6DC2C7"><title>2046: 22.58</title></circle>
+	<circle cx="552.76" cy="23.14" data-y="22.54" data-x="2047" r="4" fill="#6DC2C7"><title>2047: 22.54</title></circle>
+	<circle cx="572.07" cy="23.47" data-y="22.51" data-x="2048" r="4" fill="#6DC2C7"><title>2048: 22.51</title></circle>
+	<circle cx="591.38" cy="23.91" data-y="22.47" data-x="2049" r="4" fill="#6DC2C7"><title>2049: 22.47</title></circle>
+	<circle cx="610.69" cy="24.35" data-y="22.43" data-x="2050" r="4" fill="#6DC2C7"><title>2050: 22.43</title></circle>
+</g>
+<g data-scenario="heat-pumps---domestic" class="data-series">	<path d="M 70.00,268.14L 89.31,267.59L 108.62,266.82L 127.93,264.74L 147.24,261.79L 166.55,258.28L 185.86,257.41L 205.17,256.75L 224.48,256.20L 243.79,255.54L 263.10,255.00L 282.41,254.34L 301.72,253.79L 321.03,251.05L 340.34,241.31L 359.66,231.56L 378.97,222.14L 398.28,213.05L 417.59,204.95L 436.90,197.94L 456.21,191.47L 475.52,182.71L 494.83,173.62L 514.14,164.53L 533.45,155.66L 552.76,146.79L 572.07,137.92L 591.38,129.16L 610.69,122.70" id="Heat pumps - domestic" class="line" stroke="#2D137F" stroke-width="3" stroke-linecap="round"><title>Heat pumps - domestic</title></path>
+	<circle cx="70.00" cy="268.14" data-y="0.17" data-x="2022" r="4" fill="#2D137F"><title>2022: 0.17</title></circle>
+	<circle cx="89.31" cy="267.59" data-y="0.22" data-x="2023" r="4" fill="#2D137F"><title>2023: 0.22</title></circle>
+	<circle cx="108.62" cy="266.82" data-y="0.29" data-x="2024" r="4" fill="#2D137F"><title>2024: 0.29</title></circle>
+	<circle cx="127.93" cy="264.74" data-y="0.48" data-x="2025" r="4" fill="#2D137F"><title>2025: 0.48</title></circle>
+	<circle cx="147.24" cy="261.79" data-y="0.75" data-x="2026" r="4" fill="#2D137F"><title>2026: 0.75</title></circle>
+	<circle cx="166.55" cy="258.28" data-y="1.07" data-x="2027" r="4" fill="#2D137F"><title>2027: 1.07</title></circle>
+	<circle cx="185.86" cy="257.41" data-y="1.15" data-x="2028" r="4" fill="#2D137F"><title>2028: 1.15</title></circle>
+	<circle cx="205.17" cy="256.75" data-y="1.21" data-x="2029" r="4" fill="#2D137F"><title>2029: 1.21</title></circle>
+	<circle cx="224.48" cy="256.20" data-y="1.26" data-x="2030" r="4" fill="#2D137F"><title>2030: 1.26</title></circle>
+	<circle cx="243.79" cy="255.54" data-y="1.32" data-x="2031" r="4" fill="#2D137F"><title>2031: 1.32</title></circle>
+	<circle cx="263.10" cy="255.00" data-y="1.37" data-x="2032" r="4" fill="#2D137F"><title>2032: 1.37</title></circle>
+	<circle cx="282.41" cy="254.34" data-y="1.43" data-x="2033" r="4" fill="#2D137F"><title>2033: 1.43</title></circle>
+	<circle cx="301.72" cy="253.79" data-y="1.48" data-x="2034" r="4" fill="#2D137F"><title>2034: 1.48</title></circle>
+	<circle cx="321.03" cy="251.05" data-y="1.73" data-x="2035" r="4" fill="#2D137F"><title>2035: 1.73</title></circle>
+	<circle cx="340.34" cy="241.31" data-y="2.62" data-x="2036" r="4" fill="#2D137F"><title>2036: 2.62</title></circle>
+	<circle cx="359.66" cy="231.56" data-y="3.51" data-x="2037" r="4" fill="#2D137F"><title>2037: 3.51</title></circle>
+	<circle cx="378.97" cy="222.14" data-y="4.37" data-x="2038" r="4" fill="#2D137F"><title>2038: 4.37</title></circle>
+	<circle cx="398.28" cy="213.05" data-y="5.20" data-x="2039" r="4" fill="#2D137F"><title>2039: 5.20</title></circle>
+	<circle cx="417.59" cy="204.95" data-y="5.94" data-x="2040" r="4" fill="#2D137F"><title>2040: 5.94</title></circle>
+	<circle cx="436.90" cy="197.94" data-y="6.58" data-x="2041" r="4" fill="#2D137F"><title>2041: 6.58</title></circle>
+	<circle cx="456.21" cy="191.47" data-y="7.17" data-x="2042" r="4" fill="#2D137F"><title>2042: 7.17</title></circle>
+	<circle cx="475.52" cy="182.71" data-y="7.97" data-x="2043" r="4" fill="#2D137F"><title>2043: 7.97</title></circle>
+	<circle cx="494.83" cy="173.62" data-y="8.80" data-x="2044" r="4" fill="#2D137F"><title>2044: 8.80</title></circle>
+	<circle cx="514.14" cy="164.53" data-y="9.63" data-x="2045" r="4" fill="#2D137F"><title>2045: 9.63</title></circle>
+	<circle cx="533.45" cy="155.66" data-y="10.44" data-x="2046" r="4" fill="#2D137F"><title>2046: 10.44</title></circle>
+	<circle cx="552.76" cy="146.79" data-y="11.25" data-x="2047" r="4" fill="#2D137F"><title>2047: 11.25</title></circle>
+	<circle cx="572.07" cy="137.92" data-y="12.06" data-x="2048" r="4" fill="#2D137F"><title>2048: 12.06</title></circle>
+	<circle cx="591.38" cy="129.16" data-y="12.86" data-x="2049" r="4" fill="#2D137F"><title>2049: 12.86</title></circle>
+	<circle cx="610.69" cy="122.70" data-y="13.45" data-x="2050" r="4" fill="#2D137F"><title>2050: 13.45</title></circle>
+</g>
+<g data-scenario="heat-pumps---i-and-c" class="data-series">	<path d="M 70.00,268.47L 89.31,268.25L 108.62,268.14L 127.93,267.92L 147.24,267.81L 166.55,267.37L 185.86,266.93L 205.17,266.60L 224.48,266.17L 243.79,265.84L 263.10,265.62L 282.41,265.29L 301.72,264.96L 321.03,264.63L 340.34,261.79L 359.66,258.94L 378.97,256.20L 398.28,253.46L 417.59,250.94L 436.90,248.42L 456.21,246.12L 475.52,243.82L 494.83,241.52L 514.14,239.22L 533.45,237.03L 552.76,234.84L 572.07,232.65L 591.38,230.46L 610.69,228.38" id="Heat pumps - I &amp; C" class="line" stroke="#cc0935" stroke-width="3" stroke-linecap="round"><title>Heat pumps - I &amp; C</title></path>
+	<circle cx="70.00" cy="268.47" data-y="0.14" data-x="2022" r="4" fill="#cc0935"><title>2022: 0.14</title></circle>
+	<circle cx="89.31" cy="268.25" data-y="0.16" data-x="2023" r="4" fill="#cc0935"><title>2023: 0.16</title></circle>
+	<circle cx="108.62" cy="268.14" data-y="0.17" data-x="2024" r="4" fill="#cc0935"><title>2024: 0.17</title></circle>
+	<circle cx="127.93" cy="267.92" data-y="0.19" data-x="2025" r="4" fill="#cc0935"><title>2025: 0.19</title></circle>
+	<circle cx="147.24" cy="267.81" data-y="0.20" data-x="2026" r="4" fill="#cc0935"><title>2026: 0.20</title></circle>
+	<circle cx="166.55" cy="267.37" data-y="0.24" data-x="2027" r="4" fill="#cc0935"><title>2027: 0.24</title></circle>
+	<circle cx="185.86" cy="266.93" data-y="0.28" data-x="2028" r="4" fill="#cc0935"><title>2028: 0.28</title></circle>
+	<circle cx="205.17" cy="266.60" data-y="0.31" data-x="2029" r="4" fill="#cc0935"><title>2029: 0.31</title></circle>
+	<circle cx="224.48" cy="266.17" data-y="0.35" data-x="2030" r="4" fill="#cc0935"><title>2030: 0.35</title></circle>
+	<circle cx="243.79" cy="265.84" data-y="0.38" data-x="2031" r="4" fill="#cc0935"><title>2031: 0.38</title></circle>
+	<circle cx="263.10" cy="265.62" data-y="0.40" data-x="2032" r="4" fill="#cc0935"><title>2032: 0.40</title></circle>
+	<circle cx="282.41" cy="265.29" data-y="0.43" data-x="2033" r="4" fill="#cc0935"><title>2033: 0.43</title></circle>
+	<circle cx="301.72" cy="264.96" data-y="0.46" data-x="2034" r="4" fill="#cc0935"><title>2034: 0.46</title></circle>
+	<circle cx="321.03" cy="264.63" data-y="0.49" data-x="2035" r="4" fill="#cc0935"><title>2035: 0.49</title></circle>
+	<circle cx="340.34" cy="261.79" data-y="0.75" data-x="2036" r="4" fill="#cc0935"><title>2036: 0.75</title></circle>
+	<circle cx="359.66" cy="258.94" data-y="1.01" data-x="2037" r="4" fill="#cc0935"><title>2037: 1.01</title></circle>
+	<circle cx="378.97" cy="256.20" data-y="1.26" data-x="2038" r="4" fill="#cc0935"><title>2038: 1.26</title></circle>
+	<circle cx="398.28" cy="253.46" data-y="1.51" data-x="2039" r="4" fill="#cc0935"><title>2039: 1.51</title></circle>
+	<circle cx="417.59" cy="250.94" data-y="1.74" data-x="2040" r="4" fill="#cc0935"><title>2040: 1.74</title></circle>
+	<circle cx="436.90" cy="248.42" data-y="1.97" data-x="2041" r="4" fill="#cc0935"><title>2041: 1.97</title></circle>
+	<circle cx="456.21" cy="246.12" data-y="2.18" data-x="2042" r="4" fill="#cc0935"><title>2042: 2.18</title></circle>
+	<circle cx="475.52" cy="243.82" data-y="2.39" data-x="2043" r="4" fill="#cc0935"><title>2043: 2.39</title></circle>
+	<circle cx="494.83" cy="241.52" data-y="2.60" data-x="2044" r="4" fill="#cc0935"><title>2044: 2.60</title></circle>
+	<circle cx="514.14" cy="239.22" data-y="2.81" data-x="2045" r="4" fill="#cc0935"><title>2045: 2.81</title></circle>
+	<circle cx="533.45" cy="237.03" data-y="3.01" data-x="2046" r="4" fill="#cc0935"><title>2046: 3.01</title></circle>
+	<circle cx="552.76" cy="234.84" data-y="3.21" data-x="2047" r="4" fill="#cc0935"><title>2047: 3.21</title></circle>
+	<circle cx="572.07" cy="232.65" data-y="3.41" data-x="2048" r="4" fill="#cc0935"><title>2048: 3.41</title></circle>
+	<circle cx="591.38" cy="230.46" data-y="3.61" data-x="2049" r="4" fill="#cc0935"><title>2049: 3.61</title></circle>
+	<circle cx="610.69" cy="228.38" data-y="3.80" data-x="2050" r="4" fill="#cc0935"><title>2050: 3.80</title></circle>
+</g>
+<g data-scenario="ev" class="data-series">	<path d="M 70.00,266.93L 89.31,265.07L 108.62,260.91L 127.93,255.98L 147.24,249.19L 166.55,242.51L 185.86,235.83L 205.17,228.82L 224.48,220.39L 243.79,212.28L 263.10,205.16L 282.41,198.59L 301.72,192.79L 321.03,188.08L 340.34,184.14L 359.66,180.74L 378.97,177.89L 398.28,175.37L 417.59,173.40L 436.90,171.87L 456.21,170.78L 475.52,169.90L 494.83,169.35L 514.14,168.91L 533.45,168.69L 552.76,168.48L 572.07,168.26L 591.38,168.04L 610.69,167.82" id="EV" class="line" stroke="#45D526" stroke-width="3" stroke-linecap="round"><title>EV</title></path>
+	<circle cx="70.00" cy="266.93" data-y="0.28" data-x="2022" r="4" fill="#45D526"><title>2022: 0.28</title></circle>
+	<circle cx="89.31" cy="265.07" data-y="0.45" data-x="2023" r="4" fill="#45D526"><title>2023: 0.45</title></circle>
+	<circle cx="108.62" cy="260.91" data-y="0.83" data-x="2024" r="4" fill="#45D526"><title>2024: 0.83</title></circle>
+	<circle cx="127.93" cy="255.98" data-y="1.28" data-x="2025" r="4" fill="#45D526"><title>2025: 1.28</title></circle>
+	<circle cx="147.24" cy="249.19" data-y="1.90" data-x="2026" r="4" fill="#45D526"><title>2026: 1.90</title></circle>
+	<circle cx="166.55" cy="242.51" data-y="2.51" data-x="2027" r="4" fill="#45D526"><title>2027: 2.51</title></circle>
+	<circle cx="185.86" cy="235.83" data-y="3.12" data-x="2028" r="4" fill="#45D526"><title>2028: 3.12</title></circle>
+	<circle cx="205.17" cy="228.82" data-y="3.76" data-x="2029" r="4" fill="#45D526"><title>2029: 3.76</title></circle>
+	<circle cx="224.48" cy="220.39" data-y="4.53" data-x="2030" r="4" fill="#45D526"><title>2030: 4.53</title></circle>
+	<circle cx="243.79" cy="212.28" data-y="5.27" data-x="2031" r="4" fill="#45D526"><title>2031: 5.27</title></circle>
+	<circle cx="263.10" cy="205.16" data-y="5.92" data-x="2032" r="4" fill="#45D526"><title>2032: 5.92</title></circle>
+	<circle cx="282.41" cy="198.59" data-y="6.52" data-x="2033" r="4" fill="#45D526"><title>2033: 6.52</title></circle>
+	<circle cx="301.72" cy="192.79" data-y="7.05" data-x="2034" r="4" fill="#45D526"><title>2034: 7.05</title></circle>
+	<circle cx="321.03" cy="188.08" data-y="7.48" data-x="2035" r="4" fill="#45D526"><title>2035: 7.48</title></circle>
+	<circle cx="340.34" cy="184.14" data-y="7.84" data-x="2036" r="4" fill="#45D526"><title>2036: 7.84</title></circle>
+	<circle cx="359.66" cy="180.74" data-y="8.15" data-x="2037" r="4" fill="#45D526"><title>2037: 8.15</title></circle>
+	<circle cx="378.97" cy="177.89" data-y="8.41" data-x="2038" r="4" fill="#45D526"><title>2038: 8.41</title></circle>
+	<circle cx="398.28" cy="175.37" data-y="8.64" data-x="2039" r="4" fill="#45D526"><title>2039: 8.64</title></circle>
+	<circle cx="417.59" cy="173.40" data-y="8.82" data-x="2040" r="4" fill="#45D526"><title>2040: 8.82</title></circle>
+	<circle cx="436.90" cy="171.87" data-y="8.96" data-x="2041" r="4" fill="#45D526"><title>2041: 8.96</title></circle>
+	<circle cx="456.21" cy="170.78" data-y="9.06" data-x="2042" r="4" fill="#45D526"><title>2042: 9.06</title></circle>
+	<circle cx="475.52" cy="169.90" data-y="9.14" data-x="2043" r="4" fill="#45D526"><title>2043: 9.14</title></circle>
+	<circle cx="494.83" cy="169.35" data-y="9.19" data-x="2044" r="4" fill="#45D526"><title>2044: 9.19</title></circle>
+	<circle cx="514.14" cy="168.91" data-y="9.23" data-x="2045" r="4" fill="#45D526"><title>2045: 9.23</title></circle>
+	<circle cx="533.45" cy="168.69" data-y="9.25" data-x="2046" r="4" fill="#45D526"><title>2046: 9.25</title></circle>
+	<circle cx="552.76" cy="168.48" data-y="9.27" data-x="2047" r="4" fill="#45D526"><title>2047: 9.27</title></circle>
+	<circle cx="572.07" cy="168.26" data-y="9.29" data-x="2048" r="4" fill="#45D526"><title>2048: 9.29</title></circle>
+	<circle cx="591.38" cy="168.04" data-y="9.31" data-x="2049" r="4" fill="#45D526"><title>2049: 9.31</title></circle>
+	<circle cx="610.69" cy="167.82" data-y="9.33" data-x="2050" r="4" fill="#45D526"><title>2050: 9.33</title></circle>
+</g>
+</svg>

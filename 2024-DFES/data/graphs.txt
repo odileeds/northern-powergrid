@@ -1,0 +1,160 @@
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 1:</strong> Electric vehicle uptake forecast (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ev.html %}</div>
+					{% include_relative data/graphs/graph-ev.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ev.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 4" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfEVs.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 4" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 2:</strong> Electric vehicle penetration of total car stock (%)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ev-percent.html %}</div>
+					{% include_relative data/graphs/graph-ev-percent.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ev-percent.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 5" /> SVG</a>
+						<a href="data/graphs/ElectricVehiclePenetrationOfTotalCarStock_percent.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 5" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 3:</strong> Total number of heat pumps (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-heatpumps.html %}</div>
+					{% include_relative data/graphs/graph-heatpumps.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-heatpumps.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 6" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfHeatPumps.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 6" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 4:</strong> Battery storage capacity installed (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-battery-storage.html %}</div>
+					{% include_relative data/graphs/graph-battery-storage.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-battery-storage.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 7" /> SVG</a>
+						<a href="data/graphs/BatteryStorageCapacityInstalled_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 7" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 5:</strong> Renewable generation installed (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-renewable-generation-installed.html %}</div>
+					{% include_relative data/graphs/graph-renewable-generation-installed.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-renewable-generation-installed.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 8" /> SVG</a>
+						<a href="data/graphs/RenewableGenerationInstalled_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 8" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 6:</strong> Electric bus and HGV uptake forecast (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ebus-ehgv.html %}</div>
+					{% include_relative data/graphs/graph-ebus-ehgv.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ebus-ehgv.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 9" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfBusesAndHGVs.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 9" /> CSV</a>
+					</div>
+				</figure>
+			
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 7:</strong> Annual peak demand (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand.html %}</div>
+					{% include_relative data/graphs/graph-annual-peak-demand.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-peak-demand.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 10" /> SVG</a>
+						<a href="data/graphs/AnnualPeakDemand_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 10" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 8:</strong> Network peak demand breakdown - NPg Best View Scenario (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand-breakdown.html %}</div>
+					{% include_relative data/graphs/graph-annual-peak-demand-breakdown.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-peak-demand-breakdown.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 11" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualGrossPeakDemandBreakdown_NPgBestView_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 11" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 9:</strong> Network energy consumption breakdown - NPg Best View Scenario (TWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-energy-consumption-breakdown.html %}</div>
+					{% include_relative data/graphs/graph-energy-consumption-breakdown.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-energy-consumption-breakdown.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 12" /> SVG</a>
+						<a href="data/graphs/NetworkEnergyConsumptionBreakdown_NPgBestView_TWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 12" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 10:</strong> Annual network energy consumption (TWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-energy-consumption.html %}</div>
+					{% include_relative data/graphs/graph-annual-energy-consumption.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-energy-consumption.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 13" /> SVG</a>
+						<a href="data/graphs/AnnualNetworkEnergyConsumption_TWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 13" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 11:</strong> Additional industrial peak demand breakdown - NPg Best View Scenario (MW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 15" /> SVG</a>
+						<a href="data/graphs/IndustryAdditionalPeakDemandBreakdown_NPgBestView_MW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 12:</strong> Additional industrial energy consumption breakdown - NPg Best View Scenario (GWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 16" /> SVG</a>
+						<a href="data/graphs/IndustryAdditionalEnergyConsumptionBreakdown_NPgBestView_GWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 16" /> CSV</a>
+					</div>
+				</figure>
+
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 13:</strong> Network annual fuel consumption breakdown - NPg Planning Scenario (GWh-yr)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-fuel-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 14" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
+					</div>
+				</figure>
+
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 14:</strong> Annual carbon emissions (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-co2-emissions.html %}</div>
+					{% include_relative data/graphs/graph-annual-co2-emissions.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-co2-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a>
+						<a href="data/graphs/AnnualCarbonEmissions_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 1" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 15:</strong> Cumulative carbon emissions (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-cumulative-carbon-emissions.html %}</div>
+					{% include_relative data/graphs/graph-cumulative-carbon-emissions.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-cumulative-carbon-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 2" /> SVG</a>
+						<a href="data/graphs/CumulativeCarbonEmissions_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 2" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 16:</strong> Network annual carbon emission breakdown - NPg Planning Scenario (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-carbon-emissions-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualCarbonEmissionBreakdown_NPgPlanningScenario_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a>
+					</div>
+				</figure>
+

@@ -1,0 +1,262 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Northern Powergrid DFES 2023: graphs</title>
+	<link rel="StyleSheet" href="resources/style.css" type="text/css" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<style>
+	.glory { height: unset; }
+	.glory .holder { height: unset; }
+	.glory-opacity { height: unset; }
+	h2 { font-weight: bold; font-size: 1.4em; margin-top: 2em; }
+	figure { border-top: 2px solid #cc0935; padding: 0.5em 0; width: 640px; max-width:100%; margin-bottom: 3em; }
+	figure h3 { font-size: 1em; margin-top: 0; }
+	figure table { border-spacing: 0.4em; border-collapse: separate; width: 100%; margin-left: -0.4em; }
+	figure table tr { opacity: 0.9; }
+	figure table tr.on, figure table tr:hover { cursor: pointer; opacity: 1; }
+	figure table tr.on td, figure table tr:hover td { font-weight: bold; background-color: rgba(204, 9, 53,0.3); }
+	figure table th, figure table td { padding: 0.25em 0.5em; text-align: right; }
+	figure table th { background-color: #cc0935; color: white; font-weight: bold; }
+	figure table td {background-color: rgba(180, 180, 180,0.3); color: black; width: 80px; }
+	figure table td:first-child span:after { color: rgb(0, 255, 255); mix-blend-mode: difference; }
+	figure table th:first-child, figure table td:first-child { text-align: left; font-weight: bold; border-left: 0; width: auto; }
+	figure figcaption { font-size: 1em; color: inherit; text-align: left; margin-bottom: 0.5em; }
+	figure .download { float: right; }
+	figure .download a { display: inline-block; line-height: 1.25em; padding: 0.25em 0.5em; text-decoration: none; color: inherit; }
+	figure .download a:hover, figure .download a:focus { background-color: #cc0935; color: white; }
+	figure .download a:hover img, figure .download a:focus img { filter: invert(); }
+	figure .download img { width: 1.25em; height: 1.25em; float: left; margin-right: 0.5em; }
+	#graphs svg { width: 100%; height: auto;}
+
+	@media only screen and (max-width: 700px) {
+		figure .table-holder { overflow-x: auto; margin-bottom: 0.5em; }
+	}
+	</style>
+</head>
+<body>
+	<!--
+	<div class="warning message">
+		<div class="holder">
+		<h2>WARNING</h2>
+		<p>This page is currently <em>under development</em>. It contains placeholder content.<br />The real DFES 2023 data should be included here by the end of December 2023.</p>
+		</div>
+	</div>
+	-->
+	<header class="b1-bg">
+		<div class="b1-bg glory">
+			<div class="glory-opacity">
+				<div class="holder">
+					<a href="https://open-innovations.org/"><img alt="Open Innovations" src="https://open-innovations.org/resources/images/logos/oi-square-white.svg" title="Open Innovations" style="height:91px;width:91px;padding:0.25em;" ></a>
+					<a href="https://www.northernpowergrid.com/"><img alt="Northern Powergrid" src="https://open-innovations.org/dashboard/data/img/northernpowergrid.svg" title="Northern Powergrid"></a>
+					<a href="http://www.element-energy.co.uk/"><img alt="Element Energy" src="https://open-innovations.org/dashboard/data/img/elementenergy.svg" title="Element Energy"></a>
+				</div>
+			</div>
+		</div>
+		<div class="planning-scenario title">
+			<div class="holder">
+				<h1>Northern Powergrid DFES 2023: graphs</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="b6-bg" id="graphs">
+		<div class="holder padded">
+			<p>The following graphs are supplemental to <a href="index.html">Northern Powergrid's DFES 2023 interactive map</a>. Each graph can be downloaded as a scalable-vector-graphic (SVG). The underlying data for each graph is also available as a CSV file.</p>
+	
+			<h2>Low carbon technologies</h2>
+			
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 1:</strong> Electric vehicle uptake forecast (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ev.html %}</div>
+					{% include_relative data/graphs/graph-ev.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ev.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 4" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfEVs.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 4" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 2:</strong> Electric vehicle penetration of total car stock (%)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ev-percent.html %}</div>
+					{% include_relative data/graphs/graph-ev-percent.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ev-percent.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 5" /> SVG</a>
+						<a href="data/graphs/ElectricVehiclePenetrationOfTotalCarStock_percent.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 5" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 3:</strong> Total number of heat pumps (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-heatpumps.html %}</div>
+					{% include_relative data/graphs/graph-heatpumps.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-heatpumps.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 6" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfHeatPumps.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 6" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 4:</strong> Battery storage capacity installed (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-battery-storage.html %}</div>
+					{% include_relative data/graphs/graph-battery-storage.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-battery-storage.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 7" /> SVG</a>
+						<a href="data/graphs/BatteryStorageCapacityInstalled_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 7" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 5:</strong> Renewable generation installed (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-renewable-generation-installed.html %}</div>
+					{% include_relative data/graphs/graph-renewable-generation-installed.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-renewable-generation-installed.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 8" /> SVG</a>
+						<a href="data/graphs/RenewableGenerationInstalled_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 8" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 6:</strong> Electric bus and HGV uptake forecast (#)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-ebus-ehgv.html %}</div>
+					{% include_relative data/graphs/graph-ebus-ehgv.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-ebus-ehgv.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 9" /> SVG</a>
+						<a href="data/graphs/TotalNumberOfBusesAndHGVs.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 9" /> CSV</a>
+					</div>
+				</figure>
+
+			<h2>Network data</h2>
+			
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 7:</strong> Annual peak demand (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand.html %}</div>
+					{% include_relative data/graphs/graph-annual-peak-demand.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-peak-demand.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 10" /> SVG</a>
+						<a href="data/graphs/AnnualPeakDemand_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 10" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 8:</strong> Network peak demand breakdown - NPg Best View Scenario (GW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-peak-demand-breakdown.html %}</div>
+					{% include_relative data/graphs/graph-annual-peak-demand-breakdown.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-peak-demand-breakdown.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 11" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualGrossPeakDemandBreakdown_NPgBestView_GW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 11" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 9:</strong> Network energy consumption breakdown - NPg Best View Scenario (TWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-energy-consumption-breakdown.html %}</div>
+					{% include_relative data/graphs/graph-energy-consumption-breakdown.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-energy-consumption-breakdown.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 12" /> SVG</a>
+						<a href="data/graphs/NetworkEnergyConsumptionBreakdown_NPgBestView_TWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 12" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 10:</strong> Annual network energy consumption (TWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-energy-consumption.html %}</div>
+					{% include_relative data/graphs/graph-annual-energy-consumption.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-energy-consumption.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 13" /> SVG</a>
+						<a href="data/graphs/AnnualNetworkEnergyConsumption_TWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 13" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 11:</strong> Additional industrial peak demand breakdown - NPg Best View Scenario (MW)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-industry-additional-peak-demand-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 15" /> SVG</a>
+						<a href="data/graphs/IndustryAdditionalPeakDemandBreakdown_NPgBestView_MW.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 15" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 12:</strong> Additional industrial energy consumption breakdown - NPg Best View Scenario (GWh)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-industry-additional-energy-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 16" /> SVG</a>
+						<a href="data/graphs/IndustryAdditionalEnergyConsumptionBreakdown_NPgBestView_GWh.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 16" /> CSV</a>
+					</div>
+				</figure>
+
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 13:</strong> Network annual fuel consumption breakdown - NPg Planning Scenario (GWh-yr)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-fuel-consumption-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-fuel-consumption-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 14" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualFuelConsumptionBreakdown_NPgPlanningScenario_GWh-yr.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 14" /> CSV</a>
+					</div>
+				</figure>
+			
+			<h2>Emissions</h2>
+			
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 14:</strong> Annual carbon emissions (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-co2-emissions.html %}</div>
+					{% include_relative data/graphs/graph-annual-co2-emissions.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-co2-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 1" /> SVG</a>
+						<a href="data/graphs/AnnualCarbonEmissions_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 1" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 15:</strong> Cumulative carbon emissions (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-cumulative-carbon-emissions.html %}</div>
+					{% include_relative data/graphs/graph-cumulative-carbon-emissions.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-cumulative-carbon-emissions.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 2" /> SVG</a>
+						<a href="data/graphs/CumulativeCarbonEmissions_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 2" /> CSV</a>
+					</div>
+				</figure>
+	
+				<figure class="jekyll-parse">
+					<figcaption><strong>Figure 16:</strong> Network annual carbon emission breakdown - NPg Planning Scenario (MtCO2)</figcaption>
+					<div class="table-holder">{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.html %}</div>
+					{% include_relative data/graphs/graph-annual-carbon-emissions-planning-scenario.svg %}
+					<div class="download">
+						<a href="data/graphs/graph-annual-carbon-emissions-planning-scenario.svg"><img src="resources/download.svg" alt="download" title="Download graph from Figure 3" /> SVG</a>
+						<a href="data/graphs/NetworkAnnualCarbonEmissionBreakdown_NPgPlanningScenario_MtCO2.csv"><img src="resources/download.svg" alt="download" title="Download data from Figure 3" /> CSV</a>
+					</div>
+				</figure>
+			
+		</div>
+	</div>
+
+	<section class="b5-bg">
+		<div class="holder padded">
+			<h2>About this visualisation</h2>
+			<p>These figures have been created to show some of the parameters calculated in Northern Powergrid's 2023 DFES.</p>
+		</div>
+	</section>
+	<footer class="b1-bg">
+		<div class="holder">
+				<h3><a href="https://odileeds.org/blog/2019-12-09-visualising-future-energy-scenarios">Interactive visualisation</a></h3>
+				<p>&copy; Open Innovations (Stuart Lowe) 2023. Released under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> licence. <a href="https://odileeds.org/projects/northernpowergrid/dfes/">Read about the project</a> or view the <a href="https://github.com/odileeds/northern-powergrid">repository on Github</a>.</p>
+				<h3><a href="https://datamillnorth.org/">Energy scenario data</a></h3>
+				<p>&copy; Northern Powergrid &amp; ERM 2023. Released under a Creative Commons Attribution Licence.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="resources/graphs.js"></script>
+
+	<script src="https://open-innovations.org/resources/oi.log.js"></script>
+	<script>
+	OI.log.setup({"id":"npg","target":["odileeds.github.io"]}).add('action=view');
+	</script>
+</body>
+</html>
