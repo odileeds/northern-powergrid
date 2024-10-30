@@ -280,7 +280,7 @@ OI.ready(function(){
 
 						div = document.createElement('div');
 						div.classList.add('leaflet-control','leaflet-bar');
-						div.innerHTML = '<div class="placesearch leaflet-button"><button class="submit" href="#" title="Search" role="button" aria-label="Search"></button><form class="placeform layersearch pop-left" action="search" method="GET" autocomplete="off"><input class="place" id="search" name="place" value="" placeholder="Search for a named area" type="text" /><div class="searchresults" id="searchresults"></div></div></form></div>';
+						div.innerHTML = '<div class="placesearch leaflet-button"><button class="submit" href="#" title="Search" role="button" aria-label="Search"></button><form class="placeform layersearch pop-left" action="search" method="GET" autocomplete="off"><input class="place" id="search" name="place" value="" placeholder="Search for a named area" aria-label="Search for a named area" type="text" /><div class="searchresults" id="searchresults"></div></div></form></div>';
 						el.appendChild(div);
 						
 						if("geolocation" in navigator){

@@ -20,16 +20,14 @@
 
 
 /* Main site styling */
-.counterfactual { background-color: #827B7A!important; color: white!important; }
-.counterfactual-text { color: #827B7A!important; }
-.hydrogen-evolution { background-color: #5BCBF5!important; color: black!important; }
-.hydrogen-evolution-text { color: #5BCBF5!important; }
-.electric-engagement { background-color: #FFBF22!important; color: black!important; }
-.electric-engagement-text { color: #FFBF22!important; }
-.holistic-transition { background-color: #C2CD23!important; color: black!important; }
-.holistic-transition-text { color: #C2CD23!important; }
-.early-net-zero { background-color: #00AB84!important; color: white!important; }
-.early-net-zero-text { color: #00AB84!important; }
+.counterfactual { background-color: #454546!important; color: white!important; }
+.counterfactual-text { color: #454546!important; }
+.hydrogen-evolution { background-color: #0079C1!important; color: white!important; }
+.hydrogen-evolution-text { color: #0079C1!important; }
+.electric-engagement { background-color: #F26522!important; color: black!important; }
+.electric-engagement-text { color: #F26522!important; }
+.holistic-transition { background-color: #C2CD23!important; color: #454546!important; }
+.holistic-transition-text { color: #454546!important; }
 .reference-scenario { background-color: #ab1236!important; color: white!important; }
 .reference-scenario-text { color: #ab1236!important; }
 
@@ -524,6 +522,7 @@ footer ul, footer ol { margin-left: 2em; }
 #about h2 { margin-top: 0em; }
 #about h3 { margin-top: 2em; }
 #about h4 { margin-top: 1em; }
+#about a { color: inherit; }
 .thickline { height: 10px; }
 
 dl { margin-bottom: 2em; }
@@ -660,6 +659,7 @@ dl dd { margin-bottom: 1em; }
 .toggle-bg, .toggle-bg input { width: 2.5em; }
 .toggle-label1, .toggle-label2 { top: -0.25em; }
 .switch { width: 1.25em; }
+.noUi-pips { color: #555; }
 .noUi-pips-horizontal { height: auto; }
 button:disabled { opacity: 0.8; filter: grayscale(100%); cursor: not-allowed; }
 #play, #pause { line-height: 1.2em; }
