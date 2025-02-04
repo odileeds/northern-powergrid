@@ -41,7 +41,7 @@ OI.ready(function(){
 		"options": {
 			"scenario": "NPg Reference Scenario",
 			"view": "LAD",
-			"key": "2022",
+			"key": "2023",
 			"parameter": "ev",
 			"scale": "relative",
 			"years": {"min":2023, "max":2050},
